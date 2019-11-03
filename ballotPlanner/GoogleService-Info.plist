@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1003302049232-5jpqtk3hibj4v68slqt323a20o55m3nm.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1003302049232-5jpqtk3hibj4v68slqt323a20o55m3nm</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCI-QYKQlT3FiYKsp2Gc8cgq21vSWVZvPs</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1003302049232</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.egiuse.ballotPlanner</string>
+	<key>PROJECT_ID</key>
+	<string>ballotplanner</string>
+	<key>STORAGE_BUCKET</key>
+	<string>ballotplanner.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1003302049232:ios:498eede69e29920fd915d5</string>
+	<key>DATABASE_URL</key>
+	<string>https://ballotplanner.firebaseio.com</string>
+</dict>
+</plist>
