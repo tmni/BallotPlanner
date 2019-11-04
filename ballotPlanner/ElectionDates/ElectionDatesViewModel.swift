@@ -11,6 +11,8 @@ import Foundation
 class ElectionDatesViewModel {
   var electionDates = [ElectionDate]()
   
+  let parser = ElectionDatesParser()
+  
   func numberOfRows() -> Int {
     return electionDates.count
   }
@@ -40,6 +42,13 @@ class ElectionDatesViewModel {
   
   func detailViewModelForRowAtIndexPath(_ indexPath: IndexPath) -> ElectionDateDetailViewModel {
     return ElectionDateDetailViewModel(electionDate: electionDates[indexPath.row])
+  }
+  
+  func refresh(_ completion: @escaping () -> Void) {
+    if let electionDatesTotal = self.parser.electionDatesFromSearchResponse() {
+      self.electionDates = electionDatesTotal
+    }
+    completion()
   }
   
 }

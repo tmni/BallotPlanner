@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="3ie-xZ-w1V">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Dac-AZ-2vC">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -76,25 +76,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mSm-WL-qIc" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-564" y="-4.4334975369458132"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="TZq-KI-siK">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3ie-xZ-w1V" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0ls-On-k0r">
-                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.97254901959999995" green="0.40784313729999999" blue="0.18039215689999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="Dac-AZ-2vC" kind="relationship" relationship="rootViewController" id="gmF-Ko-XQQ"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="24L-V2-jAa" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1309" y="-4"/>
         </scene>
         <!--Election Date Detail View Controller-->
         <scene sceneID="22P-DE-A74">

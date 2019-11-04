@@ -19,6 +19,12 @@ class ElectionDatesViewController: UIViewController, UITableViewDataSource, UITa
     
     let cellNib = UINib(nibName: "TableViewCell", bundle: nil)
     tableView.register(cellNib, forCellReuseIdentifier: "cell")
+    
+    viewModel.refresh { [unowned self] in
+      DispatchQueue.main.async {
+        self.tableView.reloadData()
+      }
+    }
   }
   
   override func viewWillAppear(_ animated: Bool) {
