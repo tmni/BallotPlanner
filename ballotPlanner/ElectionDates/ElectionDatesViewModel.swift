@@ -45,10 +45,14 @@ class ElectionDatesViewModel {
   }
   
   func refresh(_ completion: @escaping () -> Void) {
-    if let electionDatesTotal = self.parser.electionDatesFromSearchResponse() {
+//    if let electionDatesTotal = self.parser.electionDatesFromSearchResponse { (electionDatesTotal) in
+//      self.electionDates = electionDatesTotal
+//    }
+    self.parser.electionDatesFromSearchResponse { (electionDatesTotal) in
       self.electionDates = electionDatesTotal
+      completion()
     }
-    completion()
+    
   }
   
 }

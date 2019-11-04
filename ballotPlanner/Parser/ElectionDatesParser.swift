@@ -10,9 +10,10 @@ import Foundation
 import Firebase
 
 class ElectionDatesParser {
-  func electionDatesFromSearchResponse() -> [ElectionDate]? {
-    var electionDates = [ElectionDate]()
-    
+  //var electionDates = [ElectionDate]()
+  
+  func electionDatesFromSearchResponse(completion: @escaping([ElectionDate]) -> Void) {
+    var electionDatesTotal = [ElectionDate]()
     let db = Firestore.firestore()
     db.collection("electionDates").getDocuments() { (querySnapshot, err) in
       if let err = err {
@@ -20,12 +21,12 @@ class ElectionDatesParser {
       } else {
         for document in querySnapshot!.documents {
           let newElectionDate = ElectionDate(date: document.data()["date"] as! String, description: document.data()["description"] as! String, name: document.data()["name"] as! String)
-          electionDates.append(newElectionDate)
+          electionDatesTotal.append(newElectionDate)
         }
       }
+      completion(electionDatesTotal)
+      print(electionDatesTotal)
     }
-    
-    return electionDates
   }
   
 }
