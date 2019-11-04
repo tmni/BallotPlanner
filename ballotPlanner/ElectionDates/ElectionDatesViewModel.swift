@@ -8,7 +8,7 @@
 
 import Foundation
 
-class ViewModel {
+class ElectionDatesViewModel {
   var electionDates = [ElectionDate]()
   
   func numberOfRows() -> Int {
@@ -38,5 +38,8 @@ class ViewModel {
     }
   }
   
+  func detailViewModelForRowAtIndexPath(_ indexPath: IndexPath) -> ElectionDateDetailViewModel {
+    return ElectionDateDetailViewModel(electionDate: electionDates[indexPath.row])
+  }
   
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F42AB812370A49100238682 /* ElectionDatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F42AB7F2370A49100238682 /* ElectionDatesViewController.swift */; };
 		3F5AB495236F72C400A58E42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5AB494236F72C400A58E42 /* AppDelegate.swift */; };
 		3F5AB497236F72C400A58E42 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5AB496236F72C400A58E42 /* ViewController.swift */; };
 		3F5AB49A236F72C400A58E42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F5AB498236F72C400A58E42 /* Main.storyboard */; };
@@ -14,14 +15,19 @@
 		3F5AB49F236F72C700A58E42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F5AB49D236F72C700A58E42 /* LaunchScreen.storyboard */; };
 		3F5AB4A7236F731700A58E42 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F5AB4A6236F731700A58E42 /* GoogleService-Info.plist */; };
 		3F5AB4AA236F89A500A58E42 /* ElectionDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5AB4A9236F89A500A58E42 /* ElectionDate.swift */; };
-		3F5AB4AD236F8AD800A58E42 /* ElectionDateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5AB4AC236F8AD800A58E42 /* ElectionDateViewModel.swift */; };
+		3F5AB4AD236F8AD800A58E42 /* ElectionDatesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5AB4AC236F8AD800A58E42 /* ElectionDatesViewModel.swift */; };
 		3F5AB4B0236F8EBC00A58E42 /* ElectionDateDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5AB4AF236F8EBC00A58E42 /* ElectionDateDetailViewModel.swift */; };
+		3F5AB4C8236F9CF200A58E42 /* ElectionDateDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5AB4C7236F9CF200A58E42 /* ElectionDateDetailViewController.swift */; };
+		3F5AB4CA2370994000A58E42 /* ElectionDates.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F5AB4C92370994000A58E42 /* ElectionDates.storyboard */; };
+		3F9DBE852370A5F5007AD74C /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9DBE832370A5F5007AD74C /* TableViewCell.swift */; };
+		3F9DBE862370A5F5007AD74C /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F9DBE842370A5F5007AD74C /* TableViewCell.xib */; };
 		8AEA7911B449A15C078BED31 /* Pods_ballotPlanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E280B0C56CB18E69F0ABFE1 /* Pods_ballotPlanner.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2E280B0C56CB18E69F0ABFE1 /* Pods_ballotPlanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ballotPlanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C628B7B7611EB44E84599A8 /* Pods-ballotPlanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ballotPlanner.debug.xcconfig"; path = "Target Support Files/Pods-ballotPlanner/Pods-ballotPlanner.debug.xcconfig"; sourceTree = "<group>"; };
+		3F42AB7F2370A49100238682 /* ElectionDatesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectionDatesViewController.swift; sourceTree = "<group>"; };
 		3F5AB491236F72C400A58E42 /* ballotPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ballotPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F5AB494236F72C400A58E42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F5AB496236F72C400A58E42 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -31,8 +37,12 @@
 		3F5AB4A0236F72C700A58E42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F5AB4A6236F731700A58E42 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3F5AB4A9236F89A500A58E42 /* ElectionDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectionDate.swift; sourceTree = "<group>"; };
-		3F5AB4AC236F8AD800A58E42 /* ElectionDateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectionDateViewModel.swift; sourceTree = "<group>"; };
+		3F5AB4AC236F8AD800A58E42 /* ElectionDatesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectionDatesViewModel.swift; sourceTree = "<group>"; };
 		3F5AB4AF236F8EBC00A58E42 /* ElectionDateDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectionDateDetailViewModel.swift; sourceTree = "<group>"; };
+		3F5AB4C7236F9CF200A58E42 /* ElectionDateDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectionDateDetailViewController.swift; sourceTree = "<group>"; };
+		3F5AB4C92370994000A58E42 /* ElectionDates.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ElectionDates.storyboard; sourceTree = "<group>"; };
+		3F9DBE832370A5F5007AD74C /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		3F9DBE842370A5F5007AD74C /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		F4B65065CEABC734A70351D5 /* Pods-ballotPlanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ballotPlanner.release.xcconfig"; path = "Target Support Files/Pods-ballotPlanner/Pods-ballotPlanner.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,23 +82,36 @@
 				3F5AB494236F72C400A58E42 /* AppDelegate.swift */,
 				3F5AB496236F72C400A58E42 /* ViewController.swift */,
 				3F5AB498236F72C400A58E42 /* Main.storyboard */,
+				3F5AB4C92370994000A58E42 /* ElectionDates.storyboard */,
 				3F5AB49B236F72C700A58E42 /* Assets.xcassets */,
 				3F5AB49D236F72C700A58E42 /* LaunchScreen.storyboard */,
 				3F5AB4A0236F72C700A58E42 /* Info.plist */,
 				3F5AB4A6236F731700A58E42 /* GoogleService-Info.plist */,
-				3F5AB4A9236F89A500A58E42 /* ElectionDate.swift */,
-				3F5AB4AC236F8AD800A58E42 /* ElectionDateViewModel.swift */,
-				3F5AB4AF236F8EBC00A58E42 /* ElectionDateDetailViewModel.swift */,
-				3F5AB4AE236F8E5100A58E42 /* ElectionDates */,
+				3F5AB4B4236F94AB00A58E42 /* ElectionDate Detail */,
+				3F5AB4B3236F947100A58E42 /* ElectionDates */,
 			);
 			path = ballotPlanner;
 			sourceTree = "<group>";
 		};
-		3F5AB4AE236F8E5100A58E42 /* ElectionDates */ = {
+		3F5AB4B3236F947100A58E42 /* ElectionDates */ = {
 			isa = PBXGroup;
 			children = (
+				3F5AB4A9236F89A500A58E42 /* ElectionDate.swift */,
+				3F5AB4AC236F8AD800A58E42 /* ElectionDatesViewModel.swift */,
+				3F42AB7F2370A49100238682 /* ElectionDatesViewController.swift */,
+				3F9DBE832370A5F5007AD74C /* TableViewCell.swift */,
+				3F9DBE842370A5F5007AD74C /* TableViewCell.xib */,
 			);
 			path = ElectionDates;
+			sourceTree = "<group>";
+		};
+		3F5AB4B4236F94AB00A58E42 /* ElectionDate Detail */ = {
+			isa = PBXGroup;
+			children = (
+				3F5AB4AF236F8EBC00A58E42 /* ElectionDateDetailViewModel.swift */,
+				3F5AB4C7236F9CF200A58E42 /* ElectionDateDetailViewController.swift */,
+			);
+			path = "ElectionDate Detail";
 			sourceTree = "<group>";
 		};
 		569D63D6FCCFB8D6A772A79A /* Pods */ = {
@@ -170,6 +193,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F5AB49F236F72C700A58E42 /* LaunchScreen.storyboard in Resources */,
+				3F9DBE862370A5F5007AD74C /* TableViewCell.xib in Resources */,
+				3F5AB4CA2370994000A58E42 /* ElectionDates.storyboard in Resources */,
 				3F5AB4A7236F731700A58E42 /* GoogleService-Info.plist in Resources */,
 				3F5AB49C236F72C700A58E42 /* Assets.xcassets in Resources */,
 				3F5AB49A236F72C400A58E42 /* Main.storyboard in Resources */,
@@ -225,10 +250,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F5AB4C8236F9CF200A58E42 /* ElectionDateDetailViewController.swift in Sources */,
+				3F9DBE852370A5F5007AD74C /* TableViewCell.swift in Sources */,
+				3F42AB812370A49100238682 /* ElectionDatesViewController.swift in Sources */,
 				3F5AB497236F72C400A58E42 /* ViewController.swift in Sources */,
 				3F5AB4B0236F8EBC00A58E42 /* ElectionDateDetailViewModel.swift in Sources */,
 				3F5AB495236F72C400A58E42 /* AppDelegate.swift in Sources */,
-				3F5AB4AD236F8AD800A58E42 /* ElectionDateViewModel.swift in Sources */,
+				3F5AB4AD236F8AD800A58E42 /* ElectionDatesViewModel.swift in Sources */,
 				3F5AB4AA236F89A500A58E42 /* ElectionDate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
