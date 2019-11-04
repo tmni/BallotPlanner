@@ -42,7 +42,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="Gd4-oo-6Nm" kind="show" id="70W-Xe-N3S"/>
+                                            <segue destination="Gd4-oo-6Nm" kind="show" identifier="toDetailVC" id="70W-Xe-N3S"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
