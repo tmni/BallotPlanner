@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Dac-AZ-2vC">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Election Dates View Controller-->
+        <scene sceneID="HYI-6Q-fF8">
+            <objects>
+                <viewController id="Dac-AZ-2vC" customClass="ElectionDatesViewController" customModule="ballotPlanner" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Lfb-5U-U86"/>
+                        <viewControllerLayoutGuide type="bottom" id="28V-MZ-TTt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oSv-JB-ZwB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="l6s-ax-wAR">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="778"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="7Dx-oh-pyc" style="IBUITableViewCellStyleDefault" id="UJw-WU-H9o">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UJw-WU-H9o" id="4mW-Gp-dQ6">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Election" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7Dx-oh-pyc">
+                                                    <rect key="frame" x="15" y="0.0" width="325" height="43.666666666666664"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Gd4-oo-6Nm" kind="show" identifier="toDetailVC" id="70W-Xe-N3S"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Dac-AZ-2vC" id="A8k-Of-US6"/>
+                                    <outlet property="delegate" destination="Dac-AZ-2vC" id="iWE-nE-lpM"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="28V-MZ-TTt" firstAttribute="top" secondItem="l6s-ax-wAR" secondAttribute="bottom" id="A67-Yi-Hgy"/>
+                            <constraint firstAttribute="trailing" secondItem="l6s-ax-wAR" secondAttribute="trailing" id="C62-fe-wvs"/>
+                            <constraint firstItem="l6s-ax-wAR" firstAttribute="top" secondItem="oSv-JB-ZwB" secondAttribute="top" id="ebV-QV-KFK"/>
+                            <constraint firstItem="l6s-ax-wAR" firstAttribute="leading" secondItem="oSv-JB-ZwB" secondAttribute="leading" id="nJJ-Ta-vNB"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="eGH-Hq-POM">
+                        <nil key="title"/>
+                        <barButtonItem key="backBarButtonItem" title="Back" id="Ftb-Zp-ump"/>
+                        <view key="titleView" contentMode="scaleToFill" id="uVZ-Dm-LiS">
+                            <rect key="frame" x="37" y="0.0" width="301" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </view>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="l6s-ax-wAR" id="XQV-IY-z3B"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mSm-WL-qIc" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-564" y="-4.4334975369458132"/>
+        </scene>
+        <!--Election Date Detail View Controller-->
+        <scene sceneID="22P-DE-A74">
+            <objects>
+                <viewController id="Gd4-oo-6Nm" customClass="ElectionDateDetailViewController" customModule="ballotPlanner" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nCt-yf-PeJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="qRk-ea-UIs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hAz-l4-99m">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dsx-14-oQD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="219" y="-4"/>
+        </scene>
+    </scenes>
+</document>

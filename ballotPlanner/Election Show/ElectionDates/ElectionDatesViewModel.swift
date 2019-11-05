@@ -8,8 +8,10 @@
 
 import Foundation
 
-class ViewModel {
+class ElectionDatesViewModel {
   var electionDates = [ElectionDate]()
+  
+  let parser = ElectionDatesParser()
   
   func numberOfRows() -> Int {
     return electionDates.count
@@ -38,5 +40,19 @@ class ViewModel {
     }
   }
   
+  func detailViewModelForRowAtIndexPath(_ indexPath: IndexPath) -> ElectionDateDetailViewModel {
+    return ElectionDateDetailViewModel(electionDate: electionDates[indexPath.row])
+  }
+  
+  func refresh(_ completion: @escaping () -> Void) {
+//    if let electionDatesTotal = self.parser.electionDatesFromSearchResponse { (electionDatesTotal) in
+//      self.electionDates = electionDatesTotal
+//    }
+    self.parser.electionDatesFromSearchResponse { (electionDatesTotal) in
+      self.electionDates = electionDatesTotal
+      completion()
+    }
+    
+  }
   
 }
