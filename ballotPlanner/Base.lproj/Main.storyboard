@@ -1,52 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EGl-uK-2Bd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
-        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes>
-        <!--ElectionDates-->
-        <scene sceneID="l4C-Hb-qiy">
-            <objects>
-                <viewControllerPlaceholder storyboardName="ElectionDates" id="afa-WJ-dYO" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="Sjv-ub-4wV"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="w4K-rI-ieu" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="83" y="-294"/>
-        </scene>
-        <!--myBallot-->
-        <scene sceneID="t4q-FL-0hK">
-            <objects>
-                <viewControllerPlaceholder storyboardName="myBallot" id="vna-Us-max" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="3Yl-p4-2aJ"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dDa-P0-aoU" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="102" y="-258"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="ZaD-5M-76i">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Uat-Hd-P96" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EGl-uK-2Bd" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tyQ-ee-9TC">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.97254901959999995" green="0.40784313729999999" blue="0.18039215689999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="vna-Us-max" kind="relationship" relationship="rootViewController" id="t2c-TC-CDo"/>
-                    </connections>
-                </navigationController>
-            </objects>
-            <point key="canvasLocation" x="-490" y="-259"/>
-        </scene>
-    </scenes>
+    <scenes/>
 </document>
