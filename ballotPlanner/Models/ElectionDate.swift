@@ -1,5 +1,4 @@
 //
-//  Election.swift
 //  ballotPlanner
 //
 //  Created by Erika Giuse on 11/3/19.

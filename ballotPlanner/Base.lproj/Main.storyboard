@@ -19,6 +19,16 @@
             </objects>
             <point key="canvasLocation" x="83" y="-294"/>
         </scene>
+        <!--myBallot-->
+        <scene sceneID="t4q-FL-0hK">
+            <objects>
+                <viewControllerPlaceholder storyboardName="myBallot" id="vna-Us-max" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="3Yl-p4-2aJ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dDa-P0-aoU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="102" y="-258"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="ZaD-5M-76i">
             <objects>
@@ -32,7 +42,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="afa-WJ-dYO" kind="relationship" relationship="rootViewController" id="v6A-yq-KDT"/>
+                        <segue destination="vna-Us-max" kind="relationship" relationship="rootViewController" id="t2c-TC-CDo"/>
                     </connections>
                 </navigationController>
             </objects>

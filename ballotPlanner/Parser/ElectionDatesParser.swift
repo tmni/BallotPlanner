@@ -25,7 +25,6 @@ class ElectionDatesParser {
         }
       }
       completion(electionDatesTotal)
-      print(electionDatesTotal)
     }
   }
   
