@@ -15,7 +15,7 @@ class MyBallotsViewModel {
     self.election = election
   }
   
-  var myBallots = [Candidate]()
+  var myBallots = [Person]()
   
   func numberOfRows() -> Int {
     return myBallots.count

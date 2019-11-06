@@ -9,9 +9,9 @@
 import Foundation
 
 class CandidateViewModel {
-  var candidate: Candidate
+  var candidate: Person
   
-  init(candidate: Candidate) {
+  init(candidate: Person) {
     self.candidate = candidate
   }
   

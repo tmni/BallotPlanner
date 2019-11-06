@@ -44,6 +44,10 @@ class ElectionDatesViewModel {
     return ElectionDateDetailViewModel(electionDate: electionDates[indexPath.row])
   }
   
+  func candidatesIndexViewModelForRowAtIndexPath(_ indexPath: IndexPath) -> CandidatesIndexViewModel {
+    return CandidatesIndexViewModel(election: electionDates[indexPath.row])
+  }
+  
   func refresh(_ completion: @escaping () -> Void) {
 //    if let electionDatesTotal = self.parser.electionDatesFromSearchResponse { (electionDatesTotal) in
 //      self.electionDates = electionDatesTotal

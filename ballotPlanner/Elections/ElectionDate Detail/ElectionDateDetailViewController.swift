@@ -10,6 +10,7 @@ import UIKit
 import MapKit
 
 class ElectionDateDetailViewController: UIViewController {
+  @IBOutlet weak var aboutText: UILabel!
   @IBOutlet weak var mapView: MKMapView!
   
   var viewModel: ElectionDateDetailViewModel?
@@ -22,8 +23,6 @@ class ElectionDateDetailViewController: UIViewController {
     location.loadLocation()
     let initialLocation = CLLocation(latitude: location.latitude, longitude: location.longitude)
     centerMapOnLocation(location: initialLocation)
-//    self.setYourPin()
-//    self.setVotingLocationsPins()
     self.setAllPins()
   }
   
@@ -67,5 +66,6 @@ class ElectionDateDetailViewController: UIViewController {
     super.viewWillAppear(animated)
     
     self.title = viewModel?.title()
+    self.aboutText.text = viewModel?.description()
   }
 }

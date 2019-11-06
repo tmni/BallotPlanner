@@ -1,31 +1,24 @@
 //
-//  MyBallotsParser.swift
+//  CandidatesIndexParser.swift
 //  ballotPlanner
 //
-//  Created by Erika Giuse on 11/5/19.
+//  Created by Erika Giuse on 11/6/19.
 //  Copyright © 2019 Erika Giuse. All rights reserved.
 //
 
 import Foundation
 import Firebase
 
-class MyBallotsParser {
+class CandidatesIndexParser {
   var election: ElectionDate
   
   init(_ election: ElectionDate) {
     self.election = election
   }
   
-  // TODO: go through all raceIds in ballots
-  // go through all races for those raceIds
-  // if race's election_id matches given electionID
-  // then for each race loop through all candidate races to get candidateRaces that matches race id
-  // for each candidate race, get candidate, then people_id
-  
-  // loop through all races, get races that match the given election id
-  // for each race, loop through all candidate races that match the race id
-  // for each candidate race, get candidate, then people_id
-  // get first and last name of people, then detail view controller is candidate show
+  // loop through all races, get race_ids that match given election id
+  // loop through all candidateRaces, get candidate_ids that match race_id
+  // loop through all candidates, get people
   
   let group1 = DispatchGroup()
   let group2 = DispatchGroup()
@@ -35,9 +28,9 @@ class MyBallotsParser {
   var raceIdsFromElectionId = [String]()
   var candidateIds = [String]()
   var peopleIds = [String]()
-  var myBallots = [Person]()
+  var allCandidates = [Person]()
   
-  func getAllMyBallots(completion: @escaping([Person]) -> Void) {
+  func getAllCandidates(completion: @escaping([Person]) -> Void) {
     self.getRaceIdsFromElectionId {
       (result) in
       self.raceIdsFromElectionId = result
@@ -47,10 +40,10 @@ class MyBallotsParser {
         self.getPeopleIds {
           (result) in
           self.peopleIds = result
-          self.getBallotCandidates {
+          self.getCandidates {
             (result) in
-            self.myBallots = result
-            completion(self.myBallots)
+            self.allCandidates = result
+            completion(self.allCandidates)
           }
         }
       }
@@ -116,7 +109,7 @@ class MyBallotsParser {
     }
   }
   
-  func getBallotCandidates(completion: @escaping([Person]) -> Void) {
+  func getCandidates(completion: @escaping([Person]) -> Void) {
     let db = Firestore.firestore()
     self.group4.enter()
     db.collection("people").getDocuments() { (querySnapshot, err) in
@@ -125,14 +118,13 @@ class MyBallotsParser {
         self.group4.leave()
       } else {
         for document in querySnapshot!.documents {
-//          let newBallotCandidate = Candidate(first_name: document.get("first_name") as! String, last_name: document.get("last_name") as! String)
-          let newBallotPerson = Person(first_name: document.get("first_name") as! String, last_name: document.get("last_name") as! String, party_affiliation: document.get("party_affiliation") as! String, image: nil, contact_twitter: document.get("contact_twitter") as! String, summary: document.get("summary") as! String)
-          self.myBallots.append(newBallotPerson)
+          //          let newBallotCandidate = Candidate(first_name: document.get("first_name") as! String, last_name: document.get("last_name") as! String)
+          let newCandidatePerson = Person(first_name: document.get("first_name") as! String, last_name: document.get("last_name") as! String, party_affiliation: document.get("party_affiliation") as! String, image: nil, contact_twitter: document.get("contact_twitter") as! String, summary: document.get("summary") as! String)
+          self.allCandidates.append(newCandidatePerson)
         }
         self.group4.leave()
       }
-      completion(self.myBallots)
+      completion(self.allCandidates)
     }
   }
-  
 }

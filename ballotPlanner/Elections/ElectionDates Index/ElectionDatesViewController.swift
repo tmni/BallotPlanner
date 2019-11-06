@@ -35,9 +35,13 @@ class ElectionDatesViewController: UIViewController, UITableViewDataSource, UITa
   }
   
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    if let detailVC = segue.destination as? ElectionDateDetailViewController,
+//    if let detailVC = segue.destination as? ElectionDateDetailViewController,
+//      let indexPath = sender as? IndexPath {
+//      detailVC.viewModel = viewModel.detailViewModelForRowAtIndexPath(indexPath)
+//    }
+    if let detailVC = segue.destination as? CandidatesIndexViewController,
       let indexPath = sender as? IndexPath {
-      detailVC.viewModel = viewModel.detailViewModelForRowAtIndexPath(indexPath)
+      detailVC.viewModel = viewModel.candidatesIndexViewModelForRowAtIndexPath(indexPath)
     }
   }
   
@@ -52,8 +56,11 @@ class ElectionDatesViewController: UIViewController, UITableViewDataSource, UITa
     return cell
   }
   
+//  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//    performSegue(withIdentifier: "toDetailVC", sender: indexPath)
+//  }
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    performSegue(withIdentifier: "toDetailVC", sender: indexPath)
+    performSegue(withIdentifier: "toCandidatesIndexVC", sender: indexPath)
   }
   /*
    // MARK: - Navigation
