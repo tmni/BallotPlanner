@@ -28,20 +28,22 @@ class ElectionDateDetailViewController: UIViewController {
   }
   
   func setAllPins() {
+    self.setYourPin()
     self.setVotingLocationsPins()
     mapView.showAnnotations(arrAnnotations, animated: true)
   }
   
   func setVotingLocationsPins() {
     let voting_locations = viewModel?.voting_locations()
+    var count = 1
     for loc in voting_locations! {
       let lat = loc["lat"] as! CLLocationDegrees
       let long = loc["long"] as! CLLocationDegrees
       let droppedPin = MKPointAnnotation()
       droppedPin.coordinate = CLLocationCoordinate2D(latitude: lat, longitude: long)
-      droppedPin.title = "Loc"
-      //mapView.addAnnotation(droppedPin)
+      droppedPin.title = "Loc" + " " + "\(count)"
       arrAnnotations.append(droppedPin)
+      count = count + 1
     }
   }
   
@@ -50,7 +52,7 @@ class ElectionDateDetailViewController: UIViewController {
     droppedPin.coordinate = CLLocationCoordinate2D(latitude: location.latitude, longitude: location.longitude)
     droppedPin.title = "You"
     //droppedPin.subtitle = "Look it's your car!"
-    mapView.addAnnotation(droppedPin)
+    arrAnnotations.append(droppedPin)
     //print("You are currently at: \n( \(location.latitude), \(location.longitude))")
   }
   
