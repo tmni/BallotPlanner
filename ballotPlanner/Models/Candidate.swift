@@ -8,10 +8,10 @@
 struct Candidate {
   var first_name: String
   var last_name: String
-  var party_affiliation: String?
+  var party_affiliation: String
   var image: String?
-  var contact_twitter: String?
-  var summary: String?
+  var contact_twitter: String
+  var summary: String
 //  var campaign_facebook_url: String?
 //  var campaign_website_url: String?
 //  var is_incumbent: Bool?

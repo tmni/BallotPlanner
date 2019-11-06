@@ -32,6 +32,10 @@ class MyBallotsViewModel {
     }
   }
   
+  func candidateViewModelForRowAtIndexPath(_ indexPath: IndexPath) -> CandidateViewModel {
+    return CandidateViewModel(candidate: myBallots[indexPath.row])
+  }
+  
   func refresh(_ completion: @escaping () -> Void) {
     let parser = MyBallotsParser(self.election)
     

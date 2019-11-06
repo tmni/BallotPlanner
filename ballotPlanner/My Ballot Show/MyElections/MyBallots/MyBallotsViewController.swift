@@ -36,7 +36,10 @@ class MyBallotsViewController: UIViewController, UITableViewDataSource, UITableV
   }
   
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    
+    if let detailVC = segue.destination as? CandidateViewController,
+      let indexPath = sender as? IndexPath {
+      detailVC.viewModel = viewModel?.candidateViewModelForRowAtIndexPath(indexPath)
+    }
   }
   
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -49,7 +52,7 @@ class MyBallotsViewController: UIViewController, UITableViewDataSource, UITableV
     return cell
   }
   
-//  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//    performSegue(withIdentifier: "toBallotDetailVC", sender: indexPath)
-//  }
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    performSegue(withIdentifier: "toCandidateVC", sender: indexPath)
+  }
 }

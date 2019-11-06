@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F00D0D4237268220001F364 /* Candidate.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F00D0D3237268220001F364 /* Candidate.storyboard */; };
 		3F42AB812370A49100238682 /* ElectionDatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F42AB7F2370A49100238682 /* ElectionDatesViewController.swift */; };
 		3F5AB495236F72C400A58E42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5AB494236F72C400A58E42 /* AppDelegate.swift */; };
 		3F5AB49A236F72C400A58E42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F5AB498236F72C400A58E42 /* Main.storyboard */; };
@@ -47,6 +48,7 @@
 /* Begin PBXFileReference section */
 		2E280B0C56CB18E69F0ABFE1 /* Pods_ballotPlanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ballotPlanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C628B7B7611EB44E84599A8 /* Pods-ballotPlanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ballotPlanner.debug.xcconfig"; path = "Target Support Files/Pods-ballotPlanner/Pods-ballotPlanner.debug.xcconfig"; sourceTree = "<group>"; };
+		3F00D0D3237268220001F364 /* Candidate.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Candidate.storyboard; sourceTree = "<group>"; };
 		3F42AB7F2370A49100238682 /* ElectionDatesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectionDatesViewController.swift; sourceTree = "<group>"; };
 		3F5AB491236F72C400A58E42 /* ballotPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ballotPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F5AB494236F72C400A58E42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 			children = (
 				3F8912B72372647F00D9B199 /* CandidateViewModel.swift */,
 				3F8912B92372648E00D9B199 /* CandidateViewController.swift */,
+				3F00D0D3237268220001F364 /* Candidate.storyboard */,
 			);
 			path = "Candidate Show";
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 				3F5AB4CA2370994000A58E42 /* ElectionDates.storyboard in Resources */,
 				3F5AB4A7236F731700A58E42 /* GoogleService-Info.plist in Resources */,
 				6D88EFC52371C469004FFF23 /* UserLocationController.storyboard in Resources */,
+				3F00D0D4237268220001F364 /* Candidate.storyboard in Resources */,
 				3F5AB49C236F72C700A58E42 /* Assets.xcassets in Resources */,
 				3FB5826A237121AE006024BD /* myBallot.storyboard in Resources */,
 				3F5AB49A236F72C400A58E42 /* Main.storyboard in Resources */,
