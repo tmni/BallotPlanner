@@ -35,7 +35,10 @@ class MyElectionsViewController: UIViewController, UITableViewDataSource, UITabl
   }
   
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-  
+    if let detailVC = segue.destination as? MyBallotsViewController,
+      let indexPath = sender as? IndexPath {
+      detailVC.viewModel = viewModel.myBallotsViewModelForRowAtIndexPath(indexPath)
+    }
   }
   
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

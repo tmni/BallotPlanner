@@ -42,6 +42,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="KDx-j8-5G2" kind="show" identifier="toDetailVC" trigger="accessoryAction" id="pYy-EF-eeZ"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <sections/>
@@ -75,6 +78,72 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HCN-Qv-zqP" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-183" y="-118"/>
+        </scene>
+        <!--My Ballots View Controller-->
+        <scene sceneID="a9Z-JZ-93x">
+            <objects>
+                <viewController id="KDx-j8-5G2" customClass="MyBallotsViewController" customModule="ballotPlanner" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9M6-5h-yPA"/>
+                        <viewControllerLayoutGuide type="bottom" id="kmk-ju-B0x"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="trr-o5-Z9d">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nyI-bb-Gek">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="myBallotCell" textLabel="AQY-vy-GZQ" style="IBUITableViewCellStyleDefault" id="xYA-xv-ssp" customClass="MyBallotsTableViewCell" customModule="ballotPlanner" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xYA-xv-ssp" id="XQ2-Mh-HQ2">
+                                            <rect key="frame" x="0.0" y="0.0" width="376" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Ballot" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="AQY-vy-GZQ">
+                                                    <rect key="frame" x="20" y="0.0" width="356" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="KDx-j8-5G2" id="WY4-f4-Ra9"/>
+                                    <outlet property="delegate" destination="KDx-j8-5G2" id="Jah-JT-nJI"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kmk-ju-B0x" firstAttribute="top" secondItem="nyI-bb-Gek" secondAttribute="bottom" id="322-k4-dRc"/>
+                            <constraint firstItem="nyI-bb-Gek" firstAttribute="leading" secondItem="trr-o5-Z9d" secondAttribute="leading" id="3nM-gH-o5S"/>
+                            <constraint firstAttribute="trailing" secondItem="nyI-bb-Gek" secondAttribute="trailing" id="9Dg-sm-FzU"/>
+                            <constraint firstItem="nyI-bb-Gek" firstAttribute="top" secondItem="trr-o5-Z9d" secondAttribute="top" id="e9v-Ro-O6V"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="I5B-yN-lR6"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fgR-mb-jqI">
+                        <nil key="title"/>
+                        <barButtonItem key="backBarButtonItem" title="Back" id="qVZ-Rt-ged"/>
+                        <view key="titleView" contentMode="scaleToFill" id="8fm-Kf-SGt">
+                            <rect key="frame" x="37" y="0.0" width="301" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </view>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="nyI-bb-Gek" id="8n8-Vk-RoL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J8f-3b-fgQ" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="633" y="-119"/>
         </scene>
     </scenes>
 </document>

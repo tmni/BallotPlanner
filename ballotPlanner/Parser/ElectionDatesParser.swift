@@ -10,7 +10,6 @@ import Foundation
 import Firebase
 
 class ElectionDatesParser {
-  //var electionDates = [ElectionDate]()
   
   func electionDatesFromSearchResponse(completion: @escaping([ElectionDate]) -> Void) {
     var electionDatesTotal = [ElectionDate]()
@@ -20,7 +19,7 @@ class ElectionDatesParser {
         print("Error getting documents: \(err)")
       } else {
         for document in querySnapshot!.documents {
-          let newElectionDate = ElectionDate(date: document.data()["date"] as! String, description: document.data()["description"] as! String, name: document.data()["name"] as! String)
+          let newElectionDate = ElectionDate(election_id: document.documentID, date: document.data()["date"] as! String, description: document.data()["description"] as! String, name: document.data()["name"] as! String)
           electionDatesTotal.append(newElectionDate)
         }
       }

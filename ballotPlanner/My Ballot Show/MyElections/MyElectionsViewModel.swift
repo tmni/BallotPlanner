@@ -13,8 +13,6 @@ class MyElectionsViewModel {
   let parser = MyElectionsParser()
   
   func numberOfRows() -> Int {
-    print(("my Elections data here:"))
-    print(myElections)
     return myElections.count
   }
   
@@ -44,13 +42,9 @@ class MyElectionsViewModel {
 //  func detailViewModelForRowAtIndexPath(_ indexPath: IndexPath) -> MyElectionDetailViewModel {
 //    return MyElectionDetailViewModel(myElection: myElections[indexPath.row])
 //  }
-  
-//  func refresh(_ completion: @escaping () -> Void) {
-//    self.parser.myElectionsFromSearchResponse { (myElectionsTotal) in
-//      self.myElections = myElectionsTotal
-//      completion()
-//    }
-//  }
+  func myBallotsViewModelForRowAtIndexPath(_ indexPath: IndexPath) -> MyBallotsViewModel {
+    return MyBallotsViewModel(election: myElections[indexPath.row])
+  }
   
   func refresh(_ completion: @escaping () -> Void) {
     self.parser.getAllMyElections {

@@ -6,6 +6,7 @@
 //
 
 struct ElectionDate {
+  var election_id: String
   var date: String
   var description: String
   var name: String
