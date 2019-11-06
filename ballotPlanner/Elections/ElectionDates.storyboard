@@ -42,7 +42,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="Gd4-oo-6Nm" kind="show" identifier="toDetailVC" id="70W-Xe-N3S"/>
+                                            <segue destination="TbQ-o9-R9C" kind="show" identifier="toDetailVC" id="JW7-Jw-R45"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -77,23 +77,13 @@
             </objects>
             <point key="canvasLocation" x="-564" y="-4.4334975369458132"/>
         </scene>
-        <!--Election Date Detail View Controller-->
-        <scene sceneID="22P-DE-A74">
+        <!--ElectionDateDetail-->
+        <scene sceneID="rzW-Mv-ug8">
             <objects>
-                <viewController id="Gd4-oo-6Nm" customClass="ElectionDateDetailViewController" customModule="ballotPlanner" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="nCt-yf-PeJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="qRk-ea-UIs"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="hAz-l4-99m">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Dsx-14-oQD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="ElectionDateDetail" id="TbQ-o9-R9C" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BTe-Ci-s5f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="219" y="-4"/>
+            <point key="canvasLocation" x="21" y="-4"/>
         </scene>
     </scenes>
 </document>

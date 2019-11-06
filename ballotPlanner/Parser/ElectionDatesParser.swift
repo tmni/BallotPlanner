@@ -19,7 +19,7 @@ class ElectionDatesParser {
         print("Error getting documents: \(err)")
       } else {
         for document in querySnapshot!.documents {
-          let newElectionDate = ElectionDate(election_id: document.documentID, date: document.data()["date"] as! String, description: document.data()["description"] as! String, name: document.data()["name"] as! String)
+          let newElectionDate = ElectionDate(election_id: document.documentID, date: document.data()["date"] as! String, description: document.data()["description"] as! String, name: document.data()["name"] as! String, voting_locations: document.data()["voting_locations"] as! Array<Dictionary<String, Double>>)
           electionDatesTotal.append(newElectionDate)
         }
       }
@@ -28,3 +28,4 @@ class ElectionDatesParser {
   }
   
 }
+

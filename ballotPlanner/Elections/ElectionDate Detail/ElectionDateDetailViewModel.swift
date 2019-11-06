@@ -27,4 +27,8 @@ class ElectionDateDetailViewModel {
     return self.electionDate.description
   }
   
+  func voting_locations() -> Array<Dictionary<String, Double>> {
+    return self.electionDate.voting_locations
+  }
+  
 }

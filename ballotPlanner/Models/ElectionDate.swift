@@ -10,4 +10,5 @@ struct ElectionDate {
   var date: String
   var description: String
   var name: String
+  var voting_locations: Array<Dictionary<String, Double>>
 }

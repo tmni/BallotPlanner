@@ -74,7 +74,6 @@ class MyElectionsParser {
   }
   
   func getMyElections(completion: @escaping([ElectionDate]) -> Void) {
-    //print(self.electionIdsFromBallots)
     let db = Firestore.firestore()
     self.electionsDispatchGroup.enter()
     db.collection("electionDates").getDocuments() { (querySnapshot, err) in
@@ -84,7 +83,7 @@ class MyElectionsParser {
       } else {
         for document in querySnapshot!.documents {
           if (self.electionIdsFromBallots.contains(document.documentID)) {
-            let myNewElection = ElectionDate(election_id: document.documentID, date: document.get("date") as! String, description: document.get("description") as! String, name: document.get("name") as! String)
+            let myNewElection = ElectionDate(election_id: document.documentID, date: document.get("date") as! String, description: document.get("description") as! String, name: document.get("name") as! String, voting_locations: document.get("locations") as! Array<Dictionary<String, Double>>)
             self.myElections.append(myNewElection)
           }
         }
