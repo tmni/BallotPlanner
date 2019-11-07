@@ -11,9 +11,6 @@ import Foundation
 class UserInfoViewModel {
   var user_info: (String, Int) = ("", 0)
   
-  
-  let parser = UserInfoParser()
-  
 //  func refresh(_ completion: @escaping () -> Void) {
 //
 //    self.parser.DataFromSearchResponse { (user_info) in
@@ -21,11 +18,19 @@ class UserInfoViewModel {
 //      completion()
 //    }}
   
-  func getUserInfo() -> (party: String, zip: Int) {
-    self.parser.DataFromSearchResponse { (user_info) in
-    self.user_info = user_info
+//  func getUserInfo() -> (party: String, zip: Int) {
+//    let parser = UserInfoParser()
+//    parser.DataFromSearchResponse { (user_info) in
+//      self.user_info = user_info
+//    }
+//    return self.user_info
+//  }
+  func getUserInfo(completion: @escaping((String, Int)) -> Void) {
+    let parser = UserInfoParser()
+    parser.DataFromSearchResponse { (user_info) in
+      self.user_info = user_info
+      completion(self.user_info)
     }
-    return self.user_info
   }
   
   func numberOfRows() -> Int {

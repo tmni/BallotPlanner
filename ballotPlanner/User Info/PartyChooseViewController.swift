@@ -21,7 +21,7 @@ class PartyChooseController: UITableViewController {
   {
     selectedParty = parties[indexPath.row]
     updateParty()
-//    print("selected section is: ", currentCell.textLabel?.text)
+    //print("selected section is: ", currentCell.textLabel?.text)
   }
   
   override func viewDidLoad() {
@@ -35,8 +35,7 @@ class PartyChooseController: UITableViewController {
   
   func updateParty(){
     db.collection("user").document("okabUm7jCq34tjDWHbRQ").updateData(["party": self.selectedParty])
-    print("updated user's party to " , self.selectedParty)
+    //print("updated user's party to " , self.selectedParty)
   }
-  
 
 }

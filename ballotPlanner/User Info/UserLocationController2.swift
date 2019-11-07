@@ -11,7 +11,7 @@ import UIKit
 import Firebase
 
 
-class UserLocationController: UIViewController, UITextFieldDelegate{
+class UserLocationController2: UIViewController, UITextFieldDelegate{
   @IBOutlet weak var locationText: UITextField!
   let location = Location()
   let db = Firestore.firestore()
@@ -39,12 +39,7 @@ class UserLocationController: UIViewController, UITextFieldDelegate{
     let bool = pinPredicate.evaluate(with: postalCode) as Bool
     return bool
   }
-  
-  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//    let backItem = UIBarButtonItem()
-//    backItem.title = "hello"
-    //self.navigationItem.backBarButtonItem = nil
-  }
+
   
   
   func updateText(){
@@ -75,7 +70,7 @@ class UserLocationController: UIViewController, UITextFieldDelegate{
           print("Location zip written")
         }
       }
-//      location.saveLocation()
+      //      location.saveLocation()
     }
     //    else{
     //      let alert = UIAlertController(title: "Location Not Found", message: "Please enter location manually", preferredStyle: UIAlertController.Style.alert)
@@ -89,3 +84,4 @@ class UserLocationController: UIViewController, UITextFieldDelegate{
   }
   
 }
+

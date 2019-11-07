@@ -7,35 +7,55 @@
 //
 
 import UIKit
+import Firebase
+
 class MyViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
   let reuseIdentifier = "achievement" // also enter this string as the cell identifier in the storyboard
   let viewModel = AchievementViewModel()
   let viewModel2 = UserInfoViewModel()
-//  var user_info = (party: String, zip: Int)
+  
+  var user_info: (String, Int) = ("", 0)
+  
   @IBOutlet weak var collectionView: UICollectionView!
   @IBOutlet weak var partyLabel: UIButton!
   @IBOutlet weak var locLabel: UIButton!
+  //@IBOutlet weak var locationText: UITextField!
+  let location = Location()
+  let db = Firestore.firestore()
   
 
   // MARK: - UICollectionViewDataSource protocol
   override func viewDidLoad() {
     super.viewDidLoad()
-//    viewModel2.refresh{[unowned self] in
-//      DispatchQueue.main.async {
-//        viewModel2.reloadData()
-//      }
-//    }
-//
-    viewModel2.getUserInfo()
-    
-    updatePartyLabel()
-    updateLocLabel()
-    viewModel.refresh { [unowned self] in
-      DispatchQueue.main.async {
-        self.collectionView.reloadData()
+    //self.navigationItem.setHidesBackButton(true, animated: true)
+
+    viewModel2.getUserInfo { (result) in
+      self.user_info = result
+      self.updatePartyLabel()
+      self.updateLocLabel()
+      self.viewModel.refresh { [unowned self] in
+        DispatchQueue.main.async {
+          self.collectionView.reloadData()
+        }
       }
     }
   }
+  
+  override func viewDidAppear(_ animated: Bool) {
+    super.viewDidAppear(animated)
+    //self.navigationItem.setHidesBackButton(true, animated: true)
+    viewModel2.getUserInfo { (result) in
+      self.user_info = result
+      self.updatePartyLabel()
+      self.updateLocLabel()
+      self.viewModel.refresh { [unowned self] in
+        DispatchQueue.main.async {
+          self.collectionView.reloadData()
+        }
+      }
+    }
+  }
+  
   // tell the collection view how many cells to make
   func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
     return viewModel.numberOfRows()
@@ -63,12 +83,12 @@ class MyViewController: UIViewController, UICollectionViewDataSource, UICollecti
   func updatePartyLabel(){
     partyLabel.layer.borderColor = UIColor.darkGray.cgColor;
     partyLabel.layer.borderWidth = 1.0;
-    partyLabel.setTitle("Party: " + viewModel2.user_info.0, for: .normal)
+    partyLabel.setTitle("Party: " + self.user_info.0, for: .normal)
   }
   func updateLocLabel(){
     locLabel.layer.borderColor = UIColor.darkGray.cgColor;
     locLabel.layer.borderWidth = 1.0;
-    locLabel.setTitle("Location: " + String(viewModel2.user_info.1), for: .normal)
+    locLabel.setTitle("Location: " + String(self.user_info.1), for: .normal)
   }
   
 }

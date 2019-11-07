@@ -67,6 +67,16 @@
 			<key>orderHint</key>
 			<integer>8</integer>
 		</dict>
+		<key>FirebaseStorage.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>20</integer>
+		</dict>
+		<key>GTMSessionFetcher.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>21</integer>
+		</dict>
 		<key>GoogleAppMeasurement.xcscheme</key>
 		<dict>
 			<key>isShown</key>
