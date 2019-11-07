@@ -42,7 +42,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="Lrv-8L-laQ" kind="show" identifier="toCandidatesIndexVC" id="Gbc-s6-biv"/>
+                                            <segue destination="TbQ-o9-R9C" kind="show" identifier="toDetailVC" id="sc3-Ee-dVc"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -83,7 +83,7 @@
                 <viewControllerPlaceholder storyboardName="ElectionDateDetail" id="TbQ-o9-R9C" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BTe-Ci-s5f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="109" y="-246"/>
+            <point key="canvasLocation" x="99" y="-52"/>
         </scene>
         <!--CandidatesIndex-->
         <scene sceneID="XyA-Tn-GWD">

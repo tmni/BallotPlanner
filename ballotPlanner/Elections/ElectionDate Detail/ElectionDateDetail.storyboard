@@ -13,7 +13,6 @@
         <!--Election Date Detail View Controller-->
         <scene sceneID="Idg-LZ-Qqp">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Xuf-me-mLi" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="nHj-0S-yYt" customClass="ElectionDateDetailViewController" customModule="ballotPlanner" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MPT-xx-1Zd"/>
@@ -48,6 +47,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JQs-u6-yxw">
+                                <rect key="frame" x="133" y="632" width="108" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="See Candidates"/>
+                                <connections>
+                                    <segue destination="FpS-XH-9rY" kind="show" identifier="toCandidatesIndexVC" id="3gw-cA-P2D"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="pdC-pr-ELQ"/>
@@ -57,8 +64,17 @@
                         <outlet property="mapView" destination="rLh-gu-76t" id="eEo-3J-Ofk"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xuf-me-mLi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="218.40000000000001" y="-4.4334975369458132"/>
+        </scene>
+        <!--CandidatesIndex-->
+        <scene sceneID="nOZ-Ea-jgm">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CandidatesIndex" id="FpS-XH-9rY" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J2D-pV-G6X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="880" y="-13"/>
         </scene>
     </scenes>
 </document>

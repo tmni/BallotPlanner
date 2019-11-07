@@ -68,4 +68,14 @@ class ElectionDateDetailViewController: UIViewController {
     self.title = viewModel?.title()
     self.aboutText.text = viewModel?.description()
   }
+  
+  //TEMPORARY
+  @IBOutlet weak var seeCandidates: UIButton!
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    if segue.identifier == "toCandidatesIndexVC" {
+      if let destination = segue.destination as? CandidatesIndexViewController {
+        destination.viewModel = CandidatesIndexViewModel(election: viewModel!.electionDate)
+      }
+    }
+  }
 }

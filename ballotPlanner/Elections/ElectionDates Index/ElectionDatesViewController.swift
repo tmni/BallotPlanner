@@ -35,14 +35,14 @@ class ElectionDatesViewController: UIViewController, UITableViewDataSource, UITa
   }
   
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//    if let detailVC = segue.destination as? ElectionDateDetailViewController,
-//      let indexPath = sender as? IndexPath {
-//      detailVC.viewModel = viewModel.detailViewModelForRowAtIndexPath(indexPath)
-//    }
-    if let detailVC = segue.destination as? CandidatesIndexViewController,
+    if let detailVC = segue.destination as? ElectionDateDetailViewController,
       let indexPath = sender as? IndexPath {
-      detailVC.viewModel = viewModel.candidatesIndexViewModelForRowAtIndexPath(indexPath)
+      detailVC.viewModel = viewModel.detailViewModelForRowAtIndexPath(indexPath)
     }
+//    if let detailVC = segue.destination as? CandidatesIndexViewController,
+//      let indexPath = sender as? IndexPath {
+//      detailVC.viewModel = viewModel.candidatesIndexViewModelForRowAtIndexPath(indexPath)
+//    }
   }
   
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -56,12 +56,12 @@ class ElectionDatesViewController: UIViewController, UITableViewDataSource, UITa
     return cell
   }
   
-//  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//    performSegue(withIdentifier: "toDetailVC", sender: indexPath)
-//  }
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    performSegue(withIdentifier: "toCandidatesIndexVC", sender: indexPath)
+    performSegue(withIdentifier: "toDetailVC", sender: indexPath)
   }
+//  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//    performSegue(withIdentifier: "toCandidatesIndexVC", sender: indexPath)
+//  }
   /*
    // MARK: - Navigation
    
