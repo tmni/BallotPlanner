@@ -1,17 +1,15 @@
 //
 //  Achievement.swift
-//  
+//  ballotPlanner
 //
 //  Created by Taruna Emani on 11/6/19.
+//  Copyright © 2019 Erika Giuse. All rights reserved.
 //
 
 import Foundation
-import UIKit
-
 
 struct Achievement{
-  var title: String
-  var icon: UIImage?
+  var name: String
+  var description: String
   var isActive: Bool
-  
 }

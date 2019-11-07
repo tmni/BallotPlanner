@@ -21,19 +21,20 @@
 		3FB582522370E2C8006024BD /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB582502370E2C8006024BD /* TableViewCell.swift */; };
 		3FB582532370E2C8006024BD /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FB582512370E2C8006024BD /* TableViewCell.xib */; };
 		3FB5825D2370EC12006024BD /* MyElectionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB5825C2370EC12006024BD /* MyElectionsViewModel.swift */; };
-		3FB5825F2370EC53006024BD /* MyElectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB5825E2370EC53006024BD /* MyElectionsViewController.swift */; };
 		3FB582622370F0E7006024BD /* MyElectionsParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB582612370F0E7006024BD /* MyElectionsParser.swift */; };
 		3FB5826423710FF9006024BD /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB5826323710FF9006024BD /* Person.swift */; };
 		3FB58267237112E9006024BD /* MyElectionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB58265237112E9006024BD /* MyElectionsTableViewCell.swift */; };
 		3FB58268237112E9006024BD /* MyElectionsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FB58266237112E9006024BD /* MyElectionsTableViewCell.xib */; };
 		3FB5826A237121AE006024BD /* myBallot.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FB58269237121AE006024BD /* myBallot.storyboard */; };
 		3FFD3E2C2372244000B680F9 /* ElectionDatesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5AB4AC236F8AD800A58E42 /* ElectionDatesViewModel.swift */; };
+		6D097B9F2373BCF700E756DB /* Achievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D097B9E2373BCF700E756DB /* Achievement.swift */; };
+		6D57021C2373AFF900A7BA0D /* AchievementViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D57021B2373AFF900A7BA0D /* AchievementViewModel.swift */; };
+		6D57021E2373B0C500A7BA0D /* AchievementsParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D57021D2373B0C500A7BA0D /* AchievementsParser.swift */; };
 		6D88EFBD236F95D1004FFF23 /* UserLocationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D88EFBC236F95D1004FFF23 /* UserLocationController.swift */; };
 		6D88EFBF236F95EA004FFF23 /* UserPartyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D88EFBE236F95EA004FFF23 /* UserPartyController.swift */; };
 		6D88EFC1236F9618004FFF23 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D88EFC0236F9618004FFF23 /* Location.swift */; };
 		6D88EFC52371C469004FFF23 /* UserLocationController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D88EFC42371C469004FFF23 /* UserLocationController.storyboard */; };
 		6D88EFC923720542004FFF23 /* UserInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D88EFC823720542004FFF23 /* UserInfoController.swift */; };
-		6D88EFCD23731FE8004FFF23 /* Achievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D88EFCC23731FE8004FFF23 /* Achievement.swift */; };
 		6D88EFCF23733793004FFF23 /* Achievements.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D88EFCE23733793004FFF23 /* Achievements.storyboard */; };
 		6D88EFD12373386F004FFF23 /* AchievementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D88EFD02373386F004FFF23 /* AchievementsViewController.swift */; };
 		6D88EFD323733C11004FFF23 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D88EFD223733C11004FFF23 /* MyCollectionViewCell.swift */; };
@@ -67,12 +68,15 @@
 		3FB58265237112E9006024BD /* MyElectionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyElectionsTableViewCell.swift; sourceTree = "<group>"; };
 		3FB58266237112E9006024BD /* MyElectionsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyElectionsTableViewCell.xib; sourceTree = "<group>"; };
 		3FB58269237121AE006024BD /* myBallot.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = myBallot.storyboard; sourceTree = "<group>"; };
+		6D097B9C2373BCAC00E756DB /* Achievement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Achievement.swift; path = /Users/tarunaemani/Desktop/Ballot_Planner/ballotPlanner/Models/Achievement.swift; sourceTree = "<absolute>"; };
+		6D097B9E2373BCF700E756DB /* Achievement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achievement.swift; sourceTree = "<group>"; };
+		6D57021B2373AFF900A7BA0D /* AchievementViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementViewModel.swift; sourceTree = "<group>"; };
+		6D57021D2373B0C500A7BA0D /* AchievementsParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsParser.swift; sourceTree = "<group>"; };
 		6D88EFBC236F95D1004FFF23 /* UserLocationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocationController.swift; sourceTree = "<group>"; };
 		6D88EFBE236F95EA004FFF23 /* UserPartyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPartyController.swift; sourceTree = "<group>"; };
 		6D88EFC0236F9618004FFF23 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		6D88EFC42371C469004FFF23 /* UserLocationController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserLocationController.storyboard; sourceTree = "<group>"; };
 		6D88EFC823720542004FFF23 /* UserInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoController.swift; sourceTree = "<group>"; };
-		6D88EFCC23731FE8004FFF23 /* Achievement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Achievement.swift; path = /Users/tarunaemani/Desktop/Ballot_Planner/ballotPlanner/Models/Achievement.swift; sourceTree = "<absolute>"; };
 		6D88EFCE23733793004FFF23 /* Achievements.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Achievements.storyboard; sourceTree = SOURCE_ROOT; };
 		6D88EFD02373386F004FFF23 /* AchievementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsViewController.swift; sourceTree = "<group>"; };
 		6D88EFD223733C11004FFF23 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -153,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				3FB5824E2370BFE6006024BD /* ElectionDatesParser.swift */,
+				6D57021D2373B0C500A7BA0D /* AchievementsParser.swift */,
 				3FB582612370F0E7006024BD /* MyElectionsParser.swift */,
 			);
 			path = Parser;
@@ -194,7 +199,8 @@
 				6D88EFC0236F9618004FFF23 /* Location.swift */,
 				3F5AB4A9236F89A500A58E42 /* ElectionDate.swift */,
 				3FB5826323710FF9006024BD /* Person.swift */,
-				6D88EFCC23731FE8004FFF23 /* Achievement.swift */,
+				6D097B9C2373BCAC00E756DB /* Achievement.swift */,
+				6D097B9E2373BCF700E756DB /* Achievement.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -225,6 +231,7 @@
 				6D88EFD02373386F004FFF23 /* AchievementsViewController.swift */,
 				6D88EFD223733C11004FFF23 /* MyCollectionViewCell.swift */,
 				6D88EFD423733C3F004FFF23 /* MyViewController.swift */,
+				6D57021B2373AFF900A7BA0D /* AchievementViewModel.swift */,
 				6D88EFCE23733793004FFF23 /* Achievements.storyboard */,
 			);
 			path = "User Info";
@@ -366,22 +373,23 @@
 				3FB582622370F0E7006024BD /* MyElectionsParser.swift in Sources */,
 				3F5AB4C8236F9CF200A58E42 /* ElectionDateDetailViewController.swift in Sources */,
 				3FB582522370E2C8006024BD /* TableViewCell.swift in Sources */,
-				3FB5825F2370EC53006024BD /* MyElectionsViewController.swift in Sources */,
+				6D097B9F2373BCF700E756DB /* Achievement.swift in Sources */,
 				6D88EFD323733C11004FFF23 /* MyCollectionViewCell.swift in Sources */,
 				3FB58267237112E9006024BD /* MyElectionsTableViewCell.swift in Sources */,
 				3F42AB812370A49100238682 /* ElectionDatesViewController.swift in Sources */,
 				3FB5825D2370EC12006024BD /* MyElectionsViewModel.swift in Sources */,
 				6D88EFD523733C3F004FFF23 /* MyViewController.swift in Sources */,
+				6D57021E2373B0C500A7BA0D /* AchievementsParser.swift in Sources */,
 				3FB5826423710FF9006024BD /* Person.swift in Sources */,
 				3F5AB4B0236F8EBC00A58E42 /* ElectionDateDetailViewModel.swift in Sources */,
 				6D88EFC1236F9618004FFF23 /* Location.swift in Sources */,
 				6D88EFC923720542004FFF23 /* UserInfoController.swift in Sources */,
 				3F5AB495236F72C400A58E42 /* AppDelegate.swift in Sources */,
+				6D57021C2373AFF900A7BA0D /* AchievementViewModel.swift in Sources */,
 				3FB5824F2370BFE6006024BD /* ElectionDatesParser.swift in Sources */,
 				6D88EFBD236F95D1004FFF23 /* UserLocationController.swift in Sources */,
 				6D88EFBF236F95EA004FFF23 /* UserPartyController.swift in Sources */,
 				3F5AB4AA236F89A500A58E42 /* ElectionDate.swift in Sources */,
-				6D88EFCD23731FE8004FFF23 /* Achievement.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
