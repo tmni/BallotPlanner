@@ -8,5 +8,7 @@ target 'ballotPlanner' do
   # Pods for ballotPlanner
   pod 'Firebase/Analytics'
   pod 'Firebase/Firestore'
+  pod 'Firebase/Storage'
+
 
 end

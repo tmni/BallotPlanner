@@ -40,6 +40,12 @@ class UserLocationController: UIViewController, UITextFieldDelegate{
     return bool
   }
   
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//    let backItem = UIBarButtonItem()
+//    backItem.title = "hello"
+    //self.navigationItem.backBarButtonItem = nil
+  }
+  
   
   func updateText(){
     db.collection("user").document("okabUm7jCq34tjDWHbRQ")
