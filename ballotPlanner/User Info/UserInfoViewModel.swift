@@ -14,18 +14,28 @@ class UserInfoViewModel {
   
   let parser = UserInfoParser()
   
-  func getUserInfo() {
+//  func refresh(_ completion: @escaping () -> Void) {
+//
+//    self.parser.DataFromSearchResponse { (user_info) in
+//      self.user_info = user_info
+//      completion()
+//    }}
+  
+  func getUserInfo() -> (party: String, zip: Int) {
     self.parser.DataFromSearchResponse { (user_info) in
     self.user_info = user_info
-
-    }}
-    
+    }
+    return self.user_info
+  }
+  
   func numberOfRows() -> Int {
     return 2
   }
   
   func getParty() -> String {
-      return user_info.0
+     print("the function for getParty in ViewModel returns" , user_info.0, " which is type ", type(of: self.user_info.0))
+      return self.user_info.0
+   
   }
   func getLocation() -> Int {
 

@@ -11,17 +11,23 @@ class MyViewController: UIViewController, UICollectionViewDataSource, UICollecti
   let reuseIdentifier = "achievement" // also enter this string as the cell identifier in the storyboard
   let viewModel = AchievementViewModel()
   let viewModel2 = UserInfoViewModel()
+//  var user_info = (party: String, zip: Int)
   @IBOutlet weak var collectionView: UICollectionView!
   @IBOutlet weak var partyLabel: UIButton!
   @IBOutlet weak var locLabel: UIButton!
   
 
-  
-  
   // MARK: - UICollectionViewDataSource protocol
   override func viewDidLoad() {
     super.viewDidLoad()
+//    viewModel2.refresh{[unowned self] in
+//      DispatchQueue.main.async {
+//        viewModel2.reloadData()
+//      }
+//    }
+//
     viewModel2.getUserInfo()
+    
     updatePartyLabel()
     updateLocLabel()
     viewModel.refresh { [unowned self] in
@@ -57,12 +63,12 @@ class MyViewController: UIViewController, UICollectionViewDataSource, UICollecti
   func updatePartyLabel(){
     partyLabel.layer.borderColor = UIColor.darkGray.cgColor;
     partyLabel.layer.borderWidth = 1.0;
-    partyLabel.setTitle("Party: " + viewModel2.getParty(), for: .normal)
+    partyLabel.setTitle("Party: " + viewModel2.user_info.0, for: .normal)
   }
   func updateLocLabel(){
     locLabel.layer.borderColor = UIColor.darkGray.cgColor;
     locLabel.layer.borderWidth = 1.0;
-    locLabel.setTitle("Location: " + String(viewModel2.getLocation()), for: .normal)
+    locLabel.setTitle("Location: " + String(viewModel2.user_info.1), for: .normal)
   }
   
 }

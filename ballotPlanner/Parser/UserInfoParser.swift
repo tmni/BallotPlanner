@@ -12,7 +12,6 @@ import Firebase
 class UserInfoParser {
   
   func DataFromSearchResponse(completion: @escaping((String, Int)) -> Void) {
-    print("Wowowowowow")
     var user_info: (String, Int) = (party: "", zip: 0)
     let db = Firestore.firestore()
     db.collection("user").getDocuments() { (querySnapshot, err) in
