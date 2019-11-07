@@ -28,6 +28,9 @@
 		3FB5826A237121AE006024BD /* myBallot.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FB58269237121AE006024BD /* myBallot.storyboard */; };
 		3FFD3E2C2372244000B680F9 /* ElectionDatesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5AB4AC236F8AD800A58E42 /* ElectionDatesViewModel.swift */; };
 		6D097B9F2373BCF700E756DB /* Achievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D097B9E2373BCF700E756DB /* Achievement.swift */; };
+		6D097BA12373C94A00E756DB /* UserInfoParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D097BA02373C94A00E756DB /* UserInfoParser.swift */; };
+		6D097BA32373CBEA00E756DB /* UserInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D097BA22373CBEA00E756DB /* UserInfoViewModel.swift */; };
+		6D097BA52373E10700E756DB /* PartyChooseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D097BA42373E10700E756DB /* PartyChooseViewController.swift */; };
 		6D57021C2373AFF900A7BA0D /* AchievementViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D57021B2373AFF900A7BA0D /* AchievementViewModel.swift */; };
 		6D57021E2373B0C500A7BA0D /* AchievementsParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D57021D2373B0C500A7BA0D /* AchievementsParser.swift */; };
 		6D88EFBD236F95D1004FFF23 /* UserLocationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D88EFBC236F95D1004FFF23 /* UserLocationController.swift */; };
@@ -35,7 +38,7 @@
 		6D88EFC1236F9618004FFF23 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D88EFC0236F9618004FFF23 /* Location.swift */; };
 		6D88EFC52371C469004FFF23 /* UserLocationController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D88EFC42371C469004FFF23 /* UserLocationController.storyboard */; };
 		6D88EFC923720542004FFF23 /* UserInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D88EFC823720542004FFF23 /* UserInfoController.swift */; };
-		6D88EFCF23733793004FFF23 /* Achievements.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D88EFCE23733793004FFF23 /* Achievements.storyboard */; };
+		6D88EFCF23733793004FFF23 /* UserInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D88EFCE23733793004FFF23 /* UserInfo.storyboard */; };
 		6D88EFD12373386F004FFF23 /* AchievementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D88EFD02373386F004FFF23 /* AchievementsViewController.swift */; };
 		6D88EFD323733C11004FFF23 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D88EFD223733C11004FFF23 /* MyCollectionViewCell.swift */; };
 		6D88EFD523733C3F004FFF23 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D88EFD423733C3F004FFF23 /* MyViewController.swift */; };
@@ -70,6 +73,9 @@
 		3FB58269237121AE006024BD /* myBallot.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = myBallot.storyboard; sourceTree = "<group>"; };
 		6D097B9C2373BCAC00E756DB /* Achievement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Achievement.swift; path = /Users/tarunaemani/Desktop/Ballot_Planner/ballotPlanner/Models/Achievement.swift; sourceTree = "<absolute>"; };
 		6D097B9E2373BCF700E756DB /* Achievement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achievement.swift; sourceTree = "<group>"; };
+		6D097BA02373C94A00E756DB /* UserInfoParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserInfoParser.swift; path = ballotPlanner/Parser/UserInfoParser.swift; sourceTree = SOURCE_ROOT; };
+		6D097BA22373CBEA00E756DB /* UserInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewModel.swift; sourceTree = "<group>"; };
+		6D097BA42373E10700E756DB /* PartyChooseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyChooseViewController.swift; sourceTree = "<group>"; };
 		6D57021B2373AFF900A7BA0D /* AchievementViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementViewModel.swift; sourceTree = "<group>"; };
 		6D57021D2373B0C500A7BA0D /* AchievementsParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsParser.swift; sourceTree = "<group>"; };
 		6D88EFBC236F95D1004FFF23 /* UserLocationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocationController.swift; sourceTree = "<group>"; };
@@ -77,7 +83,7 @@
 		6D88EFC0236F9618004FFF23 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		6D88EFC42371C469004FFF23 /* UserLocationController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserLocationController.storyboard; sourceTree = "<group>"; };
 		6D88EFC823720542004FFF23 /* UserInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoController.swift; sourceTree = "<group>"; };
-		6D88EFCE23733793004FFF23 /* Achievements.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Achievements.storyboard; sourceTree = SOURCE_ROOT; };
+		6D88EFCE23733793004FFF23 /* UserInfo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserInfo.storyboard; sourceTree = SOURCE_ROOT; };
 		6D88EFD02373386F004FFF23 /* AchievementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsViewController.swift; sourceTree = "<group>"; };
 		6D88EFD223733C11004FFF23 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
 		6D88EFD423733C3F004FFF23 /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
@@ -159,6 +165,7 @@
 				3FB5824E2370BFE6006024BD /* ElectionDatesParser.swift */,
 				6D57021D2373B0C500A7BA0D /* AchievementsParser.swift */,
 				3FB582612370F0E7006024BD /* MyElectionsParser.swift */,
+				6D097BA02373C94A00E756DB /* UserInfoParser.swift */,
 			);
 			path = Parser;
 			sourceTree = "<group>";
@@ -228,11 +235,13 @@
 			isa = PBXGroup;
 			children = (
 				6D88EFC823720542004FFF23 /* UserInfoController.swift */,
+				6D097BA22373CBEA00E756DB /* UserInfoViewModel.swift */,
 				6D88EFD02373386F004FFF23 /* AchievementsViewController.swift */,
+				6D097BA42373E10700E756DB /* PartyChooseViewController.swift */,
 				6D88EFD223733C11004FFF23 /* MyCollectionViewCell.swift */,
 				6D88EFD423733C3F004FFF23 /* MyViewController.swift */,
 				6D57021B2373AFF900A7BA0D /* AchievementViewModel.swift */,
-				6D88EFCE23733793004FFF23 /* Achievements.storyboard */,
+				6D88EFCE23733793004FFF23 /* UserInfo.storyboard */,
 			);
 			path = "User Info";
 			sourceTree = "<group>";
@@ -308,7 +317,7 @@
 			files = (
 				3F5AB49F236F72C700A58E42 /* LaunchScreen.storyboard in Resources */,
 				3FB582532370E2C8006024BD /* TableViewCell.xib in Resources */,
-				6D88EFCF23733793004FFF23 /* Achievements.storyboard in Resources */,
+				6D88EFCF23733793004FFF23 /* UserInfo.storyboard in Resources */,
 				3FB58268237112E9006024BD /* MyElectionsTableViewCell.xib in Resources */,
 				3F5AB4CA2370994000A58E42 /* ElectionDates.storyboard in Resources */,
 				3F5AB4A7236F731700A58E42 /* GoogleService-Info.plist in Resources */,
@@ -373,6 +382,7 @@
 				3FB582622370F0E7006024BD /* MyElectionsParser.swift in Sources */,
 				3F5AB4C8236F9CF200A58E42 /* ElectionDateDetailViewController.swift in Sources */,
 				3FB582522370E2C8006024BD /* TableViewCell.swift in Sources */,
+				6D097BA52373E10700E756DB /* PartyChooseViewController.swift in Sources */,
 				6D097B9F2373BCF700E756DB /* Achievement.swift in Sources */,
 				6D88EFD323733C11004FFF23 /* MyCollectionViewCell.swift in Sources */,
 				3FB58267237112E9006024BD /* MyElectionsTableViewCell.swift in Sources */,
@@ -385,7 +395,9 @@
 				6D88EFC1236F9618004FFF23 /* Location.swift in Sources */,
 				6D88EFC923720542004FFF23 /* UserInfoController.swift in Sources */,
 				3F5AB495236F72C400A58E42 /* AppDelegate.swift in Sources */,
+				6D097BA32373CBEA00E756DB /* UserInfoViewModel.swift in Sources */,
 				6D57021C2373AFF900A7BA0D /* AchievementViewModel.swift in Sources */,
+				6D097BA12373C94A00E756DB /* UserInfoParser.swift in Sources */,
 				3FB5824F2370BFE6006024BD /* ElectionDatesParser.swift in Sources */,
 				6D88EFBD236F95D1004FFF23 /* UserLocationController.swift in Sources */,
 				6D88EFBF236F95EA004FFF23 /* UserPartyController.swift in Sources */,
