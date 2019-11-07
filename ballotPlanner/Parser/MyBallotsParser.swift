@@ -76,6 +76,8 @@ class MyBallotsParser {
     }
   }
   
+  //TODO: get candidate ids from ballots, then people from candidates
+  
   // candidate ids from candidateRaces
   func getCandidateIds(completion: @escaping([String]) -> Void) {
     let db = Firestore.firestore()
