@@ -31,5 +31,9 @@ class CandidateViewModel {
     return self.candidate.contact_twitter
   }
   
+  func person_id() -> String? {
+    return self.candidate.people_id
+  }
+  
   
 }

@@ -12,6 +12,7 @@ struct Person {
   var image: String?
   var contact_twitter: String
   var summary: String
+  var people_id: String
 //  var campaign_facebook_url: String?
 //  var campaign_website_url: String?
 //  var is_incumbent: Bool?

@@ -128,7 +128,7 @@ class MyBallotsParser {
       } else {
         for document in querySnapshot!.documents {
 //          let newBallotCandidate = Candidate(first_name: document.get("first_name") as! String, last_name: document.get("last_name") as! String)
-          let newBallotPerson = Person(first_name: document.get("first_name") as! String, last_name: document.get("last_name") as! String, party_affiliation: document.get("party_affiliation") as! String, image: nil, contact_twitter: document.get("contact_twitter") as! String, summary: document.get("summary") as! String)
+          let newBallotPerson = Person(first_name: document.get("first_name") as! String, last_name: document.get("last_name") as! String, party_affiliation: document.get("party_affiliation") as! String, image: nil, contact_twitter: document.get("contact_twitter") as! String, summary: document.get("summary") as! String, people_id: document.documentID)
           self.myBallots.append(newBallotPerson)
         }
         self.group4.leave()

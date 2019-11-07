@@ -14,6 +14,7 @@ class CandidateViewController: UIViewController {
   @IBOutlet weak var party: UILabel!
   @IBOutlet weak var about: UILabel!
   @IBOutlet weak var twitter: UILabel!
+  @IBOutlet weak var addToMyBallot: UIButton!
   
   var viewModel: CandidateViewModel?
   
@@ -24,5 +25,10 @@ class CandidateViewController: UIViewController {
     self.party.text = viewModel?.party()
     self.about.text = viewModel?.about()
     self.twitter.text = viewModel?.twitter_url()
+  }
+  
+  @IBAction func addToMyBallotButtonTapped(sender: UIButton) {
+    let parser = AddToMyBallotHelper(viewModel!.candidate)
+    parser.addToMyBallot()
   }
 }
