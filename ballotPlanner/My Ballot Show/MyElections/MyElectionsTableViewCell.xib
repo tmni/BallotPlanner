@@ -40,7 +40,7 @@
                 <outlet property="date" destination="icO-5a-JHh" id="bVZ-zr-qk2"/>
                 <outlet property="name" destination="baN-me-Ntv" id="Lra-Gq-kAq"/>
             </connections>
-            <point key="canvasLocation" x="47.826086956521742" y="35.491071428571423"/>
+            <point key="canvasLocation" x="47.826086956521742" y="34.821428571428569"/>
         </tableViewCell>
     </objects>
 </document>

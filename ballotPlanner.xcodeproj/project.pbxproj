@@ -17,6 +17,7 @@
 		3F00D0EA23736E900001F364 /* CandidatesIndexParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F00D0E923736E900001F364 /* CandidatesIndexParser.swift */; };
 		3F20530B2374A9EA0055F441 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F20530A2374A9EA0055F441 /* Location.swift */; };
 		3F20530D2374AA0D0055F441 /* UserInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F20530C2374AA0D0055F441 /* UserInfoController.swift */; };
+		3F2990022374CF630017340F /* HomeTemp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F2990012374CF630017340F /* HomeTemp.storyboard */; };
 		3F3018C223749A1C00766FEE /* UserLocationController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3018C123749A1C00766FEE /* UserLocationController2.swift */; };
 		3F33181A2374AADB00C83017 /* UserLocationController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F3318192374AADB00C83017 /* UserLocationController.storyboard */; };
 		3F33181C2374AB0E00C83017 /* UserLocationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F33181B2374AB0E00C83017 /* UserLocationController.swift */; };
@@ -75,6 +76,7 @@
 		3F00D0E923736E900001F364 /* CandidatesIndexParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidatesIndexParser.swift; sourceTree = "<group>"; };
 		3F20530A2374A9EA0055F441 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		3F20530C2374AA0D0055F441 /* UserInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoController.swift; sourceTree = "<group>"; };
+		3F2990012374CF630017340F /* HomeTemp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeTemp.storyboard; sourceTree = "<group>"; };
 		3F3018C123749A1C00766FEE /* UserLocationController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocationController2.swift; sourceTree = "<group>"; };
 		3F3318192374AADB00C83017 /* UserLocationController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = UserLocationController.storyboard; path = ../UserLocationController.storyboard; sourceTree = "<group>"; };
 		3F33181B2374AB0E00C83017 /* UserLocationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserLocationController.swift; path = ../UserLocationController.swift; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 			children = (
 				3F5AB494236F72C400A58E42 /* AppDelegate.swift */,
 				3F68CEC72374A86D0006AC6B /* Main.storyboard */,
+				3F2990012374CF630017340F /* HomeTemp.storyboard */,
 				3F8912B62372644A00D9B199 /* Candidate Show */,
 				3FB5824B2370BF86006024BD /* Parser */,
 				3FB582602370F020006024BD /* Models */,
@@ -399,6 +402,7 @@
 				3F68CEC82374A86D0006AC6B /* Main.storyboard in Resources */,
 				3F5AB4A7236F731700A58E42 /* GoogleService-Info.plist in Resources */,
 				3F00D0D4237268220001F364 /* Candidate.storyboard in Resources */,
+				3F2990022374CF630017340F /* HomeTemp.storyboard in Resources */,
 				3F5AB49C236F72C700A58E42 /* Assets.xcassets in Resources */,
 				3F00D0E4237368520001F364 /* CandidatesIndex.storyboard in Resources */,
 				3FB5826A237121AE006024BD /* myBallot.storyboard in Resources */,
