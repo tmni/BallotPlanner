@@ -18,6 +18,7 @@ class AchievementViewModel {
 
     self.parser.AchievementsFromSearchResponse { (achievements) in
       self.achievements = achievements
+      print("achievements in refresh: ", achievements)
       completion()
     }}
   

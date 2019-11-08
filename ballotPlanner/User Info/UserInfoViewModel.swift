@@ -35,6 +35,7 @@ class UserInfoViewModel {
   
   func numberOfRows() -> Int {
     return 2
+    
   }
   
   func getParty() -> String {

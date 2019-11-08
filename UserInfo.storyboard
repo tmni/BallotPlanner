@@ -287,10 +287,10 @@
             </objects>
             <point key="canvasLocation" x="-375.19999999999999" y="-143.3497536945813"/>
         </scene>
-        <!--User Location Controller2-->
+        <!--User Location Controller-->
         <scene sceneID="74w-Ee-qbh">
             <objects>
-                <viewController storyboardIdentifier="UserLocationController2" id="S3s-bs-Fsm" customClass="UserLocationController2" customModule="ballotPlanner" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="UserLocationController2" id="S3s-bs-Fsm" customClass="UserLocationController" customModule="ballotPlanner" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tMO-Ot-4ry">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -316,7 +316,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="updateLocationWithSender:" destination="S3s-bs-Fsm" eventType="editingDidBegin" id="2qc-L3-gay"/>
+                                    <action selector="updateLocationWithSender:" destination="S3s-bs-Fsm" eventType="editingDidEnd" id="FoL-MW-BYN"/>
+                                    <action selector="updateLocationWithSender:" destination="S3s-bs-Fsm" eventType="editingDidEndOnExit" id="yP0-Mt-X8L"/>
                                 </connections>
                             </textField>
                         </subviews>
@@ -324,7 +325,7 @@
                         <viewLayoutGuide key="safeArea" id="1X2-ZJ-6Nn"/>
                     </view>
                     <connections>
-                        <outlet property="locationText" destination="tbe-bE-QYM" id="J5y-67-Auo"/>
+                        <outlet property="locationText" destination="tbe-bE-QYM" id="q6q-AN-VMR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pdS-hU-28z" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -334,7 +335,7 @@
         <!--View Controller-->
         <scene sceneID="i9U-3d-Cbf">
             <objects>
-                <viewController id="n2k-Kj-CNY" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="welcome" id="n2k-Kj-CNY" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ntm-aU-ES0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
