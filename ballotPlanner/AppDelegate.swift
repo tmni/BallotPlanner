@@ -8,9 +8,11 @@
 
 import UIKit
 import Firebase
+import CoreLocation
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+  let locationManager = CLLocationManager()
 
   var window: UIWindow?
 

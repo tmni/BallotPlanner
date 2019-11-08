@@ -9,20 +9,26 @@
 import Foundation
 import UIKit
 import Firebase
+import CoreLocation
 
 
-class UserLocationController: UIViewController, UITextFieldDelegate{
+class UserLocationController: UIViewController, UITextFieldDelegate, CLLocationManagerDelegate{
   @IBOutlet weak var locationText: UITextField!
   let location = Location()
   let db = Firestore.firestore()
+  var locationManager: CLLocationManager!
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
     self.locationText.delegate = self
+    locationManager = CLLocationManager()
+    locationManager?.delegate = self
+    locationManager?.requestWhenInUseAuthorization()
     
     
   }
+  
+
   override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
     self.view.endEditing(true)
   }
@@ -46,46 +52,78 @@ class UserLocationController: UIViewController, UITextFieldDelegate{
     //self.navigationItem.backBarButtonItem = nil
   }
   
-  
-  func updateText(){
-    db.collection("user").document("okabUm7jCq34tjDWHbRQ")
-      .getDocument { (snapshot, error ) in
-        
-        if let document = snapshot {
-          if let zipcode = document.get("zip"){
-            self.locationText.text = "\n \(String(describing: zipcode) )\n"
-          }
-          
-        } else {
-          
-          print("Document does not exist")
-          
-        }
-    }
-    
-  }
-  @IBAction func updateLocation(sender: UITextField){
-    location.getCurrentLocation() //update location
-    if !(location.latitude == 0.0 && location.longitude == 0.0){
-      updateText()
+  func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+    switch status {
+    case .notDetermined:
+      locationManager.requestAlwaysAuthorization()
+      break
+    case .authorizedWhenInUse:
+      locationManager.startUpdatingLocation()
+      self.locationText.text = "15213"
       db.collection("user").document("okabUm7jCq34tjDWHbRQ").updateData(["zip": 15213]) { err in
         if let err = err {
           print("Error writing document: \(err)")
         } else {
-          print("Location zip written")
+          print("Location zip written to ", "15213")
         }
+        
       }
-//      location.saveLocation()
+      
+      break
+    case .authorizedAlways:
+      locationManager.startUpdatingLocation()
+      break
+    case .restricted:
+      // restricted by e.g. parental controls. User can't enable Location Services
+      break
+    case .denied:
+      // user denied your app access to Location Services, but can grant access from Settings.app
+      break
+    @unknown default:
+      fatalError()
     }
-    //    else{
-    //      let alert = UIAlertController(title: "Location Not Found", message: "Please enter location manually", preferredStyle: UIAlertController.Style.alert)
-    //      alert.addAction(UIAlertAction(title: "Dismiss", style: UIAlertAction.Style.default, handler: nil))
-    //      self.present(alert, animated: true, completion: nil)
-    //    }
-    //
-    //
+  }
+//  func canUpdateText()->Bool{
+//    var userZip = self.locationText.text
+//    if validZipCode(postalCode:userZip){
+//    db.collection("user").document("okabUm7jCq34tjDWHbRQ")
+//      .getDocument { (snapshot, error ) in
+//
+//        if let document = snapshot {
+//          if let zipcode = document.get("zip"){
+//            self.locationText.text = "\n \(String(describing: zipcode) )\n"
+//          }
+//
+//        } else {
+//
+//          print("Document does not exist")
+//
+//        }
+//    }
+//
+//    }}
+  @IBAction func updateLocation(sender: UITextField){
+    var userZip = self.locationText.text
+    if validZipCode(postalCode:userZip!)
+    {
+      if let userZip = Int((userZip)!) {
+        
+      
+      print("converted zip to Integer ", type(of: userZip))
+      db.collection("user").document("okabUm7jCq34tjDWHbRQ").updateData(["zip": userZip]) { err in
+        if let err = err {
+          print("Error writing document: \(err)")
+        } else {
+          print("Location zip written to ", userZip)
+        }}}
+      }
+    else{
+      print("Not a valid zipcode")
+    }
     
     
   }
   
-}
+    }
+    
+
