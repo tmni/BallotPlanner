@@ -134,7 +134,6 @@
 				6D88EFCB23731FA0004FFF23 /* User Info */,
 				6D88EFCA23731F87004FFF23 /* User Set Up */,
 				3F5AB49B236F72C700A58E42 /* Assets.xcassets */,
-				3F5AB49D236F72C700A58E42 /* LaunchScreen.storyboard */,
 				3F5AB4A0236F72C700A58E42 /* Info.plist */,
 				3F5AB4A6236F731700A58E42 /* GoogleService-Info.plist */,
 			);
@@ -244,6 +243,7 @@
 				6D88EFD423733C3F004FFF23 /* MyViewController.swift */,
 				6D57021B2373AFF900A7BA0D /* AchievementViewModel.swift */,
 				6D88EFCE23733793004FFF23 /* UserInfo.storyboard */,
+				3F5AB49D236F72C700A58E42 /* LaunchScreen.storyboard */,
 				3F3018C123749A1C00766FEE /* UserLocationController2.swift */,
 			);
 			path = "User Info";
