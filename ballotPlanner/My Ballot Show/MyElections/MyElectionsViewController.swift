@@ -2,7 +2,7 @@
 //  MyElectionsViewController.swift
 //  ballotPlanner
 //
-//  Created by Erika Giuse on 11/4/19.
+//  Created by Erika Giuse on 11/10/19.
 //  Copyright © 2019 Erika Giuse. All rights reserved.
 //
 
@@ -55,4 +55,5 @@ class MyElectionsViewController: UIViewController, UITableViewDataSource, UITabl
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     performSegue(withIdentifier: "toDetailVC", sender: indexPath)
   }
+  
 }
