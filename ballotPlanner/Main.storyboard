@@ -1,11 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WLd-nw-CnI">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Elections-->
+        <scene sceneID="5PE-dW-Wgu">
+            <objects>
+                <navigationController title="Elections" id="esA-8k-Pfx" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Elections" id="6hv-Jw-Era"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2NJ-fM-BXc">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="nvS-ip-WIC" kind="relationship" relationship="rootViewController" id="KYv-sG-CTR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1v9-SQ-ipA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-794" y="-930"/>
+        </scene>
+        <!--ElectionDates-->
+        <scene sceneID="8cr-CQ-mty">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ElectionDates" id="nvS-ip-WIC" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="lzv-jj-IYK"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fPM-yA-roi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-163" y="-930"/>
+        </scene>
+        <!--myBallot-->
+        <scene sceneID="6xm-EW-FlE">
+            <objects>
+                <viewControllerPlaceholder storyboardName="myBallot" id="Ggq-HE-HpL" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="VTd-nm-ByQ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VQJ-R1-MCQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="532" y="-485"/>
+        </scene>
+        <!--My Info-->
+        <scene sceneID="8t1-GJ-DC1">
+            <objects>
+                <navigationController title="My Info" id="hh2-jX-R8E" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="My Info" id="kfg-e4-4hS"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Btn-iz-feT">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="57K-nS-jqz" kind="relationship" relationship="rootViewController" id="9bV-eP-ggm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R32-4S-dDa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-794" y="16"/>
+        </scene>
+        <!--UserInfo-->
+        <scene sceneID="8tX-id-dZq">
+            <objects>
+                <viewControllerPlaceholder storyboardName="UserInfo" id="57K-nS-jqz" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="zkF-DK-fNL"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kXN-TY-Otj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-114" y="16"/>
+        </scene>
+        <!--My Ballot-->
+        <scene sceneID="5IC-f6-IMC">
+            <objects>
+                <navigationController title="My Ballot" id="aDV-tE-70Q" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="My Ballot" id="OAB-7n-BXy"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="W6P-hJ-fyr">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Ggq-HE-HpL" kind="relationship" relationship="rootViewController" id="vkY-vW-CBi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jjc-9F-jRw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-79" y="-485"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="EuE-Ut-4qV">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="WLd-nw-CnI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="AY3-ZK-eUV">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="esA-8k-Pfx" kind="relationship" relationship="viewControllers" id="4x1-ua-imy"/>
+                        <segue destination="aDV-tE-70Q" kind="relationship" relationship="viewControllers" id="L7c-1V-wqL"/>
+                        <segue destination="hh2-jX-R8E" kind="relationship" relationship="viewControllers" id="eac-u6-Jfe"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h4F-VZ-Fr3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1645.5999999999999" y="-485.46798029556652"/>
+        </scene>
+    </scenes>
 </document>

@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Election Dates View Controller-->
+        <!--Item-->
         <scene sceneID="HYI-6Q-fF8">
             <objects>
                 <viewController id="Dac-AZ-2vC" customClass="ElectionDatesViewController" customModule="ballotPlanner" customModuleProvider="target" sceneMemberID="viewController">
@@ -61,6 +61,7 @@
                             <constraint firstItem="l6s-ax-wAR" firstAttribute="leading" secondItem="oSv-JB-ZwB" secondAttribute="leading" id="nJJ-Ta-vNB"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="NjU-L2-CrT"/>
                     <navigationItem key="navigationItem" id="eGH-Hq-POM">
                         <nil key="title"/>
                         <barButtonItem key="backBarButtonItem" title="Back" id="Ftb-Zp-ump"/>

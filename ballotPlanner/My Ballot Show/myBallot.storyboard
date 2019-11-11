@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--My Elections View Controller-->
+        <!--Item-->
         <scene sceneID="FIa-o2-LKY">
             <objects>
                 <viewController id="y7n-R4-fLY" customClass="MyElectionsViewController" customModule="ballotPlanner" customModuleProvider="target" sceneMemberID="viewController">
@@ -44,6 +44,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="i7g-yo-Rms"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="UpT-Ct-eYU"/>
                     <connections>
                         <outlet property="tableView" destination="qf8-8m-XmB" id="Xcn-sf-1ka"/>
                     </connections>
