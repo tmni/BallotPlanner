@@ -12,9 +12,7 @@ import Firebase
 class AchievementParser {
   var achievements = [Achievement]()
   func AchievementsFromSearchResponse(completion: @escaping([Achievement]) -> Void) {
-    
     let db = Firestore.firestore()
-    
     db.collection("achievements").getDocuments() { (querySnapshot, err) in
       if let err = err {
         print("Error getting documents: \(err)")
