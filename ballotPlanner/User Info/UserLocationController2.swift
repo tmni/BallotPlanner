@@ -33,6 +33,7 @@ class UserLocationController2: UIViewController, UITextFieldDelegate{
     textField.resignFirstResponder()
     return true
   }
+  
   func validZipCode(postalCode:String)->Bool{
     let postalcodeRegex = "^[0-9]{5}(-[0-9]{4})?$"
     let pinPredicate = NSPredicate(format: "SELF MATCHES %@", postalcodeRegex)

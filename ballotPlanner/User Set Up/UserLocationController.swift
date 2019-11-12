@@ -16,29 +16,35 @@ class UserLocationController: UIViewController, UITextFieldDelegate, CLLocationM
   @IBOutlet weak var locationText: UITextField!
   let location = Location()
   let db = Firestore.firestore()
-  var locationManager: CLLocationManager!
+  var locationManager1: CLLocationManager!
   
   override func viewDidLoad() {
     super.viewDidLoad()
     self.locationText.delegate = self
-    locationManager = CLLocationManager()
-    locationManager?.delegate = self
-    locationManager?.requestWhenInUseAuthorization()
-    
-    
+    locationManager1 = CLLocationManager()
+    locationManager1?.delegate = self
+    locationManager1?.requestWhenInUseAuthorization()
   }
   
 
   override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
     self.view.endEditing(true)
+    self.textFieldDidEndEditing(locationText)
   }
   
   // user presses return key
   
   func textFieldShouldReturn(_ textField: UITextField) -> Bool {
     textField.resignFirstResponder()
+    self.updateLocation(sender: textField)
     return true
   }
+  
+  func textFieldDidEndEditing(_ textField: UITextField) {
+    textField.resignFirstResponder()
+    self.updateLocation(sender: textField)
+  }
+  
   func validZipCode(postalCode:String)->Bool{
     let postalcodeRegex = "^[0-9]{5}(-[0-9]{4})?$"
     let pinPredicate = NSPredicate(format: "SELF MATCHES %@", postalcodeRegex)
@@ -55,23 +61,23 @@ class UserLocationController: UIViewController, UITextFieldDelegate, CLLocationM
   func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
     switch status {
     case .notDetermined:
-      locationManager.requestAlwaysAuthorization()
+      locationManager1.requestAlwaysAuthorization()
       break
     case .authorizedWhenInUse:
-      locationManager.startUpdatingLocation()
-      self.locationText.text = "15213"
-      db.collection("user").document("okabUm7jCq34tjDWHbRQ").updateData(["zip": 15213]) { err in
-        if let err = err {
-          print("Error writing document: \(err)")
-        } else {
-          print("Location zip written to ", "15213")
-        }
-        
-      }
+      locationManager1.startUpdatingLocation()
+//      self.locationText.text = "15213"
+//      db.collection("user").document("okabUm7jCq34tjDWHbRQ").updateData(["zip": 15213]) { err in
+//        if let err = err {
+//          print("Error writing document: \(err)")
+//        } else {
+//          print("Location zip written to ", "15213")
+//        }
+//
+//      }
       
       break
     case .authorizedAlways:
-      locationManager.startUpdatingLocation()
+      locationManager1.startUpdatingLocation()
       break
     case .restricted:
       // restricted by e.g. parental controls. User can't enable Location Services

@@ -138,7 +138,7 @@
 		6D16B7402375B4EA008245BE /* ElectionDateDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectionDateDetailViewModelTests.swift; sourceTree = "<group>"; };
 		6D57021B2373AFF900A7BA0D /* AchievementViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementViewModel.swift; sourceTree = "<group>"; };
 		6D57021D2373B0C500A7BA0D /* AchievementsParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsParser.swift; sourceTree = "<group>"; };
-		6D88EFBC236F95D1004FFF23 /* UserLocationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocationController.swift; sourceTree = "<group>"; };
+		6D88EFBC236F95D1004FFF23 /* UserLocationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocationController.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		6D88EFBE236F95EA004FFF23 /* UserPartyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPartyController.swift; sourceTree = "<group>"; };
 		6D88EFC0236F9618004FFF23 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		6D88EFC42371C469004FFF23 /* UserLocationController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserLocationController.storyboard; sourceTree = "<group>"; };
