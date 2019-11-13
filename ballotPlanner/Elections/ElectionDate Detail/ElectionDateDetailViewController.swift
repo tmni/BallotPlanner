@@ -13,6 +13,8 @@ class ElectionDateDetailViewController: UIViewController {
   @IBOutlet weak var aboutText: UILabel!
   @IBOutlet weak var mapView: MKMapView!
   
+  var electionDate: ElectionDate?
+  
   var viewModel: ElectionDateDetailViewModel?
   let location = Location()
   var arrAnnotations = [MKAnnotation]()
@@ -23,6 +25,7 @@ class ElectionDateDetailViewController: UIViewController {
     location.loadLocation()
     let initialLocation = CLLocation(latitude: location.latitude, longitude: location.longitude)
     centerMapOnLocation(location: initialLocation)
+    //viewModel = ElectionDateDetailViewModel(electionDate: electionDate!)
     self.setAllPins()
   }
   
@@ -79,3 +82,4 @@ class ElectionDateDetailViewController: UIViewController {
     }
   }
 }
+

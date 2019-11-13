@@ -38,6 +38,7 @@ class ElectionDatesViewController: UIViewController, UITableViewDataSource, UITa
     if let detailVC = segue.destination as? ElectionDateDetailViewController,
       let indexPath = sender as? IndexPath {
       detailVC.viewModel = viewModel.detailViewModelForRowAtIndexPath(indexPath)
+      //detailVC.electionDate = viewModel.electionDates[indexPath.row]
     }
 //    if let detailVC = segue.destination as? CandidatesIndexViewController,
 //      let indexPath = sender as? IndexPath {

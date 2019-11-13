@@ -60,8 +60,8 @@
                         <viewLayoutGuide key="safeArea" id="pdC-pr-ELQ"/>
                     </view>
                     <connections>
-                        <outlet property="aboutText" destination="aJb-bQ-6Pd" id="lsW-y2-oLG"/>
-                        <outlet property="mapView" destination="rLh-gu-76t" id="eEo-3J-Ofk"/>
+                        <outlet property="aboutText" destination="aJb-bQ-6Pd" id="7fI-vR-i21"/>
+                        <outlet property="mapView" destination="rLh-gu-76t" id="Jzc-em-x32"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xuf-me-mLi" userLabel="First Responder" sceneMemberID="firstResponder"/>
