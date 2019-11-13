@@ -24,29 +24,31 @@ class ballotPlannerParserTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
-      FirebaseApp.configure()
     }
 
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
-  func testElectionDatesFromSearchResponse(){
-    
-    
-  }
   
-//  db.collection("achievements").getDocuments() { (querySnapshot, err) in
-//  if let err = err {
-//  print("Error getting documents: \(err)")
-//  } else {
-//  for document in querySnapshot!.documents {
-//  let newAchievement = Achievement(name: document.data()["name"] as! String, description: document.data()["description"] as! String, isActive: document.data()["isActive"] as! Bool)
-//  print("adding ", newAchievement.name)
-//  self.achievements.append(newAchievement)
-//  }
-//  }
-//  completion(self.achievements)
-//  }
+  func testElectionDatesFromSearchResponse(){
+//    // create the expectation
+//    let exp = expectation(description: "Loading ElectionDates")
+//
+//    // call my asynchronous method
+//    parser1.electionDatesFromSearchResponse {_ in
+//      // when it finishes, mark my expectation as being fulfilled
+//      exp.fulfill()
+//    }
+//
+//    // wait three seconds for all outstanding expectations to be fulfilled
+//    waitForExpectations(timeout: 3)
+    
+    let electionDate1 = parser1.createElectionDate("date1", "description1", "name1")
+    
+    XCTAssertEqual(electionDate1.date, "date1")
+    XCTAssertEqual(electionDate1.description, "description1")
+    XCTAssertEqual(electionDate1.name, "name1")
+  }
 
   func testAchievementsFromSearchResponse() {
     // create the expectation
@@ -61,22 +63,16 @@ class ballotPlannerParserTests: XCTestCase {
     // wait three seconds for all outstanding expectations to be fulfilled
     waitForExpectations(timeout: 3)
     
-    let db = Firestore.firestore()
-    db.collection("achievements").getDocuments() { (querySnapshot, err) in
-      if let err = err {
-        print("Error getting documents: \(err)")
-      } else {
-        var count = 0
-        for document in querySnapshot!.documents {
-          count += 1
-        }
-        XCTAssertEqual(self.parser2.achievements.count, count, "We should have loaded exactly 2 achievements.")
-      }
-    }
+    let achievement1 = parser2.createAchievement("name1", "description1", true)
+    let achievement2 = parser2.createAchievement("name2", "description2", false)
     
-    // our expectation has been fulfilled, so we can check the result is correct
-//    print(parser2.achievements.count)
-//    XCTAssertEqual(parser2.achievements.count, 2, "We should have loaded exactly 2 achievements.")
+    XCTAssertEqual(achievement1.name, "name1")
+    XCTAssertEqual(achievement1.description, "description1")
+    XCTAssertEqual(achievement1.isActive, true)
+    
+    XCTAssertEqual(achievement2.name, "name2")
+    XCTAssertEqual(achievement2.description, "description2")
+    XCTAssertEqual(achievement2.isActive, false)
   }
   
   func testGetAllMyElections(){}
