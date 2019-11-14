@@ -45,7 +45,7 @@
 		3FB5826A237121AE006024BD /* myBallot.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FB58269237121AE006024BD /* myBallot.storyboard */; };
 		3FEAA46C237B76830097AB6F /* ElectionsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEAA46B237B76830097AB6F /* ElectionsPageViewController.swift */; };
 		3FEAA46E237B7F820097AB6F /* ElectionDateDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEAA46D237B7F820097AB6F /* ElectionDateDetailViewController.swift */; };
-		3FEAA471237CD9030097AB6F /* ballotPlannerParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEAA470237CD9030097AB6F /* ballotPlannerParserTests.swift */; };
+		3FEAA498237CDB550097AB6F /* ballotPlannerParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEAA497237CDB550097AB6F /* ballotPlannerParserTests.swift */; };
 		3FFD3E2C2372244000B680F9 /* ElectionDatesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5AB4AC236F8AD800A58E42 /* ElectionDatesViewModel.swift */; };
 		3FFD3E2F2372351D00B680F9 /* MyBallotsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFD3E2E2372351D00B680F9 /* MyBallotsViewModel.swift */; };
 		3FFD3E312372352E00B680F9 /* MyBallotsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFD3E302372352E00B680F9 /* MyBallotsViewController.swift */; };
@@ -64,7 +64,18 @@
 		6D88EFD323733C11004FFF23 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D88EFD223733C11004FFF23 /* MyCollectionViewCell.swift */; };
 		6D88EFD523733C3F004FFF23 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D88EFD423733C3F004FFF23 /* MyViewController.swift */; };
 		8AEA7911B449A15C078BED31 /* Pods_ballotPlanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E280B0C56CB18E69F0ABFE1 /* Pods_ballotPlanner.framework */; };
+		FA216417A0545CDF121A8A98 /* libPods-ballotPlannerParserTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B87B8577E8EDBD83706602CC /* libPods-ballotPlannerParserTests.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3FEAA49A237CDB550097AB6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F5AB489236F72C400A58E42 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F5AB490236F72C400A58E42;
+			remoteInfo = ballotPlanner;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		2E280B0C56CB18E69F0ABFE1 /* Pods_ballotPlanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ballotPlanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -110,13 +121,16 @@
 		3FB58269237121AE006024BD /* myBallot.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = myBallot.storyboard; sourceTree = "<group>"; };
 		3FEAA46B237B76830097AB6F /* ElectionsPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectionsPageViewController.swift; sourceTree = "<group>"; };
 		3FEAA46D237B7F820097AB6F /* ElectionDateDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectionDateDetailViewController.swift; sourceTree = "<group>"; };
-		3FEAA470237CD9030097AB6F /* ballotPlannerParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ballotPlannerParserTests.swift; sourceTree = "<group>"; };
+		3FEAA495237CDB550097AB6F /* ballotPlannerParserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ballotPlannerParserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FEAA497237CDB550097AB6F /* ballotPlannerParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ballotPlannerParserTests.swift; sourceTree = "<group>"; };
+		3FEAA499237CDB550097AB6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FFD3E2E2372351D00B680F9 /* MyBallotsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBallotsViewModel.swift; sourceTree = "<group>"; };
 		3FFD3E302372352E00B680F9 /* MyBallotsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBallotsViewController.swift; sourceTree = "<group>"; };
 		3FFD3E322372354900B680F9 /* MyBallotsParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBallotsParser.swift; sourceTree = "<group>"; };
 		3FFD3E3423723A2F00B680F9 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		3FFD3E382372446900B680F9 /* MyBallotsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBallotsTableViewCell.swift; sourceTree = "<group>"; };
 		3FFD3E392372446900B680F9 /* MyBallotsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyBallotsTableViewCell.xib; sourceTree = "<group>"; };
+		6036F6C09D642BF5613C83F7 /* Pods-ballotPlannerParserTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ballotPlannerParserTests.release.xcconfig"; path = "Target Support Files/Pods-ballotPlannerParserTests/Pods-ballotPlannerParserTests.release.xcconfig"; sourceTree = "<group>"; };
 		6D097B9C2373BCAC00E756DB /* Achievement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Achievement.swift; path = /Users/tarunaemani/Desktop/Ballot_Planner/ballotPlanner/Models/Achievement.swift; sourceTree = "<absolute>"; };
 		6D097B9E2373BCF700E756DB /* Achievement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achievement.swift; sourceTree = "<group>"; };
 		6D097BA02373C94A00E756DB /* UserInfoParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserInfoParser.swift; path = ballotPlanner/Parser/UserInfoParser.swift; sourceTree = SOURCE_ROOT; };
@@ -128,6 +142,8 @@
 		6D88EFD02373386F004FFF23 /* AchievementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsViewController.swift; sourceTree = "<group>"; };
 		6D88EFD223733C11004FFF23 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
 		6D88EFD423733C3F004FFF23 /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
+		964ECA83D58592A1B4B51FF9 /* Pods-ballotPlannerParserTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ballotPlannerParserTests.debug.xcconfig"; path = "Target Support Files/Pods-ballotPlannerParserTests/Pods-ballotPlannerParserTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B87B8577E8EDBD83706602CC /* libPods-ballotPlannerParserTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ballotPlannerParserTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4B65065CEABC734A70351D5 /* Pods-ballotPlanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ballotPlanner.release.xcconfig"; path = "Target Support Files/Pods-ballotPlanner/Pods-ballotPlanner.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -137,6 +153,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				8AEA7911B449A15C078BED31 /* Pods_ballotPlanner.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FEAA492237CDB550097AB6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA216417A0545CDF121A8A98 /* libPods-ballotPlannerParserTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,7 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				3F5AB493236F72C400A58E42 /* ballotPlanner */,
-				3FEAA46F237CD8D00097AB6F /* ballotPlannerParserTests */,
+				3FEAA496237CDB550097AB6F /* ballotPlannerParserTests */,
 				3F5AB492236F72C400A58E42 /* Products */,
 				569D63D6FCCFB8D6A772A79A /* Pods */,
 				B4D5A65D66F9350CA7BA2EAC /* Frameworks */,
@@ -170,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				3F5AB491236F72C400A58E42 /* ballotPlanner.app */,
+				3FEAA495237CDB550097AB6F /* ballotPlannerParserTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -286,10 +311,11 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		3FEAA46F237CD8D00097AB6F /* ballotPlannerParserTests */ = {
+		3FEAA496237CDB550097AB6F /* ballotPlannerParserTests */ = {
 			isa = PBXGroup;
 			children = (
-				3FEAA470237CD9030097AB6F /* ballotPlannerParserTests.swift */,
+				3FEAA497237CDB550097AB6F /* ballotPlannerParserTests.swift */,
+				3FEAA499237CDB550097AB6F /* Info.plist */,
 			);
 			path = ballotPlannerParserTests;
 			sourceTree = "<group>";
@@ -310,6 +336,8 @@
 			children = (
 				3C628B7B7611EB44E84599A8 /* Pods-ballotPlanner.debug.xcconfig */,
 				F4B65065CEABC734A70351D5 /* Pods-ballotPlanner.release.xcconfig */,
+				964ECA83D58592A1B4B51FF9 /* Pods-ballotPlannerParserTests.debug.xcconfig */,
+				6036F6C09D642BF5613C83F7 /* Pods-ballotPlannerParserTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -343,6 +371,7 @@
 			isa = PBXGroup;
 			children = (
 				2E280B0C56CB18E69F0ABFE1 /* Pods_ballotPlanner.framework */,
+				B87B8577E8EDBD83706602CC /* libPods-ballotPlannerParserTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -369,12 +398,33 @@
 			productReference = 3F5AB491236F72C400A58E42 /* ballotPlanner.app */;
 			productType = "com.apple.product-type.application";
 		};
+		3FEAA494237CDB550097AB6F /* ballotPlannerParserTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FEAA49C237CDB550097AB6F /* Build configuration list for PBXNativeTarget "ballotPlannerParserTests" */;
+			buildPhases = (
+				C87E5AB9080AE60786F31804 /* [CP] Check Pods Manifest.lock */,
+				3FEAA491237CDB550097AB6F /* Sources */,
+				3FEAA492237CDB550097AB6F /* Frameworks */,
+				3FEAA493237CDB550097AB6F /* Resources */,
+				66A6DAFEB00D2F65235F6994 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FEAA49B237CDB550097AB6F /* PBXTargetDependency */,
+			);
+			name = ballotPlannerParserTests;
+			productName = ballotPlannerParserTests;
+			productReference = 3FEAA495237CDB550097AB6F /* ballotPlannerParserTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		3F5AB489236F72C400A58E42 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				DefaultBuildSystemTypeForWorkspace = Original;
 				LastSwiftUpdateCheck = 1030;
 				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = "Erika Giuse";
@@ -382,6 +432,10 @@
 					3F5AB490236F72C400A58E42 = {
 						CreatedOnToolsVersion = 10.3;
 						LastSwiftMigration = 1030;
+					};
+					3FEAA494237CDB550097AB6F = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 3F5AB490236F72C400A58E42;
 					};
 				};
 			};
@@ -399,6 +453,7 @@
 			projectRoot = "";
 			targets = (
 				3F5AB490236F72C400A58E42 /* ballotPlanner */,
+				3FEAA494237CDB550097AB6F /* ballotPlannerParserTests */,
 			);
 		};
 /* End PBXProject section */
@@ -427,9 +482,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3FEAA493237CDB550097AB6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		66A6DAFEB00D2F65235F6994 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ballotPlannerParserTests/Pods-ballotPlannerParserTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ballotPlannerParserTests/Pods-ballotPlannerParserTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ballotPlannerParserTests/Pods-ballotPlannerParserTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		9EFF5FBF7EDE54F5F313C4A8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -446,6 +525,28 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-ballotPlanner-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C87E5AB9080AE60786F31804 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ballotPlannerParserTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -503,7 +604,6 @@
 				3FFD3E2F2372351D00B680F9 /* MyBallotsViewModel.swift in Sources */,
 				3F5AB495236F72C400A58E42 /* AppDelegate.swift in Sources */,
 				3F36121F2373B12000B31F77 /* AddToMyBallotHelper.swift in Sources */,
-				3FEAA471237CD9030097AB6F /* ballotPlannerParserTests.swift in Sources */,
 				3F20530D2374AA0D0055F441 /* UserInfoController.swift in Sources */,
 				3F8912B82372647F00D9B199 /* CandidateViewModel.swift in Sources */,
 				6D097BA32373CBEA00E756DB /* UserInfoViewModel.swift in Sources */,
@@ -519,7 +619,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3FEAA491237CDB550097AB6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FEAA498237CDB550097AB6F /* ballotPlannerParserTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3FEAA49B237CDB550097AB6F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F5AB490236F72C400A58E42 /* ballotPlanner */;
+			targetProxy = 3FEAA49A237CDB550097AB6F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3F5AB49D236F72C700A58E42 /* LaunchScreen.storyboard */ = {
@@ -687,6 +803,48 @@
 			};
 			name = Release;
 		};
+		3FEAA49D237CDB550097AB6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 964ECA83D58592A1B4B51FF9 /* Pods-ballotPlannerParserTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RMKJ5888TK;
+				INFOPLIST_FILE = ballotPlannerParserTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.egiuse.ballotPlannerParserTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ballotPlanner.app/ballotPlanner";
+			};
+			name = Debug;
+		};
+		3FEAA49E237CDB550097AB6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6036F6C09D642BF5613C83F7 /* Pods-ballotPlannerParserTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RMKJ5888TK;
+				INFOPLIST_FILE = ballotPlannerParserTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.egiuse.ballotPlannerParserTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ballotPlanner.app/ballotPlanner";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -704,6 +862,15 @@
 			buildConfigurations = (
 				3F5AB4A4236F72C700A58E42 /* Debug */,
 				3F5AB4A5236F72C700A58E42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FEAA49C237CDB550097AB6F /* Build configuration list for PBXNativeTarget "ballotPlannerParserTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FEAA49D237CDB550097AB6F /* Debug */,
+				3FEAA49E237CDB550097AB6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

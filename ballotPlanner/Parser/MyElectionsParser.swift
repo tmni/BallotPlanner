@@ -83,7 +83,7 @@ class MyElectionsParser {
       } else {
         for document in querySnapshot!.documents {
           if (self.electionIdsFromBallots.contains(document.documentID)) {
-            let myNewElection = ElectionDate(election_id: document.documentID, date: document.get("date") as! String, description: document.get("description") as! String, name: document.get("name") as! String, voting_locations: document.get("voting_locations") as! Array<Dictionary<String, Double>>)
+            let myNewElection = self.createMyElection(document.documentID, document.get("date") as! String, document.get("description") as! String, document.get("name") as! String, document.get("voting_locations") as! Array<Dictionary<String, Double>>)
             self.myElections.append(myNewElection)
           }
         }
@@ -91,6 +91,11 @@ class MyElectionsParser {
       }
       completion(self.myElections)
     }
+  }
+  
+  func createMyElection(_ election_id: String, _ date: String, _ description: String, _ name: String, _ voting_locations: Array<Dictionary<String, Double>>) -> ElectionDate {
+    let newElectionDate = ElectionDate(election_id: election_id, date: date, description: description, name: name, voting_locations: voting_locations)
+    return newElectionDate
   }
   
 }

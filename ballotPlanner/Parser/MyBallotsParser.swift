@@ -128,13 +128,19 @@ class MyBallotsParser {
       } else {
         for document in querySnapshot!.documents {
 //          let newBallotCandidate = Candidate(first_name: document.get("first_name") as! String, last_name: document.get("last_name") as! String)
-          let newBallotPerson = Person(first_name: document.get("first_name") as! String, last_name: document.get("last_name") as! String, party_affiliation: document.get("party_affiliation") as! String, image: nil, contact_twitter: document.get("contact_twitter") as! String, summary: document.get("summary") as! String, people_id: document.documentID)
+//          let newBallotPerson = Person(first_name: document.get("first_name") as! String, last_name: document.get("last_name") as! String, party_affiliation: document.get("party_affiliation") as! String, image: nil, contact_twitter: document.get("contact_twitter") as! String, summary: document.get("summary") as! String, people_id: document.documentID)
+          let newBallotPerson = self.createBallotPerson(document.get("first_name") as! String, document.get("last_name") as! String, document.get("party_affiliation") as! String, nil, document.get("contact_twitter") as! String, document.get("summary") as! String, document.documentID)
           self.myBallots.append(newBallotPerson)
         }
         self.group4.leave()
       }
       completion(self.myBallots)
     }
+  }
+  
+  func createBallotPerson(_ first_name: String, _ last_name: String, _ party_affiliation: String, _ image: String?, _ contact_twitter: String, _ summary: String, _ people_id: String) -> Person{
+    let newBallotPerson = Person(first_name: first_name, last_name: last_name, party_affiliation: party_affiliation, image: image, contact_twitter: contact_twitter, summary: summary, people_id: people_id)
+    return newBallotPerson
   }
   
 }

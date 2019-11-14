@@ -1,37 +1,30 @@
 //
 //  ballotPlannerParserTests.swift
-//  ballotPlanner
+//  ballotPlannerParserTests
 //
 //  Created by Erika Giuse on 11/13/19.
 //  Copyright © 2019 Erika Giuse. All rights reserved.
 //
-
-import Foundation
 
 import XCTest
 import Firebase
 @testable import ballotPlanner
 
 class ballotPlannerParserTests: XCTestCase {
-  //  override init() {
-  //    super.init()
-  //    FirebaseApp.configure()
-  //  }
+
+    let parser1 = ElectionDatesParser()
+    let parser2 = AchievementParser()
+    let parser3 = MyElectionsParser()
+    let parser4 = UserInfoParser()
   
-  let parser1 = ElectionDatesParser()
-  let parser2 = AchievementParser()
-  let parser3 = MyElectionsParser()
-  let parser4 = UserInfoParser()
-  
-  
-  override func setUp() {
-    // Put setup code here. This method is called before the invocation of each test method in the class.
-  }
-  
-  override func tearDown() {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
-  }
-  
+    override func setUp() {
+        // Put setup code here. This method is called before the invocation of each test method in the class.
+    }
+
+    override func tearDown() {
+        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    }
+
   func testElectionDatesFromSearchResponse(){
     //    // create the expectation
     //    let exp = expectation(description: "Loading ElectionDates")
@@ -45,26 +38,17 @@ class ballotPlannerParserTests: XCTestCase {
     //    // wait three seconds for all outstanding expectations to be fulfilled
     //    waitForExpectations(timeout: 3)
     
-    let electionDate1 = parser1.createElectionDate("date1", "description1", "name1")
+    let electionDate1 = parser1.createElectionDate("election_id1", "date1", "description1", "name1", [["lat": 0.0, "long": 1.1]])
     
+    XCTAssertEqual(electionDate1.election_id, "election_id1")
     XCTAssertEqual(electionDate1.date, "date1")
     XCTAssertEqual(electionDate1.description, "description1")
     XCTAssertEqual(electionDate1.name, "name1")
+    XCTAssertEqual(electionDate1.voting_locations[0]["lat"], 0.0)
+    XCTAssertEqual(electionDate1.voting_locations[0]["long"], 1.1)
   }
   
   func testAchievementsFromSearchResponse() {
-    // create the expectation
-    let exp = expectation(description: "Loading Achievements")
-    
-    // call my asynchronous method
-    parser2.AchievementsFromSearchResponse {_ in
-      // when it finishes, mark my expectation as being fulfilled
-      exp.fulfill()
-    }
-    
-    // wait three seconds for all outstanding expectations to be fulfilled
-    waitForExpectations(timeout: 3)
-    
     let achievement1 = parser2.createAchievement("name1", "description1", true)
     let achievement2 = parser2.createAchievement("name2", "description2", false)
     
@@ -77,19 +61,27 @@ class ballotPlannerParserTests: XCTestCase {
     XCTAssertEqual(achievement2.isActive, false)
   }
   
-  func testGetAllMyElections(){}
-  func testGetRaceIdsFromBallots(){}
-  func testGetElectionIdsFromRaces(){}
-  func testGetMyElections(){}
-  func testDataFromSearchResponse(){}
-  
-  
-  
-  func testPerformanceExample() {
-    // This is an example of a performance test case.
-    self.measure {
-      // Put the code you want to measure the time of here.
-    }
+  func testMyElectionsParser() {
+    let myElection1 = parser3.createMyElection("election_id", "date", "description", "name", [["lat": 0.0, "long": 1.1]])
+    
+    XCTAssertEqual(myElection1.election_id, "election_id")
+    XCTAssertEqual(myElection1.date, "date")
+    XCTAssertEqual(myElection1.description, "description")
+    XCTAssertEqual(myElection1.name, "name")
+    XCTAssertEqual(myElection1.voting_locations[0]["lat"], 0.0)
+    XCTAssertEqual(myElection1.voting_locations[0]["long"], 1.1)
   }
-}
+  
+    func testExample() {
+        // This is an example of a functional test case.
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    }
 
+    func testPerformanceExample() {
+        // This is an example of a performance test case.
+        self.measure {
+            // Put the code you want to measure the time of here.
+        }
+    }
+
+}
