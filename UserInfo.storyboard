@@ -92,8 +92,8 @@
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="aem-Ag-eNd" id="1de-fK-z4j"/>
-                        <outlet property="locLabel" destination="Wmh-3j-q8b" id="cbi-Qy-Te6"/>
-                        <outlet property="partyLabel" destination="8HI-Vz-7gI" id="HHb-aI-pz2"/>
+                        <outlet property="locLabel" destination="Wmh-3j-q8b" id="GZf-k2-hp2"/>
+                        <outlet property="partyLabel" destination="8HI-Vz-7gI" id="9hr-Eu-KHS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7cq-Ne-qc3" userLabel="First Responder" sceneMemberID="firstResponder"/>

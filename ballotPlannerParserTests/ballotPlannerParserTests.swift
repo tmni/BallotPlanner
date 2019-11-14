@@ -15,7 +15,8 @@ class ballotPlannerParserTests: XCTestCase {
     let parser1 = ElectionDatesParser()
     let parser2 = AchievementParser()
     let parser3 = MyElectionsParser()
-    let parser4 = UserInfoParser()
+    let parser4 = MyBallotsParser(ElectionDate(election_id: "election_id", date: "date", description: "description", name: "name", voting_locations: [["lat": 0.0, "long": 1.1]]))
+    let parser5 = CandidatesIndexParser(ElectionDate(election_id: "election_id", date: "date", description: "description", name: "name", voting_locations: [["lat": 0.0, "long": 1.1]]))
   
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -70,6 +71,30 @@ class ballotPlannerParserTests: XCTestCase {
     XCTAssertEqual(myElection1.name, "name")
     XCTAssertEqual(myElection1.voting_locations[0]["lat"], 0.0)
     XCTAssertEqual(myElection1.voting_locations[0]["long"], 1.1)
+  }
+  
+  func testMyBallotParser() {
+    let myBallot = parser4.createBallotPerson("first_name", "last_name", "party_affiliation", nil, "contact_twitter", "summary", "people_id")
+    
+    XCTAssertEqual(myBallot.first_name, "first_name")
+    XCTAssertEqual(myBallot.last_name, "last_name")
+    XCTAssertEqual(myBallot.party_affiliation, "party_affiliation")
+    XCTAssertEqual(myBallot.image, nil)
+    XCTAssertEqual(myBallot.contact_twitter, "contact_twitter")
+    XCTAssertEqual(myBallot.summary, "summary")
+    XCTAssertEqual(myBallot.people_id, "people_id")
+  }
+  
+  func testCandidatesIndexParser() {
+    let myCandidatePerson = parser5.createCandidatePerson("first_name", "last_name", "party_affiliation", nil, "contact_twitter", "summary", "people_id")
+    
+    XCTAssertEqual(myCandidatePerson.first_name, "first_name")
+    XCTAssertEqual(myCandidatePerson.last_name, "last_name")
+    XCTAssertEqual(myCandidatePerson.party_affiliation, "party_affiliation")
+    XCTAssertEqual(myCandidatePerson.image, nil)
+    XCTAssertEqual(myCandidatePerson.contact_twitter, "contact_twitter")
+    XCTAssertEqual(myCandidatePerson.summary, "summary")
+    XCTAssertEqual(myCandidatePerson.people_id, "people_id")
   }
   
     func testExample() {

@@ -9,6 +9,8 @@
 import Foundation
 import Firebase
 
+// Creates a new "ballots" table entry
+
 class AddToMyBallotHelper {
   var person: Person
   

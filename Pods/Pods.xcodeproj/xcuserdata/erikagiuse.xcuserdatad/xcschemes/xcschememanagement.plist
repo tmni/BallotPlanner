@@ -169,7 +169,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-ballotPlannerModelTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-ballotPlannerParserTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-ballotPlannerViewModelTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

@@ -19,3 +19,21 @@ target 'ballotPlannerParserTests' do
     pod 'Firebase/Storage'
     pod 'Firebase/Firestore'
 end
+
+target 'ballotPlannerModelTests' do
+
+    pod 'Firebase' 
+    pod 'Firebase/Auth'
+    pod 'Firebase/Database'
+    pod 'Firebase/Storage'
+    pod 'Firebase/Firestore'
+end
+
+target 'ballotPlannerViewModelTests' do
+
+    pod 'Firebase' 
+    pod 'Firebase/Auth'
+    pod 'Firebase/Database'
+    pod 'Firebase/Storage'
+    pod 'Firebase/Firestore'
+end

@@ -32,9 +32,39 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3FEAA477237CDA950097AB6F"
+               BlueprintIdentifier = "3FEAA494237CDB550097AB6F"
                BuildableName = "ballotPlannerParserTests.xctest"
                BlueprintName = "ballotPlannerParserTests"
+               ReferencedContainer = "container:ballotPlanner.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "3F6E3403237D107300E7A74E"
+               BuildableName = "ballotPlannerModelsTests.xctest"
+               BlueprintName = "ballotPlannerModelsTests"
+               ReferencedContainer = "container:ballotPlanner.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "3F6E3411237D109700E7A74E"
+               BuildableName = "ballotPlannerModelTests.xctest"
+               BlueprintName = "ballotPlannerModelTests"
+               ReferencedContainer = "container:ballotPlanner.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "3F6E341F237D114900E7A74E"
+               BuildableName = "ballotPlannerViewModelTests.xctest"
+               BlueprintName = "ballotPlannerViewModelTests"
                ReferencedContainer = "container:ballotPlanner.xcodeproj">
             </BuildableReference>
          </TestableReference>

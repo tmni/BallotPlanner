@@ -1180,6 +1180,7 @@
 		2AB50060407D170AC4F1028305DD8ABB /* ec.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 0D8F2B7A8B5A35CD60FA095180700D16 /* ec.h */; };
 		2AB8428AEBFD972B15CA5A9CAC3F4B29 /* FTupleObjectNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D61BEA20FC19B0D57EC992EFDEEB29DC /* FTupleObjectNode.m */; };
 		2AC569FEE0A94CD493DFEC9FF0C709C0 /* FIRStorageUploadTask.m in Sources */ = {isa = PBXBuildFile; fileRef = AFAEBF8B579E99254A149ADFD91925D9 /* FIRStorageUploadTask.m */; };
+		2ACF581F1C4E02B97640A172A88CC028 /* Pods-ballotPlannerModelTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F2D974477A3F59A5F09A9DB18BD841D /* Pods-ballotPlannerModelTests-dummy.m */; };
 		2AD6CA5AF2B8EC92CEDBA1A6404D6A93 /* handshake.cc in Sources */ = {isa = PBXBuildFile; fileRef = 2B6DB45F38D3AB7B2E89A4E0CB1610C0 /* handshake.cc */; settings = {COMPILER_FLAGS = "-DOPENSSL_NO_ASM -GCC_WARN_INHIBIT_ALL_WARNINGS -w -fno-objc-arc"; }; };
 		2ADB1C61637E8D41D99C7E8AA30842F1 /* algorithm_metadata.h in Headers */ = {isa = PBXBuildFile; fileRef = A17A862DC541DDE85C0387B2A8FB21A4 /* algorithm_metadata.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		2AE4BC699942C6CA6DBEED8FC428180E /* tcp_posix.h in Headers */ = {isa = PBXBuildFile; fileRef = 970881D2CA7DC4A6885DF925AEB9DF6F /* tcp_posix.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -2140,7 +2141,7 @@
 		508E2F91BBA0342E11EDB100D2150369 /* grpc_security_constants.h in Headers */ = {isa = PBXBuildFile; fileRef = 074E6A8829E51E58751C51E15AB8CBC1 /* grpc_security_constants.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		508FA6FA6188F1041CD97CAF217A1D38 /* lb_policy_factory.h in Headers */ = {isa = PBXBuildFile; fileRef = 456F97F3DD177BFBF01DCEFBD7CAEE70 /* lb_policy_factory.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		508FB8249416B8A77144B20CD4351D39 /* hard_assert.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1F304839E16B58D0C10264500F660ED2 /* hard_assert.cc */; settings = {COMPILER_FLAGS = "$(inherited) -Wreorder -Werror=reorder -fno-objc-arc"; }; };
-		509674BFA9EAB4861F4D6546C8096A81 /* Pods-ballotPlanner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0E5A7A437ECF01D6E74A3360283B86 /* Pods-ballotPlanner-dummy.m */; };
+		509674BFA9EAB4861F4D6546C8096A81 /* Pods-ballotPlanner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E8A45193B3D71A306C8D7C5FF7F51A /* Pods-ballotPlanner-dummy.m */; };
 		50ACCD3EBB299E413284B8A972D00CFE /* frame_rst_stream.h in Copy src/core/ext/transport/chttp2/transport Public Headers */ = {isa = PBXBuildFile; fileRef = F89A5E25A866DF4F9BCD42B794ABF248 /* frame_rst_stream.h */; };
 		50B909B2148F460E7DB6A3FE8F62F2D7 /* proxy_mapper_registry.h in Headers */ = {isa = PBXBuildFile; fileRef = 4430F8C7F0E3CA1B5BF21D69424CF838 /* proxy_mapper_registry.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		50BD328C398121C53B822BCF06886650 /* local_subchannel_pool.cc in Sources */ = {isa = PBXBuildFile; fileRef = BF25A7C0EC258BE0DEE7193CF292BDF4 /* local_subchannel_pool.cc */; settings = {COMPILER_FLAGS = "-DGRPC_ARES=0 -DPB_FIELD_32BIT -DGRPC_SHADOW_BORINGSSL_SYMBOLS -fno-objc-arc"; }; };
@@ -2181,7 +2182,7 @@
 		51ECCEF9855B04ECD91625753BB78E54 /* init.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D6544549451AF5A0770A23C2B6C6F8D /* init.h */; };
 		51F833A26B74051014A670DB645773C4 /* FIRVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = 25F05F3244D75559C6B9A23DF0628AD5 /* FIRVersion.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		520483D2F273761DE352118B1D7BE32B /* slice.h in Headers */ = {isa = PBXBuildFile; fileRef = 296DFC9C8858E29CE57CE8A797BC4FCD /* slice.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		520D391369C4ADE651270E761581968A /* Pods-ballotPlanner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A3769500445AC8CBDE225C7335DBE96B /* Pods-ballotPlanner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		520D391369C4ADE651270E761581968A /* Pods-ballotPlanner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DD0D35C17AC40B1B5634533AF7D1E0F /* Pods-ballotPlanner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		521742A8D90010F7DCEA143D795F6C0F /* thread_manager.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1793D16C98B7AFEFC5A73AC8217E1328 /* thread_manager.cc */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		521D662291A58A883799FCD81DD5A8E0 /* GoogleUtilities-framework-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B3BEDE6818C91712BA0940A9A676A0A /* GoogleUtilities-framework-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		521EB4296C1359D34AA377EA82D749FA /* reader.cc in Sources */ = {isa = PBXBuildFile; fileRef = F08B221223BE9B34304DA41D315E86D6 /* reader.cc */; settings = {COMPILER_FLAGS = "$(inherited) -Wreorder -Werror=reorder -fno-objc-arc"; }; };
@@ -2705,7 +2706,7 @@
 		69D4682FDAFA4D4ED22EBBF6459D5C74 /* x_spki.c in Sources */ = {isa = PBXBuildFile; fileRef = 599E1F0144F99DE5B1A88EB4706F929E /* x_spki.c */; settings = {COMPILER_FLAGS = "-DOPENSSL_NO_ASM -GCC_WARN_INHIBIT_ALL_WARNINGS -w -fno-objc-arc"; }; };
 		69D9C929123CF4A2CE66C4F3600B2B3D /* client_interceptor.h in Headers */ = {isa = PBXBuildFile; fileRef = C0ED98A969B25667B776718EB6A167F8 /* client_interceptor.h */; };
 		69E1643D1A2B4F1B6F38D66565872C94 /* error.h in Headers */ = {isa = PBXBuildFile; fileRef = 30D09C098D42AFA12DD410F24124311E /* error.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		69E44F81B5FA788418A95FE511028CA5 /* Pods-ballotPlannerParserTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C7C4C2AF26F302539F25E664A604CF1 /* Pods-ballotPlannerParserTests-dummy.m */; };
+		69E44F81B5FA788418A95FE511028CA5 /* Pods-ballotPlannerParserTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 017DC6E5589A3C9BB925743349566110 /* Pods-ballotPlannerParserTests-dummy.m */; };
 		69E6496DED5603E2D97E1C0A00C75C09 /* FPendingPut.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AE6B46A4F077B285A6A6EE1EC517204 /* FPendingPut.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		69E9221E89AA0B2EC06FDC09E04E871C /* grpclb_client_stats.h in Copy src/core/ext/filters/client_channel/lb_policy/grpclb Private Headers */ = {isa = PBXBuildFile; fileRef = 105684A244C152FC1ED155A2CDB773D8 /* grpclb_client_stats.h */; };
 		69E9AC7A177272B6C10D8916EC6EF9C1 /* handshaker_registry.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FF2C600095EDDBEFDF6B01C2807ECB8 /* handshaker_registry.h */; };
@@ -3810,6 +3811,7 @@
 		9642A2EF5813F883A112E31100CA892B /* arena.h in Copy src/core/lib/gpr Private Headers */ = {isa = PBXBuildFile; fileRef = 71F12B374E5E07DC8F6E8F0E700DC8DB /* arena.h */; };
 		9643CF5EE245342DB6B4BA763D2C7BA2 /* crc32c.h in Headers */ = {isa = PBXBuildFile; fileRef = 256101F2E9E927FCF25328BDBF67A85D /* crc32c.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		965445A99D19824E9353E74B2CE30735 /* dtls1.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 1D95054EA4570814D8FD34E5E1816BAC /* dtls1.h */; };
+		965571828EB80F69E1A4944ABBBB0D40 /* Pods-ballotPlannerViewModelTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 175BB2210548543E55DB40CF92B2C302 /* Pods-ballotPlannerViewModelTests-dummy.m */; };
 		965769FEEAD78079BB65DF2D0CAC8D69 /* v3_utl.c in Sources */ = {isa = PBXBuildFile; fileRef = 1D7D9C3130E929A70243296700D8A391 /* v3_utl.c */; settings = {COMPILER_FLAGS = "-DOPENSSL_NO_ASM -GCC_WARN_INHIBIT_ALL_WARNINGS -w -fno-objc-arc"; }; };
 		96687164298D2000CD835190F059DC4C /* raw_logging.cc in Sources */ = {isa = PBXBuildFile; fileRef = 694649BDF10D1DE301716812BF59E572 /* raw_logging.cc */; settings = {COMPILER_FLAGS = "$(inherited) -Wreorder -Werror=reorder $(inherited) -Wno-comma -Wno-range-loop-analysis -Wno-shorten-64-to-32 -fno-objc-arc"; }; };
 		966E1B7A6C33740F81861769E1D158BB /* ssl_aead_ctx.cc in Sources */ = {isa = PBXBuildFile; fileRef = F77D9BFFFCAB17A1FDE5A72A1BAAF672 /* ssl_aead_ctx.cc */; settings = {COMPILER_FLAGS = "-DOPENSSL_NO_ASM -GCC_WARN_INHIBIT_ALL_WARNINGS -w -fno-objc-arc"; }; };
@@ -6402,6 +6404,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		01445B706A6D5BF2E6E4F5BCCE604193 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A792BDFC73ADDF2F20A1436285664CB8;
+			remoteInfo = "Protobuf-library";
+		};
 		0169B4DCD4F6E5E008B18C8A903835D4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -6437,6 +6446,13 @@
 			remoteGlobalIDString = A792BDFC73ADDF2F20A1436285664CB8;
 			remoteInfo = "Protobuf-library";
 		};
+		0542492DDF47ED6009AE8932A761E837 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8BE4AE81F0991825300EFEF89E2F8615;
+			remoteInfo = "Firebase.default-Auth-CoreOnly-Database-Firestore-Storage";
+		};
 		0BA373C2C5B882A64F7221BF8018840F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -6444,12 +6460,26 @@
 			remoteGlobalIDString = 6C1906198354E44BC58137F814AD7CAA;
 			remoteInfo = "FirebaseInstanceID-framework";
 		};
+		0D2B581958E2B264384F62D4CA3A25A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9E7A4527EBB9BA5439AFF2476157BCA1;
+			remoteInfo = "FirebaseInstanceID-library";
+		};
 		0D698D9D77F539C60573135CAA5C81D6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 06A6C967BF13F3D8A63EFC3896D07243;
 			remoteInfo = "GoogleUtilities-framework";
+		};
+		0D9405409B4958CBDD0246E744BB7DBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6AE4A3D573DED275B034E20506596C62;
+			remoteInfo = FirebaseAuth;
 		};
 		0FB27CE3D87C575F81DCB31F414225E4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -6493,12 +6523,26 @@
 			remoteGlobalIDString = 495337E4586F5D7486F656DCB6CDE295;
 			remoteInfo = "GTMSessionFetcher-library";
 		};
+		1B0A3755B29A52A4146B7EB667821550 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8620A7E7A13DD1B1C49818E57787452C;
+			remoteInfo = "GoogleDataTransportCCTSupport-library";
+		};
 		1D04B21D758EA0C3B6D8C56F9914EC44 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 96DC0FA7DA971E5152F24F934B07B747;
 			remoteInfo = "FirebaseAnalytics-library";
+		};
+		1DF885580F7E21ED807A315508D45A3D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D2D98ED7278422B9AC91255D784C3EA;
+			remoteInfo = "GoogleUtilities-library";
 		};
 		1E695FD39825EC7E4ACB8C12AD4440E2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -6514,12 +6558,47 @@
 			remoteGlobalIDString = 6AB110F0910D4623160F17DC7F9F41CE;
 			remoteInfo = "gRPC-Core-library";
 		};
+		22CE3BEFC1FA1AAB529AA4A3C833784D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE5DA074265A039FB5C70EB131A2B4FD;
+			remoteInfo = "leveldb-library-library";
+		};
+		22ECDDC064DF0E1008C18086CBF1DB97 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D2D98ED7278422B9AC91255D784C3EA;
+			remoteInfo = "GoogleUtilities-library";
+		};
 		24F4BCB20037193F602A9BFB3C59248C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 008D28317A79D3064D6C9A835A1C93BC;
 			remoteInfo = "nanopb-framework";
+		};
+		26ABFE2F1857B2C466008FDC290B4CED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 008AEF3FA14175B99EC90F3688B1564D;
+			remoteInfo = "FirebaseCoreDiagnostics-library";
+		};
+		280328A149D820EC7EE5F85FD1A74BA6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33FB887CE5CFF86247F875E350657682;
+			remoteInfo = "BoringSSL-GRPC-library";
+		};
+		29B7DF798DC579042306A7D242C47362 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 91410BCBA5046FDB89736CF24992BA24;
+			remoteInfo = "nanopb-library";
 		};
 		2BE0FEB4423710BFE36FA708A983DE9F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -6549,12 +6628,26 @@
 			remoteGlobalIDString = 525013EF7C5BF9D0DBFE988307FD9224;
 			remoteInfo = "FirebaseCore-library";
 		};
+		35D11C1AA2C5245335BB84709148A078 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A1A6A362D535EF8E96BEE7D2F0CD36F;
+			remoteInfo = "FirebaseFirestore-library";
+		};
 		37F1795D3A6728BF3D12A82BD151D88C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = F23CB519B3A35B92D60AC830ADEC5698;
 			remoteInfo = "GoogleDataTransportCCTSupport-framework";
+		};
+		399789CE09A7A867DE4AA0A7807C033A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96DC0FA7DA971E5152F24F934B07B747;
+			remoteInfo = "FirebaseAnalytics-library";
 		};
 		3A0BEC9C8DC09B977AA4E47CDCE5D98E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -6591,6 +6684,13 @@
 			remoteGlobalIDString = 2A1A6A362D535EF8E96BEE7D2F0CD36F;
 			remoteInfo = "FirebaseFirestore-library";
 		};
+		3CE7920BF2711B53AD36AD60993E8386 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6AE4A3D573DED275B034E20506596C62;
+			remoteInfo = FirebaseAuth;
+		};
 		3DA747856E1F4CA9F47057E67DBE1C5D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -6619,12 +6719,40 @@
 			remoteGlobalIDString = 3D2D98ED7278422B9AC91255D784C3EA;
 			remoteInfo = "GoogleUtilities-library";
 		};
+		4AE606E755ED4FD8A1E6B477E34F644A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 525013EF7C5BF9D0DBFE988307FD9224;
+			remoteInfo = "FirebaseCore-library";
+		};
 		4F56B379E57A03215E62518DE0095AE3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 008D28317A79D3064D6C9A835A1C93BC;
 			remoteInfo = "nanopb-framework";
+		};
+		4FC789B4FF561061E10B978575122A1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7210A56E8A77AC7232961BE7F0EBB87;
+			remoteInfo = "GoogleDataTransport-library";
+		};
+		50951191AE5CC65CEB9D626958D82E0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C7E83F93BE3CB526012C48ADEB23879;
+			remoteInfo = "GoogleAppMeasurement-library";
+		};
+		50AB8ED8183F706403FCC8DB4409A87C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0CC78BDC32EDB04D1B5F1E814AF01DCD;
+			remoteInfo = "FirebaseCoreDiagnosticsInterop-library";
 		};
 		517ED1857D05AFC1AA5F77BA520F1C0A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -6682,6 +6810,20 @@
 			remoteGlobalIDString = A792BDFC73ADDF2F20A1436285664CB8;
 			remoteInfo = "Protobuf-library";
 		};
+		5BBB01CA2DDE268F71269C9AB2C7856B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9E7A4527EBB9BA5439AFF2476157BCA1;
+			remoteInfo = "FirebaseInstanceID-library";
+		};
+		5C41A446AEFD53FEF0F471A9B2BCDAD7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84C64BA38AEB890BCDE0B2CA97EC33AA;
+			remoteInfo = "FirebaseStorage-library";
+		};
 		5C8E6273169C58265B4A3AA27A4CFD43 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -6696,12 +6838,26 @@
 			remoteGlobalIDString = 3D2D98ED7278422B9AC91255D784C3EA;
 			remoteInfo = "GoogleUtilities-library";
 		};
+		61DE708B0AA3D730455AC5C44707CD6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7210A56E8A77AC7232961BE7F0EBB87;
+			remoteInfo = "GoogleDataTransport-library";
+		};
 		64E54D480731B9B0222EE6881AEF9AE7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 5C895369120F450AADC9A777714415BA;
 			remoteInfo = "FirebaseCoreDiagnostics-framework";
+		};
+		67A74871A09463968DB8B9296E1D3801 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE5DA074265A039FB5C70EB131A2B4FD;
+			remoteInfo = "leveldb-library-library";
 		};
 		695831C43A74488971AEC031BD3DC5AE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -6752,6 +6908,13 @@
 			remoteGlobalIDString = FE5DA074265A039FB5C70EB131A2B4FD;
 			remoteInfo = "leveldb-library-library";
 		};
+		73FB76329CBF75BDE248FF44FB508A4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84C64BA38AEB890BCDE0B2CA97EC33AA;
+			remoteInfo = "FirebaseStorage-library";
+		};
 		74E24081B024FAF5A3930A0E741D8FE2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -6760,6 +6923,13 @@
 			remoteInfo = "GoogleUtilities-library";
 		};
 		77016CBFD4C95E524AFFF8643A13BF24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6AB110F0910D4623160F17DC7F9F41CE;
+			remoteInfo = "gRPC-Core-library";
+		};
+		77EEA399F6D9DD8C0ED18B5A6B0293F3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -6808,6 +6978,20 @@
 			remoteGlobalIDString = A701D65EF295364805D592B4C7BE36CD;
 			remoteInfo = "FirebaseAnalytics-framework";
 		};
+		84AF305164D50797EDF0B46C35FCBF8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 525013EF7C5BF9D0DBFE988307FD9224;
+			remoteInfo = "FirebaseCore-library";
+		};
+		85535A3F9AC5D737BF9EE23BC6566818 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28BEAEB856B0DA2F356B18B494BA3E16;
+			remoteInfo = "gRPC-C++-library";
+		};
 		875405A59CF56B3E1E366E1C1FA58611 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -6835,6 +7019,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 91410BCBA5046FDB89736CF24992BA24;
 			remoteInfo = "nanopb-library";
+		};
+		8A0CCC12E11ED09F37A649F4B42C5214 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 510A66A4FCCEE440C1CE2B400BAC21E1;
+			remoteInfo = "FirebaseAuthInterop-library";
 		};
 		8A78092F5A9310F6FDB2DB30BA149A25 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -6871,12 +7062,26 @@
 			remoteGlobalIDString = 84C64BA38AEB890BCDE0B2CA97EC33AA;
 			remoteInfo = "FirebaseStorage-library";
 		};
+		94D29387E4AFBFB60A46B74C26D4B7A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 495337E4586F5D7486F656DCB6CDE295;
+			remoteInfo = "GTMSessionFetcher-library";
+		};
 		96C7742CC4690B566B1D3E83064795E2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = E9573F9E97CFC015E2D2B5B76F9407AC;
 			remoteInfo = "BoringSSL-GRPC-framework";
+		};
+		96E072B1A4C9B75E9D953058ABA1C2E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28BEAEB856B0DA2F356B18B494BA3E16;
+			remoteInfo = "gRPC-C++-library";
 		};
 		972C08AA155DCDB031CB0BDBFDE1CE89 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -6905,6 +7110,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 06A6C967BF13F3D8A63EFC3896D07243;
 			remoteInfo = "GoogleUtilities-framework";
+		};
+		99450D5DFC4C74FBE8B399189E7322D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 736AF68F6527ACF6B4A4C54728824A1C;
+			remoteInfo = FirebaseDatabase;
 		};
 		99555DCC7EA00ED39DA210CDEC6B045D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -6955,6 +7167,20 @@
 			remoteGlobalIDString = 510A66A4FCCEE440C1CE2B400BAC21E1;
 			remoteInfo = "FirebaseAuthInterop-library";
 		};
+		A51D6FA7F0F141D58D53105926452550 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 008AEF3FA14175B99EC90F3688B1564D;
+			remoteInfo = "FirebaseCoreDiagnostics-library";
+		};
+		A6C0E3D4B04F20BE5F7B79FD0BA34963 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96DC0FA7DA971E5152F24F934B07B747;
+			remoteInfo = "FirebaseAnalytics-library";
+		};
 		A6DDF5BE075BC2C5EBD313C4AE105781 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -6983,6 +7209,13 @@
 			remoteGlobalIDString = 6890A8A3971EA3CCE887BE65B0C041B3;
 			remoteInfo = "GoogleAppMeasurement-framework";
 		};
+		B0B398FFFB96FF7004ED40A3AFCE7B67 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 91410BCBA5046FDB89736CF24992BA24;
+			remoteInfo = "nanopb-library";
+		};
 		B1B0E49A2312E46339C362457E77E815 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -6996,6 +7229,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 91410BCBA5046FDB89736CF24992BA24;
 			remoteInfo = "nanopb-library";
+		};
+		B3E665338CAEAD4CA6BCB18A759AA74B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8620A7E7A13DD1B1C49818E57787452C;
+			remoteInfo = "GoogleDataTransportCCTSupport-library";
 		};
 		B494F2E0E36B0834CCCC31FF8C2E0E21 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -7018,6 +7258,13 @@
 			remoteGlobalIDString = 9E7A4527EBB9BA5439AFF2476157BCA1;
 			remoteInfo = "FirebaseInstanceID-library";
 		};
+		B71934152BB3FBD1B8B945800FDEF92B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 510A66A4FCCEE440C1CE2B400BAC21E1;
+			remoteInfo = "FirebaseAuthInterop-library";
+		};
 		B75919C7C7DC707A5BB47EE79DE4E79D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -7039,6 +7286,13 @@
 			remoteGlobalIDString = 91410BCBA5046FDB89736CF24992BA24;
 			remoteInfo = "nanopb-library";
 		};
+		C36C29A3AB2705A644732A661A48343E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A792BDFC73ADDF2F20A1436285664CB8;
+			remoteInfo = "Protobuf-library";
+		};
 		C4805508849FB62B86D9221132F48D42 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -7052,6 +7306,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 3D2D98ED7278422B9AC91255D784C3EA;
 			remoteInfo = "GoogleUtilities-library";
+		};
+		C709FF9844BCD998E04A0FC3EBFD7938 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0CC78BDC32EDB04D1B5F1E814AF01DCD;
+			remoteInfo = "FirebaseCoreDiagnosticsInterop-library";
 		};
 		C78F263B72D367759C1F726095A0D2A0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -7073,6 +7334,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 91410BCBA5046FDB89736CF24992BA24;
 			remoteInfo = "nanopb-library";
+		};
+		CA7B153EB9373141E0CF0FE240ADBDF0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6AB110F0910D4623160F17DC7F9F41CE;
+			remoteInfo = "gRPC-Core-library";
 		};
 		CD7D5B686F6CACC6AC319AB62B208983 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -7151,6 +7419,13 @@
 			remoteGlobalIDString = 6C1906198354E44BC58137F814AD7CAA;
 			remoteInfo = "FirebaseInstanceID-framework";
 		};
+		E2B5FD8EA07B780A882F48B357251890 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8BE4AE81F0991825300EFEF89E2F8615;
+			remoteInfo = "Firebase.default-Auth-CoreOnly-Database-Firestore-Storage";
+		};
 		E3532F5A91C464389FFF1EAA01AD9522 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -7193,6 +7468,13 @@
 			remoteGlobalIDString = C17DE9EB398CD1E35A21D59F11C12F47;
 			remoteInfo = "gRPC-Core-framework";
 		};
+		EA5150B8AA51C495B712F97040777B31 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 736AF68F6527ACF6B4A4C54728824A1C;
+			remoteInfo = FirebaseDatabase;
+		};
 		EB5328803105D8E719C6F39F76E2062F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -7207,12 +7489,26 @@
 			remoteGlobalIDString = 525013EF7C5BF9D0DBFE988307FD9224;
 			remoteInfo = "FirebaseCore-library";
 		};
+		EBDEDD4A63167E99149E1FE18AFF9E3F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C7E83F93BE3CB526012C48ADEB23879;
+			remoteInfo = "GoogleAppMeasurement-library";
+		};
 		EE6FCCBBB6256422302F4A7ADBDB96BE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 3D2D98ED7278422B9AC91255D784C3EA;
 			remoteInfo = "GoogleUtilities-library";
+		};
+		F171556EB2A46906E4D52EB15028D1C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A1A6A362D535EF8E96BEE7D2F0CD36F;
+			remoteInfo = "FirebaseFirestore-library";
 		};
 		F287DEA23341F75FB36E9FD54213A0A6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -7234,6 +7530,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 495337E4586F5D7486F656DCB6CDE295;
 			remoteInfo = "GTMSessionFetcher-library";
+		};
+		F8AC4A03B26B0200C83D8053B7EA506B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33FB887CE5CFF86247F875E350657682;
+			remoteInfo = "BoringSSL-GRPC-library";
 		};
 		FBE05F834F29B4CA59A20D72D0A8AA96 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -7262,6 +7565,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = E9573F9E97CFC015E2D2B5B76F9407AC;
 			remoteInfo = "BoringSSL-GRPC-framework";
+		};
+		FF11A038BAAF664A1D07749B104A5C49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 495337E4586F5D7486F656DCB6CDE295;
+			remoteInfo = "GTMSessionFetcher-library";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -10068,6 +10378,7 @@
 		0156AC5BB9C3BC85359B6C9702B61BA2 /* socket_utils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = socket_utils.h; path = src/core/lib/iomgr/socket_utils.h; sourceTree = "<group>"; };
 		017193CF03FFE9B6B1E7B2091E373E93 /* FirebaseFirestore-library-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FirebaseFirestore-library-dummy.m"; path = "../FirebaseFirestore-library/FirebaseFirestore-library-dummy.m"; sourceTree = "<group>"; };
 		0178BABA5B626B3390CC904071AD0EA1 /* nanopb-framework-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "nanopb-framework-prefix.pch"; sourceTree = "<group>"; };
+		017DC6E5589A3C9BB925743349566110 /* Pods-ballotPlannerParserTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ballotPlannerParserTests-dummy.m"; sourceTree = "<group>"; };
 		0189283E36B59CF570AD32C00353C12B /* alts_tsi_utils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = alts_tsi_utils.h; path = src/core/tsi/alts/handshaker/alts_tsi_utils.h; sourceTree = "<group>"; };
 		01AA417BA6BE2EAF38227D7D3F556F74 /* health.pb.c */ = {isa = PBXFileReference; includeInIndex = 1; name = health.pb.c; path = src/core/ext/filters/client_channel/health/health.pb.c; sourceTree = "<group>"; };
 		01BBD2E02B1C8F60450E6D635020BE09 /* SourceContext.pbobjc.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SourceContext.pbobjc.m; path = objectivec/google/protobuf/SourceContext.pbobjc.m; sourceTree = "<group>"; };
@@ -10227,10 +10538,10 @@
 		0C4D3FB9E2731FDD59A497E805822ED2 /* ec_key.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ec_key.c; path = crypto/fipsmodule/ec/ec_key.c; sourceTree = "<group>"; };
 		0C50170C62A5F6D864818262E0F6046D /* FViewProcessor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FViewProcessor.m; path = Firebase/Database/FViewProcessor.m; sourceTree = "<group>"; };
 		0C58A9694AEDB408B9E2B53D4EFD5308 /* FValueEventRegistration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FValueEventRegistration.m; path = Firebase/Database/Core/View/FValueEventRegistration.m; sourceTree = "<group>"; };
-		0C7C4C2AF26F302539F25E664A604CF1 /* Pods-ballotPlannerParserTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ballotPlannerParserTests-dummy.m"; sourceTree = "<group>"; };
 		0C85F2D02B5C6190CAE411092CE6ECC1 /* FEventRegistration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FEventRegistration.h; path = Firebase/Database/Core/View/FEventRegistration.h; sourceTree = "<group>"; };
 		0CC83A10E21ABE5C1890671A02F2A96F /* FImmutableTree.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FImmutableTree.h; path = Firebase/Database/Core/Utilities/FImmutableTree.h; sourceTree = "<group>"; };
 		0CE95EBC3545CD5F34A1CFD4A05F5B74 /* sync.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = sync.cc; path = src/core/lib/gpr/sync.cc; sourceTree = "<group>"; };
+		0CEC529F21893708963B1BC37E7F8A53 /* Pods-ballotPlanner-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ballotPlanner-Info.plist"; sourceTree = "<group>"; };
 		0CFE56BE535BFB6276AE8C7915ECB665 /* service_config.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = service_config.cc; path = src/core/ext/filters/client_channel/service_config.cc; sourceTree = "<group>"; };
 		0D0AED6142B6289D1C35662AD8F27904 /* executor_std.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = executor_std.cc; path = Firestore/core/src/firebase/firestore/util/executor_std.cc; sourceTree = "<group>"; };
 		0D0B79A1B6F4F94110E98A28DDAF8927 /* httpcli.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = httpcli.h; path = src/core/lib/http/httpcli.h; sourceTree = "<group>"; };
@@ -10272,12 +10583,14 @@
 		1016B0942F708B968BF43934D2DE6D56 /* hmac.c */ = {isa = PBXFileReference; includeInIndex = 1; name = hmac.c; path = crypto/fipsmodule/hmac/hmac.c; sourceTree = "<group>"; };
 		101F41B99843229111F95D2917AAA43E /* time_support.c */ = {isa = PBXFileReference; includeInIndex = 1; name = time_support.c; path = crypto/asn1/time_support.c; sourceTree = "<group>"; };
 		10362BE3D1EFB0251755A3605CE16D4B /* nanopb-library.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "nanopb-library.xcconfig"; path = "../nanopb-library/nanopb-library.xcconfig"; sourceTree = "<group>"; };
+		103FC0E2AD66101DCBABB9A5B787BDEA /* Pods-ballotPlannerViewModelTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ballotPlannerViewModelTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		104EC6F91C7870FBC1D4EE06C312FF79 /* gRPC-C++-library.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "gRPC-C++-library.xcconfig"; path = "../gRPC-C++-library/gRPC-C++-library.xcconfig"; sourceTree = "<group>"; };
 		105684A244C152FC1ED155A2CDB773D8 /* grpclb_client_stats.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = grpclb_client_stats.h; path = src/core/ext/filters/client_channel/lb_policy/grpclb/grpclb_client_stats.h; sourceTree = "<group>"; };
 		105E0C8D8C8764A2C715A03BADB3633D /* transform_operation.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = transform_operation.cc; path = Firestore/core/src/firebase/firestore/model/transform_operation.cc; sourceTree = "<group>"; };
 		105E9CA19A942EC895923C2B235FBBD7 /* asn1_compat.c */ = {isa = PBXFileReference; includeInIndex = 1; name = asn1_compat.c; path = crypto/bytestring/asn1_compat.c; sourceTree = "<group>"; };
 		105FBA7103EE938E1804B64486F3320B /* FIRStorageDownloadTask_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRStorageDownloadTask_Private.h; path = Firebase/Storage/Private/FIRStorageDownloadTask_Private.h; sourceTree = "<group>"; };
 		10631AEAD46D81EEEEF18378367055DF /* pollset.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = pollset.cc; path = src/core/lib/iomgr/pollset.cc; sourceTree = "<group>"; };
+		106D1C33F694C466CBCAC44DF79EF001 /* Pods-ballotPlanner-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ballotPlanner-acknowledgements.markdown"; sourceTree = "<group>"; };
 		109FBF2730A7525A4A9D9530AC6E4933 /* lockfree_event.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = lockfree_event.h; path = src/core/lib/iomgr/lockfree_event.h; sourceTree = "<group>"; };
 		10D95C29EABCFC960E249E4BCF6D27B8 /* pollset_set_custom.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = pollset_set_custom.cc; path = src/core/lib/iomgr/pollset_set_custom.cc; sourceTree = "<group>"; };
 		10EA1866A4CBB41476A3B7D528BDF7FF /* FIRFacebookAuthProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRFacebookAuthProvider.m; path = Firebase/Auth/Source/AuthProvider/Facebook/FIRFacebookAuthProvider.m; sourceTree = "<group>"; };
@@ -10290,6 +10603,7 @@
 		117C1C91274AD0AB390AC8B3D4B1FFD8 /* nanopb_util.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = nanopb_util.cc; path = Firestore/core/src/firebase/firestore/nanopb/nanopb_util.cc; sourceTree = "<group>"; };
 		117D8849CB61BD02A2663DBFD9755B00 /* json_string.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = json_string.cc; path = src/core/lib/json/json_string.cc; sourceTree = "<group>"; };
 		118602D1CB0BFE35FEF7232C9B8842C9 /* tls13_enc.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = tls13_enc.cc; path = ssl/tls13_enc.cc; sourceTree = "<group>"; };
+		1190E6C9F4EA5B14739BE9BCECB85D3D /* Pods-ballotPlanner-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ballotPlanner-frameworks.sh"; sourceTree = "<group>"; };
 		11A16FB7D55E889B0617E18789434D2B /* match.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = match.cc; path = "Firestore/third_party/abseil-cpp/absl/strings/match.cc"; sourceTree = "<group>"; };
 		11B6431FE106597C3B7F59A9F3D32744 /* FIRDependency.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRDependency.h; path = Firebase/Core/Private/FIRDependency.h; sourceTree = "<group>"; };
 		11C866FAC0115ADC025AD0710E4D0DC3 /* FTransformedEnumerator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FTransformedEnumerator.m; path = Firebase/Database/FTransformedEnumerator.m; sourceTree = "<group>"; };
@@ -10344,7 +10658,6 @@
 		1589AA2C906F7509FA202D36FA9B4EC0 /* FIRInstanceIDAuthKeyChain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRInstanceIDAuthKeyChain.m; path = Firebase/InstanceID/FIRInstanceIDAuthKeyChain.m; sourceTree = "<group>"; };
 		158D5400C9BC11C621B3670AF2008EBD /* alts_grpc_integrity_only_record_protocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = alts_grpc_integrity_only_record_protocol.h; path = src/core/tsi/alts/zero_copy_frame_protector/alts_grpc_integrity_only_record_protocol.h; sourceTree = "<group>"; };
 		15B2A69C9E510D7F7A8E570CB957DB6C /* alts_frame_protector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = alts_frame_protector.h; path = src/core/tsi/alts/frame_protector/alts_frame_protector.h; sourceTree = "<group>"; };
-		15CC7965A795B0FEC2EB59353621F063 /* Pods-ballotPlanner-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ballotPlanner-frameworks.sh"; sourceTree = "<group>"; };
 		15E74F0A194A8337217A8DAAA322049E /* FWebSocketConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FWebSocketConnection.h; path = Firebase/Database/Realtime/FWebSocketConnection.h; sourceTree = "<group>"; };
 		15EE32C5C9FB74CCC65F2308799890EB /* server_credentials.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = server_credentials.h; path = include/grpcpp/security/server_credentials.h; sourceTree = "<group>"; };
 		15FD64FD734DBF49FD459D3ED5DFB8A0 /* channel_trace.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = channel_trace.cc; path = src/core/lib/channel/channel_trace.cc; sourceTree = "<group>"; };
@@ -10361,6 +10674,7 @@
 		163CC471E79D7992A4A5498A64C1D0F4 /* max_age_filter.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = max_age_filter.cc; path = src/core/ext/filters/max_age/max_age_filter.cc; sourceTree = "<group>"; };
 		1646457958D480A533615CE1B0E893B2 /* FParsedUrl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FParsedUrl.m; path = Firebase/Database/Utilities/FParsedUrl.m; sourceTree = "<group>"; };
 		165C4EEC53B0A73C0F28075670B4CF01 /* alts_handshaker_client.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = alts_handshaker_client.cc; path = src/core/tsi/alts/handshaker/alts_handshaker_client.cc; sourceTree = "<group>"; };
+		169FBC68ED382A96B6092C878D0D7AE0 /* Pods-ballotPlanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ballotPlanner.release.xcconfig"; sourceTree = "<group>"; };
 		16A6F90E6CB54BF90D2CF1D96609AEF0 /* FIRVerifyAssertionResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRVerifyAssertionResponse.h; path = Firebase/Auth/Source/Backend/RPC/FIRVerifyAssertionResponse.h; sourceTree = "<group>"; };
 		16C484F7FEEE4057CD8FE42678F4A49B /* alts_handshaker_service_api_util.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = alts_handshaker_service_api_util.h; path = src/core/tsi/alts/handshaker/alts_handshaker_service_api_util.h; sourceTree = "<group>"; };
 		16C8D8989A6B9AF109164DF0B53D8B48 /* error_utils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = error_utils.h; path = src/core/lib/transport/error_utils.h; sourceTree = "<group>"; };
@@ -10373,7 +10687,7 @@
 		174BCCB1F449B100021D4C2E07472BE1 /* debug_location.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = debug_location.h; path = src/core/lib/gprpp/debug_location.h; sourceTree = "<group>"; };
 		174BD5A38A94C522037BF0B32AFA8DD9 /* maybe_document.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = maybe_document.cc; path = Firestore/core/src/firebase/firestore/model/maybe_document.cc; sourceTree = "<group>"; };
 		174D6E820459B7DF0BC35773BD83A025 /* FIRUserInfoImpl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRUserInfoImpl.m; path = Firebase/Auth/Source/User/FIRUserInfoImpl.m; sourceTree = "<group>"; };
-		1761AA5EAACF78DFD6E5B334790B9068 /* Pods-ballotPlanner-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ballotPlanner-acknowledgements.markdown"; sourceTree = "<group>"; };
+		175BB2210548543E55DB40CF92B2C302 /* Pods-ballotPlannerViewModelTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ballotPlannerViewModelTests-dummy.m"; sourceTree = "<group>"; };
 		1767033150DEE8392C434436A256534E /* stats_data.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = stats_data.cc; path = src/core/lib/debug/stats_data.cc; sourceTree = "<group>"; };
 		176916867B4A151C73E9B99632E6EC7B /* FIRInstanceIDTokenStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRInstanceIDTokenStore.m; path = Firebase/InstanceID/FIRInstanceIDTokenStore.m; sourceTree = "<group>"; };
 		1771F45BBA76BC061CE5B00C8EA0FCBC /* trace.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = trace.cc; path = src/core/lib/debug/trace.cc; sourceTree = "<group>"; };
@@ -10452,7 +10766,6 @@
 		1D9760BAF07557BE31BD840C0354FAC1 /* port_platform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = port_platform.h; path = include/grpc/support/port_platform.h; sourceTree = "<group>"; };
 		1DA57E670F20D2FB7A52B661C986A5AE /* http2_errors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = http2_errors.h; path = src/core/lib/transport/http2_errors.h; sourceTree = "<group>"; };
 		1DAE9F8590552D40BA9C2266746E6E7F /* ssl3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ssl3.h; path = include/openssl/ssl3.h; sourceTree = "<group>"; };
-		1DD2D8E14D101DC43050C9451CD11A57 /* Pods-ballotPlannerParserTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ballotPlannerParserTests.release.xcconfig"; sourceTree = "<group>"; };
 		1DF1DEEE4376ADF134834D5FA1692399 /* x_info.c */ = {isa = PBXFileReference; includeInIndex = 1; name = x_info.c; path = crypto/x509/x_info.c; sourceTree = "<group>"; };
 		1DF3B2E5D0BA40AB55AC3C85E9B198CF /* alloc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = alloc.h; path = src/core/lib/gpr/alloc.h; sourceTree = "<group>"; };
 		1DFD6766CF4605074EF70467EB8A8186 /* cmp.c */ = {isa = PBXFileReference; includeInIndex = 1; name = cmp.c; path = crypto/fipsmodule/bn/cmp.c; sourceTree = "<group>"; };
@@ -10555,7 +10868,6 @@
 		254EBC8FB1CA80AE52B2696FB3CB025E /* pem_info.c */ = {isa = PBXFileReference; includeInIndex = 1; name = pem_info.c; path = crypto/pem/pem_info.c; sourceTree = "<group>"; };
 		256101F2E9E927FCF25328BDBF67A85D /* crc32c.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crc32c.h; path = util/crc32c.h; sourceTree = "<group>"; };
 		2581B1E7828C87D403DECF68E66BE1BD /* fake_transport_security.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = fake_transport_security.h; path = src/core/tsi/fake_transport_security.h; sourceTree = "<group>"; };
-		2587B677B45C6B17676B97652053980A /* Pods-ballotPlannerParserTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ballotPlannerParserTests.debug.xcconfig"; sourceTree = "<group>"; };
 		258D40E4AD4FED5E415034A50C152DAB /* FIRVersion.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRVersion.m; path = Firebase/Core/FIRVersion.m; sourceTree = "<group>"; };
 		25B3396611CAE52EA2B57F06ECCF4474 /* resource_quota.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = resource_quota.cc; path = src/core/lib/iomgr/resource_quota.cc; sourceTree = "<group>"; };
 		25C48BEC7647C48B2AF697EBA524156E /* digests.c */ = {isa = PBXFileReference; includeInIndex = 1; name = digests.c; path = crypto/fipsmodule/digest/digests.c; sourceTree = "<group>"; };
@@ -10584,6 +10896,7 @@
 		27AA2B0A7EF724AA686541701F7FA5DA /* arena.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = arena.cc; path = src/core/lib/gprpp/arena.cc; sourceTree = "<group>"; };
 		27D4CF709303B02050434F232E5D2B9E /* server_posix_impl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = server_posix_impl.h; path = include/grpcpp/server_posix_impl.h; sourceTree = "<group>"; };
 		27FA39071BB88AC8739989E87A54FA6D /* FTupleStringNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FTupleStringNode.m; path = Firebase/Database/Utilities/Tuples/FTupleStringNode.m; sourceTree = "<group>"; };
+		28035C87CDDC0A298A82D2AEA3DB0D97 /* Pods-ballotPlannerParserTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ballotPlannerParserTests-resources.sh"; sourceTree = "<group>"; };
 		28293825422749AFEF0C35271A7137EF /* GoogleAppMeasurement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleAppMeasurement.framework; path = Frameworks/GoogleAppMeasurement.framework; sourceTree = "<group>"; };
 		28522480C05083AE85E3F0F26BCEA367 /* tcp_server_posix.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = tcp_server_posix.cc; path = src/core/lib/iomgr/tcp_server_posix.cc; sourceTree = "<group>"; };
 		2856003B38833C633367BF5D638A9163 /* server.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = server.h; path = src/core/lib/surface/server.h; sourceTree = "<group>"; };
@@ -10643,6 +10956,7 @@
 		2DA4EC508A9AA111A082ED139C1626BD /* merger.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = merger.cc; path = table/merger.cc; sourceTree = "<group>"; };
 		2DA63F61D750666F6715FD4158632DCF /* hpack_encoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = hpack_encoder.h; path = src/core/ext/transport/chttp2/transport/hpack_encoder.h; sourceTree = "<group>"; };
 		2DAAFDDCA6543B180940882DF710D1DA /* block_builder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = block_builder.h; path = table/block_builder.h; sourceTree = "<group>"; };
+		2DD0D35C17AC40B1B5634533AF7D1E0F /* Pods-ballotPlanner-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ballotPlanner-umbrella.h"; sourceTree = "<group>"; };
 		2DEBB7C514AA050B593D6ADC1F427542 /* FIRConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRConfiguration.h; path = Firebase/Core/Public/FIRConfiguration.h; sourceTree = "<group>"; };
 		2E051BDAC0709FD3492D491ED94F1A7E /* view.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = view.cc; path = Firestore/core/src/firebase/firestore/core/view.cc; sourceTree = "<group>"; };
 		2E1056EA208CB324A02425526F57F00A /* status.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = status.h; path = include/grpcpp/impl/codegen/status.h; sourceTree = "<group>"; };
@@ -10687,6 +11001,7 @@
 		30D0C3E2CDC65A18FF66ECA681832C06 /* pollset.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pollset.h; path = src/core/lib/iomgr/pollset.h; sourceTree = "<group>"; };
 		30D174BBBF6EF0A6BC72722ED7B7250A /* stream_compression_gzip.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = stream_compression_gzip.cc; path = src/core/lib/compression/stream_compression_gzip.cc; sourceTree = "<group>"; };
 		30D38506C3CA1C268C9BEE52ADD20259 /* GPBRootObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPBRootObject.h; path = objectivec/GPBRootObject.h; sourceTree = "<group>"; };
+		30E8A45193B3D71A306C8D7C5FF7F51A /* Pods-ballotPlanner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ballotPlanner-dummy.m"; sourceTree = "<group>"; };
 		30ECA450C11015E85FCB3DACABB51FDC /* FCompleteChildSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FCompleteChildSource.h; path = Firebase/Database/Core/View/Filter/FCompleteChildSource.h; sourceTree = "<group>"; };
 		311A764891090A006B95A05D14943D9B /* FSnapshotHolder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSnapshotHolder.m; path = Firebase/Database/Core/FSnapshotHolder.m; sourceTree = "<group>"; };
 		312CDA0C0AE8EA5A9D620CD4B523934E /* GDTCORTargets.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTCORTargets.h; path = GoogleDataTransport/GDTCORLibrary/Public/GDTCORTargets.h; sourceTree = "<group>"; };
@@ -10707,7 +11022,7 @@
 		3243AE9CF2198A96C40C5E977EF0772E /* ecdh.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ecdh.c; path = crypto/ecdh/ecdh.c; sourceTree = "<group>"; };
 		324747384F46531C81399DBDF667C9B8 /* mutation.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = mutation.cc; path = Firestore/core/src/firebase/firestore/model/mutation.cc; sourceTree = "<group>"; };
 		327409A24D9C40A6200CF884E3E4C76A /* ssl_utils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ssl_utils.h; path = src/core/lib/security/security_connector/ssl_utils.h; sourceTree = "<group>"; };
-		328C821D3EA3C40054622D63CFE3C5C9 /* Pods-ballotPlanner-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ballotPlanner-acknowledgements.plist"; sourceTree = "<group>"; };
+		328AB70DB7990C4C8019E99382C6FFE8 /* Pods-ballotPlannerParserTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ballotPlannerParserTests.debug.xcconfig"; sourceTree = "<group>"; };
 		32AD18889783B55C45D82F7E604B6C4E /* ssl_privkey.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = ssl_privkey.cc; path = ssl/ssl_privkey.cc; sourceTree = "<group>"; };
 		32B6B365FA607FCC4538C04B0141738E /* error.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = error.h; path = src/core/lib/iomgr/error.h; sourceTree = "<group>"; };
 		32BAF9C0214385DD98C36F97EBE45819 /* port_platform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = port_platform.h; path = include/grpc/impl/codegen/port_platform.h; sourceTree = "<group>"; };
@@ -10722,6 +11037,7 @@
 		342F4F695003FF68ECBC6A2EC6CBED83 /* GPBUnknownField_PackagePrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPBUnknownField_PackagePrivate.h; path = objectivec/GPBUnknownField_PackagePrivate.h; sourceTree = "<group>"; };
 		345D509C3DE4935AF9BCF1AD9944D05A /* thd_windows.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = thd_windows.cc; path = src/core/lib/gprpp/thd_windows.cc; sourceTree = "<group>"; };
 		34781E1DC3662E5A00796417475259BF /* client_authority_filter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = client_authority_filter.h; path = src/core/ext/filters/http/client_authority_filter.h; sourceTree = "<group>"; };
+		34C026D40C82838D6D6C2EBCF1A8E761 /* Pods-ballotPlannerParserTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ballotPlannerParserTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		34D5A48F387CF848140AA7241C770F3B /* FIRCreateAuthURIRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRCreateAuthURIRequest.m; path = Firebase/Auth/Source/Backend/RPC/FIRCreateAuthURIRequest.m; sourceTree = "<group>"; };
 		34DB8299C15CB7B6CA9D7BBACB2317E3 /* grpc_ares_wrapper_libuv.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = grpc_ares_wrapper_libuv.cc; path = src/core/ext/filters/client_channel/resolver/dns/c_ares/grpc_ares_wrapper_libuv.cc; sourceTree = "<group>"; };
 		34DDA3A8A3F0CCBDAB40ED492C4FED19 /* health_check_service.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = health_check_service.cc; path = src/cpp/server/health/health_check_service.cc; sourceTree = "<group>"; };
@@ -10791,6 +11107,7 @@
 		3AA3CC80F9D180A40485304E9BCD4685 /* FirebaseCore-framework-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FirebaseCore-framework-dummy.m"; sourceTree = "<group>"; };
 		3ABF45FF62DDAA83EAA70EB9DE9EC62C /* FIRVerifyPhoneNumberRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRVerifyPhoneNumberRequest.h; path = Firebase/Auth/Source/Backend/RPC/FIRVerifyPhoneNumberRequest.h; sourceTree = "<group>"; };
 		3AC2411200E0B680EF7C105E615D2752 /* ev_posix.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = ev_posix.cc; path = src/core/lib/iomgr/ev_posix.cc; sourceTree = "<group>"; };
+		3AEB6EA7D4CB815ACD7E39D064DA52BC /* Pods-ballotPlannerViewModelTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ballotPlannerViewModelTests-resources.sh"; sourceTree = "<group>"; };
 		3AF144C2A85D67A096F1719AC61C5B2A /* pollset_set.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pollset_set.h; path = src/core/lib/iomgr/pollset_set.h; sourceTree = "<group>"; };
 		3B162502C749C913AA13D38F9F3C052E /* v3_bitst.c */ = {isa = PBXFileReference; includeInIndex = 1; name = v3_bitst.c; path = crypto/x509v3/v3_bitst.c; sourceTree = "<group>"; };
 		3B16E90F53CE5DC4127528EC8847981F /* FIRAuthWebView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRAuthWebView.h; path = Firebase/Auth/Source/Utilities/FIRAuthWebView.h; sourceTree = "<group>"; };
@@ -10827,6 +11144,7 @@
 		3EFB1D6048023B8CE69DAC3A7D9CA35D /* status.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = status.h; path = include/grpcpp/support/status.h; sourceTree = "<group>"; };
 		3F1E5E905E3F94D880B757AE42E3B26D /* ev_poll_posix.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = ev_poll_posix.cc; path = src/core/lib/iomgr/ev_poll_posix.cc; sourceTree = "<group>"; };
 		3F20647B8865FED9787A2E6B05B024E4 /* GDTFLLUploader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GDTFLLUploader.m; path = GoogleDataTransportCCTSupport/GDTCCTLibrary/GDTFLLUploader.m; sourceTree = "<group>"; };
+		3F2D974477A3F59A5F09A9DB18BD841D /* Pods-ballotPlannerModelTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ballotPlannerModelTests-dummy.m"; sourceTree = "<group>"; };
 		3F4856B644A798078852AC89F4E3E717 /* pollset_windows.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = pollset_windows.cc; path = src/core/lib/iomgr/pollset_windows.cc; sourceTree = "<group>"; };
 		3F599D940AC55ED418EDCE65D207C018 /* FIRResetPasswordResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRResetPasswordResponse.m; path = Firebase/Auth/Source/Backend/RPC/FIRResetPasswordResponse.m; sourceTree = "<group>"; };
 		3F62E4AF6947F038AEC097C579DED684 /* FIRStorageListTask.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRStorageListTask.m; path = Firebase/Storage/FIRStorageListTask.m; sourceTree = "<group>"; };
@@ -10844,6 +11162,7 @@
 		405A07D28239C5334C57A714792771BC /* server_interceptor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = server_interceptor.h; path = include/grpcpp/impl/codegen/server_interceptor.h; sourceTree = "<group>"; };
 		406B431A49BA758903F7DDECFF463741 /* FTupleSetIdPath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FTupleSetIdPath.h; path = Firebase/Database/Utilities/Tuples/FTupleSetIdPath.h; sourceTree = "<group>"; };
 		406E3BB8DBBF9FC7987D21B849514D8D /* FIRListenerRegistration.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = FIRListenerRegistration.mm; path = Firestore/Source/API/FIRListenerRegistration.mm; sourceTree = "<group>"; };
+		407C7A58866EB0F88268FAF2ACB17F74 /* Pods-ballotPlannerModelTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ballotPlannerModelTests.release.xcconfig"; sourceTree = "<group>"; };
 		40B42EDC2F5154B4F08440912E4654BD /* atm_gcc_sync.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = atm_gcc_sync.h; path = include/grpc/impl/codegen/atm_gcc_sync.h; sourceTree = "<group>"; };
 		40C1DCCD629A82C3E7C1B7FF34BC15CC /* ssl_credentials.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = ssl_credentials.cc; path = src/core/lib/security/credentials/ssl/ssl_credentials.cc; sourceTree = "<group>"; };
 		40CD6CE3A14C08008FFD9A4CBC65A520 /* FConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FConstants.m; path = Firebase/Database/Constants/FConstants.m; sourceTree = "<group>"; };
@@ -10870,11 +11189,9 @@
 		4275252F01245055437A1C4B6E23422F /* json_writer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = json_writer.h; path = src/core/lib/json/json_writer.h; sourceTree = "<group>"; };
 		4276E3AE6546FC0F5AB51F3811D7A7B2 /* FTupleUserCallback.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FTupleUserCallback.m; path = Firebase/Database/Utilities/Tuples/FTupleUserCallback.m; sourceTree = "<group>"; };
 		42CFD193786764A207FD467EE825F5E7 /* json_reader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = json_reader.h; path = src/core/lib/json/json_reader.h; sourceTree = "<group>"; };
-		42F0CE16C636D2BAC988140795A417FD /* Pods-ballotPlannerParserTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ballotPlannerParserTests-resources.sh"; sourceTree = "<group>"; };
 		43060A00A7A3553D18781EF9376600FD /* client_interceptor.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = client_interceptor.cc; path = src/cpp/client/client_interceptor.cc; sourceTree = "<group>"; };
 		4323A50C5DDCD4054C15C1D6889D8900 /* fork.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = fork.h; path = include/grpc/fork.h; sourceTree = "<group>"; };
 		4331A2FE26943C67AC171770CF8E9AC0 /* FIRVerifyAssertionRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRVerifyAssertionRequest.h; path = Firebase/Auth/Source/Backend/RPC/FIRVerifyAssertionRequest.h; sourceTree = "<group>"; };
-		4355913FC059CC9D6326D1DD49666A60 /* Pods-ballotPlanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ballotPlanner.release.xcconfig"; sourceTree = "<group>"; };
 		4367086E5380854504627FAC57A2AD4B /* FIRInstanceIDStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstanceIDStore.h; path = Firebase/InstanceID/FIRInstanceIDStore.h; sourceTree = "<group>"; };
 		438C7DBCFDF28276B9C6E363B8B12FB9 /* GULReachabilityChecker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULReachabilityChecker.h; path = GoogleUtilities/Reachability/Private/GULReachabilityChecker.h; sourceTree = "<group>"; };
 		4391D0CF4212351C4BE62CAB41F83590 /* grpc_library.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = grpc_library.h; path = include/grpcpp/impl/codegen/grpc_library.h; sourceTree = "<group>"; };
@@ -10916,6 +11233,7 @@
 		474049154C665A3E09C52F7CFA7CDB48 /* a_sign.c */ = {isa = PBXFileReference; includeInIndex = 1; name = a_sign.c; path = crypto/x509/a_sign.c; sourceTree = "<group>"; };
 		47486B3530CDC05BD37E17E5D35FA1FF /* cfstream_handle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cfstream_handle.h; path = src/core/lib/iomgr/cfstream_handle.h; sourceTree = "<group>"; };
 		47586FA2D65A7EFF0B6D53C3021C33A3 /* inlined_vector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = inlined_vector.h; path = src/core/lib/gprpp/inlined_vector.h; sourceTree = "<group>"; };
+		47591B070DB0511A2721A9EC966927C4 /* Pods-ballotPlanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ballotPlanner.debug.xcconfig"; sourceTree = "<group>"; };
 		47B06807D8DF8221AC5747E2CF3D738A /* gethostname.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = gethostname.h; path = src/core/lib/iomgr/gethostname.h; sourceTree = "<group>"; };
 		47C68F9146D7EDF1C3093F307087D9D1 /* x_pubkey.c */ = {isa = PBXFileReference; includeInIndex = 1; name = x_pubkey.c; path = crypto/x509/x_pubkey.c; sourceTree = "<group>"; };
 		47EA5A5868038648035DBE14B3EDAEE8 /* string_windows.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = string_windows.h; path = src/core/lib/gpr/string_windows.h; sourceTree = "<group>"; };
@@ -11038,7 +11356,6 @@
 		537DF665013C502EA54E42AF89FAB0DF /* gRPC-C++-framework-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "gRPC-C++-framework-prefix.pch"; sourceTree = "<group>"; };
 		53CCF010775E428D33A5D87B9175FD9E /* call_op_set.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = call_op_set.h; path = include/grpcpp/impl/codegen/call_op_set.h; sourceTree = "<group>"; };
 		53F30061D224A9824863183937BEFAF2 /* FIRInstanceIDCheckinStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRInstanceIDCheckinStore.m; path = Firebase/InstanceID/FIRInstanceIDCheckinStore.m; sourceTree = "<group>"; };
-		53F65CB501A5409B0B33EF8581D89301 /* Pods-ballotPlannerParserTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ballotPlannerParserTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		540A276A3DD79B23483037B4D80AD0DC /* escaping.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = escaping.cc; path = "Firestore/third_party/abseil-cpp/absl/strings/escaping.cc"; sourceTree = "<group>"; };
 		543A29BA978CD2E4889ECEEE555A40BE /* deadline_filter.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = deadline_filter.cc; path = src/core/ext/filters/deadline/deadline_filter.cc; sourceTree = "<group>"; };
 		547E60CC45286B325676D6E94BCA60D1 /* json_writer.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = json_writer.cc; path = src/core/lib/json/json_writer.cc; sourceTree = "<group>"; };
@@ -11259,11 +11576,13 @@
 		6800D76EB8952D97DA0AA536A7F8D055 /* atm_gcc_sync.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = atm_gcc_sync.h; path = include/grpc/support/atm_gcc_sync.h; sourceTree = "<group>"; };
 		6804660452331AFB8066131CEDBEA46E /* byte_buffer_cc.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = byte_buffer_cc.cc; path = src/cpp/util/byte_buffer_cc.cc; sourceTree = "<group>"; };
 		6846FE6D18D8B8BECB6569E3DF920D8C /* alts_frame_protector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = alts_frame_protector.h; path = src/core/tsi/alts/frame_protector/alts_frame_protector.h; sourceTree = "<group>"; };
+		685AA022B8C6147669F36E92791EF79F /* Pods-ballotPlanner.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ballotPlanner.modulemap"; sourceTree = "<group>"; };
 		6862316454CF47E82E33D2E544CD4416 /* tls_msvc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = tls_msvc.h; path = src/core/lib/gpr/tls_msvc.h; sourceTree = "<group>"; };
 		686C2070982CF622642293D36268FD67 /* precondition.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = precondition.cc; path = Firestore/core/src/firebase/firestore/model/precondition.cc; sourceTree = "<group>"; };
 		686EF228906DAA1DAE9CD05AE58D2944 /* GDTCORRegistrar_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTCORRegistrar_Private.h; path = GoogleDataTransport/GDTCORLibrary/Private/GDTCORRegistrar_Private.h; sourceTree = "<group>"; };
 		687982580CB74EAC37013A14C90543D5 /* string_util.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = string_util.h; path = include/grpc/support/string_util.h; sourceTree = "<group>"; };
 		6879AC6350D5F6DD3BE903BE23C9E19E /* iomgr.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = iomgr.cc; path = src/core/lib/iomgr/iomgr.cc; sourceTree = "<group>"; };
+		687C61B63A277CB178EC89A7A4040B36 /* Pods-ballotPlanner-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ballotPlanner-acknowledgements.plist"; sourceTree = "<group>"; };
 		688BF83D7FEDE5DCA1ACB2D6D352707A /* FUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FUtilities.h; path = Firebase/Database/Utilities/FUtilities.h; sourceTree = "<group>"; };
 		68907F846F80CCF20B506233C2486A6A /* dns_resolver_ares.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = dns_resolver_ares.cc; path = src/core/ext/filters/client_channel/resolver/dns/c_ares/dns_resolver_ares.cc; sourceTree = "<group>"; };
 		68A4F7681DAF61BF73B7F0B19609D4CA /* subchannel_pool_interface.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = subchannel_pool_interface.cc; path = src/core/ext/filters/client_channel/subchannel_pool_interface.cc; sourceTree = "<group>"; };
@@ -11345,6 +11664,7 @@
 		6DB6E1E44F1DFC06FF697F1112754833 /* connectivity_monitor_apple.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = connectivity_monitor_apple.mm; path = Firestore/core/src/firebase/firestore/remote/connectivity_monitor_apple.mm; sourceTree = "<group>"; };
 		6DBB441F6C21E30BB3C179A36C608ADA /* socket_windows.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = socket_windows.h; path = src/core/lib/iomgr/socket_windows.h; sourceTree = "<group>"; };
 		6DDB16426A6B8BC71A4CC91C114C5366 /* alts_iovec_record_protocol.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = alts_iovec_record_protocol.cc; path = src/core/tsi/alts/zero_copy_frame_protector/alts_iovec_record_protocol.cc; sourceTree = "<group>"; };
+		6DE5DC3C64BC8BAB9F6DDA779CF77753 /* Pods-ballotPlannerModelTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ballotPlannerModelTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6DF062725FDD5E9BDE1201C0D5FFB6A1 /* tcp_client_posix.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = tcp_client_posix.cc; path = src/core/lib/iomgr/tcp_client_posix.cc; sourceTree = "<group>"; };
 		6E1DA7E13D05BF9C0D162B452824705E /* Document.pbobjc.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Document.pbobjc.m; path = Firestore/Protos/objc/google/firestore/v1/Document.pbobjc.m; sourceTree = "<group>"; };
 		6E38CD8F37FD09F8BCE8144B70519E76 /* a_octet.c */ = {isa = PBXFileReference; includeInIndex = 1; name = a_octet.c; path = crypto/asn1/a_octet.c; sourceTree = "<group>"; };
@@ -11603,7 +11923,6 @@
 		845155CEE121EB82132F06A3282DC7AF /* watch_stream.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = watch_stream.mm; path = Firestore/core/src/firebase/firestore/remote/watch_stream.mm; sourceTree = "<group>"; };
 		84768E1F8F08DC90DA21EFB03D085361 /* alloc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = alloc.h; path = include/grpc/support/alloc.h; sourceTree = "<group>"; };
 		84AB77C02A2E7222C5C5DFCF4B3696F2 /* ssl_buffer.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = ssl_buffer.cc; path = ssl/ssl_buffer.cc; sourceTree = "<group>"; };
-		84BA8A9980F3792D96326B679A06593A /* Pods-ballotPlanner-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ballotPlanner-Info.plist"; sourceTree = "<group>"; };
 		84CC86651DF36DBB704AF0D65070D0BC /* grpc_alts_credentials_server_options.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = grpc_alts_credentials_server_options.cc; path = src/core/lib/security/credentials/alts/grpc_alts_credentials_server_options.cc; sourceTree = "<group>"; };
 		84E582B7CB3E5BB7436D265B6135F0FD /* subchannel_pool_interface.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = subchannel_pool_interface.h; path = src/core/ext/filters/client_channel/subchannel_pool_interface.h; sourceTree = "<group>"; };
 		85281A77905EC0C0C80C763E05AFA079 /* grpc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = grpc.h; path = include/grpc/grpc.h; sourceTree = "<group>"; };
@@ -11655,6 +11974,7 @@
 		887CCA0A497FCFBAC6AD064A667263CC /* x509spki.c */ = {isa = PBXFileReference; includeInIndex = 1; name = x509spki.c; path = crypto/x509/x509spki.c; sourceTree = "<group>"; };
 		887F3DB1F6E3314E00697AE295E91EE6 /* HTTP.pbobjc.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HTTP.pbobjc.m; path = Firestore/Protos/objc/google/api/HTTP.pbobjc.m; sourceTree = "<group>"; };
 		888E9498489FCCA6D40C20849E4166CC /* resolving_lb_policy.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = resolving_lb_policy.cc; path = src/core/ext/filters/client_channel/resolving_lb_policy.cc; sourceTree = "<group>"; };
+		88979897414929D49898F213AC5203B8 /* Pods-ballotPlannerViewModelTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ballotPlannerViewModelTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		8898C605C9F6BEFA533D7D909F07C012 /* montgomery.c */ = {isa = PBXFileReference; includeInIndex = 1; name = montgomery.c; path = crypto/fipsmodule/bn/montgomery.c; sourceTree = "<group>"; };
 		88B210885DB9F52D9816B75328556907 /* FIRCreateAuthURIResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRCreateAuthURIResponse.h; path = Firebase/Auth/Source/Backend/RPC/FIRCreateAuthURIResponse.h; sourceTree = "<group>"; };
 		88B2D35F141BC45C19DA100F3FD3C8B2 /* stap_timers.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = stap_timers.cc; path = src/core/lib/profiling/stap_timers.cc; sourceTree = "<group>"; };
@@ -11682,6 +12002,7 @@
 		8A930E4E54E819AF6F05B072C3BBAD32 /* GoogleDataTransport-framework-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleDataTransport-framework-umbrella.h"; sourceTree = "<group>"; };
 		8AD275BEF7EA73586ADB8E0E6E018AB5 /* target_authority_table.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = target_authority_table.h; path = src/core/lib/security/transport/target_authority_table.h; sourceTree = "<group>"; };
 		8ADE240DA5546F4AFE579055385AA89F /* a_strnid.c */ = {isa = PBXFileReference; includeInIndex = 1; name = a_strnid.c; path = crypto/asn1/a_strnid.c; sourceTree = "<group>"; };
+		8AE6332BF8C27B1D7A83ACB52F0AEBCF /* Pods-ballotPlannerViewModelTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ballotPlannerViewModelTests.release.xcconfig"; sourceTree = "<group>"; };
 		8AF226979A376F81DDFCA789D2F59D00 /* FIRPhoneAuthProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRPhoneAuthProvider.h; path = Firebase/Auth/Source/Public/FIRPhoneAuthProvider.h; sourceTree = "<group>"; };
 		8AFA773608CB76E3A6380661182F0D53 /* grpc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = grpc.h; path = include/grpc/grpc.h; sourceTree = "<group>"; };
 		8B10710E1EDDFAB6B0E0B8C1BF9254C6 /* channelz.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = channelz.h; path = src/core/lib/channel/channelz.h; sourceTree = "<group>"; };
@@ -11693,6 +12014,7 @@
 		8B9E5C8FCD022FF19DE775F6EBC87C1B /* FirebaseAnalytics-framework.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "FirebaseAnalytics-framework.xcconfig"; sourceTree = "<group>"; };
 		8C4A41BABDC93C50552ED222413A3D22 /* strerror.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = strerror.cc; path = Firestore/core/src/firebase/firestore/util/strerror.cc; sourceTree = "<group>"; };
 		8C6E1A1B8F09294C1FC2ACBF48EA8D8F /* iterator.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = iterator.cc; path = table/iterator.cc; sourceTree = "<group>"; };
+		8CB496ECEE3753F194C10EBB1A31F337 /* Pods-ballotPlannerModelTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ballotPlannerModelTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		8CBFE4A3F646039B6F5C85974A0F3431 /* FTupleStringNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FTupleStringNode.h; path = Firebase/Database/Utilities/Tuples/FTupleStringNode.h; sourceTree = "<group>"; };
 		8CF0D408C8917C60E0CE3E25D71E9D33 /* ssl_session_openssl.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = ssl_session_openssl.cc; path = src/core/tsi/ssl/session_cache/ssl_session_openssl.cc; sourceTree = "<group>"; };
 		8D01E08EA09A9D6C2443C4CB88E1B2D8 /* client_channel_channelz.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = client_channel_channelz.cc; path = src/core/ext/filters/client_channel/client_channel_channelz.cc; sourceTree = "<group>"; };
@@ -11796,7 +12118,6 @@
 		94744D7786ABC70B5FDD9BB15A744333 /* Type.pbobjc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Type.pbobjc.h; path = objectivec/google/protobuf/Type.pbobjc.h; sourceTree = "<group>"; };
 		947EB38DE22BD369EC409212CB10748D /* ssl_types.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ssl_types.h; path = src/core/tsi/ssl_types.h; sourceTree = "<group>"; };
 		9485A472E0CA911AA9405C3D1821CEBB /* FIRDatabaseReference.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRDatabaseReference.m; path = Firebase/Database/FIRDatabaseReference.m; sourceTree = "<group>"; };
-		9488AB0AAE26C96C10204ED3F104DA21 /* Pods-ballotPlanner.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ballotPlanner.modulemap"; sourceTree = "<group>"; };
 		948E00D5D679F085D0AD68F75143F3C1 /* internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = internal.h; path = crypto/err/internal.h; sourceTree = "<group>"; };
 		94AB3C3D98C62802E71CAD4575BC77E1 /* chttp2_transport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = chttp2_transport.h; path = src/core/ext/transport/chttp2/transport/chttp2_transport.h; sourceTree = "<group>"; };
 		94B6349F44873DC209F7FBE9A8FF1725 /* x509_req.c */ = {isa = PBXFileReference; includeInIndex = 1; name = x509_req.c; path = crypto/x509/x509_req.c; sourceTree = "<group>"; };
@@ -11852,6 +12173,7 @@
 		990B20C0030117D1B77BD23004C9822F /* callback_common.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = callback_common.h; path = include/grpcpp/impl/codegen/callback_common.h; sourceTree = "<group>"; };
 		992121F3F826E178DD433467A795CB22 /* FTupleTSN.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FTupleTSN.m; path = Firebase/Database/Utilities/Tuples/FTupleTSN.m; sourceTree = "<group>"; };
 		99217485B62040FA2E3EC16F8938C8E2 /* ssl_session_boringssl.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = ssl_session_boringssl.cc; path = src/core/tsi/ssl/session_cache/ssl_session_boringssl.cc; sourceTree = "<group>"; };
+		9964B373A762B12D95EAD8FCC01BE839 /* Pods-ballotPlannerViewModelTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ballotPlannerViewModelTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9969F30EC580567B6A087B2D5041288B /* GPBDictionary_PackagePrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPBDictionary_PackagePrivate.h; path = objectivec/GPBDictionary_PackagePrivate.h; sourceTree = "<group>"; };
 		9981430EF2EACD14CD9E7FE4E0A76353 /* stream_compression.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = stream_compression.cc; path = src/core/lib/compression/stream_compression.cc; sourceTree = "<group>"; };
 		9999B07C66A89EC3B3E2E4104D33E250 /* security_handshaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = security_handshaker.h; path = src/core/lib/security/transport/security_handshaker.h; sourceTree = "<group>"; };
@@ -11917,7 +12239,6 @@
 		9DA7B53202BE67C5C25872D723112465 /* status.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = status.h; path = include/grpc/impl/codegen/status.h; sourceTree = "<group>"; };
 		9DAC82635B16A95225080486029C552C /* server_secure_chttp2.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = server_secure_chttp2.cc; path = src/core/ext/transport/chttp2/server/secure/server_secure_chttp2.cc; sourceTree = "<group>"; };
 		9DCC022DA3AAFFD27FD2211C3913D86F /* timer_heap.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = timer_heap.cc; path = src/core/lib/iomgr/timer_heap.cc; sourceTree = "<group>"; };
-		9DCD79A573B00C9A1567D028BB124018 /* Pods-ballotPlannerParserTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ballotPlannerParserTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		9DEF7F2DCC0DA3B2FB4FA36478D63F99 /* d1_lib.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = d1_lib.cc; path = ssl/d1_lib.cc; sourceTree = "<group>"; };
 		9DEFC3DB54F73BA038A42399906E3852 /* sha256.c */ = {isa = PBXFileReference; includeInIndex = 1; name = sha256.c; path = crypto/fipsmodule/sha/sha256.c; sourceTree = "<group>"; };
 		9DF9610F182C4F602BC49BE28988DEA2 /* pollset_set_windows.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pollset_set_windows.h; path = src/core/lib/iomgr/pollset_set_windows.h; sourceTree = "<group>"; };
@@ -11984,7 +12305,6 @@
 		A2FDFB02EF9DA4EAC28F79D680EC704D /* memory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = memory.h; path = src/core/lib/gprpp/memory.h; sourceTree = "<group>"; };
 		A313460A6A41A5B89B29915C7C6A26A0 /* call_op_set_interface.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = call_op_set_interface.h; path = include/grpcpp/impl/codegen/call_op_set_interface.h; sourceTree = "<group>"; };
 		A332E28BD232704BA6E12A0CD5051B2B /* slice_string_helpers.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = slice_string_helpers.cc; path = src/core/lib/slice/slice_string_helpers.cc; sourceTree = "<group>"; };
-		A3769500445AC8CBDE225C7335DBE96B /* Pods-ballotPlanner-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ballotPlanner-umbrella.h"; sourceTree = "<group>"; };
 		A3848AD123AA8BC8CE8B55BD8E653895 /* channel_filter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = channel_filter.h; path = src/cpp/common/channel_filter.h; sourceTree = "<group>"; };
 		A3881475E36E563D5C5F2A9E50A8B8E3 /* FIRStorageReference.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRStorageReference.m; path = Firebase/Storage/FIRStorageReference.m; sourceTree = "<group>"; };
 		A388DF41CFB28041B7B87B3285EA6E9C /* coding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = coding.h; path = util/coding.h; sourceTree = "<group>"; };
@@ -12042,6 +12362,7 @@
 		A7D87B12CB56C0715032C04083BE9412 /* string_view.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = string_view.cc; path = "Firestore/third_party/abseil-cpp/absl/strings/string_view.cc"; sourceTree = "<group>"; };
 		A7E530D0FEEAAA15215E2F5E714D3BDD /* context_list.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = context_list.cc; path = src/core/ext/transport/chttp2/transport/context_list.cc; sourceTree = "<group>"; };
 		A82734299CF502A54C293C34EC2475A0 /* alts_zero_copy_grpc_protector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = alts_zero_copy_grpc_protector.h; path = src/core/tsi/alts/zero_copy_frame_protector/alts_zero_copy_grpc_protector.h; sourceTree = "<group>"; };
+		A8337A0615E7C566E59A14209DE5BFFE /* Pods-ballotPlannerParserTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ballotPlannerParserTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		A86C4EFF9A30392725E43974B9FCCA17 /* socket_utils_linux.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = socket_utils_linux.cc; path = src/core/lib/iomgr/socket_utils_linux.cc; sourceTree = "<group>"; };
 		A88A6B4C0991D76F2BFD3DDD55225F64 /* proxy_mapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = proxy_mapper.h; path = src/core/ext/filters/client_channel/proxy_mapper.h; sourceTree = "<group>"; };
 		A89E815B3A01958B7929B63B920B3365 /* service_type.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = service_type.h; path = include/grpcpp/impl/service_type.h; sourceTree = "<group>"; };
@@ -12222,6 +12543,7 @@
 		B735D91D7705FCB0DC38B39B1A665C87 /* FTupleRemovedQueriesEvents.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FTupleRemovedQueriesEvents.h; path = Firebase/Database/Utilities/Tuples/FTupleRemovedQueriesEvents.h; sourceTree = "<group>"; };
 		B752657C277E9217FD3EFE553C691C52 /* FWriteTree.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FWriteTree.h; path = Firebase/Database/Core/FWriteTree.h; sourceTree = "<group>"; };
 		B75A6DE0949D81C276857A24C766E71A /* client_channel_factory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = client_channel_factory.h; path = src/core/ext/filters/client_channel/client_channel_factory.h; sourceTree = "<group>"; };
+		B75CF71B250256D11EB0FEF2F1797F90 /* Pods-ballotPlannerModelTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ballotPlannerModelTests-resources.sh"; sourceTree = "<group>"; };
 		B77096EA8AFD2AC54223CC4A2319EDCD /* tcp_windows.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = tcp_windows.h; path = src/core/lib/iomgr/tcp_windows.h; sourceTree = "<group>"; };
 		B77FEBCB350540619253A00F9D7052EF /* FChildEventRegistration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FChildEventRegistration.m; path = Firebase/Database/Core/View/FChildEventRegistration.m; sourceTree = "<group>"; };
 		B79997B7EBDFB654B5093CE8BEFF2C00 /* err.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = err.h; path = include/openssl/err.h; sourceTree = "<group>"; };
@@ -12615,6 +12937,7 @@
 		D878C23D7FB12D75EFEFF3A69F8A1E13 /* numbers.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = numbers.cc; path = "Firestore/third_party/abseil-cpp/absl/strings/numbers.cc"; sourceTree = "<group>"; };
 		D87D3608C3BFE4D4B0598D95CDF9ACAE /* sync.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sync.h; path = include/grpc/support/sync.h; sourceTree = "<group>"; };
 		D8C3F6FA9E8A78BD03F5D2122F1D2679 /* server_context.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = server_context.h; path = include/grpcpp/server_context.h; sourceTree = "<group>"; };
+		D90D90F4E097B2BB3650D27B9F337D07 /* libPods-ballotPlannerModelTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-ballotPlannerModelTests.a"; path = "libPods-ballotPlannerModelTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D910B2EA0DD8E775BD7528AA1895ADA5 /* log.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = log.h; path = include/grpc/support/log.h; sourceTree = "<group>"; };
 		D928184853C52B18A078D893793FC77D /* tcp_uv.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = tcp_uv.cc; path = src/core/lib/iomgr/tcp_uv.cc; sourceTree = "<group>"; };
 		D941E3D0E19AB477B197EFE8CBB7B83A /* GoogleDataTransportCCTSupport-framework.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "GoogleDataTransportCCTSupport-framework.xcconfig"; sourceTree = "<group>"; };
@@ -12663,6 +12986,7 @@
 		DC3D32B79415FB24D0C2DA873F8CB971 /* FIRVerifyClientResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRVerifyClientResponse.h; path = Firebase/Auth/Source/Backend/RPC/FIRVerifyClientResponse.h; sourceTree = "<group>"; };
 		DC40ADE62A1CB50A6ED931B27F072DB2 /* FIRAuthKeychainServices.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRAuthKeychainServices.m; path = Firebase/Auth/Source/Storage/FIRAuthKeychainServices.m; sourceTree = "<group>"; };
 		DC597B6A7D0A191653DDB735BA99DD63 /* x509.c */ = {isa = PBXFileReference; includeInIndex = 1; name = x509.c; path = crypto/x509/x509.c; sourceTree = "<group>"; };
+		DC7F16AFDB7DC5423A4DF093EA7756BA /* Pods-ballotPlannerModelTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ballotPlannerModelTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		DC827C09C9E603B90FC6FCA6D7D571A6 /* e_rc2.c */ = {isa = PBXFileReference; includeInIndex = 1; name = e_rc2.c; path = crypto/cipher_extra/e_rc2.c; sourceTree = "<group>"; };
 		DC843156FA7F7A5C603D6B54F50D1574 /* FTupleNodePath.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FTupleNodePath.m; path = Firebase/Database/Utilities/Tuples/FTupleNodePath.m; sourceTree = "<group>"; };
 		DCA16917AD2B0037EFDA9043FC4FBFBA /* gRPC-C++-framework.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "gRPC-C++-framework.xcconfig"; sourceTree = "<group>"; };
@@ -12694,7 +13018,6 @@
 		DEFBE22BAC4F18A713EEAE03F97F28E6 /* shift.c */ = {isa = PBXFileReference; includeInIndex = 1; name = shift.c; path = crypto/fipsmodule/bn/shift.c; sourceTree = "<group>"; };
 		DF0591473675BB91705AE5DD8073DA7C /* dh.c */ = {isa = PBXFileReference; includeInIndex = 1; name = dh.c; path = crypto/dh/dh.c; sourceTree = "<group>"; };
 		DF09C3453629CB1D92147595FF1F12E0 /* manual_constructor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = manual_constructor.h; path = src/core/lib/gprpp/manual_constructor.h; sourceTree = "<group>"; };
-		DF0E5A7A437ECF01D6E74A3360283B86 /* Pods-ballotPlanner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ballotPlanner-dummy.m"; sourceTree = "<group>"; };
 		DF45EC2DB5E16920CA87EE96E0A6EFF6 /* client_channel_factory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = client_channel_factory.h; path = src/core/ext/filters/client_channel/client_channel_factory.h; sourceTree = "<group>"; };
 		DF5082817C5FACB84A0F54FEC2A5C737 /* create_default_thread_pool.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = create_default_thread_pool.cc; path = src/cpp/server/create_default_thread_pool.cc; sourceTree = "<group>"; };
 		DF62D3E86664574CBBD5C06E51EE632A /* FIRTimestamp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRTimestamp.h; path = Firestore/Source/Public/FIRTimestamp.h; sourceTree = "<group>"; };
@@ -12758,6 +13081,7 @@
 		E549B6A1E7C971CCF26265ED23FF29C0 /* orphanable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = orphanable.h; path = src/core/lib/gprpp/orphanable.h; sourceTree = "<group>"; };
 		E5543CB811FA9BA8CFDD62CCBCD6947F /* dsa.c */ = {isa = PBXFileReference; includeInIndex = 1; name = dsa.c; path = crypto/dsa/dsa.c; sourceTree = "<group>"; };
 		E554B05489337397A7EA63C0D7F9589B /* transport_security_interface.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = transport_security_interface.h; path = src/core/tsi/transport_security_interface.h; sourceTree = "<group>"; };
+		E559E48E968D896C142B8A7C8E588A3B /* libPods-ballotPlannerViewModelTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-ballotPlannerViewModelTests.a"; path = "libPods-ballotPlannerViewModelTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E563E186077BFB1B119EEFBC35AE27B3 /* substitute.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = substitute.cc; path = "Firestore/third_party/abseil-cpp/absl/strings/substitute.cc"; sourceTree = "<group>"; };
 		E564AEA7741CEE74D3B3AB61E592777D /* GDTCOREvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTCOREvent.h; path = GoogleDataTransport/GDTCORLibrary/Public/GDTCOREvent.h; sourceTree = "<group>"; };
 		E5687CD5BE3C9E2C57D5CB9D667C4047 /* grpc_security.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = grpc_security.h; path = include/grpc/grpc_security.h; sourceTree = "<group>"; };
@@ -12924,6 +13248,7 @@
 		F25DDD65396BD0A5EE0A245A4E39E1C6 /* FIRSignUpNewUserResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRSignUpNewUserResponse.m; path = Firebase/Auth/Source/Backend/RPC/FIRSignUpNewUserResponse.m; sourceTree = "<group>"; };
 		F2B4CEF56FBC3779600DE22779584A61 /* FIRApp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRApp.h; path = Firebase/Core/Public/FIRApp.h; sourceTree = "<group>"; };
 		F2D2154AED13A82F1120412E97BB2025 /* low_level_alloc.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = low_level_alloc.cc; path = "Firestore/third_party/abseil-cpp/absl/base/internal/low_level_alloc.cc"; sourceTree = "<group>"; };
+		F2D3CD1F00F2A24089CB3999F91ACFE1 /* Pods-ballotPlannerParserTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ballotPlannerParserTests.release.xcconfig"; sourceTree = "<group>"; };
 		F336B8DDFBA4A53770217452C748D750 /* sys_epoll_wrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sys_epoll_wrapper.h; path = src/core/lib/iomgr/sys_epoll_wrapper.h; sourceTree = "<group>"; };
 		F344CEF18AB58C7585CF5C6E68CF3640 /* server_builder.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = server_builder.cc; path = src/cpp/server/server_builder.cc; sourceTree = "<group>"; };
 		F34D08871B8834FF04C2838151E990C3 /* windows.c */ = {isa = PBXFileReference; includeInIndex = 1; name = windows.c; path = crypto/rand_extra/windows.c; sourceTree = "<group>"; };
@@ -12991,7 +13316,6 @@
 		F7B7E45B673436FE7B4FEFC95E9FC3AD /* polling_entity.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = polling_entity.h; path = src/core/lib/iomgr/polling_entity.h; sourceTree = "<group>"; };
 		F7E970AB12C066B4F0A44C4A975BFEE8 /* FIRAuthAppCredential.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRAuthAppCredential.m; path = Firebase/Auth/Source/SystemService/FIRAuthAppCredential.m; sourceTree = "<group>"; };
 		F8143E055B66E268A22738DDC01919D2 /* x_sig.c */ = {isa = PBXFileReference; includeInIndex = 1; name = x_sig.c; path = crypto/x509/x_sig.c; sourceTree = "<group>"; };
-		F83EF06EE3AAC140FA69C8119BD5F319 /* Pods-ballotPlanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ballotPlanner.debug.xcconfig"; sourceTree = "<group>"; };
 		F83F606D6F410D54024AF9F4319552D6 /* FCacheNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FCacheNode.m; path = Firebase/Database/Core/View/FCacheNode.m; sourceTree = "<group>"; };
 		F84CBF8B1E9F365C0A53F2C316B283FC /* FIRInstanceIDKeychain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRInstanceIDKeychain.m; path = Firebase/InstanceID/FIRInstanceIDKeychain.m; sourceTree = "<group>"; };
 		F851A758457F710337894E04818D0498 /* memory_index_manager.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = memory_index_manager.cc; path = Firestore/core/src/firebase/firestore/local/memory_index_manager.cc; sourceTree = "<group>"; };
@@ -13135,6 +13459,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		310F1D71ACEEC8AD1B6AFA89A278D4EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		48FF393597B965A74D417F2B213AD36E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -13195,6 +13526,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				288A8E881F4F2C9CEF3225FC1717125A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B25CA2322A3A9AA1120C980B9193FB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -13438,6 +13776,20 @@
 			name = AppDelegateSwizzler;
 			sourceTree = "<group>";
 		};
+		0721A7108BFB5356F69B0C549A854A82 /* Pods-ballotPlannerModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				8CB496ECEE3753F194C10EBB1A31F337 /* Pods-ballotPlannerModelTests-acknowledgements.markdown */,
+				DC7F16AFDB7DC5423A4DF093EA7756BA /* Pods-ballotPlannerModelTests-acknowledgements.plist */,
+				3F2D974477A3F59A5F09A9DB18BD841D /* Pods-ballotPlannerModelTests-dummy.m */,
+				B75CF71B250256D11EB0FEF2F1797F90 /* Pods-ballotPlannerModelTests-resources.sh */,
+				6DE5DC3C64BC8BAB9F6DDA779CF77753 /* Pods-ballotPlannerModelTests.debug.xcconfig */,
+				407C7A58866EB0F88268FAF2ACB17F74 /* Pods-ballotPlannerModelTests.release.xcconfig */,
+			);
+			name = "Pods-ballotPlannerModelTests";
+			path = "Target Support Files/Pods-ballotPlannerModelTests";
+			sourceTree = "<group>";
+		};
 		07BCC16068CA3F6D02A7FC4A2FAB6D33 /* Interface */ = {
 			isa = PBXGroup;
 			children = (
@@ -13496,6 +13848,17 @@
 				2B861AD1882595DDD46A5292DE543AED /* workaround_list.h */,
 			);
 			name = Interface;
+			sourceTree = "<group>";
+		};
+		0C8AEE4B84A5CFCDB9B7E3E355078A9F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				40F98938BFD661B16E101903A3FB01A2 /* Pods-ballotPlanner */,
+				0721A7108BFB5356F69B0C549A854A82 /* Pods-ballotPlannerModelTests */,
+				BDA8A9209BA2206D9EA614F5B3FCB707 /* Pods-ballotPlannerParserTests */,
+				F25330D489CE9AD174F39E56C9BEE908 /* Pods-ballotPlannerViewModelTests */,
+			);
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		0F35CC45CD84663E27DBE0423435716E /* Environment */ = {
@@ -13679,49 +14042,6 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/BoringSSL-GRPC-framework";
-			sourceTree = "<group>";
-		};
-		1B363E15D7C5BF45827FA3849A0D5C5E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				6BDDDF5CA8613E360ED0505A4EB89343 /* FirebaseCore.framework */,
-				CE007893AE1F76578088F75479079E5C /* FirebaseCoreDiagnostics.framework */,
-				C197F0510710269FA4CD156ED74E1381 /* FirebaseFirestore.framework */,
-				B204C0EB8D154E0C3D0FAB9DC86CD560 /* FirebaseInstanceID.framework */,
-				6C767160D325E5ABF880FF32A10DCB28 /* FirebaseStorage.framework */,
-				3FFC58173BA5109F4C508AF72C431373 /* GoogleDataTransport.framework */,
-				E04B4CF24D8B2C83A218FD280412C8E4 /* GoogleDataTransportCCTSupport.framework */,
-				9B9A4D47A429FC7523F39F65BC2EACF9 /* GoogleUtilities.framework */,
-				4909A21D0BD7F6CD4A8BCB1BFEE65306 /* grpc.framework */,
-				FEADD0DA5447918328932011C0FDF0E5 /* gRPCCertificates-Cpp.bundle */,
-				380047E3074EAA7491E2BCEE1E7D61F0 /* gRPCCertificates-Cpp.bundle */,
-				6CD7B3050AD77E78294C6A717A865EC5 /* grpcpp.framework */,
-				0B1CEB7C452300CCD2261999F26487A9 /* GTMSessionFetcher.framework */,
-				519FF00169570343CFF09C3B4A4B42DD /* leveldb.framework */,
-				83C7E4501654DF3C3A8D71D37238B172 /* libBoringSSL-GRPC-library.a */,
-				43B1E4CD7B30B9FD278100133C2AC788 /* libFirebaseAuth.a */,
-				D38CD6117F38127D5A534B9425CA65BD /* libFirebaseCore-library.a */,
-				5EB2AF9355B049C2B25B5191CD222AB6 /* libFirebaseCoreDiagnostics-library.a */,
-				51671C73F008B5C0C3751B3855999213 /* libFirebaseDatabase.a */,
-				C7D1DC10171CC7EA353F2367E5214966 /* libFirebaseFirestore-library.a */,
-				E9E8D6998E781BB2AB20E2ECF620B1C2 /* libFirebaseInstanceID-library.a */,
-				27323C63E20895F34EAA4B8917C48D7C /* libFirebaseStorage-library.a */,
-				E9F30C3A3D5257D2D390F2E6F88572AB /* libGoogleDataTransport-library.a */,
-				AE791A0E5BC5BDC9FB3DBA8E950E86CB /* libGoogleDataTransportCCTSupport-library.a */,
-				EA27D3CFC73C88D425A77DAFB37940CA /* libGoogleUtilities-library.a */,
-				98F062A0CF26403DC81D0B971188B8E4 /* libgRPC-C++-library.a */,
-				E35C33B177CA38DB9839962D5789490A /* libgRPC-Core-library.a */,
-				68F499894354578EFF2F68B1FD8BEA4C /* libGTMSessionFetcher-library.a */,
-				51B9E39FACB0181559848E257764F287 /* libleveldb-library-library.a */,
-				C1F247F17C7FE1B22AA3F26FAAEEFE82 /* libnanopb-library.a */,
-				5E5116CCC4F8E43134E997FB39C61453 /* libPods-ballotPlannerParserTests.a */,
-				131E551C56209A0327B735D13408A311 /* libProtobuf-library.a */,
-				44DCBA443B6756FC2A93FFA139913FC2 /* nanopb.framework */,
-				AD3416060ED19A1F04B02DC9C41B7E76 /* openssl_grpc.framework */,
-				6678A7A99CAAB5413A49958A98068F5E /* Pods_ballotPlanner.framework */,
-				CD47A3593CB5672A3D8B98A5A055DAAD /* protobuf.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		1D3C81C79E82FC4B654BF319DB1303BC /* Frameworks */ = {
@@ -14224,6 +14544,23 @@
 			);
 			name = Firebase;
 			path = Firebase;
+			sourceTree = "<group>";
+		};
+		40F98938BFD661B16E101903A3FB01A2 /* Pods-ballotPlanner */ = {
+			isa = PBXGroup;
+			children = (
+				685AA022B8C6147669F36E92791EF79F /* Pods-ballotPlanner.modulemap */,
+				106D1C33F694C466CBCAC44DF79EF001 /* Pods-ballotPlanner-acknowledgements.markdown */,
+				687C61B63A277CB178EC89A7A4040B36 /* Pods-ballotPlanner-acknowledgements.plist */,
+				30E8A45193B3D71A306C8D7C5FF7F51A /* Pods-ballotPlanner-dummy.m */,
+				1190E6C9F4EA5B14739BE9BCECB85D3D /* Pods-ballotPlanner-frameworks.sh */,
+				0CEC529F21893708963B1BC37E7F8A53 /* Pods-ballotPlanner-Info.plist */,
+				2DD0D35C17AC40B1B5634533AF7D1E0F /* Pods-ballotPlanner-umbrella.h */,
+				47591B070DB0511A2721A9EC966927C4 /* Pods-ballotPlanner.debug.xcconfig */,
+				169FBC68ED382A96B6092C878D0D7AE0 /* Pods-ballotPlanner.release.xcconfig */,
+			);
+			name = "Pods-ballotPlanner";
+			path = "Target Support Files/Pods-ballotPlanner";
 			sourceTree = "<group>";
 		};
 		4335C43E5F79ED15B5C664DADF189E99 /* MethodSwizzler */ = {
@@ -15456,23 +15793,6 @@
 			path = "../Target Support Files/FirebaseCoreDiagnostics-framework";
 			sourceTree = "<group>";
 		};
-		657A53FEF1693830014049D33E7A6E76 /* Pods-ballotPlanner */ = {
-			isa = PBXGroup;
-			children = (
-				9488AB0AAE26C96C10204ED3F104DA21 /* Pods-ballotPlanner.modulemap */,
-				1761AA5EAACF78DFD6E5B334790B9068 /* Pods-ballotPlanner-acknowledgements.markdown */,
-				328C821D3EA3C40054622D63CFE3C5C9 /* Pods-ballotPlanner-acknowledgements.plist */,
-				DF0E5A7A437ECF01D6E74A3360283B86 /* Pods-ballotPlanner-dummy.m */,
-				15CC7965A795B0FEC2EB59353621F063 /* Pods-ballotPlanner-frameworks.sh */,
-				84BA8A9980F3792D96326B679A06593A /* Pods-ballotPlanner-Info.plist */,
-				A3769500445AC8CBDE225C7335DBE96B /* Pods-ballotPlanner-umbrella.h */,
-				F83EF06EE3AAC140FA69C8119BD5F319 /* Pods-ballotPlanner.debug.xcconfig */,
-				4355913FC059CC9D6326D1DD49666A60 /* Pods-ballotPlanner.release.xcconfig */,
-			);
-			name = "Pods-ballotPlanner";
-			path = "Target Support Files/Pods-ballotPlanner";
-			sourceTree = "<group>";
-		};
 		67D4D867CBBE7F8BF60624CBBCADB837 /* FirebaseAuthInterop */ = {
 			isa = PBXGroup;
 			children = (
@@ -15709,20 +16029,6 @@
 			);
 			name = FirebaseFirestore;
 			path = FirebaseFirestore;
-			sourceTree = "<group>";
-		};
-		705F8813EDF11357A1EC80095C134C5F /* Pods-ballotPlannerParserTests */ = {
-			isa = PBXGroup;
-			children = (
-				53F65CB501A5409B0B33EF8581D89301 /* Pods-ballotPlannerParserTests-acknowledgements.markdown */,
-				9DCD79A573B00C9A1567D028BB124018 /* Pods-ballotPlannerParserTests-acknowledgements.plist */,
-				0C7C4C2AF26F302539F25E664A604CF1 /* Pods-ballotPlannerParserTests-dummy.m */,
-				42F0CE16C636D2BAC988140795A417FD /* Pods-ballotPlannerParserTests-resources.sh */,
-				2587B677B45C6B17676B97652053980A /* Pods-ballotPlannerParserTests.debug.xcconfig */,
-				1DD2D8E14D101DC43050C9451CD11A57 /* Pods-ballotPlannerParserTests.release.xcconfig */,
-			);
-			name = "Pods-ballotPlannerParserTests";
-			path = "Target Support Files/Pods-ballotPlannerParserTests";
 			sourceTree = "<group>";
 		};
 		708A99016A751558A4AED96C78A878F5 /* Reachability */ = {
@@ -16333,6 +16639,65 @@
 			name = CoreOnly;
 			sourceTree = "<group>";
 		};
+		BD5A32DBD06C8376724D4EF442AD263C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6BDDDF5CA8613E360ED0505A4EB89343 /* FirebaseCore.framework */,
+				CE007893AE1F76578088F75479079E5C /* FirebaseCoreDiagnostics.framework */,
+				C197F0510710269FA4CD156ED74E1381 /* FirebaseFirestore.framework */,
+				B204C0EB8D154E0C3D0FAB9DC86CD560 /* FirebaseInstanceID.framework */,
+				6C767160D325E5ABF880FF32A10DCB28 /* FirebaseStorage.framework */,
+				3FFC58173BA5109F4C508AF72C431373 /* GoogleDataTransport.framework */,
+				E04B4CF24D8B2C83A218FD280412C8E4 /* GoogleDataTransportCCTSupport.framework */,
+				9B9A4D47A429FC7523F39F65BC2EACF9 /* GoogleUtilities.framework */,
+				4909A21D0BD7F6CD4A8BCB1BFEE65306 /* grpc.framework */,
+				380047E3074EAA7491E2BCEE1E7D61F0 /* gRPCCertificates-Cpp.bundle */,
+				FEADD0DA5447918328932011C0FDF0E5 /* gRPCCertificates-Cpp.bundle */,
+				6CD7B3050AD77E78294C6A717A865EC5 /* grpcpp.framework */,
+				0B1CEB7C452300CCD2261999F26487A9 /* GTMSessionFetcher.framework */,
+				519FF00169570343CFF09C3B4A4B42DD /* leveldb.framework */,
+				83C7E4501654DF3C3A8D71D37238B172 /* libBoringSSL-GRPC-library.a */,
+				43B1E4CD7B30B9FD278100133C2AC788 /* libFirebaseAuth.a */,
+				D38CD6117F38127D5A534B9425CA65BD /* libFirebaseCore-library.a */,
+				5EB2AF9355B049C2B25B5191CD222AB6 /* libFirebaseCoreDiagnostics-library.a */,
+				51671C73F008B5C0C3751B3855999213 /* libFirebaseDatabase.a */,
+				C7D1DC10171CC7EA353F2367E5214966 /* libFirebaseFirestore-library.a */,
+				E9E8D6998E781BB2AB20E2ECF620B1C2 /* libFirebaseInstanceID-library.a */,
+				27323C63E20895F34EAA4B8917C48D7C /* libFirebaseStorage-library.a */,
+				E9F30C3A3D5257D2D390F2E6F88572AB /* libGoogleDataTransport-library.a */,
+				AE791A0E5BC5BDC9FB3DBA8E950E86CB /* libGoogleDataTransportCCTSupport-library.a */,
+				EA27D3CFC73C88D425A77DAFB37940CA /* libGoogleUtilities-library.a */,
+				98F062A0CF26403DC81D0B971188B8E4 /* libgRPC-C++-library.a */,
+				E35C33B177CA38DB9839962D5789490A /* libgRPC-Core-library.a */,
+				68F499894354578EFF2F68B1FD8BEA4C /* libGTMSessionFetcher-library.a */,
+				51B9E39FACB0181559848E257764F287 /* libleveldb-library-library.a */,
+				C1F247F17C7FE1B22AA3F26FAAEEFE82 /* libnanopb-library.a */,
+				D90D90F4E097B2BB3650D27B9F337D07 /* libPods-ballotPlannerModelTests.a */,
+				5E5116CCC4F8E43134E997FB39C61453 /* libPods-ballotPlannerParserTests.a */,
+				E559E48E968D896C142B8A7C8E588A3B /* libPods-ballotPlannerViewModelTests.a */,
+				131E551C56209A0327B735D13408A311 /* libProtobuf-library.a */,
+				44DCBA443B6756FC2A93FFA139913FC2 /* nanopb.framework */,
+				AD3416060ED19A1F04B02DC9C41B7E76 /* openssl_grpc.framework */,
+				6678A7A99CAAB5413A49958A98068F5E /* Pods_ballotPlanner.framework */,
+				CD47A3593CB5672A3D8B98A5A055DAAD /* protobuf.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BDA8A9209BA2206D9EA614F5B3FCB707 /* Pods-ballotPlannerParserTests */ = {
+			isa = PBXGroup;
+			children = (
+				A8337A0615E7C566E59A14209DE5BFFE /* Pods-ballotPlannerParserTests-acknowledgements.markdown */,
+				34C026D40C82838D6D6C2EBCF1A8E761 /* Pods-ballotPlannerParserTests-acknowledgements.plist */,
+				017DC6E5589A3C9BB925743349566110 /* Pods-ballotPlannerParserTests-dummy.m */,
+				28035C87CDDC0A298A82D2AEA3DB0D97 /* Pods-ballotPlannerParserTests-resources.sh */,
+				328AB70DB7990C4C8019E99382C6FFE8 /* Pods-ballotPlannerParserTests.debug.xcconfig */,
+				F2D3CD1F00F2A24089CB3999F91ACFE1 /* Pods-ballotPlannerParserTests.release.xcconfig */,
+			);
+			name = "Pods-ballotPlannerParserTests";
+			path = "Target Support Files/Pods-ballotPlannerParserTests";
+			sourceTree = "<group>";
+		};
 		C5805D454ED1AC36207C4C9F3E404D93 /* gRPC-C++ */ = {
 			isa = PBXGroup;
 			children = (
@@ -16372,8 +16737,8 @@
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				1D3C81C79E82FC4B654BF319DB1303BC /* Frameworks */,
 				4CE83D0D9E103BFE6CF111A38B933BCC /* Pods */,
-				1B363E15D7C5BF45827FA3849A0D5C5E /* Products */,
-				F090AC67B15C6986E3333D55A3230135 /* Targets Support Files */,
+				BD5A32DBD06C8376724D4EF442AD263C /* Products */,
+				0C8AEE4B84A5CFCDB9B7E3E355078A9F /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -16989,13 +17354,18 @@
 			path = "../Target Support Files/FirebaseDatabase";
 			sourceTree = "<group>";
 		};
-		F090AC67B15C6986E3333D55A3230135 /* Targets Support Files */ = {
+		F25330D489CE9AD174F39E56C9BEE908 /* Pods-ballotPlannerViewModelTests */ = {
 			isa = PBXGroup;
 			children = (
-				657A53FEF1693830014049D33E7A6E76 /* Pods-ballotPlanner */,
-				705F8813EDF11357A1EC80095C134C5F /* Pods-ballotPlannerParserTests */,
+				103FC0E2AD66101DCBABB9A5B787BDEA /* Pods-ballotPlannerViewModelTests-acknowledgements.markdown */,
+				88979897414929D49898F213AC5203B8 /* Pods-ballotPlannerViewModelTests-acknowledgements.plist */,
+				175BB2210548543E55DB40CF92B2C302 /* Pods-ballotPlannerViewModelTests-dummy.m */,
+				3AEB6EA7D4CB815ACD7E39D064DA52BC /* Pods-ballotPlannerViewModelTests-resources.sh */,
+				9964B373A762B12D95EAD8FCC01BE839 /* Pods-ballotPlannerViewModelTests.debug.xcconfig */,
+				8AE6332BF8C27B1D7A83ACB52F0AEBCF /* Pods-ballotPlannerViewModelTests.release.xcconfig */,
 			);
-			name = "Targets Support Files";
+			name = "Pods-ballotPlannerViewModelTests";
+			path = "Target Support Files/Pods-ballotPlannerViewModelTests";
 			sourceTree = "<group>";
 		};
 		F60D6814FB47EEA6D8595AE42E38FE5D /* NSData+zlib */ = {
@@ -17153,6 +17523,13 @@
 				07E1DAD7DCEEAB307455F9715E61AC85 /* pb_common.h in Headers */,
 				BD3557316B594959BFCF5C6C7E81A268 /* pb_decode.h in Headers */,
 				BBB7D2B40091A75DA35C4110401EAAB3 /* pb_encode.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0ED5436C8D40541A89F6CA1237C508E7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -18678,6 +19055,13 @@
 				B83B4C71463908C0F498BA71533FC6BC /* windows_logger.h in Headers */,
 				FAD2663F837565C8CCAB9481F71CFBB9 /* write_batch.h in Headers */,
 				7C3940045174D8E8DFA17A8ED7A0A6CD /* write_batch_internal.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		982DE070147FCF8C256BF5088E66FA75 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -20290,6 +20674,45 @@
 			productReference = CE007893AE1F76578088F75479079E5C /* FirebaseCoreDiagnostics.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		5F852DFFCB9B7CF016FB807EF60D6F35 /* Pods-ballotPlannerModelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 962B748FA26DFEF38946BFFE4562EBA8 /* Build configuration list for PBXNativeTarget "Pods-ballotPlannerModelTests" */;
+			buildPhases = (
+				982DE070147FCF8C256BF5088E66FA75 /* Headers */,
+				7DA848E08425DFEEC4EB463357F075F5 /* Sources */,
+				310F1D71ACEEC8AD1B6AFA89A278D4EA /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				83FCB66E3BE154628878CCF8638CB78C /* PBXTargetDependency */,
+				DC35473993B3FD902622197BC57A5F9B /* PBXTargetDependency */,
+				8F3C8EA6CE0A0EB8E9FFF21195F83B2B /* PBXTargetDependency */,
+				52ED4057206C25D334D5259037674316 /* PBXTargetDependency */,
+				235898F3E96D72F67B58DE0CBFE33799 /* PBXTargetDependency */,
+				972F1DC8583A7A556E79875630CBF02F /* PBXTargetDependency */,
+				E3E9EC5FF8D4F16EF3CF0696583FECA9 /* PBXTargetDependency */,
+				C57350FD8D07E701C99EC41A1A05553C /* PBXTargetDependency */,
+				359D80743DABCCBCEF08FFD9EB13BFA7 /* PBXTargetDependency */,
+				A8E7A7721C02530D1E660EC110D9B2AF /* PBXTargetDependency */,
+				2EA8228AEC5A4F0355AC9AAE3BFC5307 /* PBXTargetDependency */,
+				57930DBC90693F90EDD5A182DFAA86B8 /* PBXTargetDependency */,
+				0B2400A8004F7E7CEE3E52086CCF555A /* PBXTargetDependency */,
+				5B3F964DFF6631C7DAF2872BA5B9794D /* PBXTargetDependency */,
+				FA72A5E8943E037D8EFF9F6F780E6D23 /* PBXTargetDependency */,
+				B9C2306987296E6B05DD44E82F9248B9 /* PBXTargetDependency */,
+				BB7B15EE6BBE545AFC6FC09CC0FBC4FC /* PBXTargetDependency */,
+				74FAFCC3BE65FE98B2551EF990043EB9 /* PBXTargetDependency */,
+				5AC9957F6C87CF4EFA8E57CE410F0F43 /* PBXTargetDependency */,
+				0036DE1E6B2567E90C15C68AA3CA50D0 /* PBXTargetDependency */,
+				9F6848696A90CF96812BD86250E11BF3 /* PBXTargetDependency */,
+				27F9A719F93D9AB2BAABF9CD1BCC27EB /* PBXTargetDependency */,
+			);
+			name = "Pods-ballotPlannerModelTests";
+			productName = "Pods-ballotPlannerModelTests";
+			productReference = D90D90F4E097B2BB3650D27B9F337D07 /* libPods-ballotPlannerModelTests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		655F18D824AEF6F2FDBBFB670A393A53 /* Pods-ballotPlannerParserTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB34159B6D1C0E0DA1A5970B7D978A37 /* Build configuration list for PBXNativeTarget "Pods-ballotPlannerParserTests" */;
@@ -20686,6 +21109,45 @@
 			productReference = 4909A21D0BD7F6CD4A8BCB1BFEE65306 /* grpc.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		C74462CE28BCBE6C339C050DE1C0744D /* Pods-ballotPlannerViewModelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A09EEBF5AAE08663F289E4AB9F451070 /* Build configuration list for PBXNativeTarget "Pods-ballotPlannerViewModelTests" */;
+			buildPhases = (
+				0ED5436C8D40541A89F6CA1237C508E7 /* Headers */,
+				EA5D2DCC0CEA2FE230E07128194CC2F1 /* Sources */,
+				7B25CA2322A3A9AA1120C980B9193FB8 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				275A6858923AC92D9A77503565BD9DEF /* PBXTargetDependency */,
+				853B14FBF97A05793C15404F5FF89046 /* PBXTargetDependency */,
+				1B3FA31F0AF4D20C2033FB0A85CFB9E6 /* PBXTargetDependency */,
+				D37CD0330AAA5F68D8AD4998653FBDFF /* PBXTargetDependency */,
+				FB2C67D446EE03947E7A8C4AE67304F2 /* PBXTargetDependency */,
+				143838D94B24F8D080B07C0F2163B335 /* PBXTargetDependency */,
+				4A9C04AC7EA26A860BD7B4594B18D13A /* PBXTargetDependency */,
+				0BDB232D80D06EDEAA8DAA05394C064A /* PBXTargetDependency */,
+				AFB932C65D6C2DDF1B98039B233E1F19 /* PBXTargetDependency */,
+				D211DFE22CE28E50180FC8F3C37304F1 /* PBXTargetDependency */,
+				169BC3D74F7B1F5AD30C41B7DEB44D0B /* PBXTargetDependency */,
+				4A96DD859130FF948136734DCA191FF7 /* PBXTargetDependency */,
+				0FFA95A3FFF2EB3FC6CEC9670ABBE443 /* PBXTargetDependency */,
+				8E4C3ACF811B63521AA316BB159F5B4E /* PBXTargetDependency */,
+				793D2D85CACFBBC664A261EA64C27065 /* PBXTargetDependency */,
+				3B3B60489B482E94B6F257ED05B48D45 /* PBXTargetDependency */,
+				DB09AC2982529A10032B0B003E239CE1 /* PBXTargetDependency */,
+				D36BDB4A4D177B39C4DD0B7DA01E4438 /* PBXTargetDependency */,
+				0EF4E21321BB00BC7D0CD49D1C570D49 /* PBXTargetDependency */,
+				390188B6A7442448B340EB79F71B71BE /* PBXTargetDependency */,
+				7CD1080404BD2FBEC251165C4ECD9406 /* PBXTargetDependency */,
+				FBC3939CCD8B3B0C80E6EB3D8E0E27AC /* PBXTargetDependency */,
+			);
+			name = "Pods-ballotPlannerViewModelTests";
+			productName = "Pods-ballotPlannerViewModelTests";
+			productReference = E559E48E968D896C142B8A7C8E588A3B /* libPods-ballotPlannerViewModelTests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		D191AF8DF058A78982F1AC816CFEAAA4 /* GTMSessionFetcher-framework */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A6A926BCCD474870F7F4B5264449DCEE /* Build configuration list for PBXNativeTarget "GTMSessionFetcher-framework" */;
@@ -20928,7 +21390,7 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 1B363E15D7C5BF45827FA3849A0D5C5E /* Products */;
+			productRefGroup = BD5A32DBD06C8376724D4EF442AD263C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -20975,7 +21437,9 @@
 				008D28317A79D3064D6C9A835A1C93BC /* nanopb-framework */,
 				91410BCBA5046FDB89736CF24992BA24 /* nanopb-library */,
 				A947CAF2C9FEDE9D06A7067C6FB536F2 /* Pods-ballotPlanner */,
+				5F852DFFCB9B7CF016FB807EF60D6F35 /* Pods-ballotPlannerModelTests */,
 				655F18D824AEF6F2FDBBFB670A393A53 /* Pods-ballotPlannerParserTests */,
+				C74462CE28BCBE6C339C050DE1C0744D /* Pods-ballotPlannerViewModelTests */,
 				3B3539307C32708A1D87B79BEAA1DA28 /* Protobuf-framework */,
 				A792BDFC73ADDF2F20A1436285664CB8 /* Protobuf-library */,
 			);
@@ -22647,6 +23111,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7DA848E08425DFEEC4EB463357F075F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ACF581F1C4E02B97640A172A88CC028 /* Pods-ballotPlannerModelTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		82C2A06993B5E8DFB204A3CFBEA4C36B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -23737,6 +24209,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EA5D2DCC0CEA2FE230E07128194CC2F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				965571828EB80F69E1A4944ABBBB0D40 /* Pods-ballotPlannerViewModelTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EDE245D2DCDA01392C1796B55B6B51B9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -23919,6 +24399,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		0036DE1E6B2567E90C15C68AA3CA50D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "gRPC-Core-library";
+			target = 6AB110F0910D4623160F17DC7F9F41CE /* gRPC-Core-library */;
+			targetProxy = CA7B153EB9373141E0CF0FE240ADBDF0 /* PBXContainerItemProxy */;
+		};
 		039708C856482DF8D1EB9957CAC1930B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "nanopb-framework";
@@ -23931,17 +24417,53 @@
 			target = 510A66A4FCCEE440C1CE2B400BAC21E1 /* FirebaseAuthInterop-library */;
 			targetProxy = 8A78092F5A9310F6FDB2DB30BA149A25 /* PBXContainerItemProxy */;
 		};
+		0B2400A8004F7E7CEE3E52086CCF555A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "GTMSessionFetcher-library";
+			target = 495337E4586F5D7486F656DCB6CDE295 /* GTMSessionFetcher-library */;
+			targetProxy = FF11A038BAAF664A1D07749B104A5C49 /* PBXContainerItemProxy */;
+		};
+		0BDB232D80D06EDEAA8DAA05394C064A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "FirebaseCoreDiagnosticsInterop-library";
+			target = 0CC78BDC32EDB04D1B5F1E814AF01DCD /* FirebaseCoreDiagnosticsInterop-library */;
+			targetProxy = 50AB8ED8183F706403FCC8DB4409A87C /* PBXContainerItemProxy */;
+		};
 		0CD6CACD4E28440EF5E952F8E1937151 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "FirebaseCore-library";
 			target = 525013EF7C5BF9D0DBFE988307FD9224 /* FirebaseCore-library */;
 			targetProxy = 03DB4DF0BDD948AA0F27110CC13C29C2 /* PBXContainerItemProxy */;
 		};
+		0EF4E21321BB00BC7D0CD49D1C570D49 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "gRPC-C++-library";
+			target = 28BEAEB856B0DA2F356B18B494BA3E16 /* gRPC-C++-library */;
+			targetProxy = 96E072B1A4C9B75E9D953058ABA1C2E6 /* PBXContainerItemProxy */;
+		};
+		0FFA95A3FFF2EB3FC6CEC9670ABBE443 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "GTMSessionFetcher-library";
+			target = 495337E4586F5D7486F656DCB6CDE295 /* GTMSessionFetcher-library */;
+			targetProxy = 94D29387E4AFBFB60A46B74C26D4B7A0 /* PBXContainerItemProxy */;
+		};
 		0FFFA9A93114935181C932AA940D5304 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "FirebaseAnalytics-framework";
 			target = A701D65EF295364805D592B4C7BE36CD /* FirebaseAnalytics-framework */;
 			targetProxy = 7F2DA4E30F931BDF40C18607C070BCDD /* PBXContainerItemProxy */;
+		};
+		143838D94B24F8D080B07C0F2163B335 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "FirebaseCore-library";
+			target = 525013EF7C5BF9D0DBFE988307FD9224 /* FirebaseCore-library */;
+			targetProxy = 84AF305164D50797EDF0B46C35FCBF8C /* PBXContainerItemProxy */;
+		};
+		169BC3D74F7B1F5AD30C41B7DEB44D0B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "FirebaseInstanceID-library";
+			target = 9E7A4527EBB9BA5439AFF2476157BCA1 /* FirebaseInstanceID-library */;
+			targetProxy = 5BBB01CA2DDE268F71269C9AB2C7856B /* PBXContainerItemProxy */;
 		};
 		16ACB1976FA714C513A9DFDCEA483817 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -23960,6 +24482,12 @@
 			name = "gRPC-C++-framework-gRPCCertificates-Cpp";
 			target = 826DC10E0DBCB3E2576663D6147665DD /* gRPC-C++-framework-gRPCCertificates-Cpp */;
 			targetProxy = A11A41A60958116420F3992943AAF18D /* PBXContainerItemProxy */;
+		};
+		1B3FA31F0AF4D20C2033FB0A85CFB9E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "FirebaseAnalytics-library";
+			target = 96DC0FA7DA971E5152F24F934B07B747 /* FirebaseAnalytics-library */;
+			targetProxy = 399789CE09A7A867DE4AA0A7807C033A /* PBXContainerItemProxy */;
 		};
 		1D4140E9B526B2A2C9EAF5520EFC2166 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -23997,6 +24525,12 @@
 			target = 91410BCBA5046FDB89736CF24992BA24 /* nanopb-library */;
 			targetProxy = E7A1E4E27016E633ACE112265BD1E2B9 /* PBXContainerItemProxy */;
 		};
+		235898F3E96D72F67B58DE0CBFE33799 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "FirebaseAuthInterop-library";
+			target = 510A66A4FCCEE440C1CE2B400BAC21E1 /* FirebaseAuthInterop-library */;
+			targetProxy = B71934152BB3FBD1B8B945800FDEF92B /* PBXContainerItemProxy */;
+		};
 		27213170A3496ABCD2DAC311045C0A13 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "FirebaseCore-library";
@@ -24008,6 +24542,18 @@
 			name = "FirebaseAuthInterop-framework";
 			target = 8DE41CCC7AF6A3EE255FF0FD193B298B /* FirebaseAuthInterop-framework */;
 			targetProxy = FEB976B22DE679BE39BA62E810C14468 /* PBXContainerItemProxy */;
+		};
+		275A6858923AC92D9A77503565BD9DEF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "BoringSSL-GRPC-library";
+			target = 33FB887CE5CFF86247F875E350657682 /* BoringSSL-GRPC-library */;
+			targetProxy = F8AC4A03B26B0200C83D8053B7EA506B /* PBXContainerItemProxy */;
+		};
+		27F9A719F93D9AB2BAABF9CD1BCC27EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "nanopb-library";
+			target = 91410BCBA5046FDB89736CF24992BA24 /* nanopb-library */;
+			targetProxy = 29B7DF798DC579042306A7D242C47362 /* PBXContainerItemProxy */;
 		};
 		2BCA452C6BC0348B9E924E98F835783A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -24021,6 +24567,12 @@
 			target = 91410BCBA5046FDB89736CF24992BA24 /* nanopb-library */;
 			targetProxy = 57FD69F59776810AF2C63BCDDAB134F0 /* PBXContainerItemProxy */;
 		};
+		2EA8228AEC5A4F0355AC9AAE3BFC5307 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "FirebaseInstanceID-library";
+			target = 9E7A4527EBB9BA5439AFF2476157BCA1 /* FirebaseInstanceID-library */;
+			targetProxy = 0D2B581958E2B264384F62D4CA3A25A3 /* PBXContainerItemProxy */;
+		};
 		2EE16FFB84F00D57AB1B50D99D3FB211 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Protobuf-library";
@@ -24032,6 +24584,24 @@
 			name = "FirebaseCoreDiagnosticsInterop-library";
 			target = 0CC78BDC32EDB04D1B5F1E814AF01DCD /* FirebaseCoreDiagnosticsInterop-library */;
 			targetProxy = 99555DCC7EA00ED39DA210CDEC6B045D /* PBXContainerItemProxy */;
+		};
+		359D80743DABCCBCEF08FFD9EB13BFA7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FirebaseDatabase;
+			target = 736AF68F6527ACF6B4A4C54728824A1C /* FirebaseDatabase */;
+			targetProxy = EA5150B8AA51C495B712F97040777B31 /* PBXContainerItemProxy */;
+		};
+		390188B6A7442448B340EB79F71B71BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "gRPC-Core-library";
+			target = 6AB110F0910D4623160F17DC7F9F41CE /* gRPC-Core-library */;
+			targetProxy = 77EEA399F6D9DD8C0ED18B5A6B0293F3 /* PBXContainerItemProxy */;
+		};
+		3B3B60489B482E94B6F257ED05B48D45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "GoogleDataTransportCCTSupport-library";
+			target = 8620A7E7A13DD1B1C49818E57787452C /* GoogleDataTransportCCTSupport-library */;
+			targetProxy = 1B0A3755B29A52A4146B7EB667821550 /* PBXContainerItemProxy */;
 		};
 		3B9E56045F76AD56A6A1C34906CD47A8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -24069,6 +24639,18 @@
 			target = 008D28317A79D3064D6C9A835A1C93BC /* nanopb-framework */;
 			targetProxy = 24F4BCB20037193F602A9BFB3C59248C /* PBXContainerItemProxy */;
 		};
+		4A96DD859130FF948136734DCA191FF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "FirebaseStorage-library";
+			target = 84C64BA38AEB890BCDE0B2CA97EC33AA /* FirebaseStorage-library */;
+			targetProxy = 5C41A446AEFD53FEF0F471A9B2BCDAD7 /* PBXContainerItemProxy */;
+		};
+		4A9C04AC7EA26A860BD7B4594B18D13A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "FirebaseCoreDiagnostics-library";
+			target = 008AEF3FA14175B99EC90F3688B1564D /* FirebaseCoreDiagnostics-library */;
+			targetProxy = A51D6FA7F0F141D58D53105926452550 /* PBXContainerItemProxy */;
+		};
 		4B8E402A5E497F96F98A771719857513 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "nanopb-framework";
@@ -24093,6 +24675,12 @@
 			target = 525013EF7C5BF9D0DBFE988307FD9224 /* FirebaseCore-library */;
 			targetProxy = B494F2E0E36B0834CCCC31FF8C2E0E21 /* PBXContainerItemProxy */;
 		};
+		52ED4057206C25D334D5259037674316 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FirebaseAuth;
+			target = 6AE4A3D573DED275B034E20506596C62 /* FirebaseAuth */;
+			targetProxy = 3CE7920BF2711B53AD36AD60993E8386 /* PBXContainerItemProxy */;
+		};
 		55AE2EF3F55CBA6003A1213E18A3AC99 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Firebase-Analytics-Core-CoreOnly-Firestore-Storage";
@@ -24104,6 +24692,12 @@
 			name = "GoogleUtilities-library";
 			target = 3D2D98ED7278422B9AC91255D784C3EA /* GoogleUtilities-library */;
 			targetProxy = 74E24081B024FAF5A3930A0E741D8FE2 /* PBXContainerItemProxy */;
+		};
+		57930DBC90693F90EDD5A182DFAA86B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "FirebaseStorage-library";
+			target = 84C64BA38AEB890BCDE0B2CA97EC33AA /* FirebaseStorage-library */;
+			targetProxy = 73FB76329CBF75BDE248FF44FB508A4E /* PBXContainerItemProxy */;
 		};
 		57DBB311E6C809C2D227D8E07750EB6D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -24140,6 +24734,18 @@
 			name = "FirebaseAuthInterop-library";
 			target = 510A66A4FCCEE440C1CE2B400BAC21E1 /* FirebaseAuthInterop-library */;
 			targetProxy = 3A0BEC9C8DC09B977AA4E47CDCE5D98E /* PBXContainerItemProxy */;
+		};
+		5AC9957F6C87CF4EFA8E57CE410F0F43 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "gRPC-C++-library";
+			target = 28BEAEB856B0DA2F356B18B494BA3E16 /* gRPC-C++-library */;
+			targetProxy = 85535A3F9AC5D737BF9EE23BC6566818 /* PBXContainerItemProxy */;
+		};
+		5B3F964DFF6631C7DAF2872BA5B9794D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "GoogleAppMeasurement-library";
+			target = 0C7E83F93BE3CB526012C48ADEB23879 /* GoogleAppMeasurement-library */;
+			targetProxy = EBDEDD4A63167E99149E1FE18AFF9E3F /* PBXContainerItemProxy */;
 		};
 		5EBDE101BA0A0B56051E2BED8C71F781 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -24213,6 +24819,12 @@
 			target = 9E7A4527EBB9BA5439AFF2476157BCA1 /* FirebaseInstanceID-library */;
 			targetProxy = B70E00D28AF16D578FBC826E62792462 /* PBXContainerItemProxy */;
 		};
+		74FAFCC3BE65FE98B2551EF990043EB9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Protobuf-library";
+			target = A792BDFC73ADDF2F20A1436285664CB8 /* Protobuf-library */;
+			targetProxy = 01445B706A6D5BF2E6E4F5BCCE604193 /* PBXContainerItemProxy */;
+		};
 		74FB943BFF9D56028681EE2EF3AB0278 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "GoogleDataTransport-framework";
@@ -24249,6 +24861,12 @@
 			target = 6890A8A3971EA3CCE887BE65B0C041B3 /* GoogleAppMeasurement-framework */;
 			targetProxy = 574FB54F037B7ADAB307D936776E4BC4 /* PBXContainerItemProxy */;
 		};
+		793D2D85CACFBBC664A261EA64C27065 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "GoogleDataTransport-library";
+			target = D7210A56E8A77AC7232961BE7F0EBB87 /* GoogleDataTransport-library */;
+			targetProxy = 4FC789B4FF561061E10B978575122A1D /* PBXContainerItemProxy */;
+		};
 		7C150B86E5EEA3D3EAFB1FA565A7739E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "gRPC-Core-framework";
@@ -24260,6 +24878,12 @@
 			name = "FirebaseInstanceID-framework";
 			target = 6C1906198354E44BC58137F814AD7CAA /* FirebaseInstanceID-framework */;
 			targetProxy = 0BA373C2C5B882A64F7221BF8018840F /* PBXContainerItemProxy */;
+		};
+		7CD1080404BD2FBEC251165C4ECD9406 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "leveldb-library-library";
+			target = FE5DA074265A039FB5C70EB131A2B4FD /* leveldb-library-library */;
+			targetProxy = 22CE3BEFC1FA1AAB529AA4A3C833784D /* PBXContainerItemProxy */;
 		};
 		82525320BE2FE4E0618B5C30DB091A23 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -24278,6 +24902,18 @@
 			name = "GoogleDataTransport-library";
 			target = D7210A56E8A77AC7232961BE7F0EBB87 /* GoogleDataTransport-library */;
 			targetProxy = B1B0E49A2312E46339C362457E77E815 /* PBXContainerItemProxy */;
+		};
+		83FCB66E3BE154628878CCF8638CB78C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "BoringSSL-GRPC-library";
+			target = 33FB887CE5CFF86247F875E350657682 /* BoringSSL-GRPC-library */;
+			targetProxy = 280328A149D820EC7EE5F85FD1A74BA6 /* PBXContainerItemProxy */;
+		};
+		853B14FBF97A05793C15404F5FF89046 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Firebase.default-Auth-CoreOnly-Database-Firestore-Storage";
+			target = 8BE4AE81F0991825300EFEF89E2F8615 /* Firebase.default-Auth-CoreOnly-Database-Firestore-Storage */;
+			targetProxy = E2B5FD8EA07B780A882F48B357251890 /* PBXContainerItemProxy */;
 		};
 		860ECDDB956D195FD4D24CF9EAC8F639 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -24309,11 +24945,23 @@
 			target = D191AF8DF058A78982F1AC816CFEAAA4 /* GTMSessionFetcher-framework */;
 			targetProxy = C4805508849FB62B86D9221132F48D42 /* PBXContainerItemProxy */;
 		};
+		8E4C3ACF811B63521AA316BB159F5B4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "GoogleAppMeasurement-library";
+			target = 0C7E83F93BE3CB526012C48ADEB23879 /* GoogleAppMeasurement-library */;
+			targetProxy = 50951191AE5CC65CEB9D626958D82E0F /* PBXContainerItemProxy */;
+		};
 		8ED7E37B97A5D319D75837D0B24CF010 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "FirebaseStorage-library";
 			target = 84C64BA38AEB890BCDE0B2CA97EC33AA /* FirebaseStorage-library */;
 			targetProxy = 92E81F50916E3DC40809D2ABE538B71D /* PBXContainerItemProxy */;
+		};
+		8F3C8EA6CE0A0EB8E9FFF21195F83B2B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "FirebaseAnalytics-library";
+			target = 96DC0FA7DA971E5152F24F934B07B747 /* FirebaseAnalytics-library */;
+			targetProxy = A6C0E3D4B04F20BE5F7B79FD0BA34963 /* PBXContainerItemProxy */;
 		};
 		9220466707F1600EBC8BD7D228E17C71 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -24333,6 +24981,12 @@
 			target = 06A6C967BF13F3D8A63EFC3896D07243 /* GoogleUtilities-framework */;
 			targetProxy = 98E05F94B27C9E320ECDE005934872DC /* PBXContainerItemProxy */;
 		};
+		972F1DC8583A7A556E79875630CBF02F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "FirebaseCore-library";
+			target = 525013EF7C5BF9D0DBFE988307FD9224 /* FirebaseCore-library */;
+			targetProxy = 4AE606E755ED4FD8A1E6B477E34F644A /* PBXContainerItemProxy */;
+		};
 		993EC50A85EC4FF68138720E75572113 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = FirebaseAuth;
@@ -24350,6 +25004,12 @@
 			name = "GTMSessionFetcher-library";
 			target = 495337E4586F5D7486F656DCB6CDE295 /* GTMSessionFetcher-library */;
 			targetProxy = 1A7175CD77DD235FEF2D05CE48ABD0F3 /* PBXContainerItemProxy */;
+		};
+		9F6848696A90CF96812BD86250E11BF3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "leveldb-library-library";
+			target = FE5DA074265A039FB5C70EB131A2B4FD /* leveldb-library-library */;
+			targetProxy = 67A74871A09463968DB8B9296E1D3801 /* PBXContainerItemProxy */;
 		};
 		A1097981022FE61F1FBCA603A1A53B99 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -24375,6 +25035,12 @@
 			target = 6AE4A3D573DED275B034E20506596C62 /* FirebaseAuth */;
 			targetProxy = 3B0781DF59E5CBD505AB1F9AFDEABF7C /* PBXContainerItemProxy */;
 		};
+		A8E7A7721C02530D1E660EC110D9B2AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "FirebaseFirestore-library";
+			target = 2A1A6A362D535EF8E96BEE7D2F0CD36F /* FirebaseFirestore-library */;
+			targetProxy = F171556EB2A46906E4D52EB15028D1C3 /* PBXContainerItemProxy */;
+		};
 		ABA3936F876D6688C0FE555C0C293F4E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "GoogleDataTransportCCTSupport-library";
@@ -24386,6 +25052,12 @@
 			name = "FirebaseCore-framework";
 			target = 277C63636C4FB61E253443B5E17BDCFD /* FirebaseCore-framework */;
 			targetProxy = 69772432A89F2E5A4861E2AD7ABBC394 /* PBXContainerItemProxy */;
+		};
+		AFB932C65D6C2DDF1B98039B233E1F19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FirebaseDatabase;
+			target = 736AF68F6527ACF6B4A4C54728824A1C /* FirebaseDatabase */;
+			targetProxy = 99450D5DFC4C74FBE8B399189E7322D6 /* PBXContainerItemProxy */;
 		};
 		AFDDEAC35C0721420D4F8A9699B0BEB0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -24429,6 +25101,12 @@
 			target = 277C63636C4FB61E253443B5E17BDCFD /* FirebaseCore-framework */;
 			targetProxy = 9773906EAB1F3707A5D96D011360BA01 /* PBXContainerItemProxy */;
 		};
+		B9C2306987296E6B05DD44E82F9248B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "GoogleDataTransportCCTSupport-library";
+			target = 8620A7E7A13DD1B1C49818E57787452C /* GoogleDataTransportCCTSupport-library */;
+			targetProxy = B3E665338CAEAD4CA6BCB18A759AA74B /* PBXContainerItemProxy */;
+		};
 		BAAAF946EBC5D2E796252F96A290968D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "FirebaseInstanceID-framework";
@@ -24440,6 +25118,12 @@
 			name = "nanopb-library";
 			target = 91410BCBA5046FDB89736CF24992BA24 /* nanopb-library */;
 			targetProxy = B245A1BA1B5553E29A9D7F1023BB892B /* PBXContainerItemProxy */;
+		};
+		BB7B15EE6BBE545AFC6FC09CC0FBC4FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "GoogleUtilities-library";
+			target = 3D2D98ED7278422B9AC91255D784C3EA /* GoogleUtilities-library */;
+			targetProxy = 1DF885580F7E21ED807A315508D45A3D /* PBXContainerItemProxy */;
 		};
 		BBE88A3E6A7DCD43C5EC180187B2122D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -24464,6 +25148,12 @@
 			name = "GoogleUtilities-library";
 			target = 3D2D98ED7278422B9AC91255D784C3EA /* GoogleUtilities-library */;
 			targetProxy = 5DB41BDFCF4405DA90EE93813690F54B /* PBXContainerItemProxy */;
+		};
+		C57350FD8D07E701C99EC41A1A05553C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "FirebaseCoreDiagnosticsInterop-library";
+			target = 0CC78BDC32EDB04D1B5F1E814AF01DCD /* FirebaseCoreDiagnosticsInterop-library */;
+			targetProxy = C709FF9844BCD998E04A0FC3EBFD7938 /* PBXContainerItemProxy */;
 		};
 		C7D7456A0211C225896D5B8323EB9617 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -24513,6 +25203,24 @@
 			target = 6890A8A3971EA3CCE887BE65B0C041B3 /* GoogleAppMeasurement-framework */;
 			targetProxy = B077285F399528EB298DAAA9B9828119 /* PBXContainerItemProxy */;
 		};
+		D211DFE22CE28E50180FC8F3C37304F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "FirebaseFirestore-library";
+			target = 2A1A6A362D535EF8E96BEE7D2F0CD36F /* FirebaseFirestore-library */;
+			targetProxy = 35D11C1AA2C5245335BB84709148A078 /* PBXContainerItemProxy */;
+		};
+		D36BDB4A4D177B39C4DD0B7DA01E4438 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Protobuf-library";
+			target = A792BDFC73ADDF2F20A1436285664CB8 /* Protobuf-library */;
+			targetProxy = C36C29A3AB2705A644732A661A48343E /* PBXContainerItemProxy */;
+		};
+		D37CD0330AAA5F68D8AD4998653FBDFF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FirebaseAuth;
+			target = 6AE4A3D573DED275B034E20506596C62 /* FirebaseAuth */;
+			targetProxy = 0D9405409B4958CBDD0246E744BB7DBF /* PBXContainerItemProxy */;
+		};
 		D44BBE5038FCEF18FEE570899CEBEE3A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "GoogleUtilities-library";
@@ -24536,6 +25244,18 @@
 			name = "FirebaseAuthInterop-framework";
 			target = 8DE41CCC7AF6A3EE255FF0FD193B298B /* FirebaseAuthInterop-framework */;
 			targetProxy = DE7E7CF36616096AF3CE120C13552DD0 /* PBXContainerItemProxy */;
+		};
+		DB09AC2982529A10032B0B003E239CE1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "GoogleUtilities-library";
+			target = 3D2D98ED7278422B9AC91255D784C3EA /* GoogleUtilities-library */;
+			targetProxy = 22ECDDC064DF0E1008C18086CBF1DB97 /* PBXContainerItemProxy */;
+		};
+		DC35473993B3FD902622197BC57A5F9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Firebase.default-Auth-CoreOnly-Database-Firestore-Storage";
+			target = 8BE4AE81F0991825300EFEF89E2F8615 /* Firebase.default-Auth-CoreOnly-Database-Firestore-Storage */;
+			targetProxy = 0542492DDF47ED6009AE8932A761E837 /* PBXContainerItemProxy */;
 		};
 		DDE86A6FAA6C054151F98A3A6AB792BC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -24566,6 +25286,12 @@
 			name = "FirebaseCore-framework";
 			target = 277C63636C4FB61E253443B5E17BDCFD /* FirebaseCore-framework */;
 			targetProxy = 3E5C9F1DB6095DA7672BA97C197592B1 /* PBXContainerItemProxy */;
+		};
+		E3E9EC5FF8D4F16EF3CF0696583FECA9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "FirebaseCoreDiagnostics-library";
+			target = 008AEF3FA14175B99EC90F3688B1564D /* FirebaseCoreDiagnostics-library */;
+			targetProxy = 26ABFE2F1857B2C466008FDC290B4CED /* PBXContainerItemProxy */;
 		};
 		E55581CE9B104B17311A4BE2C2332CF6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -24621,11 +25347,29 @@
 			target = 6AB110F0910D4623160F17DC7F9F41CE /* gRPC-Core-library */;
 			targetProxy = 213821D8D66D68B7197FBCD826F0E49D /* PBXContainerItemProxy */;
 		};
+		FA72A5E8943E037D8EFF9F6F780E6D23 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "GoogleDataTransport-library";
+			target = D7210A56E8A77AC7232961BE7F0EBB87 /* GoogleDataTransport-library */;
+			targetProxy = 61DE708B0AA3D730455AC5C44707CD6F /* PBXContainerItemProxy */;
+		};
+		FB2C67D446EE03947E7A8C4AE67304F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "FirebaseAuthInterop-library";
+			target = 510A66A4FCCEE440C1CE2B400BAC21E1 /* FirebaseAuthInterop-library */;
+			targetProxy = 8A0CCC12E11ED09F37A649F4B42C5214 /* PBXContainerItemProxy */;
+		};
 		FB41237BCC10306563474B555E8265F6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "GoogleUtilities-library";
 			target = 3D2D98ED7278422B9AC91255D784C3EA /* GoogleUtilities-library */;
 			targetProxy = 40DB2C51F9E3FC5EA01C81E36E94E812 /* PBXContainerItemProxy */;
+		};
+		FBC3939CCD8B3B0C80E6EB3D8E0E27AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "nanopb-library";
+			target = 91410BCBA5046FDB89736CF24992BA24 /* nanopb-library */;
+			targetProxy = B0B398FFFB96FF7004ED40A3AFCE7B67 /* PBXContainerItemProxy */;
 		};
 		FBC3A4FD2371E6681054767296539E43 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -24979,7 +25723,7 @@
 		};
 		1D06BB52B38E09D1FC5B040FB1A0D5EC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4355913FC059CC9D6326D1DD49666A60 /* Pods-ballotPlanner.release.xcconfig */;
+			baseConfigurationReference = 169FBC68ED382A96B6092C878D0D7AE0 /* Pods-ballotPlanner.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -25140,6 +25884,51 @@
 					"@executable_path/Frameworks",
 				);
 				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		28B8F6020A525BF27BB02460AD20995A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AE6332BF8C27B1D7A83ACB52F0AEBCF /* Pods-ballotPlannerViewModelTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2CE8C418663020F4EA151C2A632740DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DE5DC3C64BC8BAB9F6DDA779CF77753 /* Pods-ballotPlannerModelTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -25429,7 +26218,7 @@
 		};
 		4F49F2A03E4E951E10BA086B4C365D52 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2587B677B45C6B17676B97652053980A /* Pods-ballotPlannerParserTests.debug.xcconfig */;
+			baseConfigurationReference = 328AB70DB7990C4C8019E99382C6FFE8 /* Pods-ballotPlannerParserTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -25990,6 +26779,28 @@
 			};
 			name = Debug;
 		};
+		7F383CB8B4EA8FE7E006B898B35C6194 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9964B373A762B12D95EAD8FCC01BE839 /* Pods-ballotPlannerViewModelTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 		81E84365331FC670F29CD259BF642586 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 93F0DF03D502E98D352246F6F838282D /* FirebaseCore-framework.xcconfig */;
@@ -26204,6 +27015,29 @@
 			};
 			name = Debug;
 		};
+		9CFDC85F3C1C5484163BB8D9F2680847 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 407C7A58866EB0F88268FAF2ACB17F74 /* Pods-ballotPlannerModelTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		9D01A2AFC772DEC693AF35EBED210C65 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E595C9BE964F391FFB859B908FBE631E /* GoogleAppMeasurement-library.xcconfig */;
@@ -26400,7 +27234,7 @@
 		};
 		A79BE50B159E9B765733942F14443F3A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1DD2D8E14D101DC43050C9451CD11A57 /* Pods-ballotPlannerParserTests.release.xcconfig */;
+			baseConfigurationReference = F2D3CD1F00F2A24089CB3999F91ACFE1 /* Pods-ballotPlannerParserTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -27114,7 +27948,7 @@
 		};
 		FD540D76B98207DD5096837AB2D670A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F83EF06EE3AAC140FA69C8119BD5F319 /* Pods-ballotPlanner.debug.xcconfig */;
+			baseConfigurationReference = 47591B070DB0511A2721A9EC966927C4 /* Pods-ballotPlanner.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -27446,6 +28280,24 @@
 			buildConfigurations = (
 				6AED7F0B574614D027AF2F74739C668C /* Debug */,
 				5E03DC3EBA67BB0B7A5BE5CFE4DC0FEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		962B748FA26DFEF38946BFFE4562EBA8 /* Build configuration list for PBXNativeTarget "Pods-ballotPlannerModelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CE8C418663020F4EA151C2A632740DD /* Debug */,
+				9CFDC85F3C1C5484163BB8D9F2680847 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A09EEBF5AAE08663F289E4AB9F451070 /* Build configuration list for PBXNativeTarget "Pods-ballotPlannerViewModelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F383CB8B4EA8FE7E006B898B35C6194 /* Debug */,
+				28B8F6020A525BF27BB02460AD20995A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
