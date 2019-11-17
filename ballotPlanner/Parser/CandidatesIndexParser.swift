@@ -73,7 +73,7 @@ class CandidatesIndexParser {
   func getCandidateIds(completion: @escaping([String]) -> Void) {
     let db = Firestore.firestore()
     self.group2.enter()
-    db.collection("candidateRaces").getDocuments() { (querySnapshot, err) in
+    db.collection("candidateRace").getDocuments() { (querySnapshot, err) in
       if let err = err {
         print("Errors getting documents: \(err)")
         self.group2.leave()
@@ -109,6 +109,7 @@ class CandidatesIndexParser {
     }
   }
   
+  // get all candidate info, currently only info from the "people" document, but should be combined info from "candidate" and "people"
   func getCandidates(completion: @escaping([Person]) -> Void) {
     let db = Firestore.firestore()
     self.group4.enter()
@@ -120,8 +121,10 @@ class CandidatesIndexParser {
         for document in querySnapshot!.documents {
           //          let newBallotCandidate = Candidate(first_name: document.get("first_name") as! String, last_name: document.get("last_name") as! String)
 //          let newCandidatePerson = Person(first_name: document.get("first_name") as! String, last_name: document.get("last_name") as! String, party_affiliation: document.get("party_affiliation") as! String, image: nil, contact_twitter: document.get("contact_twitter") as! String, summary: document.get("summary") as! String, people_id: document.documentID)
-          let newCandidatePerson = self.createCandidatePerson(document.get("first_name") as! String, document.get("last_name") as! String, document.get("party_affiliation") as! String, nil, document.get("contact_twitter") as! String, document.get("summary") as! String, document.documentID)
-          self.allCandidates.append(newCandidatePerson)
+          if self.peopleIds.contains(document.documentID) {
+            let newCandidatePerson = self.createCandidatePerson(document.get("first_name") as! String, document.get("last_name") as! String, document.get("party_affiliation") as! String, nil, document.get("contact_twitter") as! String, document.get("summary") as! String, document.documentID)
+            self.allCandidates.append(newCandidatePerson)
+          }
         }
         self.group4.leave()
       }

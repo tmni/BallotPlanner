@@ -33,11 +33,11 @@ class MyViewController: UIViewController, UICollectionViewDataSource, UICollecti
       self.user_info = result
       self.updatePartyLabel()
       self.updateLocLabel()
-      self.viewModel.refresh { [unowned self] in
-        DispatchQueue.main.async {
-          self.collectionView.reloadData()
-        }
-      }
+//      self.viewModel.refresh { [unowned self] in
+//        DispatchQueue.main.async {
+//          self.collectionView.reloadData()
+//        }
+//      }
     }
   }
   

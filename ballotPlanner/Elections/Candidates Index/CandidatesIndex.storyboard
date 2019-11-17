@@ -69,7 +69,7 @@
                         <viewLayoutGuide key="safeArea" id="w1m-z3-vkW"/>
                     </view>
                     <connections>
-                        <outlet property="collectionView" destination="VXp-UN-IuK" id="BDn-c6-APn"/>
+                        <outlet property="collectionView1" destination="VXp-UN-IuK" id="JQO-0e-izL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ICT-ZW-nWR" userLabel="First Responder" sceneMemberID="firstResponder"/>
