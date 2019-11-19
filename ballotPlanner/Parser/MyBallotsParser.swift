@@ -27,68 +27,91 @@ class MyBallotsParser {
   // for each candidate race, get candidate, then people_id
   // get first and last name of people, then detail view controller is candidate show
   
-  let group1 = DispatchGroup()
   let group2 = DispatchGroup()
   let group3 = DispatchGroup()
   let group4 = DispatchGroup()
+  let group5 = DispatchGroup()
+  let group6 = DispatchGroup()
   
-  var raceIdsFromElectionId = [String]()
+  var raceIdsFromBallots = [String]()
+  var filteredRaceIdsByElectionID = [String]()
   var candidateIds = [String]()
   var peopleIds = [String]()
   var myBallots = [Person]()
   
   func getAllMyBallots(completion: @escaping([Person]) -> Void) {
-    self.getRaceIdsFromElectionId {
+    //self.getRaceIdsFromElectionId {
+    self.getRaceIdsFromBallots {
       (result) in
-      self.raceIdsFromElectionId = result
-      self.getCandidateIds {
+      self.raceIdsFromBallots = result
+      self.getFilteredRaceIdsByElectionID {
         (result) in
-        self.candidateIds = result
-        self.getPeopleIds {
+        //self.raceIdsFromElectionId = result
+        self.filteredRaceIdsByElectionID = result
+        self.getCandidateIds {
           (result) in
-          self.peopleIds = result
-          self.getBallotCandidates {
+          self.candidateIds = result
+          self.getPeopleIds {
             (result) in
-            self.myBallots = result
-            completion(self.myBallots)
+            self.peopleIds = result
+            self.getBallotCandidates {
+              (result) in
+              self.myBallots = result
+              completion(self.myBallots)
+            }
           }
         }
       }
     }
   }
   
-  func getRaceIdsFromElectionId(completion: @escaping([String]) -> Void) {
+  func getRaceIdsFromBallots (completion: @escaping([String]) -> Void)  {
     let db = Firestore.firestore()
-    self.group1.enter()
+    self.group5.enter()
+    db.collection("ballots").getDocuments() { (querySnapshot, err) in
+      if let err = err {
+        print("Errors getting documents: \(err)")
+        self.group5.leave()
+      } else {
+        for document in querySnapshot!.documents {
+          self.raceIdsFromBallots.append(document.get("race_id") as! String)
+        }
+        self.group5.leave()
+      }
+      completion(self.raceIdsFromBallots)
+    }
+  }
+  
+  func getFilteredRaceIdsByElectionID (completion: @escaping([String]) -> Void) {
+    let db = Firestore.firestore()
+    self.group6.enter()
     db.collection("races").getDocuments() { (querySnapshot, err) in
       if let err = err {
         print("Errors getting documents: \(err)")
-        self.group1.leave()
+        self.group6.leave()
       } else {
         for document in querySnapshot!.documents {
-          if (document.get("election_id") as! String == self.election.election_id) {
-            self.raceIdsFromElectionId.append(document.documentID)
+          if (self.raceIdsFromBallots.contains(document.documentID) && (document.get("election_id") as! String == self.election.election_id)) {
+            self.filteredRaceIdsByElectionID.append(document.documentID)
           }
         }
-        self.group1.leave()
+        self.group6.leave()
       }
-      completion(self.raceIdsFromElectionId)
+      completion(self.filteredRaceIdsByElectionID)
     }
   }
   
-  //TODO: get candidate ids from ballots, then people from candidates
-  
-  // candidate ids from candidateRaces
+  // candidate ids from ballots (where the ballot has a race id belonging to given election
   func getCandidateIds(completion: @escaping([String]) -> Void) {
     let db = Firestore.firestore()
     self.group2.enter()
-    db.collection("candidateRaces").getDocuments() { (querySnapshot, err) in
+    db.collection("ballots").getDocuments() { (querySnapshot, err) in
       if let err = err {
         print("Errors getting documents: \(err)")
         self.group2.leave()
       } else {
         for document in querySnapshot!.documents {
-          if (self.raceIdsFromElectionId.contains(document.get("race_id") as! String)) {
+          if (self.filteredRaceIdsByElectionID.contains(document.get("race_id") as! String)) {
             self.candidateIds.append(document.get("candidate_id") as! String)
           }
         }
@@ -127,10 +150,10 @@ class MyBallotsParser {
         self.group4.leave()
       } else {
         for document in querySnapshot!.documents {
-//          let newBallotCandidate = Candidate(first_name: document.get("first_name") as! String, last_name: document.get("last_name") as! String)
-//          let newBallotPerson = Person(first_name: document.get("first_name") as! String, last_name: document.get("last_name") as! String, party_affiliation: document.get("party_affiliation") as! String, image: nil, contact_twitter: document.get("contact_twitter") as! String, summary: document.get("summary") as! String, people_id: document.documentID)
-          let newBallotPerson = self.createBallotPerson(document.get("first_name") as! String, document.get("last_name") as! String, document.get("party_affiliation") as! String, nil, document.get("contact_twitter") as! String, document.get("summary") as! String, document.documentID)
-          self.myBallots.append(newBallotPerson)
+          if (self.peopleIds.contains(document.documentID)) {
+            let newBallotPerson = self.createBallotPerson(document.get("first_name") as! String, document.get("last_name") as! String, document.get("party_affiliation") as! String, nil, document.get("contact_twitter") as! String, document.get("summary") as! String, document.documentID)
+            self.myBallots.append(newBallotPerson)
+          }
         }
         self.group4.leave()
       }

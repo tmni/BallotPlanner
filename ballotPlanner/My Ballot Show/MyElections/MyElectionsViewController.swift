@@ -16,21 +16,21 @@ class MyElectionsViewController: UIViewController, UITableViewDataSource, UITabl
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
-    let cellNib = UINib(nibName: "MyElectionsTableViewCell", bundle: nil)
-    tableView.register(cellNib, forCellReuseIdentifier: "myElectionCell")
-    
-    viewModel.refresh { [unowned self] in
-      DispatchQueue.main.async {
-        self.tableView.reloadData()
-      }
-    }
   }
   
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     if let selectedRow = tableView.indexPathForSelectedRow {
       tableView.deselectRow(at: selectedRow, animated: true)
+    }
+    
+    let cellNib = UINib(nibName: "MyElectionsTableViewCell", bundle: nil)
+    tableView.register(cellNib, forCellReuseIdentifier: "myElectionCell")
+
+    viewModel.refresh { [unowned self] in
+      DispatchQueue.main.async {
+        self.tableView.reloadData()
+      }
     }
   }
   

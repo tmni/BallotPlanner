@@ -21,6 +21,11 @@ class MyElectionsParser {
   var myElections = [ElectionDate]()
   
   func getAllMyElections(completion: @escaping([ElectionDate]) -> Void) {
+    // have to reinitialize or results are always duplicated
+    self.raceIdsFromBallots = [String]()
+    self.electionIdsFromBallots = [String]()
+    self.myElections = [ElectionDate]()
+    
     self.getRaceIdsFromBallots{
       (result) in
       self.raceIdsFromBallots = result
