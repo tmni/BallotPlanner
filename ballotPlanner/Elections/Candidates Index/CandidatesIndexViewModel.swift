@@ -16,6 +16,7 @@ class CandidatesIndexViewModel {
   }
   
   var allCandidates = [Person]()
+  var allCandidatesSortedByOfficeId = Dictionary<String, [Person]>()
   
   func numberOfRows() -> Int {
     return allCandidates.count
@@ -32,6 +33,7 @@ class CandidatesIndexViewModel {
       let candidate = allCandidates[row]
       return candidate.first_name + " " + candidate.last_name
     }
+    
   }
   
   func partyForRowAtIndexPath(_ indexPath: IndexPath) -> String {
@@ -45,14 +47,22 @@ class CandidatesIndexViewModel {
   }
   
   func candidateViewModelForRowAtIndexPath(_ indexPath: IndexPath) -> CandidateViewModel {
-    return CandidateViewModel(candidate: allCandidates[indexPath.row])
+    //return CandidateViewModel(candidate: allCandidates[indexPath.row])
+    var officeArray = Array(allCandidatesSortedByOfficeId.keys)
+    var officeId = officeArray[indexPath.section]
+    var candidateArray = allCandidatesSortedByOfficeId[officeId]
+    return CandidateViewModel(candidate: candidateArray![indexPath.row])
   }
   
   func refresh(_ completion: @escaping () -> Void) {
     let parser = CandidatesIndexParser(self.election)
     
-    parser.getAllCandidates {
-      (result) in self.allCandidates = result
+//    parser.getAllCandidates {
+//      (result) in self.allCandidates = result
+//      completion()
+//    }
+    parser.getAllCandidatesSortedByOfficeId {
+      (result) in self.allCandidatesSortedByOfficeId = result
       completion()
     }
   }

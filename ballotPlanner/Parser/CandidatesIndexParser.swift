@@ -24,10 +24,19 @@ class CandidatesIndexParser {
   let group2 = DispatchGroup()
   let group3 = DispatchGroup()
   let group4 = DispatchGroup()
+  let group5 = DispatchGroup()
+  let group6 = DispatchGroup()
+  let group7 = DispatchGroup()
+  let group8 = DispatchGroup()
   
   var raceIdsFromElectionId = [String]()
+  var raceIdsSortedByOfficeId = Dictionary<String, [String]>()
   var candidateIds = [String]()
+  var candidateIdsSortedByOfficeId = Dictionary<String, [String]>()
   var peopleIds = [String]()
+  var peopleIdsSortedByOfficeId = Dictionary<String, [String]>()
+  
+  var allCandidatesSortedByOfficeId = Dictionary<String, [Person]>()
   var allCandidates = [Person]()
   
   func getAllCandidates(completion: @escaping([Person]) -> Void) {
@@ -44,6 +53,30 @@ class CandidatesIndexParser {
             (result) in
             self.allCandidates = result
             completion(self.allCandidates)
+          }
+        }
+      }
+    }
+  }
+  
+  func getAllCandidatesSortedByOfficeId(completion: @escaping(Dictionary<String, [Person]>) -> Void) {
+    self.getRaceIdsFromElectionId {
+      (result) in
+      self.raceIdsFromElectionId = result
+      self.getRaceIdsSortedByOfficeId {
+        (result) in
+        self.raceIdsSortedByOfficeId = result
+        self.getCandidateIdsSortedByOfficeId() {
+          (result) in
+          self.candidateIdsSortedByOfficeId = result
+          self.getPeopleIdsSortedByOfficeId {
+            (result) in
+            self.peopleIdsSortedByOfficeId = result
+            self.getCandidatesSortedByOfficeId {
+              (result) in
+              self.allCandidatesSortedByOfficeId = result
+              completion(self.allCandidatesSortedByOfficeId)
+            }
           }
         }
       }
@@ -69,6 +102,30 @@ class CandidatesIndexParser {
     }
   }
   
+  func getRaceIdsSortedByOfficeId(completion: @escaping(Dictionary<String, [String]>) -> Void) {
+    let db = Firestore.firestore()
+    self.group5.enter()
+    db.collection("races").getDocuments() { (querySnapshot, err) in
+      if let err = err {
+        print("Errors getting documents: \(err)")
+        self.group5.leave()
+      } else {
+        for document in querySnapshot!.documents {
+          if (self.raceIdsFromElectionId.contains(document.documentID)) {
+//            self.raceIdsSortedByOfficeId[document.get("office_id") as! String]?.append(document.documentID)
+            if (self.raceIdsSortedByOfficeId.keys.contains(document.get("office_id") as! String)) {
+              self.raceIdsSortedByOfficeId[document.get("office_id") as! String]?.append(document.documentID)
+            } else {
+              self.raceIdsSortedByOfficeId[document.get("office_id") as! String] = [document.documentID]
+            }
+          }
+        }
+        self.group5.leave()
+      }
+      completion(self.raceIdsSortedByOfficeId)
+    }
+  }
+  
   // candidate ids from candidateRaces
   func getCandidateIds(completion: @escaping([String]) -> Void) {
     let db = Firestore.firestore()
@@ -86,6 +143,31 @@ class CandidatesIndexParser {
         self.group2.leave()
       }
       completion(self.candidateIds)
+    }
+  }
+  
+  func getCandidateIdsSortedByOfficeId(completion: @escaping(Dictionary<String, [String]>) -> Void) {
+    let db = Firestore.firestore()
+    self.group6.enter()
+    db.collection("candidateRace").getDocuments() { (querySnapshot, err) in
+      if let err = err {
+        print("Errors getting documents: \(err)")
+        self.group6.leave()
+      } else {
+        for document in querySnapshot!.documents {
+          for key in self.raceIdsSortedByOfficeId.keys {
+            if ((self.raceIdsSortedByOfficeId[key]?.contains(document.get("race_id") as! String))!) {
+              if (self.candidateIdsSortedByOfficeId.keys.contains(key)) {
+                self.candidateIdsSortedByOfficeId[key]?.append(document.get("candidate_id") as! String)
+              } else {
+                self.candidateIdsSortedByOfficeId[key] = [document.get("candidate_id") as! String]
+              }
+            }
+          }
+        }
+        self.group6.leave()
+      }
+      completion(self.candidateIdsSortedByOfficeId)
     }
   }
   
@@ -109,6 +191,31 @@ class CandidatesIndexParser {
     }
   }
   
+  func getPeopleIdsSortedByOfficeId(completion: @escaping(Dictionary<String, [String]>) -> Void) {
+    let db = Firestore.firestore()
+    self.group7.enter()
+    db.collection("candidates").getDocuments() { (querySnapshot, err) in
+      if let err = err {
+        print("Errors getting documents: \(err)")
+        self.group7.leave()
+      } else {
+        for document in querySnapshot!.documents {
+          for key in self.candidateIdsSortedByOfficeId.keys {
+            if ((self.candidateIdsSortedByOfficeId[key]?.contains(document.documentID))!) {
+              if (self.peopleIdsSortedByOfficeId.keys.contains(key)) {
+                self.peopleIdsSortedByOfficeId[key]?.append(document.get("people_id") as! String)
+              } else {
+                self.peopleIdsSortedByOfficeId[key] = [document.get("people_id") as! String]
+              }
+            }
+          }
+        }
+        self.group7.leave()
+      }
+      completion(self.peopleIdsSortedByOfficeId)
+    }
+  }
+  
   // get all candidate info, currently only info from the "people" document, but should be combined info from "candidate" and "people"
   func getCandidates(completion: @escaping([Person]) -> Void) {
     let db = Firestore.firestore()
@@ -119,8 +226,6 @@ class CandidatesIndexParser {
         self.group4.leave()
       } else {
         for document in querySnapshot!.documents {
-          //          let newBallotCandidate = Candidate(first_name: document.get("first_name") as! String, last_name: document.get("last_name") as! String)
-//          let newCandidatePerson = Person(first_name: document.get("first_name") as! String, last_name: document.get("last_name") as! String, party_affiliation: document.get("party_affiliation") as! String, image: nil, contact_twitter: document.get("contact_twitter") as! String, summary: document.get("summary") as! String, people_id: document.documentID)
           if self.peopleIds.contains(document.documentID) {
             let newCandidatePerson = self.createCandidatePerson(document.get("first_name") as! String, document.get("last_name") as! String, document.get("party_affiliation") as! String, nil, document.get("contact_twitter") as! String, document.get("summary") as! String, document.documentID)
             self.allCandidates.append(newCandidatePerson)
@@ -129,6 +234,32 @@ class CandidatesIndexParser {
         self.group4.leave()
       }
       completion(self.allCandidates)
+    }
+  }
+  
+  func getCandidatesSortedByOfficeId(completion: @escaping(Dictionary<String, [Person]>) -> Void) {
+    let db = Firestore.firestore()
+    self.group8.enter()
+    db.collection("people").getDocuments() { (querySnapshot, err) in
+      if let err = err {
+        print("Errors getting documents: \(err)")
+        self.group8.leave()
+      } else {
+        for document in querySnapshot!.documents {
+          for key in self.peopleIdsSortedByOfficeId.keys {
+            if ((self.peopleIdsSortedByOfficeId[key]?.contains(document.documentID))!) {
+              let newCandidatePerson = self.createCandidatePerson(document.get("first_name") as! String, document.get("last_name") as! String, document.get("party_affiliation") as! String, nil, document.get("contact_twitter") as! String, document.get("summary") as! String, document.documentID)
+              if (self.allCandidatesSortedByOfficeId.keys.contains(key)) {
+                self.allCandidatesSortedByOfficeId[key]?.append(newCandidatePerson)
+              } else {
+                self.allCandidatesSortedByOfficeId[key] = [newCandidatePerson]
+              }
+            }
+          }
+        }
+        self.group8.leave()
+      }
+      completion(self.allCandidatesSortedByOfficeId)
     }
   }
   

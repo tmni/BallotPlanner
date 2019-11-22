@@ -30,7 +30,7 @@ class CandidatesIndexViewController: UIViewController, UICollectionViewDataSourc
     viewModel?.refresh { [unowned self] in
       DispatchQueue.main.async {
         self.collectionView1.reloadData()
-        self.collectionView1.collectionViewLayout.invalidateLayout()
+        //self.collectionView1.collectionViewLayout.invalidateLayout()
       }
     }
   }
@@ -55,13 +55,28 @@ class CandidatesIndexViewController: UIViewController, UICollectionViewDataSourc
   
   func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
 //    return viewModel?.numberOfRows() ?? 0
-    return viewModel?.allCandidates.count ?? 0
+    //return viewModel?.allCandidates.count ?? 0
+    var officeArray = Array((viewModel?.allCandidatesSortedByOfficeId.keys)!)
+    if (officeArray == []) {
+      return 0
+    } else {
+      var officeId = officeArray[section]
+      var candidateArray = viewModel?.allCandidatesSortedByOfficeId[officeId]
+      return candidateArray?.count ?? 0
+    }
   }
   
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     let cell = collectionView1.dequeueReusableCell(withReuseIdentifier: "CandidatesIndexCell", for: indexPath) as! CandidatesIndexCollectionViewCell
-    cell.name.text = viewModel?.titleForRowAtIndexPath(indexPath)
-    cell.party.text = viewModel?.partyForRowAtIndexPath(indexPath)
+//    cell.name.text = viewModel?.titleForRowAtIndexPath(indexPath)
+//    cell.party.text = viewModel?.partyForRowAtIndexPath(indexPath)
+    var officeArray = Array(((viewModel?.allCandidatesSortedByOfficeId.keys)!))
+    var officeId = officeArray[indexPath.section]
+    let candidateArray = viewModel?.allCandidatesSortedByOfficeId[officeId]
+    let candidate = candidateArray![indexPath.row]
+    cell.name.text = candidate.first_name + " " + candidate.last_name
+    cell.party.text = candidate.party_affiliation
+    
     return cell
   }
   
@@ -69,26 +84,34 @@ class CandidatesIndexViewController: UIViewController, UICollectionViewDataSourc
     performSegue(withIdentifier: "toCandidateVC", sender: indexPath)
   }
   
-//  func collectionView(_ collectionView: UICollectionView,
-//                      layout collectionViewLayout: UICollectionViewLayout,
-//                      sizeForItemAt indexPath: IndexPath) -> CGSize {
-//    //2
-//    let paddingSpace = sectionInsets.left * (itemsPerRow + 1)
-//    let availableWidth = view.frame.width - paddingSpace
-//    let widthPerItem = availableWidth / itemsPerRow
-//
-//    return CGSize(width: widthPerItem, height: widthPerItem)
-//  }
-//
-//  func collectionView(_ collectionView: UICollectionView,
-//                      layout collectionViewLayout: UICollectionViewLayout,
-//                      insetForSectionAt section: Int) -> UIEdgeInsets {
-//    return sectionInsets
-//  }
-//
-//  func collectionView(_ collectionView: UICollectionView,
-//                      layout collectionViewLayout: UICollectionViewLayout,
-//                      minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-//    return sectionInsets.left
-//  }
+  func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+    var officeArray = Array((viewModel?.allCandidatesSortedByOfficeId.keys)!)
+//    if (officeArray != []) {
+//      if let sectionHeader = collectionView1.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "CandidatesIndexSectionHeader", for: indexPath) as? CandidatesIndexSectionHeader {
+//        //sectionHeader.sectionHeaderlabel.text = "Section \(indexPath.section)"
+//        sectionHeader.sectionHeaderlabel.text = officeArray[indexPath.section]
+//        return sectionHeader
+//      }
+//      return UICollectionReusableView()
+//    } else {
+//      return UICollectionReusableView()
+//    }
+//    if (officeArray != []) {
+//      print(officeArray[indexPath.section])
+//    }
+    var text: String
+    if (officeArray != []) {
+      text = officeArray[indexPath.section]
+    } else {
+      text = "Section \(indexPath.section)"
+    }
+    
+    if let sectionHeader = collectionView1.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "CandidatesIndexSectionHeader", for: indexPath) as? CandidatesIndexSectionHeader {
+      //sectionHeader.sectionHeaderlabel.text = "Section \(indexPath.section)"
+      sectionHeader.sectionHeaderlabel.text = text
+      return sectionHeader
+    }
+    return UICollectionReusableView()
+  }
+
 }
