@@ -16,7 +16,7 @@ class CandidateViewModel {
   }
   
   func title() -> String? {
-    return self.candidate.first_name + self.candidate.last_name
+    return self.candidate.first_name + " " + self.candidate.last_name
   }
   
   func party() -> String? {

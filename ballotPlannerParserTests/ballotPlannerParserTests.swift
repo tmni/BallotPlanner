@@ -27,17 +27,6 @@ class ballotPlannerParserTests: XCTestCase {
     }
 
   func testElectionDatesFromSearchResponse(){
-    //    // create the expectation
-    //    let exp = expectation(description: "Loading ElectionDates")
-    //
-    //    // call my asynchronous method
-    //    parser1.electionDatesFromSearchResponse {_ in
-    //      // when it finishes, mark my expectation as being fulfilled
-    //      exp.fulfill()
-    //    }
-    //
-    //    // wait three seconds for all outstanding expectations to be fulfilled
-    //    waitForExpectations(timeout: 3)
     
     let electionDate1 = parser1.createElectionDate("election_id1", "date1", "description1", "name1", [["lat": 0.0, "long": 1.1]])
     

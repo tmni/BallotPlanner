@@ -11,4 +11,5 @@ import UIKit
 
 class CandidatesIndexSectionHeader: UICollectionReusableView {
   @IBOutlet weak var sectionHeaderlabel: UILabel!
+  
 }
