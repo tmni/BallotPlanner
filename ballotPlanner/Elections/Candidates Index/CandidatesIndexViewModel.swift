@@ -15,36 +15,37 @@ class CandidatesIndexViewModel {
     self.election = election
   }
   
-  var allCandidates = [Person]()
+  //var allCandidates = [Person]()
   var allCandidatesSortedByOfficeId = Dictionary<String, [Person]>()
+  var officeIdsToName = Dictionary<String, String>()
   
-  func numberOfRows() -> Int {
-    return allCandidates.count
-  }
+//  func numberOfRows() -> Int {
+//    return allCandidates.count
+//  }
   
   //func imageForRowAtIndexPath
   
-  func titleForRowAtIndexPath(_ indexPath: IndexPath) -> String {
-    let row = indexPath.row
-    if (row >= self.numberOfRows()) {
-      return ""
-    }
-    else {
-      let candidate = allCandidates[row]
-      return candidate.first_name + " " + candidate.last_name
-    }
-    
-  }
-  
-  func partyForRowAtIndexPath(_ indexPath: IndexPath) -> String {
-    let row = indexPath.row
-    if (row >= self.numberOfRows()) {
-      return ""
-    } else {
-      let candidate = allCandidates[row]
-      return candidate.party_affiliation
-    }
-  }
+//  func titleForRowAtIndexPath(_ indexPath: IndexPath) -> String {
+//    let row = indexPath.row
+//    if (row >= self.numberOfRows()) {
+//      return ""
+//    }
+//    else {
+//      let candidate = allCandidates[row]
+//      return candidate.first_name + " " + candidate.last_name
+//    }
+//
+//  }
+//
+//  func partyForRowAtIndexPath(_ indexPath: IndexPath) -> String {
+//    let row = indexPath.row
+//    if (row >= self.numberOfRows()) {
+//      return ""
+//    } else {
+//      let candidate = allCandidates[row]
+//      return candidate.party_affiliation
+//    }
+//  }
   
   func candidateViewModelForRowAtIndexPath(_ indexPath: IndexPath) -> CandidateViewModel {
     //return CandidateViewModel(candidate: allCandidates[indexPath.row])
@@ -63,7 +64,10 @@ class CandidatesIndexViewModel {
 //    }
     parser.getAllCandidatesSortedByOfficeId {
       (result) in self.allCandidatesSortedByOfficeId = result
-      completion()
+      parser.getOfficeIdsToName(self.allCandidatesSortedByOfficeId) {
+        (result) in self.officeIdsToName = result
+        completion()
+      }
     }
   }
   

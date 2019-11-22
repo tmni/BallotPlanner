@@ -84,28 +84,15 @@ class CandidatesIndexViewController: UIViewController, UICollectionViewDataSourc
   
   func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
     var officeArray = Array((viewModel?.allCandidatesSortedByOfficeId.keys)!)
-//    if (officeArray != []) {
-//      if let sectionHeader = collectionView1.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "CandidatesIndexSectionHeader", for: indexPath) as? CandidatesIndexSectionHeader {
-//        //sectionHeader.sectionHeaderlabel.text = "Section \(indexPath.section)"
-//        sectionHeader.sectionHeaderlabel.text = officeArray[indexPath.section]
-//        return sectionHeader
-//      }
-//      return UICollectionReusableView()
-//    } else {
-//      return UICollectionReusableView()
-//    }
-//    if (officeArray != []) {
-//      print(officeArray[indexPath.section])
-//    }
     var text: String
     if (officeArray != []) {
-      text = officeArray[indexPath.section]
+      let officeId = officeArray[indexPath.section]
+      text = (viewModel?.officeIdsToName[officeId])!
     } else {
       text = "Section \(indexPath.section)"
     }
     
     if let sectionHeader = collectionView1.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "CandidatesIndexSectionHeader", for: indexPath) as? CandidatesIndexSectionHeader {
-      //sectionHeader.sectionHeaderlabel.text = "Section \(indexPath.section)"
       sectionHeader.sectionHeaderlabel.text = text
       return sectionHeader
     }
