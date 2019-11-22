@@ -17,6 +17,14 @@ class MyBallotsViewController: UIViewController, UITableViewDataSource, UITableV
   override func viewDidLoad() {
     super.viewDidLoad()
     
+  }
+  
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    if let selectedRow = tableView.indexPathForSelectedRow {
+      tableView.deselectRow(at: selectedRow, animated: true)
+    }
+    
     let cellNib = UINib(nibName: "MyBallotsTableViewCell", bundle: nil)
     tableView.register(cellNib, forCellReuseIdentifier: "myBallotCell")
     
@@ -24,14 +32,6 @@ class MyBallotsViewController: UIViewController, UITableViewDataSource, UITableV
       DispatchQueue.main.async {
         self.tableView.reloadData()
       }
-    }
-    
-  }
-  
-  override func viewWillAppear(_ animated: Bool) {
-    super.viewWillAppear(animated)
-    if let selectedRow = tableView.indexPathForSelectedRow {
-      tableView.deselectRow(at: selectedRow, animated: true)
     }
   }
   

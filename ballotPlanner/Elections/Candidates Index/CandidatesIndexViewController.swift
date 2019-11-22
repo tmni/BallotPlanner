@@ -15,15 +15,19 @@ class CandidatesIndexViewController: UIViewController, UICollectionViewDataSourc
   
   var viewModel: CandidatesIndexViewModel?
   
-  private let itemsPerRow: CGFloat = 3
-  private let sectionInsets = UIEdgeInsets(top: 50.0,
-                                           left: 20.0,
-                                           bottom: 50.0,
-                                           right: 20.0)
+//  private let itemsPerRow: CGFloat = 3
+//  private let sectionInsets = UIEdgeInsets(top: 50.0,
+//                                           left: 20.0,
+//                                           bottom: 50.0,
+//                                           right: 20.0)
 
 
   override func viewDidLoad() {
     super.viewDidLoad()
+  }
+  
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
     let cellNib = UINib(nibName: "CandidatesIndexCollectionViewCell", bundle: nil)
     collectionView1.register(cellNib, forCellWithReuseIdentifier: "CandidatesIndexCell")
     
@@ -33,17 +37,7 @@ class CandidatesIndexViewController: UIViewController, UICollectionViewDataSourc
         //self.collectionView1.collectionViewLayout.invalidateLayout()
       }
     }
-  }
-  
-  override func viewWillAppear(_ animated: Bool) {
-    super.viewWillAppear(animated)
-//    if let selectedRow = tableView.indexPathForSelectedRow {
-//      tableView.deselectRow(at: selectedRow, animated: true)
-//    }
-    //print(len(collectionView.indexPathsForSelectedItems))
-//    if let selectedItem = collectionView.indexPathsForSelectedItems[0] {
-//      collectionView.deselectItem(at: selectedItem, animated: true)
-//    }
+
   }
   
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -51,6 +45,10 @@ class CandidatesIndexViewController: UIViewController, UICollectionViewDataSourc
       let indexPath = sender as? IndexPath {
       detailVC.viewModel = viewModel?.candidateViewModelForRowAtIndexPath(indexPath)
     }
+  }
+  
+  func numberOfSections(in collectionView: UICollectionView) -> Int {
+    return viewModel?.allCandidatesSortedByOfficeId.keys.count ?? 0
   }
   
   func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
