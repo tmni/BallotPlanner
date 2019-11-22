@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		32AAF2B3DCC29192DA454FC6 /* libPods-ballotPlannerModelTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F600DE1ABAA221A4B8DE6782 /* libPods-ballotPlannerModelTests.a */; };
+		01C514578003B58D59A1D58A /* libPods-ballotPlannerModelTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 86F32EC8606E92106A3D5876 /* libPods-ballotPlannerModelTests.a */; };
+		1481C7510688AF664AD6B3D0 /* libPods-ballotPlannerViewModelTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA88289A74630380D8684DF /* libPods-ballotPlannerViewModelTests.a */; };
 		3F00D0D4237268220001F364 /* Candidate.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F00D0D3237268220001F364 /* Candidate.storyboard */; };
 		3F00D0DD237326A60001F364 /* CandidatesIndexViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F00D0DC237326A60001F364 /* CandidatesIndexViewModel.swift */; };
 		3F00D0DF237326B10001F364 /* CandidatesIndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F00D0DE237326B10001F364 /* CandidatesIndexViewController.swift */; };
@@ -59,7 +60,6 @@
 		3FFD3E3523723A2F00B680F9 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFD3E3423723A2F00B680F9 /* Person.swift */; };
 		3FFD3E3A2372446900B680F9 /* MyBallotsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFD3E382372446900B680F9 /* MyBallotsTableViewCell.swift */; };
 		3FFD3E3B2372446900B680F9 /* MyBallotsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FFD3E392372446900B680F9 /* MyBallotsTableViewCell.xib */; };
-		670D7461929B18D6EB11D078 /* libPods-ballotPlannerViewModelTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BAEBE2B9F0E23133203CD08 /* libPods-ballotPlannerViewModelTests.a */; };
 		6D097B9F2373BCF700E756DB /* Achievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D097B9E2373BCF700E756DB /* Achievement.swift */; };
 		6D097BA12373C94A00E756DB /* UserInfoParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D097BA02373C94A00E756DB /* UserInfoParser.swift */; };
 		6D097BA32373CBEA00E756DB /* UserInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D097BA22373CBEA00E756DB /* UserInfoViewModel.swift */; };
@@ -70,8 +70,8 @@
 		6D88EFD12373386F004FFF23 /* AchievementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D88EFD02373386F004FFF23 /* AchievementsViewController.swift */; };
 		6D88EFD323733C11004FFF23 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D88EFD223733C11004FFF23 /* MyCollectionViewCell.swift */; };
 		6D88EFD523733C3F004FFF23 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D88EFD423733C3F004FFF23 /* MyViewController.swift */; };
-		8AEA7911B449A15C078BED31 /* Pods_ballotPlanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E280B0C56CB18E69F0ABFE1 /* Pods_ballotPlanner.framework */; };
-		FA216417A0545CDF121A8A98 /* libPods-ballotPlannerParserTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B87B8577E8EDBD83706602CC /* libPods-ballotPlannerParserTests.a */; };
+		831487D30CE30161B02BBE42 /* libPods-ballotPlannerParserTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DEFDE215A852BC5A23E259F /* libPods-ballotPlannerParserTests.a */; };
+		AD65B911774461C4B80A2E27 /* Pods_ballotPlanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF148A0C160C718E5C72CC1A /* Pods_ballotPlanner.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,11 +99,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1BAEBE2B9F0E23133203CD08 /* libPods-ballotPlannerViewModelTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ballotPlannerViewModelTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2E280B0C56CB18E69F0ABFE1 /* Pods_ballotPlanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ballotPlanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F143B01ADB4D8DC54CC431D /* Pods-ballotPlannerViewModelTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ballotPlannerViewModelTests.release.xcconfig"; path = "Target Support Files/Pods-ballotPlannerViewModelTests/Pods-ballotPlannerViewModelTests.release.xcconfig"; sourceTree = "<group>"; };
-		327BBA77910B25A203209702 /* Pods-ballotPlannerModelTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ballotPlannerModelTests.debug.xcconfig"; path = "Target Support Files/Pods-ballotPlannerModelTests/Pods-ballotPlannerModelTests.debug.xcconfig"; sourceTree = "<group>"; };
-		3C628B7B7611EB44E84599A8 /* Pods-ballotPlanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ballotPlanner.debug.xcconfig"; path = "Target Support Files/Pods-ballotPlanner/Pods-ballotPlanner.debug.xcconfig"; sourceTree = "<group>"; };
+		308C426D7DCE2F511F239894 /* Pods-ballotPlannerViewModelTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ballotPlannerViewModelTests.release.xcconfig"; path = "Target Support Files/Pods-ballotPlannerViewModelTests/Pods-ballotPlannerViewModelTests.release.xcconfig"; sourceTree = "<group>"; };
+		396699BB584F31FBF3BEC08F /* Pods-ballotPlannerParserTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ballotPlannerParserTests.release.xcconfig"; path = "Target Support Files/Pods-ballotPlannerParserTests/Pods-ballotPlannerParserTests.release.xcconfig"; sourceTree = "<group>"; };
 		3F00D0D3237268220001F364 /* Candidate.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Candidate.storyboard; sourceTree = "<group>"; };
 		3F00D0DC237326A60001F364 /* CandidatesIndexViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidatesIndexViewModel.swift; sourceTree = "<group>"; };
 		3F00D0DE237326B10001F364 /* CandidatesIndexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidatesIndexViewController.swift; sourceTree = "<group>"; };
@@ -163,8 +160,8 @@
 		3FFD3E3423723A2F00B680F9 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		3FFD3E382372446900B680F9 /* MyBallotsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBallotsTableViewCell.swift; sourceTree = "<group>"; };
 		3FFD3E392372446900B680F9 /* MyBallotsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyBallotsTableViewCell.xib; sourceTree = "<group>"; };
-		45877D6865AAE0D1FAC93C6B /* Pods-ballotPlannerModelTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ballotPlannerModelTests.release.xcconfig"; path = "Target Support Files/Pods-ballotPlannerModelTests/Pods-ballotPlannerModelTests.release.xcconfig"; sourceTree = "<group>"; };
-		6036F6C09D642BF5613C83F7 /* Pods-ballotPlannerParserTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ballotPlannerParserTests.release.xcconfig"; path = "Target Support Files/Pods-ballotPlannerParserTests/Pods-ballotPlannerParserTests.release.xcconfig"; sourceTree = "<group>"; };
+		4DEFDE215A852BC5A23E259F /* libPods-ballotPlannerParserTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ballotPlannerParserTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		519A5DC83A81893F7B284A89 /* Pods-ballotPlanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ballotPlanner.release.xcconfig"; path = "Target Support Files/Pods-ballotPlanner/Pods-ballotPlanner.release.xcconfig"; sourceTree = "<group>"; };
 		6D097B9C2373BCAC00E756DB /* Achievement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Achievement.swift; path = /Users/tarunaemani/Desktop/Ballot_Planner/ballotPlanner/Models/Achievement.swift; sourceTree = "<absolute>"; };
 		6D097B9E2373BCF700E756DB /* Achievement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achievement.swift; sourceTree = "<group>"; };
 		6D097BA02373C94A00E756DB /* UserInfoParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserInfoParser.swift; path = ballotPlanner/Parser/UserInfoParser.swift; sourceTree = SOURCE_ROOT; };
@@ -176,11 +173,14 @@
 		6D88EFD02373386F004FFF23 /* AchievementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsViewController.swift; sourceTree = "<group>"; };
 		6D88EFD223733C11004FFF23 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
 		6D88EFD423733C3F004FFF23 /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
-		882FED0EA888BF2057E8EA88 /* Pods-ballotPlannerViewModelTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ballotPlannerViewModelTests.debug.xcconfig"; path = "Target Support Files/Pods-ballotPlannerViewModelTests/Pods-ballotPlannerViewModelTests.debug.xcconfig"; sourceTree = "<group>"; };
-		964ECA83D58592A1B4B51FF9 /* Pods-ballotPlannerParserTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ballotPlannerParserTests.debug.xcconfig"; path = "Target Support Files/Pods-ballotPlannerParserTests/Pods-ballotPlannerParserTests.debug.xcconfig"; sourceTree = "<group>"; };
-		B87B8577E8EDBD83706602CC /* libPods-ballotPlannerParserTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ballotPlannerParserTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F4B65065CEABC734A70351D5 /* Pods-ballotPlanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ballotPlanner.release.xcconfig"; path = "Target Support Files/Pods-ballotPlanner/Pods-ballotPlanner.release.xcconfig"; sourceTree = "<group>"; };
-		F600DE1ABAA221A4B8DE6782 /* libPods-ballotPlannerModelTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ballotPlannerModelTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		86F32EC8606E92106A3D5876 /* libPods-ballotPlannerModelTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ballotPlannerModelTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CA88289A74630380D8684DF /* libPods-ballotPlannerViewModelTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ballotPlannerViewModelTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEA1283BC293072A3CD41B75 /* Pods-ballotPlannerModelTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ballotPlannerModelTests.debug.xcconfig"; path = "Target Support Files/Pods-ballotPlannerModelTests/Pods-ballotPlannerModelTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B60BD8B02599D12AC8DD4803 /* Pods-ballotPlannerModelTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ballotPlannerModelTests.release.xcconfig"; path = "Target Support Files/Pods-ballotPlannerModelTests/Pods-ballotPlannerModelTests.release.xcconfig"; sourceTree = "<group>"; };
+		BF148A0C160C718E5C72CC1A /* Pods_ballotPlanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ballotPlanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C992BD0D2443F6CF32D05CE6 /* Pods-ballotPlannerViewModelTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ballotPlannerViewModelTests.debug.xcconfig"; path = "Target Support Files/Pods-ballotPlannerViewModelTests/Pods-ballotPlannerViewModelTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E1E1B54A3363337061842A65 /* Pods-ballotPlannerParserTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ballotPlannerParserTests.debug.xcconfig"; path = "Target Support Files/Pods-ballotPlannerParserTests/Pods-ballotPlannerParserTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EC576CEB97467329C31B4C68 /* Pods-ballotPlanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ballotPlanner.debug.xcconfig"; path = "Target Support Files/Pods-ballotPlanner/Pods-ballotPlanner.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,7 +188,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8AEA7911B449A15C078BED31 /* Pods_ballotPlanner.framework in Frameworks */,
+				AD65B911774461C4B80A2E27 /* Pods_ballotPlanner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,7 +196,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32AAF2B3DCC29192DA454FC6 /* libPods-ballotPlannerModelTests.a in Frameworks */,
+				01C514578003B58D59A1D58A /* libPods-ballotPlannerModelTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,7 +204,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				670D7461929B18D6EB11D078 /* libPods-ballotPlannerViewModelTests.a in Frameworks */,
+				1481C7510688AF664AD6B3D0 /* libPods-ballotPlannerViewModelTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,7 +212,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA216417A0545CDF121A8A98 /* libPods-ballotPlannerParserTests.a in Frameworks */,
+				831487D30CE30161B02BBE42 /* libPods-ballotPlannerParserTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,7 +240,7 @@
 				3F6E3421237D114900E7A74E /* ballotPlannerViewModelTests */,
 				3F5AB492236F72C400A58E42 /* Products */,
 				569D63D6FCCFB8D6A772A79A /* Pods */,
-				B4D5A65D66F9350CA7BA2EAC /* Frameworks */,
+				8E756842333AC0465F743074 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -410,14 +410,14 @@
 		569D63D6FCCFB8D6A772A79A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3C628B7B7611EB44E84599A8 /* Pods-ballotPlanner.debug.xcconfig */,
-				F4B65065CEABC734A70351D5 /* Pods-ballotPlanner.release.xcconfig */,
-				964ECA83D58592A1B4B51FF9 /* Pods-ballotPlannerParserTests.debug.xcconfig */,
-				6036F6C09D642BF5613C83F7 /* Pods-ballotPlannerParserTests.release.xcconfig */,
-				327BBA77910B25A203209702 /* Pods-ballotPlannerModelTests.debug.xcconfig */,
-				45877D6865AAE0D1FAC93C6B /* Pods-ballotPlannerModelTests.release.xcconfig */,
-				882FED0EA888BF2057E8EA88 /* Pods-ballotPlannerViewModelTests.debug.xcconfig */,
-				2F143B01ADB4D8DC54CC431D /* Pods-ballotPlannerViewModelTests.release.xcconfig */,
+				EC576CEB97467329C31B4C68 /* Pods-ballotPlanner.debug.xcconfig */,
+				519A5DC83A81893F7B284A89 /* Pods-ballotPlanner.release.xcconfig */,
+				AEA1283BC293072A3CD41B75 /* Pods-ballotPlannerModelTests.debug.xcconfig */,
+				B60BD8B02599D12AC8DD4803 /* Pods-ballotPlannerModelTests.release.xcconfig */,
+				E1E1B54A3363337061842A65 /* Pods-ballotPlannerParserTests.debug.xcconfig */,
+				396699BB584F31FBF3BEC08F /* Pods-ballotPlannerParserTests.release.xcconfig */,
+				C992BD0D2443F6CF32D05CE6 /* Pods-ballotPlannerViewModelTests.debug.xcconfig */,
+				308C426D7DCE2F511F239894 /* Pods-ballotPlannerViewModelTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -448,13 +448,13 @@
 			path = "User Info";
 			sourceTree = "<group>";
 		};
-		B4D5A65D66F9350CA7BA2EAC /* Frameworks */ = {
+		8E756842333AC0465F743074 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2E280B0C56CB18E69F0ABFE1 /* Pods_ballotPlanner.framework */,
-				B87B8577E8EDBD83706602CC /* libPods-ballotPlannerParserTests.a */,
-				F600DE1ABAA221A4B8DE6782 /* libPods-ballotPlannerModelTests.a */,
-				1BAEBE2B9F0E23133203CD08 /* libPods-ballotPlannerViewModelTests.a */,
+				BF148A0C160C718E5C72CC1A /* Pods_ballotPlanner.framework */,
+				86F32EC8606E92106A3D5876 /* libPods-ballotPlannerModelTests.a */,
+				4DEFDE215A852BC5A23E259F /* libPods-ballotPlannerParserTests.a */,
+				9CA88289A74630380D8684DF /* libPods-ballotPlannerViewModelTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -466,11 +466,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F5AB4A3236F72C700A58E42 /* Build configuration list for PBXNativeTarget "ballotPlanner" */;
 			buildPhases = (
-				9EFF5FBF7EDE54F5F313C4A8 /* [CP] Check Pods Manifest.lock */,
+				A2181AC0D412D4F34C1221A4 /* [CP] Check Pods Manifest.lock */,
 				3F5AB48D236F72C400A58E42 /* Sources */,
 				3F5AB48E236F72C400A58E42 /* Frameworks */,
 				3F5AB48F236F72C400A58E42 /* Resources */,
-				E7B2917DCC7F6562E4A48316 /* [CP] Embed Pods Frameworks */,
+				526BD757D0EB240D68921B89 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -485,11 +485,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F6E3419237D109700E7A74E /* Build configuration list for PBXNativeTarget "ballotPlannerModelTests" */;
 			buildPhases = (
-				CD23894E093E33B625BAA393 /* [CP] Check Pods Manifest.lock */,
+				132752B96EE4CF659B15660C /* [CP] Check Pods Manifest.lock */,
 				3F6E340E237D109700E7A74E /* Sources */,
 				3F6E340F237D109700E7A74E /* Frameworks */,
 				3F6E3410237D109700E7A74E /* Resources */,
-				5F9A2A0B8044AC69F2E09125 /* [CP] Copy Pods Resources */,
+				F08ADF2460F6BEE9F3E667D6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -505,11 +505,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F6E3427237D114900E7A74E /* Build configuration list for PBXNativeTarget "ballotPlannerViewModelTests" */;
 			buildPhases = (
-				326E282B9F809B3079E820CB /* [CP] Check Pods Manifest.lock */,
+				FAC89278C82BECB0C0160F75 /* [CP] Check Pods Manifest.lock */,
 				3F6E341C237D114900E7A74E /* Sources */,
 				3F6E341D237D114900E7A74E /* Frameworks */,
 				3F6E341E237D114900E7A74E /* Resources */,
-				60221A1B20DE0AAB0E70DD96 /* [CP] Copy Pods Resources */,
+				681C1696CB798368C70FB240 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -525,11 +525,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3FEAA49C237CDB550097AB6F /* Build configuration list for PBXNativeTarget "ballotPlannerParserTests" */;
 			buildPhases = (
-				C87E5AB9080AE60786F31804 /* [CP] Check Pods Manifest.lock */,
+				4A048D1179D43C4B9225B1A6 /* [CP] Check Pods Manifest.lock */,
 				3FEAA491237CDB550097AB6F /* Sources */,
 				3FEAA492237CDB550097AB6F /* Frameworks */,
 				3FEAA493237CDB550097AB6F /* Resources */,
-				66A6DAFEB00D2F65235F6994 /* [CP] Copy Pods Resources */,
+				0C63D2275A45FAF6D3533345 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -639,63 +639,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		326E282B9F809B3079E820CB /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ballotPlannerViewModelTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5F9A2A0B8044AC69F2E09125 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ballotPlannerModelTests/Pods-ballotPlannerModelTests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ballotPlannerModelTests/Pods-ballotPlannerModelTests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ballotPlannerModelTests/Pods-ballotPlannerModelTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		60221A1B20DE0AAB0E70DD96 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ballotPlannerViewModelTests/Pods-ballotPlannerViewModelTests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ballotPlannerViewModelTests/Pods-ballotPlannerViewModelTests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ballotPlannerViewModelTests/Pods-ballotPlannerViewModelTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		66A6DAFEB00D2F65235F6994 /* [CP] Copy Pods Resources */ = {
+		0C63D2275A45FAF6D3533345 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -712,51 +656,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ballotPlannerParserTests/Pods-ballotPlannerParserTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9EFF5FBF7EDE54F5F313C4A8 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ballotPlanner-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C87E5AB9080AE60786F31804 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ballotPlannerParserTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CD23894E093E33B625BAA393 /* [CP] Check Pods Manifest.lock */ = {
+		132752B96EE4CF659B15660C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -778,7 +678,29 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E7B2917DCC7F6562E4A48316 /* [CP] Embed Pods Frameworks */ = {
+		4A048D1179D43C4B9225B1A6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ballotPlannerParserTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		526BD757D0EB240D68921B89 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -793,6 +715,84 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ballotPlanner/Pods-ballotPlanner-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		681C1696CB798368C70FB240 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ballotPlannerViewModelTests/Pods-ballotPlannerViewModelTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ballotPlannerViewModelTests/Pods-ballotPlannerViewModelTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ballotPlannerViewModelTests/Pods-ballotPlannerViewModelTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2181AC0D412D4F34C1221A4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ballotPlanner-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F08ADF2460F6BEE9F3E667D6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ballotPlannerModelTests/Pods-ballotPlannerModelTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ballotPlannerModelTests/Pods-ballotPlannerModelTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ballotPlannerModelTests/Pods-ballotPlannerModelTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAC89278C82BECB0C0160F75 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ballotPlannerViewModelTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1021,11 +1021,12 @@
 		};
 		3F5AB4A4236F72C700A58E42 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3C628B7B7611EB44E84599A8 /* Pods-ballotPlanner.debug.xcconfig */;
+			baseConfigurationReference = EC576CEB97467329C31B4C68 /* Pods-ballotPlanner.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RMKJ5888TK;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ballotPlanner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1040,11 +1041,12 @@
 		};
 		3F5AB4A5236F72C700A58E42 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F4B65065CEABC734A70351D5 /* Pods-ballotPlanner.release.xcconfig */;
+			baseConfigurationReference = 519A5DC83A81893F7B284A89 /* Pods-ballotPlanner.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RMKJ5888TK;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ballotPlanner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1059,7 +1061,7 @@
 		};
 		3F6E341A237D109700E7A74E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 327BBA77910B25A203209702 /* Pods-ballotPlannerModelTests.debug.xcconfig */;
+			baseConfigurationReference = AEA1283BC293072A3CD41B75 /* Pods-ballotPlannerModelTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -1080,7 +1082,7 @@
 		};
 		3F6E341B237D109700E7A74E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 45877D6865AAE0D1FAC93C6B /* Pods-ballotPlannerModelTests.release.xcconfig */;
+			baseConfigurationReference = B60BD8B02599D12AC8DD4803 /* Pods-ballotPlannerModelTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -1101,7 +1103,7 @@
 		};
 		3F6E3428237D114900E7A74E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 882FED0EA888BF2057E8EA88 /* Pods-ballotPlannerViewModelTests.debug.xcconfig */;
+			baseConfigurationReference = C992BD0D2443F6CF32D05CE6 /* Pods-ballotPlannerViewModelTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -1122,7 +1124,7 @@
 		};
 		3F6E3429237D114900E7A74E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2F143B01ADB4D8DC54CC431D /* Pods-ballotPlannerViewModelTests.release.xcconfig */;
+			baseConfigurationReference = 308C426D7DCE2F511F239894 /* Pods-ballotPlannerViewModelTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -1143,7 +1145,7 @@
 		};
 		3FEAA49D237CDB550097AB6F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 964ECA83D58592A1B4B51FF9 /* Pods-ballotPlannerParserTests.debug.xcconfig */;
+			baseConfigurationReference = E1E1B54A3363337061842A65 /* Pods-ballotPlannerParserTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -1164,7 +1166,7 @@
 		};
 		3FEAA49E237CDB550097AB6F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6036F6C09D642BF5613C83F7 /* Pods-ballotPlannerParserTests.release.xcconfig */;
+			baseConfigurationReference = 396699BB584F31FBF3BEC08F /* Pods-ballotPlannerParserTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
