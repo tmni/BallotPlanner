@@ -18,6 +18,7 @@ class CandidatesIndexViewModel {
   //var allCandidates = [Person]()
   var allCandidatesSortedByOfficeId = Dictionary<String, [Person]>()
   var officeIdsToName = Dictionary<String, String>()
+  var officeIdsToDescription = Dictionary<String, String>()
   
 //  func numberOfRows() -> Int {
 //    return allCandidates.count
@@ -66,7 +67,10 @@ class CandidatesIndexViewModel {
       (result) in self.allCandidatesSortedByOfficeId = result
       parser.getOfficeIdsToName(self.allCandidatesSortedByOfficeId) {
         (result) in self.officeIdsToName = result
-        completion()
+        parser.getOfficeIdsToDescription(self.allCandidatesSortedByOfficeId) {
+          (result) in self.officeIdsToDescription = result
+          completion()
+        }
       }
     }
   }

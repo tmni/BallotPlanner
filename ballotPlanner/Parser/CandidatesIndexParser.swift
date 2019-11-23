@@ -29,6 +29,7 @@ class CandidatesIndexParser {
   let group7 = DispatchGroup()
   let group8 = DispatchGroup()
   let group9 = DispatchGroup()
+  let group10 = DispatchGroup()
   
   var raceIdsFromElectionId = [String]()
   var raceIdsSortedByOfficeId = Dictionary<String, [String]>()
@@ -41,6 +42,7 @@ class CandidatesIndexParser {
   //var allCandidates = [Person]()
   
   var officeIdsToName = Dictionary<String, String>()
+  var officeIdsToDescription = Dictionary<String, String>()
   
 //  func getAllCandidates(completion: @escaping([Person]) -> Void) {
 //    self.getRaceIdsFromElectionId {
@@ -289,6 +291,27 @@ class CandidatesIndexParser {
         self.group9.leave()
       }
       completion(self.officeIdsToName)
+    }
+  }
+  
+  func getOfficeIdsToDescription(_ allCandidatesSortedByOfficeId: Dictionary<String, [Person]>, completion: @escaping(Dictionary<String, String>) -> Void) {
+    let db = Firestore.firestore()
+    self.group10.enter()
+    db.collection("offices").getDocuments() { (querySnapshot, err) in
+      if let err = err {
+        print("Errors getting documents: \(err)")
+        self.group10.leave()
+      } else {
+        for document in querySnapshot!.documents {
+          for key in allCandidatesSortedByOfficeId.keys {
+            if (document.documentID == key) {
+              self.officeIdsToDescription[key] = document.get("description") as! String
+            }
+          }
+        }
+        self.group10.leave()
+      }
+      completion(self.officeIdsToDescription)
     }
   }
   

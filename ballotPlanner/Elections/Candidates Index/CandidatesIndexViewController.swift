@@ -85,16 +85,21 @@ class CandidatesIndexViewController: UIViewController, UICollectionViewDataSourc
   func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
     var officeArray = Array((viewModel?.allCandidatesSortedByOfficeId.keys)!)
     var text: String
+    var popoverDescription: String
     if (officeArray != []) {
       let officeId = officeArray[indexPath.section]
       text = (viewModel?.officeIdsToName[officeId])!
+      popoverDescription = (viewModel?.officeIdsToDescription[officeId])!
     } else {
       text = "Section \(indexPath.section)"
+      popoverDescription = ""
     }
     
     if let sectionHeader = collectionView1.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "CandidatesIndexSectionHeader", for: indexPath) as? CandidatesIndexSectionHeader {
       sectionHeader.sectionHeaderlabel.text = text
       sectionHeader.sectionDelegate = self
+      sectionHeader.popoverDescription = popoverDescription
+      
       return sectionHeader
     }
     return UICollectionReusableView()
@@ -117,6 +122,7 @@ class CandidatesIndexViewController: UIViewController, UICollectionViewDataSourc
       popoverPresentationController.sourceView = self.view
       popoverPresentationController.sourceRect = showRect
       popoverPresentationController.delegate = self
+      popoverContentController?.textDescriptionText = section.popoverDescription
       
       if let popoverController = popoverContentController {
         present(popoverController, animated: true, completion: nil)

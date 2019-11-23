@@ -10,8 +10,13 @@ import Foundation
 import UIKit
 
 class CandidatesIndexPopoverViewController: UIViewController {
+  @IBOutlet weak var textDescription: UITextView!
+  
+  var textDescriptionText: String?
+  
   override func viewDidLoad() {
     super.viewDidLoad()
+    self.textDescription.text = self.textDescriptionText
   }
   
   override func viewWillAppear(_ animated: Bool) {

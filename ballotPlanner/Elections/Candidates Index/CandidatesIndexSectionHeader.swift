@@ -17,6 +17,8 @@ class CandidatesIndexSectionHeader: UICollectionReusableView {
   @IBOutlet weak var sectionHeaderlabel: UILabel!
   @IBOutlet weak var button: UIButton!
   
+  var popoverDescription: String = ""
+  
   weak var sectionDelegate: CandidatesIndexSectionHeaderDelegate?
   
   /* Call Delegate method from button action */
