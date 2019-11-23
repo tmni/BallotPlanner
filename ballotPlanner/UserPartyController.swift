@@ -83,6 +83,7 @@ class UserPartyController: UIViewController{
       if party.tag == sender.tag {
         let button_name = party.titleLabel!.text!
         setUserParty(party: button_name)
+        UserDefaults.standard.set(button_name, forKey: "party")
       }
     }
   }

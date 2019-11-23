@@ -21,7 +21,7 @@
 		3F20530D2374AA0D0055F441 /* UserInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F20530C2374AA0D0055F441 /* UserInfoController.swift */; };
 		3F2990022374CF630017340F /* HomeTemp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F2990012374CF630017340F /* HomeTemp.storyboard */; };
 		3F3018C223749A1C00766FEE /* UserLocationEditController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3018C123749A1C00766FEE /* UserLocationEditController.swift */; };
-		3F33181A2374AADB00C83017 /* UserLocationController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F3318192374AADB00C83017 /* UserLocationController.storyboard */; };
+		3F33181A2374AADB00C83017 /* UserSetUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F3318192374AADB00C83017 /* UserSetUp.storyboard */; };
 		3F33181C2374AB0E00C83017 /* UserLocationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F33181B2374AB0E00C83017 /* UserLocationController.swift */; };
 		3F33181E2374AB2600C83017 /* UserPartyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F33181D2374AB2600C83017 /* UserPartyController.swift */; };
 		3F36121F2373B12000B31F77 /* AddToMyBallotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F36121E2373B12000B31F77 /* AddToMyBallotHelper.swift */; };
@@ -114,7 +114,7 @@
 		3F20530C2374AA0D0055F441 /* UserInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserInfoController.swift; path = ../UserInfoController.swift; sourceTree = "<group>"; };
 		3F2990012374CF630017340F /* HomeTemp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeTemp.storyboard; sourceTree = "<group>"; };
 		3F3018C123749A1C00766FEE /* UserLocationEditController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocationEditController.swift; sourceTree = "<group>"; };
-		3F3318192374AADB00C83017 /* UserLocationController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = UserLocationController.storyboard; path = ../UserLocationController.storyboard; sourceTree = "<group>"; };
+		3F3318192374AADB00C83017 /* UserSetUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = UserSetUp.storyboard; path = ../UserSetUp.storyboard; sourceTree = "<group>"; };
 		3F33181B2374AB0E00C83017 /* UserLocationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserLocationController.swift; path = ../UserLocationController.swift; sourceTree = "<group>"; };
 		3F33181D2374AB2600C83017 /* UserPartyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserPartyController.swift; path = ../UserPartyController.swift; sourceTree = "<group>"; };
 		3F36121E2373B12000B31F77 /* AddToMyBallotHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToMyBallotHelper.swift; sourceTree = "<group>"; };
@@ -428,7 +428,7 @@
 			isa = PBXGroup;
 			children = (
 				3F33181B2374AB0E00C83017 /* UserLocationController.swift */,
-				3F3318192374AADB00C83017 /* UserLocationController.storyboard */,
+				3F3318192374AADB00C83017 /* UserSetUp.storyboard */,
 				3F33181D2374AB2600C83017 /* UserPartyController.swift */,
 			);
 			path = "User Set Up";
@@ -614,7 +614,7 @@
 				3FB5826A237121AE006024BD /* myBallot.storyboard in Resources */,
 				3FFD3E3B2372446900B680F9 /* MyBallotsTableViewCell.xib in Resources */,
 				3F00D0E82373696F0001F364 /* CandidatesIndexCollectionViewCell.xib in Resources */,
-				3F33181A2374AADB00C83017 /* UserLocationController.storyboard in Resources */,
+				3F33181A2374AADB00C83017 /* UserSetUp.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

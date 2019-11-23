@@ -20,7 +20,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   }
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
-    //FirebaseApp.configure()
+    self.window = UIWindow(frame: UIScreen.main.bounds)
+    let mainStoryboard = UIStoryboard(name: "Main", bundle:nil)
+    let setupStoryboard = UIStoryboard(name: "UserSetUp", bundle:nil)
+    var vc = UIViewController()
+    print("user defaults", UserDefaults.standard.value(forKey: "party"), UserDefaults.standard.value(forKey: "location") )
+    if UserDefaults.standard.value(forKey: "party") as! String? == nil && UserDefaults.standard.value(forKey: "location") as! String? == nil{
+      // if the app doesnt have users party and location, show welcome screen
+      vc = setupStoryboard.instantiateViewController(withIdentifier: "Welcome")
+    }
+    else{
+      //show main screen
+      vc = mainStoryboard.instantiateInitialViewController()!
+      
+    }
+    self.window?.rootViewController = vc
+    self.window?.makeKeyAndVisible()
+    
+    
     return true
   }
 

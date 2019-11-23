@@ -60,22 +60,23 @@ class UserLocationController: UIViewController, UITextFieldDelegate, CLLocationM
   
   func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
     switch status {
-    case .notDetermined:
-      locationManager1.requestAlwaysAuthorization()
-      break
-    case .authorizedWhenInUse:
-      locationManager1.startUpdatingLocation()
-            self.locationText.text = "15213"
-            db.collection("user").document("okabUm7jCq34tjDWHbRQ").updateData(["zip": 15213]) { err in
-              if let err = err {
-                print("Error writing document: \(err)")
-              } else {
-                print("Location zip written to ", "15213")
+      case .notDetermined:
+        locationManager1.requestAlwaysAuthorization()
+        break
+      case .authorizedWhenInUse:
+        locationManager1.startUpdatingLocation()
+        self.locationText.text = "15213"
+        UserDefaults.standard.set(self.locationText.text, forKey: "location")
+              db.collection("user").document("okabUm7jCq34tjDWHbRQ").updateData(["zip": 15213]) { err in
+                if let err = err {
+                  print("Error writing document: \(err)")
+                } else {
+                  print("Location zip written to ", "15213")
+                }
+        
               }
-      
-            }
-      
-      break
+        
+        break
     case .authorizedAlways:
       locationManager1.startUpdatingLocation()
       break
@@ -89,32 +90,14 @@ class UserLocationController: UIViewController, UITextFieldDelegate, CLLocationM
       fatalError()
     }
   }
-  //  func canUpdateText()->Bool{
-  //    var userZip = self.locationText.text
-  //    if validZipCode(postalCode:userZip){
-  //    db.collection("user").document("okabUm7jCq34tjDWHbRQ")
-  //      .getDocument { (snapshot, error ) in
-  //
-  //        if let document = snapshot {
-  //          if let zipcode = document.get("zip"){
-  //            self.locationText.text = "\n \(String(describing: zipcode) )\n"
-  //          }
-  //
-  //        } else {
-  //
-  //          print("Document does not exist")
-  //
-  //        }
-  //    }
-  //
-  //    }}
+
   @IBAction func updateLocationManually(sender: UITextField){
     var userZip = self.locationText.text
     if validZipCode(postalCode:userZip!)
     {
       if let userZip = Int((userZip)!) {
         
-        
+        UserDefaults.standard.set(userZip, forKey: "location")
         print("converted zip to Integer ", type(of: userZip))
         db.collection("user").document("okabUm7jCq34tjDWHbRQ").updateData(["zip": userZip]) { err in
           if let err = err {
