@@ -47,7 +47,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4iu-Y2-yfg">
-                                <rect key="frame" x="140" y="503" width="113" height="70"/>
+                                <rect key="frame" x="184" y="153" width="175" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="AddToMyBallot"/>
                                 <connections>
@@ -72,6 +72,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oXe-yt-0aY">
+                                <rect key="frame" x="16" y="458" width="343" height="228"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="r8D-wF-wf0"/>
@@ -82,6 +91,7 @@
                         <outlet property="name" destination="Ybk-nQ-mcM" id="vA7-SQ-BGD"/>
                         <outlet property="party" destination="xU1-Ba-8dG" id="EnV-Ep-Ebu"/>
                         <outlet property="twitter" destination="THA-S8-hgg" id="z5m-qS-mgO"/>
+                        <outlet property="webView" destination="oXe-yt-0aY" id="9eJ-sh-iuk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WNR-UX-0mU" userLabel="First Responder" sceneMemberID="firstResponder"/>

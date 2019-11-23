@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		32AAF2B3DCC29192DA454FC6 /* libPods-ballotPlannerModelTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F600DE1ABAA221A4B8DE6782 /* libPods-ballotPlannerModelTests.a */; };
 		3F00D0D4237268220001F364 /* Candidate.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F00D0D3237268220001F364 /* Candidate.storyboard */; };
 		3F00D0DD237326A60001F364 /* CandidatesIndexViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F00D0DC237326A60001F364 /* CandidatesIndexViewModel.swift */; };
 		3F00D0DF237326B10001F364 /* CandidatesIndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F00D0DE237326B10001F364 /* CandidatesIndexViewController.swift */; };
@@ -16,6 +15,8 @@
 		3F00D0E72373696F0001F364 /* CandidatesIndexCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F00D0E52373696F0001F364 /* CandidatesIndexCollectionViewCell.swift */; };
 		3F00D0E82373696F0001F364 /* CandidatesIndexCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F00D0E62373696F0001F364 /* CandidatesIndexCollectionViewCell.xib */; };
 		3F00D0EA23736E900001F364 /* CandidatesIndexParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F00D0E923736E900001F364 /* CandidatesIndexParser.swift */; };
+		3F16AE672389937900D73881 /* libPods-ballotPlannerModelTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F16AE662389937900D73881 /* libPods-ballotPlannerModelTests.a */; };
+		3F16AE682389938300D73881 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F3C9EF3238992D400016E07 /* WebKit.framework */; };
 		3F20530B2374A9EA0055F441 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F20530A2374A9EA0055F441 /* Location.swift */; };
 		3F20530D2374AA0D0055F441 /* UserInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F20530C2374AA0D0055F441 /* UserInfoController.swift */; };
 		3F2990022374CF630017340F /* HomeTemp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F2990012374CF630017340F /* HomeTemp.storyboard */; };
@@ -113,6 +114,7 @@
 		3F00D0E52373696F0001F364 /* CandidatesIndexCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidatesIndexCollectionViewCell.swift; sourceTree = "<group>"; };
 		3F00D0E62373696F0001F364 /* CandidatesIndexCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CandidatesIndexCollectionViewCell.xib; sourceTree = "<group>"; };
 		3F00D0E923736E900001F364 /* CandidatesIndexParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidatesIndexParser.swift; sourceTree = "<group>"; };
+		3F16AE662389937900D73881 /* libPods-ballotPlannerModelTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPods-ballotPlannerModelTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F20530A2374A9EA0055F441 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		3F20530C2374AA0D0055F441 /* UserInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserInfoController.swift; path = ../UserInfoController.swift; sourceTree = "<group>"; };
 		3F2990012374CF630017340F /* HomeTemp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeTemp.storyboard; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 		3F33181D2374AB2600C83017 /* UserPartyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserPartyController.swift; path = ../UserPartyController.swift; sourceTree = "<group>"; };
 		3F36121E2373B12000B31F77 /* AddToMyBallotHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToMyBallotHelper.swift; sourceTree = "<group>"; };
 		3F3916872387958100948C5E /* CandidatesIndexSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidatesIndexSectionHeader.swift; sourceTree = "<group>"; };
+		3F3C9EF3238992D400016E07 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		3F42AB7F2370A49100238682 /* ElectionDatesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectionDatesViewController.swift; sourceTree = "<group>"; };
 		3F5AB491236F72C400A58E42 /* ballotPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ballotPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F5AB494236F72C400A58E42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -145,7 +148,7 @@
 		3F6E342C237D127700E7A74E /* ElectionDateDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectionDateDetailViewModelTests.swift; sourceTree = "<group>"; };
 		3F6E342E237D12D900E7A74E /* UserInfoViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewModelTests.swift; sourceTree = "<group>"; };
 		3F8912B72372647F00D9B199 /* CandidateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidateViewModel.swift; sourceTree = "<group>"; };
-		3F8912B92372648E00D9B199 /* CandidateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidateViewController.swift; sourceTree = "<group>"; };
+		3F8912B92372648E00D9B199 /* CandidateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidateViewController.swift; sourceTree = "<group>"; tabWidth = 1; };
 		3FB5824E2370BFE6006024BD /* ElectionDatesParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectionDatesParser.swift; sourceTree = "<group>"; };
 		3FB582502370E2C8006024BD /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		3FB582512370E2C8006024BD /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
@@ -190,6 +193,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F16AE682389938300D73881 /* WebKit.framework in Frameworks */,
 				8AEA7911B449A15C078BED31 /* Pods_ballotPlanner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -198,7 +202,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32AAF2B3DCC29192DA454FC6 /* libPods-ballotPlannerModelTests.a in Frameworks */,
+				3F16AE672389937900D73881 /* libPods-ballotPlannerModelTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,6 +458,8 @@
 		B4D5A65D66F9350CA7BA2EAC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3F16AE662389937900D73881 /* libPods-ballotPlannerModelTests.a */,
+				3F3C9EF3238992D400016E07 /* WebKit.framework */,
 				2E280B0C56CB18E69F0ABFE1 /* Pods_ballotPlanner.framework */,
 				B87B8577E8EDBD83706602CC /* libPods-ballotPlannerParserTests.a */,
 				F600DE1ABAA221A4B8DE6782 /* libPods-ballotPlannerModelTests.a */,
