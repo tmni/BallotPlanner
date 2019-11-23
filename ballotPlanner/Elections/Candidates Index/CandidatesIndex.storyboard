@@ -70,8 +70,16 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Pv-0g-6Sl">
+                                            <rect key="frame" x="333" y="12" width="22" height="22"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <connections>
+                                                <action selector="showButtonAction:" destination="mu2-Jl-z4H" eventType="touchUpInside" id="DRw-IL-OBL"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <connections>
+                                        <outlet property="button" destination="8Pv-0g-6Sl" id="oNl-8c-Bjn"/>
                                         <outlet property="sectionHeaderlabel" destination="hdi-pg-iRJ" id="YqH-qG-UZy"/>
                                     </connections>
                                 </collectionReusableView>
@@ -84,6 +92,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="w1m-z3-vkW"/>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="collectionView1" destination="VXp-UN-IuK" id="JQO-0e-izL"/>
                     </connections>
@@ -91,6 +101,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ICT-ZW-nWR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-37.600000000000001" y="142.61083743842366"/>
+        </scene>
+        <!--Candidates Index Popover View Controller-->
+        <scene sceneID="tyT-sL-l0v">
+            <objects>
+                <viewController storyboardIdentifier="CandidatesIndexPopoverViewController" id="R7b-md-GlC" customClass="CandidatesIndexPopoverViewController" customModule="ballotPlanner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3Jb-wV-dd1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="vs0-q4-f4T"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="siA-eM-BcH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="734" y="382"/>
         </scene>
         <!--Candidate-->
         <scene sceneID="vun-c8-iU4">

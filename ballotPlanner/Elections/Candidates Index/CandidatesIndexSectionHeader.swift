@@ -9,7 +9,19 @@
 import Foundation
 import UIKit
 
+protocol CandidatesIndexSectionHeaderDelegate:class {
+  func sectionHeader(section:CandidatesIndexSectionHeader, didTappedshow button:UIButton)
+}
+
 class CandidatesIndexSectionHeader: UICollectionReusableView {
   @IBOutlet weak var sectionHeaderlabel: UILabel!
+  @IBOutlet weak var button: UIButton!
   
+  weak var sectionDelegate: CandidatesIndexSectionHeaderDelegate?
+  
+  /* Call Delegate method from button action */
+  @IBAction func showButtonAction(_ sender: Any) {
+    let button = sender as! UIButton
+    self.sectionDelegate?.sectionHeader(section: self, didTappedshow: button)
+  }
 }

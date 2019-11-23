@@ -9,7 +9,7 @@
 import UIKit
 
 //class CandidatesIndexViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
-class CandidatesIndexViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+class CandidatesIndexViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UIPopoverPresentationControllerDelegate {
 
   @IBOutlet var collectionView1: UICollectionView!
   
@@ -94,9 +94,53 @@ class CandidatesIndexViewController: UIViewController, UICollectionViewDataSourc
     
     if let sectionHeader = collectionView1.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "CandidatesIndexSectionHeader", for: indexPath) as? CandidatesIndexSectionHeader {
       sectionHeader.sectionHeaderlabel.text = text
+      sectionHeader.sectionDelegate = self
       return sectionHeader
     }
     return UICollectionReusableView()
   }
+  
+  func showPopoverFrom(section: CandidatesIndexSectionHeader, forButton button:UIButton) {
+    /* Get the souce rect frame */
+    let buttonFrame = button.frame
+    var showRect    = section.convert(buttonFrame, to: self.collectionView1)
+    showRect        = self.collectionView1.convert(showRect, to: view)
+    showRect.origin.y -= 10
+    
+    /* Rest is same as showing popover */
+    let popoverContentController = self.storyboard?.instantiateViewController(withIdentifier: "CandidatesIndexPopoverViewController") as? CandidatesIndexPopoverViewController
+    popoverContentController?.modalPresentationStyle = .popover
+    
+    
+    if let popoverPresentationController = popoverContentController?.popoverPresentationController {
+      popoverPresentationController.permittedArrowDirections = .up
+      popoverPresentationController.sourceView = self.view
+      popoverPresentationController.sourceRect = showRect
+      popoverPresentationController.delegate = self
+      
+      if let popoverController = popoverContentController {
+        present(popoverController, animated: true, completion: nil)
+      }
+    }
+  }
+  //UIPopoverPresentationControllerDelegate inherits from UIAdaptivePresentationControllerDelegate, we will use this method to define the presentation style for popover presentation controller
+  func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
+    return .none
+  }
+  
+  //UIPopoverPresentationControllerDelegate
+  func popoverPresentationControllerDidDismissPopover(_ popoverPresentationController: UIPopoverPresentationController) {
+    
+  }
+  
+  func popoverPresentationControllerShouldDismissPopover(_ popoverPresentationController: UIPopoverPresentationController) -> Bool {
+    return true
+  }
 
+}
+
+extension CandidatesIndexViewController: CandidatesIndexSectionHeaderDelegate {
+  func sectionHeader(section: CandidatesIndexSectionHeader, didTappedshow button: UIButton) {
+    self.showPopoverFrom(section: section, forButton: button)
+  }
 }
