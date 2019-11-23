@@ -19,9 +19,6 @@ class CandidateViewController: UIViewController, WKNavigationDelegate {
   @IBOutlet weak var webView: WKWebView!
   
   var viewModel: CandidateViewModel?
-//  var webContent = """
-//    <a class="twitter-timeline" href="https://twitter.com/MichaelLambPA">Tweets by MichaelLambPA</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-//  """
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -33,16 +30,37 @@ class CandidateViewController: UIViewController, WKNavigationDelegate {
     let webContent = """
     <a class="twitter-timeline" href="https://twitter.com/\(twitter)">Tweets by \(twitter)</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     """
-    
     webView.loadHTMLString(webContent, baseURL: nil)
+    
+    let parser = AddRemoveBallotHelper(viewModel!.candidate)
+    parser.checkInBallots {
+      (result) in
+      if (result) {
+        self.addToMyBallot.setTitle("Remove From My Ballot", for: .normal)
+      } else {
+        self.addToMyBallot.setTitle("Add To My Ballot", for: .normal)
+      }
+    }
   }
   
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
+    
   }
   
   @IBAction func addToMyBallotButtonTapped(sender: UIButton) {
-    let parser = AddToMyBallotHelper(viewModel!.candidate)
-    parser.addToMyBallot()
+    let parser = AddRemoveBallotHelper(viewModel!.candidate)
+    
+    parser.checkInBallots {
+      (result) in
+      if (result) {
+        parser.removeFromMyBallot()
+        self.addToMyBallot.setTitle("Add To My Ballot", for: .normal)
+      } else {
+        parser.addToMyBallot()
+        self.addToMyBallot.setTitle("Remove From My Ballot", for: .normal)
+      }
+    }
+    
   }
 }

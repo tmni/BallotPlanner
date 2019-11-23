@@ -1,5 +1,4 @@
 //
-//  AddToMyBallotHelper.swift
 //  ballotPlanner
 //
 //  Created by Erika Giuse on 11/6/19.
@@ -11,7 +10,7 @@ import Firebase
 
 // Creates a new "ballots" table entry
 
-class AddRemoveToMyBallotHelper {
+class AddRemoveBallotHelper {
   var person: Person
   
   init(_ person: Person) {
@@ -24,9 +23,36 @@ class AddRemoveToMyBallotHelper {
   
   let group1 = DispatchGroup()
   let group2 = DispatchGroup()
+  let group3 = DispatchGroup()
+  let group4 = DispatchGroup()
   
   var candidate_id = ""
   var race_id = ""
+  var inBallots = false
+  
+  var doc_id = ""
+  
+  func checkInBallots(completion: @escaping(Bool) -> Void) {
+    let db = Firestore.firestore()
+    self.group4.enter()
+    self.getCandidateId {
+      (result) in
+      self.candidate_id = result
+      db.collection("ballots").getDocuments() { (querySnapshot, err) in
+        if let err = err {
+          print("Errors getting documents: \(err)")
+          self.group4.leave()
+        } else {
+          for document in querySnapshot!.documents {
+            if (document.get("candidate_id") as! String == self.candidate_id) {
+              self.inBallots = true
+            }
+          }
+          completion(self.inBallots)
+        }
+      }
+    }
+  }
   
   func addToMyBallot() {
     let db = Firestore.firestore()
@@ -42,6 +68,25 @@ class AddRemoveToMyBallotHelper {
             print("Error adding document: \(err)")
           } else {
             print("Document added with ID: \(ref!.documentID)")
+          }
+        }
+      }
+    }
+  }
+  
+  func removeFromMyBallot() {
+    let db = Firestore.firestore()
+    self.getCandidateId {
+      (result) in
+      self.candidate_id = result
+      self.getDocId {
+        (result) in
+        self.doc_id = result
+        db.collection("ballots").document(self.doc_id).delete() { err in
+          if let err = err {
+            print("Error removing document: \(err)")
+          } else {
+            print("Document successfully removed!")
           }
         }
       }
@@ -85,5 +130,26 @@ class AddRemoveToMyBallotHelper {
       completion(self.race_id)
     }
   }
+  
+  // for remove
+  func getDocId(completion: @escaping(String) -> Void) {
+    let db = Firestore.firestore()
+    self.group3.enter()
+    db.collection("ballots").getDocuments() { (querySnapshot, err) in
+      if let err = err {
+        print("Errors getting documents: \(err)")
+        self.group3.leave()
+      } else {
+        for document in querySnapshot!.documents {
+          if (document.get("candidate_id") as! String == self.candidate_id) {
+            self.doc_id = document.documentID
+          }
+        }
+        self.group3.leave()
+      }
+      completion(self.doc_id)
+    }
+  }
+
   
 }
