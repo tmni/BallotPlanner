@@ -64,6 +64,7 @@
 		6D097BA12373C94A00E756DB /* UserInfoParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D097BA02373C94A00E756DB /* UserInfoParser.swift */; };
 		6D097BA32373CBEA00E756DB /* UserInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D097BA22373CBEA00E756DB /* UserInfoViewModel.swift */; };
 		6D097BA52373E10700E756DB /* PartyChooseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D097BA42373E10700E756DB /* PartyChooseViewController.swift */; };
+		6D4CB75B23899E5B002F1ED9 /* AchievementPopoverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4CB75A23899E5B002F1ED9 /* AchievementPopoverController.swift */; };
 		6D57021C2373AFF900A7BA0D /* AchievementViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D57021B2373AFF900A7BA0D /* AchievementViewModel.swift */; };
 		6D57021E2373B0C500A7BA0D /* AchievementsParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D57021D2373B0C500A7BA0D /* AchievementsParser.swift */; };
 		6D88EFCF23733793004FFF23 /* UserInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D88EFCE23733793004FFF23 /* UserInfo.storyboard */; };
@@ -167,6 +168,7 @@
 		6D097BA02373C94A00E756DB /* UserInfoParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserInfoParser.swift; path = ballotPlanner/Parser/UserInfoParser.swift; sourceTree = SOURCE_ROOT; };
 		6D097BA22373CBEA00E756DB /* UserInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewModel.swift; sourceTree = "<group>"; };
 		6D097BA42373E10700E756DB /* PartyChooseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyChooseViewController.swift; sourceTree = "<group>"; };
+		6D4CB75A23899E5B002F1ED9 /* AchievementPopoverController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementPopoverController.swift; sourceTree = "<group>"; };
 		6D57021B2373AFF900A7BA0D /* AchievementViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementViewModel.swift; sourceTree = "<group>"; };
 		6D57021D2373B0C500A7BA0D /* AchievementsParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsParser.swift; sourceTree = "<group>"; };
 		6D88EFCE23733793004FFF23 /* UserInfo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserInfo.storyboard; sourceTree = SOURCE_ROOT; };
@@ -441,6 +443,7 @@
 				6D097BA42373E10700E756DB /* PartyChooseViewController.swift */,
 				6D88EFD223733C11004FFF23 /* MyCollectionViewCell.swift */,
 				6D88EFD423733C3F004FFF23 /* MyViewController.swift */,
+				6D4CB75A23899E5B002F1ED9 /* AchievementPopoverController.swift */,
 				6D57021B2373AFF900A7BA0D /* AchievementViewModel.swift */,
 				6D88EFCE23733793004FFF23 /* UserInfo.storyboard */,
 				3F3018C123749A1C00766FEE /* UserLocationEditController.swift */,
@@ -819,6 +822,7 @@
 				3FFD3E3523723A2F00B680F9 /* Person.swift in Sources */,
 				3F00D0DF237326B10001F364 /* CandidatesIndexViewController.swift in Sources */,
 				3F20530B2374A9EA0055F441 /* Location.swift in Sources */,
+				6D4CB75B23899E5B002F1ED9 /* AchievementPopoverController.swift in Sources */,
 				3F42AB812370A49100238682 /* ElectionDatesViewController.swift in Sources */,
 				3FB5825D2370EC12006024BD /* MyElectionsViewModel.swift in Sources */,
 				3F00D0DD237326A60001F364 /* CandidatesIndexViewModel.swift in Sources */,
