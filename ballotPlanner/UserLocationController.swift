@@ -36,13 +36,13 @@ class UserLocationController: UIViewController, UITextFieldDelegate, CLLocationM
   
   func textFieldShouldReturn(_ textField: UITextField) -> Bool {
     textField.resignFirstResponder()
-    self.updateLocation(sender: textField)
+    self.updateLocationManually(sender: textField)
     return true
   }
   
   func textFieldDidEndEditing(_ textField: UITextField) {
     textField.resignFirstResponder()
-    self.updateLocation(sender: textField)
+    self.updateLocationManually(sender: textField)
   }
   
   func validZipCode(postalCode:String)->Bool{
@@ -65,15 +65,15 @@ class UserLocationController: UIViewController, UITextFieldDelegate, CLLocationM
       break
     case .authorizedWhenInUse:
       locationManager1.startUpdatingLocation()
-      //      self.locationText.text = "15213"
-      //      db.collection("user").document("okabUm7jCq34tjDWHbRQ").updateData(["zip": 15213]) { err in
-      //        if let err = err {
-      //          print("Error writing document: \(err)")
-      //        } else {
-      //          print("Location zip written to ", "15213")
-      //        }
-      //
-      //      }
+            self.locationText.text = "15213"
+            db.collection("user").document("okabUm7jCq34tjDWHbRQ").updateData(["zip": 15213]) { err in
+              if let err = err {
+                print("Error writing document: \(err)")
+              } else {
+                print("Location zip written to ", "15213")
+              }
+      
+            }
       
       break
     case .authorizedAlways:
@@ -108,7 +108,7 @@ class UserLocationController: UIViewController, UITextFieldDelegate, CLLocationM
   //    }
   //
   //    }}
-  @IBAction func updateLocation(sender: UITextField){
+  @IBAction func updateLocationManually(sender: UITextField){
     var userZip = self.locationText.text
     if validZipCode(postalCode:userZip!)
     {

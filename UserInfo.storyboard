@@ -226,10 +226,10 @@
             </objects>
             <point key="canvasLocation" x="1172" y="-143"/>
         </scene>
-        <!--User Location Controller-->
+        <!--User Location Edit Controller-->
         <scene sceneID="74w-Ee-qbh">
             <objects>
-                <viewController storyboardIdentifier="UserLocationController2" id="S3s-bs-Fsm" customClass="UserLocationController" customModule="ballotPlanner" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="UserLocationController2" id="S3s-bs-Fsm" customClass="UserLocationEditController" customModule="ballotPlanner" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tMO-Ot-4ry">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -255,7 +255,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="updateLocationWithSender:" destination="S3s-bs-Fsm" eventType="editingDidBegin" id="2qc-L3-gay"/>
+                                    <action selector="updateLocationWithSender:" destination="S3s-bs-Fsm" eventType="editingDidEnd" id="3Gw-pT-ORh"/>
                                 </connections>
                             </textField>
                         </subviews>
@@ -263,7 +263,7 @@
                         <viewLayoutGuide key="safeArea" id="1X2-ZJ-6Nn"/>
                     </view>
                     <connections>
-                        <outlet property="locationText" destination="tbe-bE-QYM" id="J5y-67-Auo"/>
+                        <outlet property="locationText" destination="tbe-bE-QYM" id="WuI-Q7-Ns6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pdS-hU-28z" userLabel="First Responder" sceneMemberID="firstResponder"/>
