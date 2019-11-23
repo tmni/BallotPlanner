@@ -97,7 +97,6 @@ class MyViewController: UIViewController, UICollectionViewDataSource, UICollecti
     print("set source view to ", cell)
     self.present(popover,animated:true, completion:nil)
   }
-  gi
   func updatePartyLabel(){
     partyLabel.layer.borderColor = UIColor.darkGray.cgColor;
     partyLabel.layer.borderWidth = 1.0;
