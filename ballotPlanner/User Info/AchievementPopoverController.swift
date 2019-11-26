@@ -18,8 +18,6 @@ class AchievementPopoverController: UIViewController {
     var achTitle: String!
     var achDesc: String!
     
-    var selectedVideoTitle: String!
-    var message: String!
     
     override func viewDidLoad() {
       super.viewDidLoad()
