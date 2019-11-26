@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-class MyViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+class MyViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate{
   let reuseIdentifier = "achievement" // also enter this string as the cell identifier in the storyboard
   let viewModel = AchievementViewModel()
   let viewModel2 = UserInfoViewModel()
@@ -48,11 +48,6 @@ class MyViewController: UIViewController, UICollectionViewDataSource, UICollecti
       self.user_info = result
       self.updatePartyLabel()
       self.updateLocLabel()
-      self.viewModel.refresh { [unowned self] in
-        DispatchQueue.main.async {
-          self.collectionView.reloadData()
-        }
-      }
     }
   }
   
@@ -74,12 +69,34 @@ class MyViewController: UIViewController, UICollectionViewDataSource, UICollecti
   }
   
   // MARK: - UICollectionViewDelegate protocol
-  
+
   func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
     // handle tap events
-    print("You selected cell #\(indexPath.item)!")
-  }
+    let cell = collectionView.cellForItem(at: indexPath)
+    var achs = viewModel.achievements
+    let attributes = self.collectionView?.layoutAttributesForItem(at:indexPath)
+    let cPoint = attributes?.center
+    let centerPoint = collectionView.convert(cPoint!, to: collectionView.superview)
+    var popover = UIStoryboard(name: "UserInfo", bundle: nil).instantiateViewController(withIdentifier: "idPopover") as! AchievementPopoverController
+    popover.achTitle = achs[indexPath.item].name
+    popover.achDesc = achs[indexPath.item].description
+    print("User selected #\(indexPath.item)!")
   
+
+//    popover.popoverPresentationController?.delegate = self
+//    popover.preferredContentSize = CGSize(width: 340,height: 340)
+    popover.modalPresentationStyle = .popover
+    print("set type to popover")
+    popover.popoverPresentationController?.delegate = self
+    print("set delegate")
+    popover.popoverPresentationController?.permittedArrowDirections = UIPopoverArrowDirection(rawValue: 0)
+    print("set arrows")
+    popover.popoverPresentationController?.sourceRect = cell!.bounds
+    print("set rect to ", cell!.bounds)
+    popover.popoverPresentationController?.sourceView = cell
+    print("set source view to ", cell)
+    self.present(popover,animated:true, completion:nil)
+  }
   func updatePartyLabel(){
     partyLabel.layer.borderColor = UIColor.darkGray.cgColor;
     partyLabel.layer.borderWidth = 1.0;
@@ -92,4 +109,10 @@ class MyViewController: UIViewController, UICollectionViewDataSource, UICollecti
   }
   
 }
+extension MyViewController: UIPopoverPresentationControllerDelegate {
+  func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
+    return UIModalPresentationStyle.none
+  }
+}
+
 

@@ -6,392 +6,253 @@
 	<dict>
 		<key>BoringSSL-GRPC-framework.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>2</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>BoringSSL-GRPC-library.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>3</integer>
-		</dict>
-		<key>BoringSSL-GRPC.xcscheme</key>
-		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>0</integer>
 		</dict>
 		<key>Firebase-Analytics-Core-CoreOnly-Firestore-Storage.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>4</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Firebase.default-Auth-CoreOnly-Database-Firestore-Storage.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>5</integer>
-		</dict>
-		<key>Firebase.xcscheme</key>
-		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>1</integer>
 		</dict>
 		<key>FirebaseAnalytics-framework.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>6</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>FirebaseAnalytics-library.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>7</integer>
-		</dict>
-		<key>FirebaseAnalytics.xcscheme</key>
-		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>2</integer>
 		</dict>
 		<key>FirebaseAuth.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>8</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>FirebaseAuthInterop-framework.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>9</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>FirebaseAuthInterop-library.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>10</integer>
-		</dict>
-		<key>FirebaseAuthInterop.xcscheme</key>
-		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>3</integer>
 		</dict>
 		<key>FirebaseCore-framework.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>11</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>FirebaseCore-library.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>12</integer>
-		</dict>
-		<key>FirebaseCore.xcscheme</key>
-		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>4</integer>
 		</dict>
 		<key>FirebaseCoreDiagnostics-framework.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>13</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>FirebaseCoreDiagnostics-library.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>14</integer>
-		</dict>
-		<key>FirebaseCoreDiagnostics.xcscheme</key>
-		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>5</integer>
 		</dict>
 		<key>FirebaseCoreDiagnosticsInterop-framework.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>15</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>FirebaseCoreDiagnosticsInterop-library.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>16</integer>
-		</dict>
-		<key>FirebaseCoreDiagnosticsInterop.xcscheme</key>
-		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>6</integer>
 		</dict>
 		<key>FirebaseDatabase.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>17</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>FirebaseFirestore-framework.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>18</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>FirebaseFirestore-library.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>19</integer>
-		</dict>
-		<key>FirebaseFirestore.xcscheme</key>
-		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>7</integer>
 		</dict>
 		<key>FirebaseInstanceID-framework.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>20</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>FirebaseInstanceID-library.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>21</integer>
-		</dict>
-		<key>FirebaseInstanceID.xcscheme</key>
-		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>8</integer>
 		</dict>
 		<key>FirebaseStorage-framework.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>22</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>FirebaseStorage-library.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>23</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>FirebaseStorage.xcscheme</key>
+		<key>FirebaseUI.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>9</integer>
 		</dict>
 		<key>GTMSessionFetcher-framework.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>38</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>GTMSessionFetcher-library.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>39</integer>
-		</dict>
-		<key>GTMSessionFetcher.xcscheme</key>
-		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>17</integer>
 		</dict>
 		<key>GoogleAppMeasurement-framework.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>24</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>GoogleAppMeasurement-library.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>25</integer>
-		</dict>
-		<key>GoogleAppMeasurement.xcscheme</key>
-		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>10</integer>
 		</dict>
 		<key>GoogleDataTransport-framework.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>26</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>GoogleDataTransport-library.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>27</integer>
-		</dict>
-		<key>GoogleDataTransport.xcscheme</key>
-		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>11</integer>
 		</dict>
 		<key>GoogleDataTransportCCTSupport-framework.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>28</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>GoogleDataTransportCCTSupport-library.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>29</integer>
-		</dict>
-		<key>GoogleDataTransportCCTSupport.xcscheme</key>
-		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>12</integer>
 		</dict>
 		<key>GoogleUtilities-framework.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>30</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>GoogleUtilities-library.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>31</integer>
-		</dict>
-		<key>GoogleUtilities.xcscheme</key>
-		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>13</integer>
 		</dict>
 		<key>Pods-ballotPlanner.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>0</integer>
 		</dict>
-		<key>Pods-ballotPlannerModelTests.xcscheme_^#shared#^_</key>
+		<key>Pods-ballotPlannerModelTests.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>48</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-ballotPlannerParserTests.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>44</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-ballotPlannerViewModelTests.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>45</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Protobuf-framework.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>46</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Protobuf-library.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>47</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>Protobuf.xcscheme</key>
+		<key>SDWebImage.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>21</integer>
 		</dict>
 		<key>gRPC-C++-framework-gRPCCertificates-Cpp.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>33</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>gRPC-C++-framework.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>32</integer>
-		</dict>
-		<key>gRPC-C++-gRPCCertificates-Cpp.xcscheme</key>
-		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>15</integer>
 		</dict>
 		<key>gRPC-C++-library-gRPCCertificates-Cpp.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>35</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>gRPC-C++-library.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>34</integer>
-		</dict>
-		<key>gRPC-C++.xcscheme</key>
-		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>14</integer>
 		</dict>
 		<key>gRPC-Core-framework.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>36</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>gRPC-Core-library.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>37</integer>
-		</dict>
-		<key>gRPC-Core.xcscheme</key>
-		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>16</integer>
 		</dict>
 		<key>leveldb-library-framework.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>40</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>leveldb-library-library.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>41</integer>
-		</dict>
-		<key>leveldb-library.xcscheme</key>
-		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>18</integer>
 		</dict>
 		<key>nanopb-framework.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>42</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>nanopb-library.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>43</integer>
-		</dict>
-		<key>nanopb.xcscheme</key>
-		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>19</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>

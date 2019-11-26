@@ -12,10 +12,12 @@ import Firebase
 
 class PartyChooseController: UITableViewController {
   let db = Firestore.firestore()
+ 
+  
+
   var parties = ["Democratic", "Republican", "Libertarian", "Green", "Constitution", "Independent"]
   var selectedParty = ""
   
- 
   
   override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
   {

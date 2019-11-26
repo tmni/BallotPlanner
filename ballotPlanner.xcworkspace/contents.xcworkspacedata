@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/tarunaemani/Desktop/Ballot_Planner/ballotPlanner/Models/Achievement.swift">
-   </FileRef>
-   <FileRef
       location = "group:ballotPlanner.xcodeproj">
    </FileRef>
    <FileRef
