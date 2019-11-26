@@ -115,6 +115,7 @@ class CandidatesIndexViewController: UIViewController, UICollectionViewDataSourc
     /* Rest is same as showing popover */
     let popoverContentController = self.storyboard?.instantiateViewController(withIdentifier: "CandidatesIndexPopoverViewController") as? CandidatesIndexPopoverViewController
     popoverContentController?.modalPresentationStyle = .popover
+    popoverContentController?.preferredContentSize = CGSize(width: 300, height: 300)
     
     
     if let popoverPresentationController = popoverContentController?.popoverPresentationController {
@@ -124,11 +125,17 @@ class CandidatesIndexViewController: UIViewController, UICollectionViewDataSourc
       popoverPresentationController.delegate = self
       popoverContentController?.textDescriptionText = section.popoverDescription
       
+//      CGSize newSize = [theContentViewController.view systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
+//      CGRect newFrame = CGRectMake(0, 0, newSize.width, newSize.height);
+//      [theContentViewController.view setFrame:newFrame];
+//
+//      [thePopover setPopoverContentSize:theContentViewController.view.frame.size animated:YES];
       if let popoverController = popoverContentController {
         present(popoverController, animated: true, completion: nil)
       }
     }
   }
+  
   //UIPopoverPresentationControllerDelegate inherits from UIAdaptivePresentationControllerDelegate, we will use this method to define the presentation style for popover presentation controller
   func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
     return .none
