@@ -39,7 +39,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="updateLocationWithSender:" destination="Niz-xc-vEz" eventType="editingDidBegin" id="LcS-3p-d3r"/>
+                                    <action selector="updateLocationManuallyWithSender:" destination="Niz-xc-vEz" eventType="valueChanged" id="f7G-Ab-VZr"/>
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lzy-7F-mB6">

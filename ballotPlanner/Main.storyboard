@@ -13,7 +13,7 @@
         <scene sceneID="5PE-dW-Wgu">
             <objects>
                 <navigationController title="Elections" id="esA-8k-Pfx" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Elections" id="6hv-Jw-Era"/>
+                    <tabBarItem key="tabBarItem" title="Elections" image="tick-inside-circle" id="6hv-Jw-Era"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2NJ-fM-BXc">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -50,7 +50,7 @@
         <scene sceneID="8t1-GJ-DC1">
             <objects>
                 <navigationController title="My Info" id="hh2-jX-R8E" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="My Info" id="kfg-e4-4hS"/>
+                    <tabBarItem key="tabBarItem" title="My Info" image="user" id="kfg-e4-4hS"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Btn-iz-feT">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -77,7 +77,7 @@
         <scene sceneID="5IC-f6-IMC">
             <objects>
                 <navigationController title="My Ballot" id="aDV-tE-70Q" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="My Ballot" id="OAB-7n-BXy"/>
+                    <tabBarItem key="tabBarItem" title="My Ballot" image="list" id="OAB-7n-BXy"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="W6P-hJ-fyr">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -111,4 +111,9 @@
             <point key="canvasLocation" x="-1645.5999999999999" y="-485.46798029556652"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="list" width="24" height="24"/>
+        <image name="tick-inside-circle" width="24" height="24"/>
+        <image name="user" width="24" height="24"/>
+    </resources>
 </document>

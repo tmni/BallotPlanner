@@ -25,7 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let setupStoryboard = UIStoryboard(name: "UserSetUp", bundle:nil)
     var vc = UIViewController()
     print("user defaults", UserDefaults.standard.value(forKey: "party"), UserDefaults.standard.value(forKey: "location") )
-    if UserDefaults.standard.value(forKey: "party") as! String? == nil && UserDefaults.standard.value(forKey: "location") as! String? == nil{
+    if UserDefaults.standard.value(forKey: "party") as! String? == nil || UserDefaults.standard.value(forKey: "location") as! Int? == nil{
       // if the app doesnt have users party and location, show welcome screen
       vc = setupStoryboard.instantiateViewController(withIdentifier: "Welcome")
     }

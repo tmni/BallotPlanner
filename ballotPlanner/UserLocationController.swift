@@ -60,23 +60,28 @@ class UserLocationController: UIViewController, UITextFieldDelegate, CLLocationM
   
   func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
     switch status {
-      case .notDetermined:
-        locationManager1.requestAlwaysAuthorization()
-        break
-      case .authorizedWhenInUse:
-        locationManager1.startUpdatingLocation()
-        self.locationText.text = "15213"
-        UserDefaults.standard.set(self.locationText.text, forKey: "location")
-              db.collection("user").document("okabUm7jCq34tjDWHbRQ").updateData(["zip": 15213]) { err in
-                if let err = err {
-                  print("Error writing document: \(err)")
-                } else {
-                  print("Location zip written to ", "15213")
-                }
+    case .notDetermined:
+      locationManager1.requestAlwaysAuthorization()
+      break
+    case .authorizedWhenInUse:
+      locationManager1.startUpdatingLocation()
+      self.locationText.text = "15213"
+      var loc = 0
+      if let text = self.locationText.text {
+        if Int(text) != nil{
+          loc = Int(text)! }
+      }
+      UserDefaults.standard.set(loc, forKey: "location")
+      db.collection("user").document("okabUm7jCq34tjDWHbRQ").updateData(["zip": 15213]) { err in
+        if let err = err {
+          print("Error writing document: \(err)")
+        } else {
+          print("Location zip written to ", "15213")
+        }
         
-              }
-        
-        break
+      }
+      
+      break
     case .authorizedAlways:
       locationManager1.startUpdatingLocation()
       break
@@ -90,7 +95,7 @@ class UserLocationController: UIViewController, UITextFieldDelegate, CLLocationM
       fatalError()
     }
   }
-
+  
   @IBAction func updateLocationManually(sender: UITextField){
     var userZip = self.locationText.text
     if validZipCode(postalCode:userZip!)
@@ -114,5 +119,3 @@ class UserLocationController: UIViewController, UITextFieldDelegate, CLLocationM
   }
   
 }
-
-
