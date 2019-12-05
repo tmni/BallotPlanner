@@ -11,11 +11,7 @@ import Firebase
 
 class AchievementParser {
   var achievements = [Achievement]()
-  
-  func createAchievement(_ name: String, _ description: String, _ isActive: Bool) -> Achievement {
-    let newAchievement = Achievement(name: name, description: description, isActive: isActive)
-    return newAchievement
-  }
+  let parser = Parser()
   
   func AchievementsFromSearchResponse(completion: @escaping([Achievement]) -> Void) {
     let db = Firestore.firestore()
@@ -24,7 +20,7 @@ class AchievementParser {
         print("Error getting documents: \(err)")
       } else {
         for document in querySnapshot!.documents {
-          let newAchievement: Achievement = self.createAchievement(document.get("name") as! String, document.get("description") as! String, document.get("isActive") as! Bool)
+          let newAchievement: Achievement = self.parser.createAchievement(document.get("name") as! String, document.get("description") as! String, document.get("isActive") as! Bool)
           print("adding ", newAchievement.name)
           self.achievements.append(newAchievement)
         }

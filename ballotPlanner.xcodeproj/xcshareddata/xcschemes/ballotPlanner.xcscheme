@@ -26,14 +26,15 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      codeCoverageEnabled = "YES"
       onlyGenerateCoverageForSpecifiedTargets = "YES"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <CodeCoverageTargets>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3FEAA494237CDB550097AB6F"
-            BuildableName = "ballotPlannerParserTests.xctest"
-            BlueprintName = "ballotPlannerParserTests"
+            BlueprintIdentifier = "3F5AB490236F72C400A58E42"
+            BuildableName = "ballotPlanner.app"
+            BlueprintName = "ballotPlanner"
             ReferencedContainer = "container:ballotPlanner.xcodeproj">
          </BuildableReference>
       </CodeCoverageTargets>

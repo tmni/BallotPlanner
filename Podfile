@@ -9,8 +9,7 @@ target 'ballotPlanner' do
   pod 'Firebase/Analytics'
   pod 'Firebase/Firestore'
   pod 'Firebase/Storage'
-  pod 'FirebaseUI/Storage'
-
+#  pod 'FirebaseUI/Storage'
 end
 
 target 'ballotPlannerParserTests' do

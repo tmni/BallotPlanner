@@ -48,6 +48,12 @@ class CandidateViewController: UIViewController, WKNavigationDelegate {
     
   }
   
+//  let alert = UIAlertController(title: "Did you bring your towel?", message: "It's recommended you bring your towel before continuing.", preferredStyle: .alert)
+//
+//  alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: nil))
+//  alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: nil))
+//
+//  self.present(alert, animated: true)
   @IBAction func addToMyBallotButtonTapped(sender: UIButton) {
     let parser = AddRemoveBallotHelper(viewModel!.candidate)
     
@@ -56,9 +62,17 @@ class CandidateViewController: UIViewController, WKNavigationDelegate {
       if (result) {
         parser.removeFromMyBallot()
         self.addToMyBallot.setTitle("Add To My Ballot", for: .normal)
+        let alert = UIAlertController(title: "Removed From Ballot!", message: "", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default)
+        alert.addAction(okAction)
+        self.present(alert, animated: true)
       } else {
         parser.addToMyBallot()
         self.addToMyBallot.setTitle("Remove From My Ballot", for: .normal)
+        let alert = UIAlertController(title: "Added To Ballot!", message: "", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default)
+        alert.addAction(okAction)
+        self.present(alert, animated: true)
       }
     }
     

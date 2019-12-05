@@ -56,7 +56,8 @@
 		3FB5826A237121AE006024BD /* myBallot.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FB58269237121AE006024BD /* myBallot.storyboard */; };
 		3FEAA46C237B76830097AB6F /* ElectionsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEAA46B237B76830097AB6F /* ElectionsPageViewController.swift */; };
 		3FEAA46E237B7F820097AB6F /* ElectionDateDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEAA46D237B7F820097AB6F /* ElectionDateDetailViewController.swift */; };
-		3FEAA498237CDB550097AB6F /* ballotPlannerParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEAA497237CDB550097AB6F /* ballotPlannerParserTests.swift */; };
+		3FF9B7AE2395DB570057E736 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF9B7AD2395DB570057E736 /* Parser.swift */; };
+		3FF9B7B02395DBD60057E736 /* ParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF9B7AF2395DBD60057E736 /* ParserTests.swift */; };
 		3FFD3E2C2372244000B680F9 /* ElectionDatesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5AB4AC236F8AD800A58E42 /* ElectionDatesViewModel.swift */; };
 		3FFD3E2F2372351D00B680F9 /* MyBallotsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFD3E2E2372351D00B680F9 /* MyBallotsViewModel.swift */; };
 		3FFD3E312372352E00B680F9 /* MyBallotsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFD3E302372352E00B680F9 /* MyBallotsViewController.swift */; };
@@ -161,8 +162,9 @@
 		3FEAA46B237B76830097AB6F /* ElectionsPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectionsPageViewController.swift; sourceTree = "<group>"; };
 		3FEAA46D237B7F820097AB6F /* ElectionDateDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectionDateDetailViewController.swift; sourceTree = "<group>"; };
 		3FEAA495237CDB550097AB6F /* ballotPlannerParserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ballotPlannerParserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3FEAA497237CDB550097AB6F /* ballotPlannerParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ballotPlannerParserTests.swift; sourceTree = "<group>"; };
 		3FEAA499237CDB550097AB6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FF9B7AD2395DB570057E736 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		3FF9B7AF2395DBD60057E736 /* ParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserTests.swift; sourceTree = "<group>"; };
 		3FFD3E2E2372351D00B680F9 /* MyBallotsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBallotsViewModel.swift; sourceTree = "<group>"; };
 		3FFD3E302372352E00B680F9 /* MyBallotsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBallotsViewController.swift; sourceTree = "<group>"; };
 		3FFD3E322372354900B680F9 /* MyBallotsParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBallotsParser.swift; sourceTree = "<group>"; };
@@ -199,7 +201,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F16AE682389938300D73881 /* WebKit.framework in Frameworks */,
-				8AEA7911B449A15C078BED31 /* Pods_ballotPlanner.framework in Frameworks */,
 				AD65B911774461C4B80A2E27 /* Pods_ballotPlanner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,6 +348,7 @@
 		3FB5824B2370BF86006024BD /* Parser */ = {
 			isa = PBXGroup;
 			children = (
+				3FF9B7AD2395DB570057E736 /* Parser.swift */,
 				3FB5824E2370BFE6006024BD /* ElectionDatesParser.swift */,
 				6D57021D2373B0C500A7BA0D /* AchievementsParser.swift */,
 				3FB582612370F0E7006024BD /* MyElectionsParser.swift */,
@@ -405,8 +407,8 @@
 		3FEAA496237CDB550097AB6F /* ballotPlannerParserTests */ = {
 			isa = PBXGroup;
 			children = (
-				3FEAA497237CDB550097AB6F /* ballotPlannerParserTests.swift */,
 				3FEAA499237CDB550097AB6F /* Info.plist */,
+				3FF9B7AF2395DBD60057E736 /* ParserTests.swift */,
 			);
 			path = ballotPlannerParserTests;
 			sourceTree = "<group>";
@@ -469,10 +471,6 @@
 			children = (
 				3F16AE662389937900D73881 /* libPods-ballotPlannerModelTests.a */,
 				3F3C9EF3238992D400016E07 /* WebKit.framework */,
-				2E280B0C56CB18E69F0ABFE1 /* Pods_ballotPlanner.framework */,
-				B87B8577E8EDBD83706602CC /* libPods-ballotPlannerParserTests.a */,
-				F600DE1ABAA221A4B8DE6782 /* libPods-ballotPlannerModelTests.a */,
-				1BAEBE2B9F0E23133203CD08 /* libPods-ballotPlannerViewModelTests.a */,
 				BF148A0C160C718E5C72CC1A /* Pods_ballotPlanner.framework */,
 				86F32EC8606E92106A3D5876 /* libPods-ballotPlannerModelTests.a */,
 				4DEFDE215A852BC5A23E259F /* libPods-ballotPlannerParserTests.a */,
@@ -841,6 +839,7 @@
 				3FFD3E312372352E00B680F9 /* MyBallotsViewController.swift in Sources */,
 				3FFD3E3523723A2F00B680F9 /* Person.swift in Sources */,
 				3F00D0DF237326B10001F364 /* CandidatesIndexViewController.swift in Sources */,
+				3FF9B7AE2395DB570057E736 /* Parser.swift in Sources */,
 				3F20530B2374A9EA0055F441 /* Location.swift in Sources */,
 				6D4CB75B23899E5B002F1ED9 /* AchievementPopoverController.swift in Sources */,
 				3F42AB812370A49100238682 /* ElectionDatesViewController.swift in Sources */,
@@ -892,7 +891,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FEAA498237CDB550097AB6F /* ballotPlannerParserTests.swift in Sources */,
+				3FF9B7B02395DBD60057E736 /* ParserTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

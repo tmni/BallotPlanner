@@ -11,6 +11,7 @@ import Firebase
 
 class MyBallotsParser {
   var election: ElectionDate
+  let parser = Parser()
   
   init(_ election: ElectionDate) {
     self.election = election
@@ -151,7 +152,7 @@ class MyBallotsParser {
       } else {
         for document in querySnapshot!.documents {
           if (self.peopleIds.contains(document.documentID)) {
-            let newBallotPerson = self.createBallotPerson(document.get("first_name") as! String, document.get("last_name") as! String, document.get("party_affiliation") as! String, nil, document.get("contact_twitter") as! String, document.get("summary") as! String, document.documentID)
+            let newBallotPerson = self.parser.createBallotPerson(document.get("first_name") as! String, document.get("last_name") as! String, document.get("party_affiliation") as! String, nil, document.get("contact_twitter") as! String, document.get("summary") as! String, document.documentID)
             self.myBallots.append(newBallotPerson)
           }
         }
@@ -159,11 +160,6 @@ class MyBallotsParser {
       }
       completion(self.myBallots)
     }
-  }
-  
-  func createBallotPerson(_ first_name: String, _ last_name: String, _ party_affiliation: String, _ image: String?, _ contact_twitter: String, _ summary: String, _ people_id: String) -> Person{
-    let newBallotPerson = Person(first_name: first_name, last_name: last_name, party_affiliation: party_affiliation, image: image, contact_twitter: contact_twitter, summary: summary, people_id: people_id)
-    return newBallotPerson
   }
   
 }
