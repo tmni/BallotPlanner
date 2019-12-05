@@ -9,28 +9,6 @@
 import Foundation
 import Firebase
 
-class AchievementParser {
-  var achievements = [Achievement]()
-  let parser = Parser()
-  
-  func AchievementsFromSearchResponse(completion: @escaping([Achievement]) -> Void) {
-    let db = Firestore.firestore()
-    db.collection("achievements").getDocuments() { (querySnapshot, err) in
-      if let err = err {
-        print("Error getting documents: \(err)")
-      } else {
-        for document in querySnapshot!.documents {
-          let newAchievement: Achievement = self.parser.createAchievement(document.get("name") as! String, document.get("description") as! String, document.get("isActive") as! Bool)
-          print("adding ", newAchievement.name)
-          self.achievements.append(newAchievement)
-        }
-      }
-      completion(self.achievements)
-    }
-  }
-  
-}
-
 class AchievementViewModel {
   var achievements = [Achievement]()
   
