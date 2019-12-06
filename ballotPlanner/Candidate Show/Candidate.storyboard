@@ -54,10 +54,6 @@
                                     <action selector="addToMyBallotButtonTappedWithSender:" destination="NAc-GA-mNk" eventType="touchUpInside" id="byC-VX-Lra"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V7N-PM-99H">
-                                <rect key="frame" x="16" y="76" width="156" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Twitter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="THA-S8-hgg">
                                 <rect key="frame" x="20" y="429" width="169" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -81,6 +77,10 @@
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V7N-PM-99H">
+                                <rect key="frame" x="16" y="76" width="156" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="r8D-wF-wf0"/>
@@ -88,6 +88,7 @@
                     <connections>
                         <outlet property="about" destination="tG4-BH-6Yr" id="kgj-yq-sd1"/>
                         <outlet property="addToMyBallot" destination="4iu-Y2-yfg" id="1Jx-I5-Pzd"/>
+                        <outlet property="imageView" destination="V7N-PM-99H" id="woM-2p-77w"/>
                         <outlet property="name" destination="Ybk-nQ-mcM" id="vA7-SQ-BGD"/>
                         <outlet property="party" destination="xU1-Ba-8dG" id="EnV-Ep-Ebu"/>
                         <outlet property="twitter" destination="THA-S8-hgg" id="z5m-qS-mgO"/>

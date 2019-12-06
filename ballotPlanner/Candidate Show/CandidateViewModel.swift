@@ -28,6 +28,10 @@ class CandidateViewModel {
     return self.candidate.summary
   }
   
+  func image() -> String? {
+    return self.candidate.image
+  }
+  
   func person_id() -> String? {
     return self.candidate.people_id
   }

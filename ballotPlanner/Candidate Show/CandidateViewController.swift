@@ -8,6 +8,9 @@
 
 import UIKit
 import WebKit
+import Firebase
+import FirebaseStorage
+import FirebaseUI
 
 class CandidateViewController: UIViewController, WKNavigationDelegate {
   
@@ -17,6 +20,7 @@ class CandidateViewController: UIViewController, WKNavigationDelegate {
   @IBOutlet weak var twitter: UILabel!
   @IBOutlet weak var addToMyBallot: UIButton!
   @IBOutlet weak var webView: WKWebView!
+  @IBOutlet weak var imageView: UIImageView!
   
   var viewModel: CandidateViewModel?
   
@@ -31,6 +35,27 @@ class CandidateViewController: UIViewController, WKNavigationDelegate {
     <a class="twitter-timeline" href="https://twitter.com/\(twitter)">Tweets by \(twitter)</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     """
     webView.loadHTMLString(webContent, baseURL: nil)
+    
+    // Get a reference to the storage service using the default Firebase App
+    let storage = Storage.storage()
+    
+    // Create a storage reference from our storage service
+    let storageRef = storage.reference()
+    
+    let storagePath = viewModel?.image()
+    let spaceRef = storage.reference(forURL: storagePath!)
+    
+    // Reference to an image file in Firebase Storage
+    //let reference = storageRef.child("candidates/bobby_wilson.jpeg")
+    
+    // UIImageView in your ViewController
+    let imageView: UIImageView = self.imageView
+    
+    // Placeholder image
+//    let placeholderImage = UIImage(named: "placeholder.jpg")
+    
+    // Load the image using SDWebImage
+    imageView.sd_setImage(with: spaceRef)
     
     let parser = AddRemoveBallotHelper(viewModel!.candidate)
     parser.checkInBallots {

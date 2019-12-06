@@ -152,7 +152,7 @@ class MyBallotsParser {
       } else {
         for document in querySnapshot!.documents {
           if (self.peopleIds.contains(document.documentID)) {
-            let newBallotPerson = self.parser.createBallotPerson(document.get("first_name") as! String, document.get("last_name") as! String, document.get("party_affiliation") as! String, nil, document.get("contact_twitter") as! String, document.get("summary") as! String, document.documentID)
+            let newBallotPerson = self.parser.createBallotPerson(document.get("first_name") as! String, document.get("last_name") as! String, document.get("party_affiliation") as! String, document.get("image") as! String, document.get("contact_twitter") as! String, document.get("summary") as! String, document.documentID)
             self.myBallots.append(newBallotPerson)
           }
         }

@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseStorage
+import FirebaseUI
 
 //class CandidatesIndexViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
 class CandidatesIndexViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UIPopoverPresentationControllerDelegate {
@@ -74,6 +77,15 @@ class CandidatesIndexViewController: UIViewController, UICollectionViewDataSourc
     let candidate = candidateArray![indexPath.row]
     cell.name.text = candidate.first_name + " " + candidate.last_name
     cell.party.text = candidate.party_affiliation
+    
+    // Get a reference to the storage service using the default Firebase App
+    let storage = Storage.storage()
+    
+    let storagePath = candidate.image
+    let spaceRef = storage.reference(forURL: storagePath!)
+    
+    // Load the image using SDWebImage
+    cell.personImage.sd_setImage(with: spaceRef)
     
     return cell
   }

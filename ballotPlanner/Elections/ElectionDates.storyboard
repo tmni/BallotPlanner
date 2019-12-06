@@ -71,7 +71,6 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="NjU-L2-CrT"/>
                     <navigationItem key="navigationItem" id="eGH-Hq-POM">
-                        <nil key="title"/>
                         <barButtonItem key="backBarButtonItem" title="Back" id="Ftb-Zp-ump"/>
                         <view key="titleView" contentMode="scaleToFill" id="uVZ-Dm-LiS">
                             <rect key="frame" x="37" y="0.0" width="301" height="44"/>

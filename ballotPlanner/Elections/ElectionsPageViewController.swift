@@ -13,7 +13,7 @@ class ElectionsPageViewController: UIPageViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-
+    
     dataSource = self
     
     if let firstViewController = orderedViewControllers.first {

@@ -173,7 +173,7 @@ class CandidatesIndexParser {
         for document in querySnapshot!.documents {
           for key in self.peopleIdsSortedByOfficeId.keys {
             if ((self.peopleIdsSortedByOfficeId[key]?.contains(document.documentID))!) {
-              let newCandidatePerson = self.parser.createCandidatePerson(document.get("first_name") as! String, document.get("last_name") as! String, document.get("party_affiliation") as! String, nil, document.get("contact_twitter") as! String, document.get("summary") as! String, document.documentID)
+              let newCandidatePerson = self.parser.createCandidatePerson(document.get("first_name") as! String, document.get("last_name") as! String, document.get("party_affiliation") as! String, document.get("image") as! String, document.get("contact_twitter") as! String, document.get("summary") as! String, document.documentID)
               if (self.allCandidatesSortedByOfficeId.keys.contains(key)) {
                 self.allCandidatesSortedByOfficeId[key]?.append(newCandidatePerson)
               } else {
