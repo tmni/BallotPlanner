@@ -22,8 +22,7 @@ class ElectionDatesViewModel {
     let row = indexPath.row
     if (row >= self.numberOfRows()) {
       return ""
-    }
-    else {
+    } else {
       let electionDate = electionDates[row]
       return electionDate.name
     }

@@ -11,14 +11,13 @@ import XCTest
 
 class UserInfoViewModelTests: XCTestCase {
   
-  func testGetUserInfo(){
-  }
   func testnumberOfRows(){
     let viewModel = UserInfoViewModel()
     
     XCTAssertEqual(viewModel.numberOfRows(), 2)
     
   }
+  
   func testGetParty(){
     let user_info = ("Democratic",12345)
     let viewModel = UserInfoViewModel()

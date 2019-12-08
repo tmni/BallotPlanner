@@ -2,7 +2,7 @@
 //  ElectionDateDetailViewModelTests.swift
 //  ballotPlannerViewModelTests
 //
-//  Created by Taruna Emani on 11/8/19.
+//  Created by Erika Giuse on 12/8/19.
 //  Copyright © 2019 Erika Giuse. All rights reserved.
 //
 
@@ -10,24 +10,45 @@ import XCTest
 @testable import ballotPlanner
 
 class ElectionDateDetailViewModelTests: XCTestCase {
+
+  override func setUp() {
+      // Put setup code here. This method is called before the invocation of each test method in the class.
+  }
+
+  override func tearDown() {
+      // Put teardown code here. This method is called after the invocation of each test method in the class.
+  }
   
   func testTitle() {
-    let viewModel = ElectionDateDetailViewModel(electionDate: createElectionDate())
-    XCTAssertEqual(viewModel.title(), "456")
+    let dict: Dictionary = ["hello": 1.00]
+    let voting_locations: Array<Dictionary<String, Double>> = [dict]
+    let electionDate = ElectionDate(election_id: "election_id", date: "date", description: "description", name: "name", voting_locations: voting_locations)
+    let viewModel = ElectionDateDetailViewModel(electionDate: electionDate)
+    XCTAssertEqual(viewModel.title(), electionDate.name)
   }
   
   func testDate() {
-    let viewModel = ElectionDateDetailViewModel(electionDate: createElectionDate())
-    XCTAssertEqual(viewModel.date(), "123")
+    let dict: Dictionary = ["hello": 1.00]
+    let voting_locations: Array<Dictionary<String, Double>> = [dict]
+    let electionDate = ElectionDate(election_id: "election_id", date: "date", description: "description", name: "name", voting_locations: voting_locations)
+    let viewModel = ElectionDateDetailViewModel(electionDate: electionDate)
+    XCTAssertEqual(viewModel.date(), electionDate.date)
   }
   
-  func testDescription(){
-    let viewModel = ElectionDateDetailViewModel(electionDate: createElectionDate())
-    XCTAssertEqual(viewModel.description(), "789")
+  func testDescription() {
+    let dict: Dictionary = ["hello": 1.00]
+    let voting_locations: Array<Dictionary<String, Double>> = [dict]
+    let electionDate = ElectionDate(election_id: "election_id", date: "date", description: "description", name: "name", voting_locations: voting_locations)
+    let viewModel = ElectionDateDetailViewModel(electionDate: electionDate)
+    XCTAssertEqual(viewModel.description(), electionDate.description)
   }
   
-  func createElectionDate() -> ElectionDate {
-    return ElectionDate(election_id: "election_id", date: "123", description: "789", name: "456", voting_locations: [["lat": 0.0, "long": 1.1]])
+  func testVoting_locations() {
+    let dict: Dictionary = ["hello": 1.00]
+    let voting_locations: Array<Dictionary<String, Double>> = [dict]
+    let electionDate = ElectionDate(election_id: "election_id", date: "date", description: "description", name: "name", voting_locations: voting_locations)
+    let viewModel = ElectionDateDetailViewModel(electionDate: electionDate)
+    XCTAssertEqual(viewModel.voting_locations(), electionDate.voting_locations)
   }
-  
+
 }

@@ -40,10 +40,14 @@
 		3F6038DC2378D9CD006CA616 /* MyElectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6038DB2378D9CD006CA616 /* MyElectionsViewController.swift */; };
 		3F68CEC82374A86D0006AC6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F68CEC72374A86D0006AC6B /* Main.storyboard */; };
 		3F6E3415237D109700E7A74E /* ballotPlannerModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6E3414237D109700E7A74E /* ballotPlannerModelTests.swift */; };
-		3F6E3423237D114900E7A74E /* ballotPlannerViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6E3422237D114900E7A74E /* ballotPlannerViewModelTests.swift */; };
 		3F6E342B237D11C200E7A74E /* AchievementsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6E342A237D11C200E7A74E /* AchievementsViewModelTests.swift */; };
-		3F6E342D237D127700E7A74E /* ElectionDateDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6E342C237D127700E7A74E /* ElectionDateDetailViewModelTests.swift */; };
 		3F6E342F237D12D900E7A74E /* UserInfoViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6E342E237D12D900E7A74E /* UserInfoViewModelTests.swift */; };
+		3F88FADA239D567B007CC77A /* CandidateViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F88FAD9239D567B007CC77A /* CandidateViewModelTests.swift */; };
+		3F88FADC239D5B2E007CC77A /* MyElectionsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F88FADB239D5B2E007CC77A /* MyElectionsViewModelTests.swift */; };
+		3F88FADE239D5F83007CC77A /* MyBallotsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F88FADD239D5F83007CC77A /* MyBallotsViewModelTests.swift */; };
+		3F88FAE0239D6838007CC77A /* ElectionDatesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F88FADF239D6838007CC77A /* ElectionDatesViewModelTests.swift */; };
+		3F88FAE2239D6B0A007CC77A /* CandidatesIndexViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F88FAE1239D6B0A007CC77A /* CandidatesIndexViewModelTests.swift */; };
+		3F88FAE4239D6E8F007CC77A /* ElectionDateDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F88FAE3239D6E8F007CC77A /* ElectionDateDetailViewModelTests.swift */; };
 		3F8912B82372647F00D9B199 /* CandidateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8912B72372647F00D9B199 /* CandidateViewModel.swift */; };
 		3F8912BA2372648E00D9B199 /* CandidateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8912B92372648E00D9B199 /* CandidateViewController.swift */; };
 		3FB5824F2370BFE6006024BD /* ElectionDatesParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB5824E2370BFE6006024BD /* ElectionDatesParser.swift */; };
@@ -144,11 +148,15 @@
 		3F6E3414237D109700E7A74E /* ballotPlannerModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ballotPlannerModelTests.swift; sourceTree = "<group>"; };
 		3F6E3416237D109700E7A74E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F6E3420237D114900E7A74E /* ballotPlannerViewModelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ballotPlannerViewModelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3F6E3422237D114900E7A74E /* ballotPlannerViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ballotPlannerViewModelTests.swift; sourceTree = "<group>"; };
 		3F6E3424237D114900E7A74E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F6E342A237D11C200E7A74E /* AchievementsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsViewModelTests.swift; sourceTree = "<group>"; };
-		3F6E342C237D127700E7A74E /* ElectionDateDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectionDateDetailViewModelTests.swift; sourceTree = "<group>"; };
 		3F6E342E237D12D900E7A74E /* UserInfoViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewModelTests.swift; sourceTree = "<group>"; };
+		3F88FAD9239D567B007CC77A /* CandidateViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidateViewModelTests.swift; sourceTree = "<group>"; };
+		3F88FADB239D5B2E007CC77A /* MyElectionsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyElectionsViewModelTests.swift; sourceTree = "<group>"; };
+		3F88FADD239D5F83007CC77A /* MyBallotsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBallotsViewModelTests.swift; sourceTree = "<group>"; };
+		3F88FADF239D6838007CC77A /* ElectionDatesViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectionDatesViewModelTests.swift; sourceTree = "<group>"; };
+		3F88FAE1239D6B0A007CC77A /* CandidatesIndexViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidatesIndexViewModelTests.swift; sourceTree = "<group>"; };
+		3F88FAE3239D6E8F007CC77A /* ElectionDateDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectionDateDetailViewModelTests.swift; sourceTree = "<group>"; };
 		3F8912B72372647F00D9B199 /* CandidateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidateViewModel.swift; sourceTree = "<group>"; };
 		3F8912B92372648E00D9B199 /* CandidateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidateViewController.swift; sourceTree = "<group>"; tabWidth = 1; };
 		3FB5824E2370BFE6006024BD /* ElectionDatesParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectionDatesParser.swift; sourceTree = "<group>"; };
@@ -326,9 +334,13 @@
 		3F6E3421237D114900E7A74E /* ballotPlannerViewModelTests */ = {
 			isa = PBXGroup;
 			children = (
-				3F6E3422237D114900E7A74E /* ballotPlannerViewModelTests.swift */,
+				3F88FAD9239D567B007CC77A /* CandidateViewModelTests.swift */,
+				3F88FADB239D5B2E007CC77A /* MyElectionsViewModelTests.swift */,
+				3F88FADD239D5F83007CC77A /* MyBallotsViewModelTests.swift */,
+				3F88FADF239D6838007CC77A /* ElectionDatesViewModelTests.swift */,
+				3F88FAE1239D6B0A007CC77A /* CandidatesIndexViewModelTests.swift */,
+				3F88FAE3239D6E8F007CC77A /* ElectionDateDetailViewModelTests.swift */,
 				3F6E342A237D11C200E7A74E /* AchievementsViewModelTests.swift */,
-				3F6E342C237D127700E7A74E /* ElectionDateDetailViewModelTests.swift */,
 				3F6E342E237D12D900E7A74E /* UserInfoViewModelTests.swift */,
 				3F6E3424237D114900E7A74E /* Info.plist */,
 			);
@@ -881,9 +893,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F6E342B237D11C200E7A74E /* AchievementsViewModelTests.swift in Sources */,
+				3F88FAE4239D6E8F007CC77A /* ElectionDateDetailViewModelTests.swift in Sources */,
+				3F88FADE239D5F83007CC77A /* MyBallotsViewModelTests.swift in Sources */,
 				3F6E342F237D12D900E7A74E /* UserInfoViewModelTests.swift in Sources */,
-				3F6E342D237D127700E7A74E /* ElectionDateDetailViewModelTests.swift in Sources */,
-				3F6E3423237D114900E7A74E /* ballotPlannerViewModelTests.swift in Sources */,
+				3F88FADC239D5B2E007CC77A /* MyElectionsViewModelTests.swift in Sources */,
+				3F88FAE0239D6838007CC77A /* ElectionDatesViewModelTests.swift in Sources */,
+				3F88FADA239D567B007CC77A /* CandidateViewModelTests.swift in Sources */,
+				3F88FAE2239D6B0A007CC77A /* CandidatesIndexViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
