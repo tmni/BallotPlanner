@@ -13,6 +13,7 @@ class ElectionDatesViewController: UIViewController, UITableViewDataSource, UITa
   @IBOutlet var tableView: UITableView!
   
   let viewModel = ElectionDatesViewModel()
+  let cellSpacingHeight: CGFloat = 5
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -53,7 +54,22 @@ class ElectionDatesViewController: UIViewController, UITableViewDataSource, UITa
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TableViewCell
     cell.name.text = viewModel.titleForRowAtIndexPath(indexPath)
-    cell.date.text = viewModel.dateForRowAtIndexPath(indexPath)
+    cell.date.text = "Voting Day: " + viewModel.dateForRowAtIndexPath(indexPath)
+    
+//    cell.layer.borderWidth = CGFloat(10)
+////    cell.layer.borderColor = tableView.backgroundColor?.cgColor
+    
+    cell.layer.cornerRadius = 10
+    cell.layer.masksToBounds = false
+    cell.layer.shadowColor = UIColor.white.cgColor
+    cell.layer.shadowOffset = CGSize(width: 5, height: 5);
+    cell.layer.shadowOpacity = 0.5
+//    cell.layer.borderWidth = 10
+//    cell.layer.borderColor = UIColor(red:0.31, green:0.66, blue:0.96, alpha:1.0).cgColor
+    cell.layer.borderWidth = 5
+    cell.layer.borderColor = tableView.backgroundColor?.cgColor
+    
+    
     return cell
   }
   

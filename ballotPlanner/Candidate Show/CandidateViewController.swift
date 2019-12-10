@@ -10,13 +10,13 @@ import UIKit
 import WebKit
 import Firebase
 import FirebaseStorage
-import FirebaseUI
+//import FirebaseUI
 
 class CandidateViewController: UIViewController, WKNavigationDelegate {
   
   @IBOutlet weak var name: UILabel!
   @IBOutlet weak var party: UILabel!
-  @IBOutlet weak var about: UILabel!
+  @IBOutlet weak var about: UITextView!
   @IBOutlet weak var twitter: UILabel!
   @IBOutlet weak var addToMyBallot: UIButton!
   @IBOutlet weak var webView: WKWebView!
@@ -36,26 +36,23 @@ class CandidateViewController: UIViewController, WKNavigationDelegate {
     """
     webView.loadHTMLString(webContent, baseURL: nil)
     
-    // Get a reference to the storage service using the default Firebase App
-    let storage = Storage.storage()
-    
-    // Create a storage reference from our storage service
-    let storageRef = storage.reference()
-    
-    let storagePath = viewModel?.image()
-    let spaceRef = storage.reference(forURL: storagePath!)
-    
-    // Reference to an image file in Firebase Storage
-    //let reference = storageRef.child("candidates/bobby_wilson.jpeg")
-    
     // UIImageView in your ViewController
     let imageView: UIImageView = self.imageView
+  
+    let storage = Storage.storage()
+    let storageRef = storage.reference()
+    let imageRef = storageRef.child((viewModel?.image())!)
+    imageRef.getData(maxSize: 1 * 1024 * 1024) { data, error in
+      if let error = error {
+        print("Error getting image: \(error)")
+      } else {
+        let image = UIImage(data: data!)
+        imageView.image = image
+      }
+    }
     
-    // Placeholder image
-//    let placeholderImage = UIImage(named: "placeholder.jpg")
-    
-    // Load the image using SDWebImage
-    imageView.sd_setImage(with: spaceRef)
+    self.addToMyBallot.layer.cornerRadius = 15
+    self.addToMyBallot.clipsToBounds = true
     
     let parser = AddRemoveBallotHelper(viewModel!.candidate)
     parser.checkInBallots {
@@ -87,7 +84,7 @@ class CandidateViewController: UIViewController, WKNavigationDelegate {
         self.present(alert, animated: true)
       } else {
         parser.addToMyBallot()
-        self.addToMyBallot.setTitle("Remove From My Ballot", for: .normal)
+        self.addToMyBallot.setTitle("Remove From Ballot", for: .normal)
         let alert = UIAlertController(title: "Added To Ballot!", message: "", preferredStyle: .alert)
         let okAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default)
         alert.addAction(okAction)
