@@ -126,8 +126,8 @@
                                     <segue destination="FpS-XH-9rY" kind="show" identifier="toCandidatesIndexVC" id="3gw-cA-P2D"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="About This Election" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1zc-18-BAo">
-                                <rect key="frame" x="96" y="48" width="183" height="28"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About This Election" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1zc-18-BAo">
+                                <rect key="frame" x="96" y="45" width="183" height="28"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="226" id="mao-Io-O6x"/>
                                 </constraints>
