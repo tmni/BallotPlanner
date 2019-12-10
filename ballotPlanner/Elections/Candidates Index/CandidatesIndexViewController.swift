@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 import FirebaseStorage
-import FirebaseUI
+//import FirebaseUI
 
 //class CandidatesIndexViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
 class CandidatesIndexViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UIPopoverPresentationControllerDelegate {
@@ -34,9 +34,9 @@ class CandidatesIndexViewController: UIViewController, UICollectionViewDataSourc
     let cellNib = UINib(nibName: "CandidatesIndexCollectionViewCell", bundle: nil)
     collectionView1.register(cellNib, forCellWithReuseIdentifier: "CandidatesIndexCell")
     
-    viewModel?.refresh { [weak self] in
+    viewModel?.refresh { [unowned self] in
       DispatchQueue.main.async {
-        self?.collectionView1.reloadData()
+        self.collectionView1.reloadData()
         //self.collectionView1.collectionViewLayout.invalidateLayout()
       }
     }
@@ -69,8 +69,6 @@ class CandidatesIndexViewController: UIViewController, UICollectionViewDataSourc
   
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     let cell = collectionView1.dequeueReusableCell(withReuseIdentifier: "CandidatesIndexCell", for: indexPath) as! CandidatesIndexCollectionViewCell
-//    cell.name.text = viewModel?.titleForRowAtIndexPath(indexPath)
-//    cell.party.text = viewModel?.partyForRowAtIndexPath(indexPath)
     var officeArray = Array(((viewModel?.allCandidatesSortedByOfficeId.keys)!))
     var officeId = officeArray[indexPath.section]
     let candidateArray = viewModel?.allCandidatesSortedByOfficeId[officeId]
@@ -78,14 +76,17 @@ class CandidatesIndexViewController: UIViewController, UICollectionViewDataSourc
     cell.name.text = candidate.first_name + " " + candidate.last_name
     cell.party.text = candidate.party_affiliation
     
-    // Get a reference to the storage service using the default Firebase App
     let storage = Storage.storage()
-    
-    let storagePath = candidate.image
-    let spaceRef = storage.reference(forURL: storagePath!)
-    
-    // Load the image using SDWebImage
-    cell.personImage.sd_setImage(with: spaceRef)
+    let storageRef = storage.reference()
+    let imageRef = storageRef.child(candidate.image!)
+    imageRef.getData(maxSize: 1 * 1024 * 1024) { data, error in
+      if let error = error {
+        print("Error getting image: \(error)")
+      } else {
+        let image = UIImage(data: data!)
+        cell.personImage.image = image
+      }
+    }
     
     return cell
   }

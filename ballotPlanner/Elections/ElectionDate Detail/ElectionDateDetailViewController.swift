@@ -10,9 +10,9 @@ import UIKit
 import MapKit
 
 class ElectionDateDetailViewController: UIViewController {
-  @IBOutlet weak var aboutText: UILabel!
   @IBOutlet weak var mapView: MKMapView!
-  
+  @IBOutlet weak var aboutText: UITextView!
+  @IBOutlet weak var seeCandidates: UIButton!
   var electionDate: ElectionDate?
   
   var viewModel: ElectionDateDetailViewModel?
@@ -27,6 +27,9 @@ class ElectionDateDetailViewController: UIViewController {
     centerMapOnLocation(location: initialLocation)
     //viewModel = ElectionDateDetailViewModel(electionDate: electionDate!)
     self.setAllPins()
+    
+    self.seeCandidates.layer.cornerRadius = 15
+    self.seeCandidates.clipsToBounds = true
   }
   
   func setAllPins() {
@@ -72,8 +75,6 @@ class ElectionDateDetailViewController: UIViewController {
     self.aboutText.text = viewModel?.description()
   }
   
-  //TEMPORARY
-  @IBOutlet weak var seeCandidates: UIButton!
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     if segue.identifier == "toCandidatesIndexVC" {
       if let destination = segue.destination as? CandidatesIndexViewController {
