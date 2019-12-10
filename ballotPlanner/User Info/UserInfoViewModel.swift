@@ -12,20 +12,7 @@ import Firebase
 class UserInfoViewModel {
   var user_info: (String, Int) = ("", 0)
   
-//  func refresh(_ completion: @escaping () -> Void) {
-//
-//    self.parser.DataFromSearchResponse { (user_info) in
-//      self.user_info = user_info
-//      completion()
-//    }}
-  
-//  func getUserInfo() -> (party: String, zip: Int) {
-//    let parser = UserInfoParser()
-//    parser.DataFromSearchResponse { (user_info) in
-//      self.user_info = user_info
-//    }
-//    return self.user_info
-//  }
+
   func getUserInfo(completion: @escaping((String, Int)) -> Void) {
     let parser = UserInfoParser()
     parser.DataFromSearchResponse { (user_info) in

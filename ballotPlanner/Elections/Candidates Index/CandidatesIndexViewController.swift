@@ -34,9 +34,9 @@ class CandidatesIndexViewController: UIViewController, UICollectionViewDataSourc
     let cellNib = UINib(nibName: "CandidatesIndexCollectionViewCell", bundle: nil)
     collectionView1.register(cellNib, forCellWithReuseIdentifier: "CandidatesIndexCell")
     
-    viewModel?.refresh { [unowned self] in
+    viewModel?.refresh { [weak self] in
       DispatchQueue.main.async {
-        self.collectionView1.reloadData()
+        self?.collectionView1.reloadData()
         //self.collectionView1.collectionViewLayout.invalidateLayout()
       }
     }

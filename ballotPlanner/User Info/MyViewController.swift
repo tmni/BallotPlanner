@@ -39,7 +39,9 @@ class MyViewController: UIViewController, UICollectionViewDataSource, UICollecti
         }
       }
     }
+    
   }
+  
   
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
@@ -86,27 +88,21 @@ class MyViewController: UIViewController, UICollectionViewDataSource, UICollecti
 //    popover.popoverPresentationController?.delegate = self
 //    popover.preferredContentSize = CGSize(width: 340,height: 340)
     popover.modalPresentationStyle = .popover
-    print("set type to popover")
     popover.popoverPresentationController?.delegate = self
-    print("set delegate")
     popover.popoverPresentationController?.permittedArrowDirections = UIPopoverArrowDirection(rawValue: 0)
-    print("set arrows")
+    popover.preferredContentSize = CGSize(width: 300, height: 300)
     popover.popoverPresentationController?.sourceRect = cell!.bounds
-    print("set rect to ", cell!.bounds)
     popover.popoverPresentationController?.sourceView = cell
-    print("set source view to ", cell)
     self.present(popover,animated:true, completion:nil)
   }
   func updatePartyLabel(){
-    partyLabel.layer.borderColor = UIColor.darkGray.cgColor;
-    partyLabel.layer.borderWidth = 1.0;
     partyLabel.setTitle("Party: " + self.user_info.0, for: .normal)
   }
   func updateLocLabel(){
-    locLabel.layer.borderColor = UIColor.darkGray.cgColor;
-    locLabel.layer.borderWidth = 1.0;
     locLabel.setTitle("Location: " + String(self.user_info.1), for: .normal)
   }
+ 
+  
   
 }
 extension MyViewController: UIPopoverPresentationControllerDelegate {
@@ -114,5 +110,6 @@ extension MyViewController: UIPopoverPresentationControllerDelegate {
     return UIModalPresentationStyle.none
   }
 }
+
 
 
