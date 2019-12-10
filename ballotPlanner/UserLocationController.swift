@@ -60,26 +60,6 @@ class UserLocationController: UIViewController, UITextFieldDelegate, CLLocationM
   
   func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
     switch status {
-<<<<<<< HEAD
-    case .notDetermined:
-      locationManager1.requestAlwaysAuthorization()
-      break
-    case .authorizedWhenInUse:
-      locationManager1.startUpdatingLocation()
-      self.locationText.text = "15213"
-      var loc = 0
-      if let text = self.locationText.text {
-        if Int(text) != nil{
-          loc = Int(text)! }
-      }
-      UserDefaults.standard.set(loc, forKey: "location")
-      db.collection("user").document("okabUm7jCq34tjDWHbRQ").updateData(["zip": 15213]) { err in
-        if let err = err {
-          print("Error writing document: \(err)")
-        } else {
-          print("Location zip written to ", "15213")
-        }
-=======
       case .notDetermined:
         locationManager1.requestAlwaysAuthorization()
         break
@@ -100,10 +80,6 @@ class UserLocationController: UIViewController, UITextFieldDelegate, CLLocationM
                 }
         
               }
->>>>>>> mergetest
-        
-      }
-      
       break
     case .authorizedAlways:
       locationManager1.startUpdatingLocation()

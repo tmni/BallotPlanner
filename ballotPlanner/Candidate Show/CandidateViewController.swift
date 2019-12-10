@@ -10,7 +10,7 @@ import UIKit
 import WebKit
 import Firebase
 import FirebaseStorage
-import FirebaseUI
+//import FirebaseUI
 
 class CandidateViewController: UIViewController, WKNavigationDelegate {
   

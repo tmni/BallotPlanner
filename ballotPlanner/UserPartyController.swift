@@ -21,20 +21,6 @@ class UserPartyController: UIViewController{
   
   override func viewDidLoad() {
     super.viewDidLoad()
-
-<<<<<<< HEAD
-//    let yuh: UIImage = self.imageView
-
-
-    // Placeholder image
-//    let placeholderImage = UIImage(named: "placeholder.jpg")
-
-    // Load the image using SDWebImage
-//    imageView.sd_setImage(with: reference, placeholderImage: placeholderImage)
-//    parties[0].setImage(self.imageView, for: UIControl.State.normal)
-=======
-    
->>>>>>> mergetest
   }
 
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
+    <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,11 +15,11 @@
             <objects>
                 <viewController storyboardIdentifier="UserLocationController" id="Niz-xc-vEz" customClass="UserLocationController" customModule="ballotPlanner" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FeF-jK-HHB">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where are you located?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qIw-DO-pDJ">
-                                <rect key="frame" x="59.5" y="70" width="256.5" height="31.5"/>
+                                <rect key="frame" x="133" y="70" width="502" height="61.5"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="23"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -28,7 +28,7 @@
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We use this to find elections in your area" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rfu-S7-xRW">
-                                <rect key="frame" x="67.5" y="131" width="240" height="55"/>
+                                <rect key="frame" x="151" y="131" width="466" height="109.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="4fc-cX-IIN"/>
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="375" id="DlI-uX-xwu"/>
@@ -53,38 +53,20 @@
                                     </mask>
                                 </variation>
                             </label>
-<<<<<<< HEAD
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Zipcode" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="irc-Qs-lze">
-                                <rect key="frame" x="82" y="344" width="211" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="updateLocationManuallyWithSender:" destination="Niz-xc-vEz" eventType="valueChanged" id="f7G-Ab-VZr"/>
-                                </connections>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lzy-7F-mB6">
-                                <rect key="frame" x="302" y="681" width="32" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Next">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-=======
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lzy-7F-mB6">
-                                <rect key="frame" x="280" y="537" width="35" height="30"/>
+                                <rect key="frame" x="673" y="894" width="35" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="35" id="wKC-ij-c3U"/>
                                 </constraints>
                                 <state key="normal" title="Next" image="icons8-right-arrow-30">
                                     <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
->>>>>>> mergetest
                                 </state>
                                 <connections>
                                     <segue destination="Ieu-Su-gwY" kind="show" id="2BH-yI-nxG"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Zipcode" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="irc-Qs-lze">
-                                <rect key="frame" x="120" y="259" width="135" height="30"/>
+                                <rect key="frame" x="325.5" y="313.5" width="117.5" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -150,11 +132,11 @@
             <objects>
                 <viewController storyboardIdentifier="Welcome" id="KhR-vq-alb" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="k5S-eb-1el">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fWV-8i-csB">
-                                <rect key="frame" x="89" y="70" width="197" height="48"/>
+                                <rect key="frame" x="257.5" y="70" width="253.5" height="61.5"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="35"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -173,10 +155,10 @@
                                 </state>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ballot_planner_logo" translatesAutoresizingMaskIntoConstraints="NO" id="RtP-K3-7s4">
-                                <rect key="frame" x="30" y="144" width="315" height="155"/>
+                                <rect key="frame" x="30" y="145.5" width="708" height="297.5"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0LR-vR-ckg">
-                                <rect key="frame" x="127" y="443" width="121" height="33"/>
+                                <rect key="frame" x="283.5" y="625.5" width="201" height="47"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
                                 <state key="normal" title="Let's Get Started">
@@ -190,7 +172,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kkd-Cf-dOc">
-                                <rect key="frame" x="0.0" y="330" width="375" height="93"/>
+                                <rect key="frame" x="196.5" y="474" width="375" height="131.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="375" id="MFS-p1-w5q"/>
                                 </constraints>
@@ -232,11 +214,11 @@ voting day.</string>
             <objects>
                 <viewController storyboardIdentifier="UserPartyController" id="WjS-S4-TFs" customClass="UserPartyController" customModule="ballotPlanner" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TFN-DU-edF">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First, what party are you registered with?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BH9-G5-Buk">
-                                <rect key="frame" x="20" y="70" width="335" height="63"/>
+                                <rect key="frame" x="20" y="70" width="728" height="123"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="23"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -245,7 +227,7 @@ voting day.</string>
                                 </variation>
                             </label>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8L2-64-iQN">
-                                <rect key="frame" x="137.5" y="163" width="100" height="100"/>
+                                <rect key="frame" x="334" y="223" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="Bw1-zU-JfM"/>
                                     <constraint firstAttribute="width" secondItem="8L2-64-iQN" secondAttribute="height" multiplier="1:1" id="TDH-d9-E4J"/>
@@ -259,7 +241,7 @@ voting day.</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zg5-Nb-RDa">
-                                <rect key="frame" x="29.5" y="163" width="100" height="100"/>
+                                <rect key="frame" x="226" y="223" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Zg5-Nb-RDa" secondAttribute="height" multiplier="1:1" id="Vs7-pi-tTN"/>
                                     <constraint firstAttribute="width" constant="100" id="g0g-xn-Kbz"/>
@@ -273,25 +255,25 @@ voting day.</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Democratic" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kei-P3-Prg">
-                                <rect key="frame" x="33.5" y="272" width="92" height="24"/>
+                                <rect key="frame" x="230" y="332" width="92" height="24"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Republican" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mxs-t2-x38">
-                                <rect key="frame" x="143.5" y="272" width="88" height="24"/>
+                                <rect key="frame" x="340" y="332" width="88" height="24"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Libertarian" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aPS-Er-CcB">
-                                <rect key="frame" x="252" y="272" width="86" height="24"/>
+                                <rect key="frame" x="448.5" y="332" width="86" height="24"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </label>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qWk-Am-LYg">
-                                <rect key="frame" x="245.5" y="162" width="99" height="100"/>
+                                <rect key="frame" x="442" y="222" width="99" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="Odw-bK-3gc"/>
                                     <constraint firstAttribute="width" constant="99" id="dxA-Ff-ZQR"/>
@@ -316,7 +298,7 @@ voting day.</string>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tFf-fs-l03">
-                                <rect key="frame" x="76" y="304" width="208" height="157"/>
+                                <rect key="frame" x="272.5" y="364" width="208" height="157"/>
                                 <subviews>
                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bPu-wK-Efg">
                                         <rect key="frame" x="0.0" y="14" width="100" height="100"/>
@@ -373,7 +355,7 @@ voting day.</string>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yma-OB-nK6">
-                                <rect key="frame" x="283" y="537" width="32" height="30"/>
+                                <rect key="frame" x="676" y="894" width="32" height="30"/>
                                 <state key="normal" title="Next" backgroundImage="icons8-right-arrow-30">
                                     <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
