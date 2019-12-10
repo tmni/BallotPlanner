@@ -66,7 +66,12 @@ class UserLocationController: UIViewController, UITextFieldDelegate, CLLocationM
       case .authorizedWhenInUse:
         locationManager1.startUpdatingLocation()
         self.locationText.text = "15213"
-        UserDefaults.standard.set(self.locationText.text, forKey: "location")
+        var loc = 0
+        if let text = self.locationText.text {
+          if Int(text) != nil{
+            loc = Int(text)! }
+          }
+        UserDefaults.standard.set(loc, forKey: "location")
               db.collection("user").document("okabUm7jCq34tjDWHbRQ").updateData(["zip": 15213]) { err in
                 if let err = err {
                   print("Error writing document: \(err)")

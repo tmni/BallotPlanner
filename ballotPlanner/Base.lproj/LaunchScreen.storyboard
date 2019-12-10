@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Goc-Wd-uhi">
-    <device id="retina6_1" orientation="portrait">
+    <device id="retina5_9" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,31 +15,104 @@
             <objects>
                 <viewController id="Goc-Wd-uhi" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9zn-GL-ubZ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ballot Planner " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="grK-DL-Qgd">
-                                <rect key="frame" x="154" y="186" width="110" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Loading..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BLQ-pl-LsZ">
-                                <rect key="frame" x="177" y="236" width="75" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" image="ballot_planner_logo" translatesAutoresizingMaskIntoConstraints="NO" id="yfa-j3-y0p">
+                                <rect key="frame" x="49" y="50" width="714" height="188"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="yfa-j3-y0p" secondAttribute="height" multiplier="908:239" id="hLA-QP-Sec"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="stripes" translatesAutoresizingMaskIntoConstraints="NO" id="qf8-7m-zHo">
+                                <rect key="frame" x="398" y="409" width="16" height="1308"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1307.9999999999998" id="CyD-X1-xmd"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="CyD-X1-xmd"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="CyD-X1-xmd"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.29411764709999999" green="0.6588235294" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qf8-7m-zHo" firstAttribute="leading" secondItem="dan-aG-lO3" secondAttribute="leading" id="5eV-On-ecc"/>
+                            <constraint firstItem="qf8-7m-zHo" firstAttribute="width" secondItem="9zn-GL-ubZ" secondAttribute="width" id="Bf3-ay-NU5"/>
+                            <constraint firstItem="yfa-j3-y0p" firstAttribute="top" secondItem="dan-aG-lO3" secondAttribute="top" constant="50" id="TPq-lt-Gcq"/>
+                            <constraint firstItem="qf8-7m-zHo" firstAttribute="top" secondItem="9zn-GL-ubZ" secondAttribute="top" constant="409" id="Tmg-gC-SA8"/>
+                            <constraint firstItem="qf8-7m-zHo" firstAttribute="height" secondItem="9zn-GL-ubZ" secondAttribute="height" id="X4S-dj-YYB">
+                                <variation key="heightClass=regular" constant="-173.00000000000023"/>
+                            </constraint>
+                            <constraint firstAttribute="bottomMargin" secondItem="qf8-7m-zHo" secondAttribute="bottom" constant="-10.999999999999773" id="c8d-C6-r6m"/>
+                            <constraint firstItem="dan-aG-lO3" firstAttribute="trailing" secondItem="yfa-j3-y0p" secondAttribute="trailing" constant="5" id="cm1-n5-Yhf"/>
+                            <constraint firstItem="qf8-7m-zHo" firstAttribute="bottom" secondItem="yfa-j3-y0p" secondAttribute="bottom" constant="2500" id="fWn-ba-xDr"/>
+                            <constraint firstItem="qf8-7m-zHo" firstAttribute="centerX" secondItem="9zn-GL-ubZ" secondAttribute="centerX" id="iuU-UK-0ZV"/>
+                            <constraint firstItem="yfa-j3-y0p" firstAttribute="bottom" secondItem="qf8-7m-zHo" secondAttribute="top" constant="27" id="nye-Rp-wrm">
+                                <variation key="heightClass=regular" constant="300"/>
+                            </constraint>
+                            <constraint firstItem="qf8-7m-zHo" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="dan-aG-lO3" secondAttribute="bottom" multiplier="0.5" id="qac-Wp-B0x"/>
+                            <constraint firstItem="yfa-j3-y0p" firstAttribute="leading" secondItem="dan-aG-lO3" secondAttribute="leading" constant="5" id="xG5-yu-6XW"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="dan-aG-lO3"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="nye-Rp-wrm"/>
+                                <exclude reference="Bf3-ay-NU5"/>
+                                <exclude reference="Tmg-gC-SA8"/>
+                                <exclude reference="X4S-dj-YYB"/>
+                                <exclude reference="c8d-C6-r6m"/>
+                                <exclude reference="iuU-UK-0ZV"/>
+                                <exclude reference="qac-Wp-B0x"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="Tmg-gC-SA8"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="constraints">
+                                <include reference="Bf3-ay-NU5"/>
+                                <exclude reference="X4S-dj-YYB"/>
+                                <include reference="qac-Wp-B0x"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="nye-Rp-wrm"/>
+                                <exclude reference="5eV-On-ecc"/>
+                                <include reference="c8d-C6-r6m"/>
+                                <exclude reference="fWn-ba-xDr"/>
+                                <include reference="iuU-UK-0ZV"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="nye-Rp-wrm"/>
+                                <exclude reference="c8d-C6-r6m"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="c8d-C6-r6m"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tiz-2S-fzy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-62.318840579710148" y="182.8125"/>
+            <point key="canvasLocation" x="-65.763546798029566" y="180"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ballot_planner_logo" width="908" height="434.33334350585938"/>
+        <image name="stripes" width="1125.5" height="1457.5"/>
+    </resources>
 </document>

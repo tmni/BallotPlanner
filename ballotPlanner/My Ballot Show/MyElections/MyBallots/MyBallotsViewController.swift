@@ -28,9 +28,9 @@ class MyBallotsViewController: UIViewController, UITableViewDataSource, UITableV
     let cellNib = UINib(nibName: "MyBallotsTableViewCell", bundle: nil)
     tableView.register(cellNib, forCellReuseIdentifier: "myBallotCell")
     
-    viewModel?.refresh { [unowned self] in
+    viewModel?.refresh { [weak self] in
       DispatchQueue.main.async {
-        self.tableView.reloadData()
+        self?.tableView.reloadData()
       }
     }
   }

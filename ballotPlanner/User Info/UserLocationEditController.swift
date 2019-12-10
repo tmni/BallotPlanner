@@ -60,17 +60,7 @@ class UserLocationEditController: UIViewController, UITextFieldDelegate{
     
   }
   @IBAction func updateLocation(sender: UITextField){
-//    location.getCurrentLocation() //update location
-//    if !(location.latitude == 0.0 && location.longitude == 0.0){
-//      db.collection("user").document("okabUm7jCq34tjDWHbRQ").updateData(["zip": 15213]) { err in
-//        if let err = err {
-//          print("Error writing document: \(err)")
-//        } else {
-//          print("Location zip written")
-//        }
-//      }
-//      //      location.saveLocation()
-//    }
+    print("calling updateLocation")
     var userZip = self.locationText.text
     if validZipCode(postalCode:userZip!)
     {
