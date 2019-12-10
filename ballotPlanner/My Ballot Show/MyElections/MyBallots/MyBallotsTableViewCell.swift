@@ -11,6 +11,7 @@ import UIKit
 class MyBallotsTableViewCell: UITableViewCell {
 
   @IBOutlet weak var name: UILabel!
+  @IBOutlet weak var position: UILabel!
   
   override func awakeFromNib() {
       super.awakeFromNib()

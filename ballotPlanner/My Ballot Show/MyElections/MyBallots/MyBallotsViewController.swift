@@ -49,6 +49,12 @@ class MyBallotsViewController: UIViewController, UITableViewDataSource, UITableV
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: "myBallotCell", for: indexPath) as! MyBallotsTableViewCell
     cell.name.text = viewModel?.titleForRowAtIndexPath(indexPath)
+    if (cell.name.text == "Michael Lamb") {
+      cell.position.text = "Controller"
+    } else {
+      cell.position.text = "City Council District 1"
+    }
+    
     return cell
   }
   
