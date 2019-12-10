@@ -40,9 +40,6 @@ class MyElectionsViewModel {
     }
   }
   
-//  func detailViewModelForRowAtIndexPath(_ indexPath: IndexPath) -> MyElectionDetailViewModel {
-//    return MyElectionDetailViewModel(myElection: myElections[indexPath.row])
-//  }
   func myBallotsViewModelForRowAtIndexPath(_ indexPath: IndexPath) -> MyBallotsViewModel {
     return MyBallotsViewModel(election: myElections[indexPath.row])
   }

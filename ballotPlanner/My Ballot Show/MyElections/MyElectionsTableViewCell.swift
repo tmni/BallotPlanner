@@ -10,18 +10,18 @@ import UIKit
 
 class MyElectionsTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var name: UILabel!
-    @IBOutlet weak var date: UILabel!
-  
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
+  @IBOutlet weak var name: UILabel!
+  @IBOutlet weak var date: UILabel!
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
+  override func awakeFromNib() {
+      super.awakeFromNib()
+      // Initialization code
+  }
 
-        // Configure the view for the selected state
-    }
+  override func setSelected(_ selected: Bool, animated: Bool) {
+      super.setSelected(selected, animated: animated)
+
+      // Configure the view for the selected state
+  }
     
 }

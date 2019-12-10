@@ -17,10 +17,10 @@
             </objects>
             <point key="canvasLocation" x="-1572" y="-12"/>
         </scene>
-        <!--Item-->
+        <!--Elections-->
         <scene sceneID="HYI-6Q-fF8">
             <objects>
-                <viewController id="Dac-AZ-2vC" customClass="ElectionDatesViewController" customModule="ballotPlanner" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Elections" id="Dac-AZ-2vC" customClass="ElectionDatesViewController" customModule="ballotPlanner" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Lfb-5U-U86"/>
                         <viewControllerLayoutGuide type="bottom" id="28V-MZ-TTt"/>

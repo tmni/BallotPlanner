@@ -58,7 +58,7 @@ class CandidateViewController: UIViewController, WKNavigationDelegate {
     parser.checkInBallots {
       (result) in
       if (result) {
-        self.addToMyBallot.setTitle("Remove From My Ballot", for: .normal)
+        self.addToMyBallot.setTitle("Remove From Ballot", for: .normal)
       } else {
         self.addToMyBallot.setTitle("Add To My Ballot", for: .normal)
       }
