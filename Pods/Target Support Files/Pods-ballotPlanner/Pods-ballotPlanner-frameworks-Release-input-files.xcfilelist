@@ -2,8 +2,8 @@ ${PODS_ROOT}/Target Support Files/Pods-ballotPlanner/Pods-ballotPlanner-framewor
 ${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC-framework/openssl_grpc.framework
 ${BUILT_PRODUCTS_DIR}/GTMSessionFetcher-framework/GTMSessionFetcher.framework
 ${BUILT_PRODUCTS_DIR}/GoogleUtilities-framework/GoogleUtilities.framework
-${BUILT_PRODUCTS_DIR}/Protobuf-framework/protobuf.framework
 ${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework
+${BUILT_PRODUCTS_DIR}/abseil-framework/absl.framework
 ${BUILT_PRODUCTS_DIR}/gRPC-C++-framework/grpcpp.framework
 ${BUILT_PRODUCTS_DIR}/gRPC-Core-framework/grpc.framework
 ${BUILT_PRODUCTS_DIR}/leveldb-library-framework/leveldb.framework
