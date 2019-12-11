@@ -1075,7 +1075,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EC576CEB97467329C31B4C68 /* Pods-ballotPlanner.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RMKJ5888TK;
@@ -1095,7 +1095,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 519A5DC83A81893F7B284A89 /* Pods-ballotPlanner.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RMKJ5888TK;
