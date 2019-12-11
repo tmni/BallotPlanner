@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NAc-GA-mNk">
-    <device id="ipad11_0rounded" orientation="landscape">
+    <device id="ipad9_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,11 +15,11 @@
             <objects>
                 <viewController id="NAc-GA-mNk" customClass="CandidateViewController" customModule="ballotPlanner" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dmh-fm-btj">
-                        <rect key="frame" x="0.0" y="0.0" width="1194" height="834"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Party" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xU1-Ba-8dG">
-                                <rect key="frame" x="1100.5" y="128" width="77.5" height="48"/>
+                                <rect key="frame" x="930.5" y="124" width="77.5" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="179" id="hRI-7r-ZlW"/>
                                 </constraints>
@@ -34,7 +34,7 @@
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Candidate Name" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ybk-nQ-mcM">
-                                <rect key="frame" x="384" y="59" width="795" height="61.5"/>
+                                <rect key="frame" x="389" y="55" width="620" height="61.5"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -43,15 +43,28 @@
                                 </variation>
                             </label>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oXe-yt-0aY">
-                                <rect key="frame" x="16" y="571" width="1162" height="243"/>
+                                <rect key="frame" x="16" y="571" width="992" height="197"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="361" id="gkI-te-UeA"/>
+                                </constraints>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="gkI-te-UeA"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="gkI-te-UeA"/>
+                                    </mask>
+                                </variation>
                             </wkWebView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="V7N-PM-99H">
-                                <rect key="frame" x="16" y="41" width="346" height="284"/>
+                                <rect key="frame" x="16" y="37" width="351" height="288"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="V7N-PM-99H" secondAttribute="height" multiplier="39:32" id="1Sb-ny-kcK"/>
                                     <constraint firstAttribute="height" constant="128" id="sJR-mf-zzh"/>
@@ -63,7 +76,7 @@
                                 </variation>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eD7-xZ-yMS">
-                                <rect key="frame" x="22" y="561" width="1154" height="2"/>
+                                <rect key="frame" x="22" y="561" width="984" height="2"/>
                                 <color key="backgroundColor" white="0.89717136375255613" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="2" id="3cv-65-Lii"/>
@@ -83,7 +96,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4iu-Y2-yfg">
-                                <rect key="frame" x="935" y="196.5" width="243" height="44"/>
+                                <rect key="frame" x="765" y="192.5" width="243" height="44"/>
                                 <color key="backgroundColor" red="0.31372549020000001" green="0.66666666669999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="243" id="Azk-8B-7j5"/>
@@ -110,7 +123,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recent Tweets" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="amh-2C-jxL">
-                                <rect key="frame" x="16" y="512" width="768" height="41"/>
+                                <rect key="frame" x="16" y="512" width="598" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="41" id="wtz-xN-rma"/>
                                 </constraints>
@@ -119,7 +132,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="sample text" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sRn-px-EUM">
-                                <rect key="frame" x="16" y="364" width="1162" height="140"/>
+                                <rect key="frame" x="16" y="364" width="992" height="140"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="140" id="5Yh-T7-RhZ"/>
@@ -205,7 +218,7 @@
                             <constraint firstItem="r8D-wF-wf0" firstAttribute="trailing" secondItem="sRn-px-EUM" secondAttribute="trailing" constant="407" id="ibt-RF-kHf"/>
                             <constraint firstItem="eD7-xZ-yMS" firstAttribute="leading" secondItem="V7N-PM-99H" secondAttribute="leading" id="j57-Of-GHj"/>
                             <constraint firstItem="Ybk-nQ-mcM" firstAttribute="top" secondItem="r8D-wF-wf0" secondAttribute="top" constant="35" id="j6A-hD-Ejf"/>
-                            <constraint firstItem="Ybk-nQ-mcM" firstAttribute="top" secondItem="r8D-wF-wf0" secondAttribute="top" constant="57" id="jar-vb-Jy5"/>
+                            <constraint firstItem="Ybk-nQ-mcM" firstAttribute="top" secondItem="r8D-wF-wf0" secondAttribute="top" constant="30" id="jar-vb-Jy5"/>
                             <constraint firstItem="4sg-zM-fUC" firstAttribute="leading" secondItem="eD7-xZ-yMS" secondAttribute="leading" constant="-2" id="k9i-lL-eEF"/>
                             <constraint firstItem="4sg-zM-fUC" firstAttribute="top" secondItem="4BA-Ur-xe8" secondAttribute="bottom" id="kAn-ZZ-MSY"/>
                             <constraint firstItem="amh-2C-jxL" firstAttribute="top" secondItem="sRn-px-EUM" secondAttribute="bottom" constant="8" symbolic="YES" id="mFv-GM-oE1"/>
@@ -251,6 +264,11 @@
                                 <exclude reference="rL2-eE-GJr"/>
                                 <exclude reference="8Ma-dx-Uhf"/>
                                 <exclude reference="dPu-07-KJa"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="constraints">
+                                <exclude reference="5SE-mY-K4Z"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
