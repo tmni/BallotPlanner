@@ -123,7 +123,7 @@ class CandidatesIndexViewController: UIViewController, UICollectionViewDataSourc
     let buttonFrame = button.frame
     var showRect    = section.convert(buttonFrame, to: self.collectionView1)
     showRect        = self.collectionView1.convert(showRect, to: view)
-    showRect.origin.y -= 10
+//    showRect.origin.y -= 10
     
     /* Rest is same as showing popover */
     let popoverContentController = self.storyboard?.instantiateViewController(withIdentifier: "CandidatesIndexPopoverViewController") as? CandidatesIndexPopoverViewController
